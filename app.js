@@ -98,6 +98,7 @@
       node.setAttribute('title', `${t.name}\n${rank ? `Rank ${rank}/${t.max}` : 'Rank 1 preview'}\n${effect}`);
       node.classList.toggle('learned', rank > 0);
       node.classList.toggle('maxed', rank === t.max);
+      node.classList.toggle('budget-dim', used >= rules.budget && rank === 0);
       node.classList.toggle('locked', Boolean(calc.requirements(points, t, rules)));
       node.classList.toggle('inspected', t.id === selected);
       node.classList.toggle('search-dim', query !== '' && !`${t.name} ${effect}`.toLowerCase().includes(query));

@@ -48,6 +48,9 @@ header{height:65px}
 .node.learned .orb{border-color:var(--tree);box-shadow:0 0 0 1px color-mix(in srgb,var(--tree) 25%,transparent),0 0 13px color-mix(in srgb,var(--tree) 25%,transparent)}
 .node.maxed .orb{border-color:#e6c97c}
 .node.search-dim{opacity:.15}
+.node.budget-dim{opacity:.25}
+.node.budget-dim.search-dim{opacity:.08}
+.node.budget-dim:hover,.node.budget-dim:focus-visible{opacity:.65}
 .tooltip{padding:16px;min-height:275px}
 .tooltip h3{font-size:20px;margin:0;line-height:1.15}
 .tooltip .effect{font-size:14px;line-height:1.5}
