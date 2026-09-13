@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Druid Abilities · Forever</title>
+  <link rel="stylesheet" href="abilities.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Forever Druid talent calculator">
+      <span class="crest" aria-hidden="true">☾</span>
+      <span><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="./">Talents</a>
+      <a class="active" href="abilities.html" aria-current="page">Abilities</a>
+    </nav>
+    <span class="draft">DRUID REFERENCE</span>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div>
+        <p class="eyebrow">DRUID TRAINER</p>
+        <h1>Abilities by level</h1>
+        <p>Trainer requirements observed in the supplied Druid footage and captures.</p>
+      </div>
+    </section>
+
+    <section class="trainer" aria-labelledby="trainer-title">
+      <div class="section-head"><div><p>TEST-BUILD TRAINER</p><h2 id="trainer-title">By level</h2></div><span>Levels displayed in the supplied captures</span></div>
+      <div id="trainer-levels" class="level-grid"></div>
+    </section>
+  </main>
+  <script src="abilities-data.js"></script>
+  <script src="ability-icons.js"></script>
+  <script src="abilities-ui.js"></script>
+</body>
+</html>

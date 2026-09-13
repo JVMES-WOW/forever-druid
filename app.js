@@ -10,6 +10,7 @@
   let points = {}, rules = { ...calc.defaults }, selected = calc.talents[0].id;
   let undoStack = [], query = '';
   let initialMessage = '';
+  const sectionNav = '<nav class="section-nav" aria-label="Main navigation"><span aria-current="page">Talents</span><a href="abilities.html">Abilities</a></nav>';
   try {
     const code = location.hash.startsWith('#FF2.') ? location.hash.slice(1) : localStorage.getItem(storageKey);
     if (code) {
@@ -30,7 +31,7 @@
   }
 
   $('#root').innerHTML = `<main>
-    <header><div class="brand"><span class="crest" aria-hidden="true">❦</span><div><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></div></div><span class="header-label">DRUID TALENTS</span><button class="ghost" id="share">Share build ↗</button></header>
+    <header><div class="brand"><span class="crest" aria-hidden="true">❦</span><div><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></div></div>${sectionNav}<button class="ghost" id="share">Share build ↗</button></header>
     <h1 class="sr-only">Druid talent calculator</h1>
     <div class="calculator-bar"><div class="toolbar"><label class="search-label">Find a talent <input id="search" type="search" placeholder="Name or effect…" autocomplete="off"></label><span>Click to add · Right-click to refund</span><button class="ghost" id="undo">Undo</button><button class="ghost" id="reset">Reset build</button></div><div class="points"><span>Talent points</span><b id="total"></b><div class="meter"><i id="meter"></i></div><small id="remaining"></small></div></div>
     <p id="status" role="status" aria-live="polite"></p>
