@@ -15,6 +15,13 @@ globalThis.FOREVER_DATA = {
           "row": 1,
           "col": 2,
           "description": "Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%.",
+          "rankDescriptions": [
+            "Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%.",
+            "Reduces the cast time of your Wrath spell by 0.2 sec and its Mana cost by 20%.",
+            "Reduces the cast time of your Wrath spell by 0.3 sec and its Mana cost by 30%.",
+            "Reduces the cast time of your Wrath spell by 0.4 sec and its Mana cost by 40%.",
+            "Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%."
+          ],
           "type": "Passive",
           "icon": "icons/improved-wrath.jpg"
         },
@@ -25,6 +32,13 @@ globalThis.FOREVER_DATA = {
           "row": 1,
           "col": 3,
           "description": "Increases the periodic damage and healing done by your spells and abilities by 1%.",
+          "rankDescriptions": [
+            "Increases the periodic damage and healing done by your spells and abilities by 1%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 2%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 3%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 4%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 5%."
+          ],
           "type": "Passive",
           "icon": "icons/genesis.jpg"
         },
@@ -35,6 +49,11 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 1,
           "description": "Reduces the Mana cost of your spells by 3%.",
+          "rankDescriptions": [
+            "Reduces the Mana cost of your spells by 3%.",
+            "Reduces the Mana cost of your spells by 6%.",
+            "Reduces the Mana cost of your spells by 9%."
+          ],
           "type": "Passive",
           "icon": "icons/moonglow.jpg"
         },
@@ -45,6 +64,10 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 2,
           "description": "Increases the damage and critical strike chance of your Moonfire spell by 5%.",
+          "rankDescriptions": [
+            "Increases the damage and critical strike chance of your Moonfire spell by 5%.",
+            "Increases the damage and critical strike chance of your Moonfire spell by 10%."
+          ],
           "type": "Passive",
           "icon": "icons/improved-moonfire.jpg"
         },
@@ -55,6 +78,10 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 3,
           "description": "Increases your critical strike chance with spells and melee attacks by 2%.",
+          "rankDescriptions": [
+            "Increases your critical strike chance with spells and melee attacks by 2%.",
+            "Increases your critical strike chance with spells and melee attacks by 4%."
+          ],
           "type": "Passive",
           "icon": "icons/natures-majesty.jpg"
         },
@@ -65,6 +92,10 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 4,
           "description": "Increases the range of your offensive Balance spells by 10% and increases the chance for all your spells and attacks to hit by 2%.",
+          "rankDescriptions": [
+            "Increases the range of your offensive Balance spells by 10% and increases the chance for all your spells and attacks to hit by 2%.",
+            "Increases the range of your offensive Balance spells by 20% and increases the chance for all your spells and attacks to hit by 4%."
+          ],
           "type": "Passive",
           "icon": "icons/natures-reach.jpg"
         },
@@ -75,6 +106,11 @@ globalThis.FOREVER_DATA = {
           "row": 3,
           "col": 1,
           "description": "Increases the damage done by your Entangling Roots spell by 25%, and its victims can take up to 25% more damage without interrupting the effect.",
+          "rankDescriptions": [
+            "Increases the damage done by your Entangling Roots spell by 25%, and its victims can take up to 25% more damage without interrupting the effect.",
+            "Increases the damage done by your Entangling Roots spell by 50%, and its victims can take up to 50% more damage without interrupting the effect.",
+            "Increases the damage done by your Entangling Roots spell by 75%, and its victims can take up to 75% more damage without interrupting the effect."
+          ],
           "type": "Passive",
           "icon": "icons/improved-entangling-roots.jpg"
         },
@@ -96,6 +132,13 @@ globalThis.FOREVER_DATA = {
           "row": 3,
           "col": 4,
           "description": "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 1% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 1% increased damage.",
+          "rankDescriptions": [
+            "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 1% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 1% increased damage.",
+            "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 2% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 2% increased damage.",
+            "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 3% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 3% increased damage.",
+            "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 4% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 4% increased damage.",
+            "Each time you cast a Nature spell, your next Arcane damage spell within 10 sec deals 5% increased damage. Each time you cast an Arcane spell, your next Nature damage spell within 10 sec deals 5% increased damage."
+          ],
           "type": "Passive",
           "icon": "icons/balance-of-nature.jpg"
         },
@@ -121,6 +164,13 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 2,
           "description": "Increases the critical strike damage bonus of your Arcane and Nature spells by 20%.",
+          "rankDescriptions": [
+            "Increases the critical strike damage bonus of your Arcane and Nature spells by 20%.",
+            "Increases the critical strike damage bonus of your Arcane and Nature spells by 40%.",
+            "Increases the critical strike damage bonus of your Arcane and Nature spells by 60%.",
+            "Increases the critical strike damage bonus of your Arcane and Nature spells by 80%.",
+            "Increases the critical strike damage bonus of your Arcane and Nature spells by 100%."
+          ],
           "type": "Passive",
           "prerequisite": "improved-moonfire",
           "icon": "icons/vengeance.jpg"
@@ -132,6 +182,13 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 3,
           "description": "Reduces the cast time of Starfire by 0.1 sec and Starfire has a 3% chance to stun its target for 3 sec.",
+          "rankDescriptions": [
+            "Reduces the cast time of Starfire by 0.1 sec and Starfire has a 3% chance to stun its target for 3 sec.",
+            "Reduces the cast time of Starfire by 0.2 sec and Starfire has a 6% chance to stun its target for 3 sec.",
+            "Reduces the cast time of Starfire by 0.3 sec and Starfire has a 9% chance to stun its target for 3 sec.",
+            "Reduces the cast time of Starfire by 0.4 sec and Starfire has a 12% chance to stun its target for 3 sec.",
+            "Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec."
+          ],
           "type": "Passive",
           "icon": "icons/improved-starfire.jpg"
         },
@@ -142,6 +199,10 @@ globalThis.FOREVER_DATA = {
           "row": 5,
           "col": 1,
           "description": "Increases the maximum number of targets you may have affected by Entangling Roots by 1.",
+          "rankDescriptions": [
+            "Increases the maximum number of targets you may have affected by Entangling Roots by 1.",
+            "Increases the maximum number of targets you may have affected by Entangling Roots by 2."
+          ],
           "type": "Passive",
           "icon": "icons/overgrowth.jpg"
         },
@@ -162,6 +223,11 @@ globalThis.FOREVER_DATA = {
           "row": 5,
           "col": 3,
           "description": "Your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.17 sec. Stores up to 4 charges. Lasts 15 sec.",
+          "rankDescriptions": [
+            "Your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.17 sec. Stores up to 4 charges. Lasts 15 sec.",
+            "Your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.33 sec. Stores up to 4 charges. Lasts 15 sec.",
+            "Your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.5 sec. Stores up to 4 charges. Lasts 15 sec."
+          ],
           "type": "Passive",
           "icon": "icons/eclipse.jpg"
         },
@@ -172,6 +238,13 @@ globalThis.FOREVER_DATA = {
           "row": 6,
           "col": 2,
           "description": "Increases the damage done by your Arcane and Nature spells by 1%.",
+          "rankDescriptions": [
+            "Increases the damage done by your Arcane and Nature spells by 1%.",
+            "Increases the damage done by your Arcane and Nature spells by 2%.",
+            "Increases the damage done by your Arcane and Nature spells by 3%.",
+            "Increases the damage done by your Arcane and Nature spells by 4%.",
+            "Increases the damage done by your Arcane and Nature spells by 5%."
+          ],
           "type": "Passive",
           "icon": "icons/moonfury.jpg"
         },
@@ -205,6 +278,13 @@ globalThis.FOREVER_DATA = {
           "row": 1,
           "col": 2,
           "description": "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 1 Rage or Energy.",
+          "rankDescriptions": [
+            "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 1 Rage or Energy.",
+            "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 2 Rage or Energy.",
+            "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 3 Rage or Energy.",
+            "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 4 Rage or Energy.",
+            "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 5 Rage or Energy."
+          ],
           "type": "Passive",
           "icon": "icons/ferocity.jpg"
         },
@@ -215,6 +295,13 @@ globalThis.FOREVER_DATA = {
           "row": 1,
           "col": 3,
           "description": "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.",
+          "rankDescriptions": [
+            "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.",
+            "Increases your Intellect by 4%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 4%.",
+            "Increases your Intellect by 6%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 6%.",
+            "Increases your Intellect by 8%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 8%.",
+            "Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%."
+          ],
           "type": "Passive",
           "icon": "icons/heart-of-the-wild.jpg"
         },
@@ -225,6 +312,10 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 1,
           "description": "Increases your movement speed while in Cat Form by 15%, and increases your chance to Dodge by 2%.",
+          "rankDescriptions": [
+            "Increases your movement speed while in Cat Form by 15%, and increases your chance to Dodge by 2%.",
+            "Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%."
+          ],
           "type": "Passive",
           "icon": "icons/feral-swiftness.jpg"
         },
@@ -235,6 +326,11 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 2,
           "description": "Increases damage done by your Swipe ability by 10% and reduces the chance enemies have to detect you while Prowling as if you were 1 level higher.",
+          "rankDescriptions": [
+            "Increases damage done by your Swipe ability by 10% and reduces the chance enemies have to detect you while Prowling as if you were 1 level higher.",
+            "Increases damage done by your Swipe ability by 20% and reduces the chance enemies have to detect you while Prowling as if you were 2 levels higher.",
+            "Increases damage done by your Swipe ability by 30% and reduces the chance enemies have to detect you while Prowling as if you were 3 levels higher."
+          ],
           "type": "Passive",
           "icon": "icons/feral-instinct.jpg"
         },
@@ -245,6 +341,10 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 3,
           "description": "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec and reduces the cooldown of Bash by 15 sec.",
+          "rankDescriptions": [
+            "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec and reduces the cooldown of Bash by 15 sec.",
+            "Increases the stun duration of your Bash and Pounce abilities by 1 sec and reduces the cooldown of Bash by 30 sec."
+          ],
           "type": "Passive",
           "icon": "icons/brutal-impact.jpg"
         },
@@ -255,6 +355,11 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 4,
           "description": "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1 additional base Armor per level and another 0.67 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.",
+          "rankDescriptions": [
+            "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1 additional base Armor per level and another 0.67 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.",
+            "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 2 additional base Armor per level and another 1.33 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.",
+            "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms."
+          ],
           "type": "Passive",
           "icon": "icons/thick-hide.jpg"
         },
@@ -265,6 +370,10 @@ globalThis.FOREVER_DATA = {
           "row": 3,
           "col": 2,
           "description": "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.",
+          "rankDescriptions": [
+            "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.",
+            "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%."
+          ],
           "type": "Passive",
           "icon": "icons/savage-fury.jpg"
         },
@@ -302,6 +411,10 @@ globalThis.FOREVER_DATA = {
           "row": 3,
           "col": 4,
           "description": "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.",
+          "rankDescriptions": [
+            "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.",
+            "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%."
+          ],
           "type": "Passive",
           "icon": "icons/sharpened-claws.jpg"
         },
@@ -312,6 +425,11 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 1,
           "description": "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
+          "rankDescriptions": [
+            "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
+            "Reduces the Energy cost of your Shred ability by 12 and reduces the Rage cost of your Lacerate ability by 2.",
+            "Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3."
+          ],
           "type": "Passive",
           "icon": "icons/shredding-attacks.jpg"
         },
@@ -340,6 +458,11 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 3,
           "description": "Increases your melee Attack Power by 50% of your level.",
+          "rankDescriptions": [
+            "Increases your melee Attack Power by 50% of your level.",
+            "Increases your melee Attack Power by 100% of your level.",
+            "Increases your melee Attack Power by 150% of your level."
+          ],
           "type": "Passive",
           "requires": "Cat Form, Bear Form, Dire Bear Form",
           "icon": "icons/predatory-strikes.jpg"
@@ -351,6 +474,10 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 4,
           "description": "Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.",
+          "rankDescriptions": [
+            "Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.",
+            "Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point."
+          ],
           "type": "Passive",
           "prerequisite": "sharpened-claws",
           "icon": "icons/primal-fury.jpg"
@@ -362,6 +489,10 @@ globalThis.FOREVER_DATA = {
           "row": 5,
           "col": 1,
           "description": "Increases the critical strike damage bonus of your melee abilities by 10%.",
+          "rankDescriptions": [
+            "Increases the critical strike damage bonus of your melee abilities by 10%.",
+            "Increases the critical strike damage bonus of your melee abilities by 20%."
+          ],
           "type": "Passive",
           "icon": "icons/predatory-instincts.jpg"
         },
@@ -382,6 +513,11 @@ globalThis.FOREVER_DATA = {
           "row": 5,
           "col": 4,
           "description": "Tiger’s Fury now instantly grants you 20 Energy.",
+          "rankDescriptions": [
+            "Tiger’s Fury now instantly grants you 20 Energy.",
+            "Tiger’s Fury now instantly grants you 40 Energy.",
+            "Tiger’s Fury now instantly grants you 60 Energy."
+          ],
           "type": "Passive",
           "icon": "icons/king-of-the-jungle.jpg"
         },
@@ -392,6 +528,13 @@ globalThis.FOREVER_DATA = {
           "row": 6,
           "col": 1,
           "description": "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge.",
+          "rankDescriptions": [
+            "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 2%, and gives you a 40% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 3%, and gives you a 60% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 4%, and gives you a 80% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge."
+          ],
           "type": "Passive",
           "requires": "Bear Form, Dire Bear Form",
           "icon": "icons/natural-reaction.jpg"
@@ -403,6 +546,13 @@ globalThis.FOREVER_DATA = {
           "row": 6,
           "col": 3,
           "description": "Increases damage done by your melee abilities on Bleeding targets by 2%.",
+          "rankDescriptions": [
+            "Increases damage done by your melee abilities on Bleeding targets by 2%.",
+            "Increases damage done by your melee abilities on Bleeding targets by 4%.",
+            "Increases damage done by your melee abilities on Bleeding targets by 6%.",
+            "Increases damage done by your melee abilities on Bleeding targets by 8%.",
+            "Increases damage done by your melee abilities on Bleeding targets by 10%."
+          ],
           "type": "Passive",
           "prerequisite": "predatory-strikes",
           "icon": "icons/rend-and-tear.jpg"
@@ -439,6 +589,13 @@ globalThis.FOREVER_DATA = {
           "row": 1,
           "col": 2,
           "description": "Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+          "rankDescriptions": [
+            "Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 28% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 42% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 56% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells."
+          ],
           "type": "Passive",
           "icon": "icons/natures-focus.jpg"
         },
@@ -449,6 +606,13 @@ globalThis.FOREVER_DATA = {
           "row": 1,
           "col": 3,
           "description": "Gives you a 20% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 20% of the Energy you had when you were last in Cat Form, plus 2 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 20 Energy.",
+          "rankDescriptions": [
+            "Gives you a 20% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 20% of the Energy you had when you were last in Cat Form, plus 2 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 20 Energy.",
+            "Gives you a 40% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 40% of the Energy you had when you were last in Cat Form, plus 4 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 40 Energy.",
+            "Gives you a 60% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 60% of the Energy you had when you were last in Cat Form, plus 6 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 60 Energy.",
+            "Gives you a 80% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 80% of the Energy you had when you were last in Cat Form, plus 8 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 80 Energy.",
+            "Gives you a 100% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100 Energy."
+          ],
           "type": "Passive",
           "icon": "icons/furor.jpg"
         },
@@ -459,6 +623,13 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 1,
           "description": "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
+          "rankDescriptions": [
+            "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
+            "Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%.",
+            "Reduces the cast time of your Healing Touch spell by 0.3 sec and increases all damage you deal by 3%.",
+            "Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%.",
+            "Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%."
+          ],
           "type": "Passive",
           "icon": "icons/naturalist.jpg"
         },
@@ -469,6 +640,11 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 2,
           "description": "Reduces the threat generated by your Nature and Arcane spells by 10%.",
+          "rankDescriptions": [
+            "Reduces the threat generated by your Nature and Arcane spells by 10%.",
+            "Reduces the threat generated by your Nature and Arcane spells by 20%.",
+            "Reduces the threat generated by your Nature and Arcane spells by 30%."
+          ],
           "type": "Passive",
           "icon": "icons/subtlety.jpg"
         },
@@ -479,6 +655,11 @@ globalThis.FOREVER_DATA = {
           "row": 2,
           "col": 3,
           "description": "Reduces the mana cost of all shapeshifting by 10%.",
+          "rankDescriptions": [
+            "Reduces the mana cost of all shapeshifting by 10%.",
+            "Reduces the mana cost of all shapeshifting by 20%.",
+            "Reduces the mana cost of all shapeshifting by 30%."
+          ],
           "type": "Passive",
           "icon": "icons/natural-shapeshifter.jpg"
         },
@@ -489,6 +670,11 @@ globalThis.FOREVER_DATA = {
           "row": 3,
           "col": 2,
           "description": "Allows 17% of your Mana regeneration to continue while casting.",
+          "rankDescriptions": [
+            "Allows 17% of your Mana regeneration to continue while casting.",
+            "Allows 33% of your Mana regeneration to continue while casting.",
+            "Allows 50% of your Mana regeneration to continue while casting."
+          ],
           "type": "Passive",
           "icon": "icons/reflection.jpg"
         },
@@ -499,6 +685,13 @@ globalThis.FOREVER_DATA = {
           "row": 3,
           "col": 3,
           "description": "Increases the effect of all your healing spells by 2%.",
+          "rankDescriptions": [
+            "Increases the effect of all your healing spells by 2%.",
+            "Increases the effect of all your healing spells by 4%.",
+            "Increases the effect of all your healing spells by 6%.",
+            "Increases the effect of all your healing spells by 8%.",
+            "Increases the effect of all your healing spells by 10%."
+          ],
           "type": "Passive",
           "icon": "icons/gift-of-nature.jpg"
         },
@@ -519,6 +712,13 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 2,
           "description": "Reduces the mana cost of your Healing Touch and Tranquility spells by 2%.",
+          "rankDescriptions": [
+            "Reduces the mana cost of your Healing Touch and Tranquility spells by 2%.",
+            "Reduces the mana cost of your Healing Touch and Tranquility spells by 4%.",
+            "Reduces the mana cost of your Healing Touch and Tranquility spells by 6%.",
+            "Reduces the mana cost of your Healing Touch and Tranquility spells by 8%.",
+            "Reduces the mana cost of your Healing Touch and Tranquility spells by 10%."
+          ],
           "type": "Passive",
           "icon": "icons/tranquil-spirit.jpg"
         },
@@ -529,6 +729,11 @@ globalThis.FOREVER_DATA = {
           "row": 4,
           "col": 3,
           "description": "Increases the effect of your Rejuvenation spell by 5%.",
+          "rankDescriptions": [
+            "Increases the effect of your Rejuvenation spell by 5%.",
+            "Increases the effect of your Rejuvenation spell by 10%.",
+            "Increases the effect of your Rejuvenation spell by 15%."
+          ],
           "type": "Passive",
           "icon": "icons/improved-rejuvenation.jpg"
         },
@@ -570,6 +775,11 @@ globalThis.FOREVER_DATA = {
           "row": 5,
           "col": 2,
           "description": "Increases your Spirit by 5%.",
+          "rankDescriptions": [
+            "Increases your Spirit by 5%.",
+            "Increases your Spirit by 10%.",
+            "Increases your Spirit by 15%."
+          ],
           "type": "Passive",
           "icon": "icons/living-spirit.jpg"
         },
@@ -580,6 +790,10 @@ globalThis.FOREVER_DATA = {
           "row": 5,
           "col": 4,
           "description": "Reduces threat caused by Tranquility by 50% and its cooldown by 30%.",
+          "rankDescriptions": [
+            "Reduces threat caused by Tranquility by 50% and its cooldown by 30%.",
+            "Reduces threat caused by Tranquility by 100% and its cooldown by 60%."
+          ],
           "type": "Passive",
           "icon": "icons/improved-tranquility.jpg"
         },
@@ -590,6 +804,13 @@ globalThis.FOREVER_DATA = {
           "row": 6,
           "col": 3,
           "description": "Increases the critical effect chance of your Regrowth spell by 10%.",
+          "rankDescriptions": [
+            "Increases the critical effect chance of your Regrowth spell by 10%.",
+            "Increases the critical effect chance of your Regrowth spell by 20%.",
+            "Increases the critical effect chance of your Regrowth spell by 30%.",
+            "Increases the critical effect chance of your Regrowth spell by 40%.",
+            "Increases the critical effect chance of your Regrowth spell by 50%."
+          ],
           "type": "Passive",
           "prerequisite": "improved-rejuvenation",
           "icon": "icons/improved-regrowth.jpg"

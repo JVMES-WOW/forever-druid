@@ -7,6 +7,12 @@
   const treeTotal = (points, tree) => talents.filter(t => t.tree === tree).reduce((sum, t) => sum + (points[t.id] || 0), 0);
   const lowerPoints = (points, talent) => talents.filter(t => t.tree === talent.tree && t.row < talent.row).reduce((sum, t) => sum + (points[t.id] || 0), 0);
 
+  function descriptionAtRank(talent, rank) {
+    if (!Number.isInteger(rank) || rank < 0 || rank > talent.max) throw new RangeError('Invalid effect rank.');
+    // Unlearned talents preview their first rank, not a fictitious zero effect.
+    return talent.rankDescriptions?.[Math.max(1, rank) - 1] || talent.description;
+  }
+
   function requirements(points, talent, rules = defaults) {
     if (!rules.gates) return '';
     if (lowerPoints(points, talent) < (talent.row - 1) * 5) return `Requires ${(talent.row - 1) * 5} points in earlier ${data.trees.find(t => t.id === talent.tree).name} rows.`;
@@ -55,6 +61,6 @@
     if (error) throw new Error(error);
     return { points, rules };
   }
-  root.FOREVER_CALCULATOR = { talents, byId, defaults, total, treeTotal, requirements, validate, change, encode, decode };
+  root.FOREVER_CALCULATOR = { talents, byId, defaults, total, treeTotal, descriptionAtRank, requirements, validate, change, encode, decode };
   if (typeof module !== 'undefined') module.exports = root.FOREVER_CALCULATOR;
 })(globalThis);
