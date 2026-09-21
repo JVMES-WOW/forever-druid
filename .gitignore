@@ -8,4 +8,5 @@ __pycache__/
 # Raw and response-level survey data must never be committed.
 survey_analysis/data/raw/
 survey_analysis/data/interim/
+survey_analysis/config/*.private.*
 analysis_raw.csv

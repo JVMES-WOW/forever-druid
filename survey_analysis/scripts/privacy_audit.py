@@ -14,6 +14,7 @@ RAW_HEADERS = [
     "May your written response be quoted anonymously",
 ]
 EMAIL = re.compile(r"\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b")
+PRIVATE_SOURCE_MARKERS = ("docs.google.com/spreadsheets/", "source_spreadsheet_id")
 
 
 def main() -> None:
@@ -28,6 +29,9 @@ def main() -> None:
             continue
         text = path.read_text(errors="ignore")
         if EMAIL.search(text): issues.append(f"email-like text in {path.relative_to(ROOT)}")
+        for marker in PRIVATE_SOURCE_MARKERS:
+            if marker in text:
+                issues.append(f"private source marker in {path.relative_to(ROOT)}")
         if path.suffix == ".csv" and path.name != "survey_instrument.csv" and any(header in text for header in RAW_HEADERS):
             issues.append(f"raw header in {path.relative_to(ROOT)}")
     if issues:

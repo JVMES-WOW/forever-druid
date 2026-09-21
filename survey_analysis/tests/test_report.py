@@ -49,6 +49,16 @@ def test_methods_page_keeps_technical_detail_and_downloads():
     assert "design reference boundary" in methods
     assert "github.com/jvmes-wow/forever-druid/tree/main/survey_analysis" in methods
     assert "survey_instrument.csv" in methods
+    assert "live response sheet is not publicly linked" in methods
+    assert "subject to respondent privacy and consent" in methods
+    assert "docs.google.com/spreadsheets" not in methods
+    assert "source_spreadsheet_id" not in methods
+
+
+def test_public_metadata_does_not_identify_private_source():
+    metadata = json.loads((ROOT / "analysis/tables/source_metadata.json").read_text())
+    assert "source_spreadsheet_id" not in metadata
+    assert "worksheet" not in metadata
 
 
 def test_report_theme_matches_existing_dark_green_and_gold_palette():

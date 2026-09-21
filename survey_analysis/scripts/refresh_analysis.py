@@ -32,9 +32,7 @@ from forever_survey.stats import can_quote, clean, parse_multiselect
 from forever_survey.text import document_frequency, private_text_id, topic_outputs
 from forever_survey.themes import THEME_RULES, code_themes, powershift_polarity
 
-SPREADSHEET_ID = "1muybYt_lCb0MZvsquooyl1X5JbDz0K4gP-zT72lrM6E"
-WORKSHEET = "Form Responses 1"
-CSV_URL = f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}/export?format=csv&sheet=Form%20Responses%201"
+PRIVATE_SOURCE_FILE = ROOT / "survey_analysis" / "config" / "source_url.private.txt"
 RAW_DIR = ROOT / "survey_analysis" / "data" / "raw"
 INTERIM_DIR = ROOT / "survey_analysis" / "data" / "interim"
 PROCESSED_DIR = ROOT / "survey_analysis" / "data" / "processed"
@@ -60,13 +58,27 @@ def ensure_dirs() -> None:
         path.mkdir(parents=True, exist_ok=True)
 
 
+def private_source_url() -> str:
+    url = os.environ.get("FOREVER_SURVEY_CSV_URL", "").strip()
+    if not url and PRIVATE_SOURCE_FILE.exists():
+        url = PRIVATE_SOURCE_FILE.read_text().strip()
+    if not url:
+        raise RuntimeError(
+            "No private survey source configured. Set FOREVER_SURVEY_CSV_URL, "
+            "create survey_analysis/config/source_url.private.txt, or use --input PATH."
+        )
+    return url
+
+
 def retrieve(source: Path | None) -> tuple[Path, str, str]:
     retrieved = datetime.now(ZoneInfo("America/Chicago")).isoformat(timespec="seconds")
     destination = RAW_DIR / "form_responses.csv"
     if source:
         shutil.copyfile(source, destination)
     else:
-        request = urllib.request.Request(CSV_URL, headers={"User-Agent": "Forever-Feral-Survey-Analysis/1.0"})
+        request = urllib.request.Request(
+            private_source_url(), headers={"User-Agent": "Forever-Feral-Survey-Analysis/1.0"}
+        )
         with urllib.request.urlopen(request, timeout=60) as response:
             destination.write_bytes(response.read())
     raw = destination.read_bytes()
@@ -346,8 +358,6 @@ def main() -> None:
 
     metadata = {
         "retrieved_at_america_chicago": retrieved,
-        "source_spreadsheet_id": SPREADSHEET_ID,
-        "worksheet": WORKSHEET,
         "row_count": row_count,
         "column_count": col_count,
         "sha256": digest,

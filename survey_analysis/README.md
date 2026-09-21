@@ -23,11 +23,16 @@ python3 -m venv .venv
 .venv/bin/python survey_analysis/scripts/refresh_analysis.py
 ```
 
-The refresh command downloads the `Form Responses 1` worksheet, validates the
-45-column schema, records source provenance and a SHA-256 snapshot hash, runs
+The refresh command reads a privately configured response export, validates the
+45-column schema, records a SHA-256 snapshot hash, runs
 the structured and text analyses with a fixed seed, and rebuilds the public
 HTML report plus aggregate downloads. Use `--input PATH` to reproduce from an
 already-downloaded snapshot. The input remains ignored by Git.
+
+For a live refresh, provide the private export URL in the
+`FOREVER_SURVEY_CSV_URL` environment variable or in the gitignored file
+`survey_analysis/config/source_url.private.txt`. The source location and raw
+responses are intentionally excluded from the public repository.
 
 ## Privacy boundary
 
