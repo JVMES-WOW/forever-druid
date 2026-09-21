@@ -446,7 +446,7 @@ def main() -> None:
         "acad144b7596a53f": "Functional replacement",
         "80e25be9def5d6b7": "AoE and group viability",
         "9f8efc112574893d": "Hybrid and off-tank play",
-        "b455da06728cb871": "Shapeshifting without powershifting",
+        "d8e9ffa150c3b8b4": "Shapeshifting without powershifting",
     }
     featured_quotes = tables["anonymous_excerpts"][
         tables["anonymous_excerpts"].text_id.isin(featured_viewpoints)

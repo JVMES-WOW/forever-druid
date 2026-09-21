@@ -64,3 +64,9 @@ def test_obsolete_rake_scaling_quote_is_not_selected():
     config = json.loads((ROOT / "survey_analysis/config/quote_selections.json").read_text())
     assert "e1f9bbbc08954840" not in config["selected_text_ids"]
     assert "80e25be9def5d6b7" in config["selected_text_ids"]
+
+
+def test_shapeshifting_quote_supports_non_powershifting_design_goal():
+    config = json.loads((ROOT / "survey_analysis/config/quote_selections.json").read_text())
+    assert "b455da06728cb871" not in config["selected_text_ids"]
+    assert "d8e9ffa150c3b8b4" in config["selected_text_ids"]
