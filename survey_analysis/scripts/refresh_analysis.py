@@ -236,10 +236,17 @@ def plot_experience(table: pd.DataFrame) -> None:
         "I mainly play another Druid role/spec": "Mainly another Druid role",
         "I mainly play another class": "Mainly another class",
     }
-    data = table.assign(label=table.category.map(labels).fillna(table.category))
-    plot_bar(data, "label", "percent", FIG_DIR / "experience-profile.svg",
-             "Self-described Feral experience", colors=[COLORS["info"]] * len(data),
-             xlabel="Share of respondents", xlim=65, height=4.5)
+    data = table.assign(category=table.category.map(labels).fillna(table.category))
+    experience_colors = {
+        "High-end / competitive": "#5f7f99",
+        "Regular organized raider": "#8296a6",
+        "Experienced, primarily casual": "#9a7b3d",
+        "New or prospective": "#668675",
+        "Mainly another Druid role": "#8b8171",
+        "Mainly another class": "#756b83",
+    }
+    plot_donut(data, FIG_DIR / "experience-profile.svg",
+               "Self-described Feral experience", experience_colors)
 
 
 def make_wordclouds(freqs: dict[int, pd.DataFrame]) -> None:

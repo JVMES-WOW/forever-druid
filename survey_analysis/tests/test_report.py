@@ -28,7 +28,7 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "risk to validate" not in template
     assert "excessive apm" not in template
     assert "making energy irrelevant" not in template
-    assert template.count("donut chart") == 2
+    assert template.count("donut chart") == 3
     assert "these respondents give the design team" in template
     assert "combo points stored on the player" not in template
     assert "player-stored combo points" not in template
