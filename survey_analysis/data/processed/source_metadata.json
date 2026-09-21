@@ -1,0 +1,15 @@
+{
+  "retrieved_at_america_chicago": "2026-09-21T17:18:34-05:00",
+  "source_spreadsheet_id": "1muybYt_lCb0MZvsquooyl1X5JbDz0K4gP-zT72lrM6E",
+  "worksheet": "Form Responses 1",
+  "row_count": 758,
+  "column_count": 45,
+  "sha256": "4e6694a846ce3a60d1f2126220f761377e309af26a8450da73346527da188f67",
+  "random_seed": 20260921,
+  "exact_duplicate_rows": 0,
+  "exact_duplicate_groups": 0,
+  "duplicate_timestamp_rows": 18,
+  "invalid_timestamps": 0,
+  "collection_start": "September 20, 2026 at 10:01 AM",
+  "collection_end": "September 21, 2026 at 5:09 PM"
+}

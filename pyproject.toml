@@ -1,0 +1,9 @@
+[project]
+name = "forever-feral-survey-analysis"
+version = "1.0.0"
+description = "Reproducible public analysis of the Forever Feral Community Feedback survey"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["survey_analysis/src"]
+testpaths = ["survey_analysis/tests"]

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.matplotlib-cache/
+*.py[cod]
+.DS_Store
+
+# Raw and response-level survey data must never be committed.
+survey_analysis/data/raw/
+survey_analysis/data/interim/
+analysis_raw.csv

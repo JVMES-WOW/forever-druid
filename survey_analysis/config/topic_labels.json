@@ -1,0 +1,36 @@
+{
+  "14": {
+    "topics": 7,
+    "labels": [
+      "Hybrid roles, tanking, and damage",
+      "Powershifting, engagement, and identity",
+      "APM and skill expression",
+      "Slow or boring rotation",
+      "Energy waiting and downtime",
+      "Engaging active rotation",
+      "Class identity and distinctiveness"
+    ]
+  },
+  "15": {
+    "topics": 6,
+    "labels": [
+      "Powershifting/removal (mixed polarity)",
+      "Strong bleed emphasis",
+      "Bleed identity and gameplay",
+      "Tiger's Fury, Berserk, and energy tools",
+      "Cat/Bear hybrid and talents",
+      "Weapon scaling, forms, and toolkit"
+    ]
+  },
+  "16": {
+    "topics": 6,
+    "labels": [
+      "Restore powershifting",
+      "Furor changes",
+      "Energy and rotation gameplay",
+      "AoE, bleeds, and weaving",
+      "Restore active gameplay",
+      "Energy ticks, pooling, and mastery"
+    ]
+  }
+}
