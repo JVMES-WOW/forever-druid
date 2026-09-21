@@ -16,24 +16,28 @@
 <main>
   <section class="hero">
     <p class="eyebrow">COMMUNITY FEEDBACK · {{ metadata.row_count }} RESPONSES</p>
-    <h1>Feral players are asking for <em>something to do.</em> The powershifting debate is only part of it.</h1>
-    <p class="deck">The community is divided over literal powershifting. It is far less divided over what feels missing: activity, resource decisions, mastery, and the sense that a Druid should use more than one form.</p>
+    <h1>The clearest Feral feedback is about the <em>play loop</em>—not one required mechanic.</h1>
+    <p class="deck">This report separates the argument over literal powershifting from the broader design question: how should Feral preserve activity, resource decisions, mastery, and a meaningful reason to use more than one form?</p>
     <div class="hero-actions"><a class="button" href="#story">Read the story</a><a class="ghost-button" href="methodology.html">See the evidence</a></div>
   </section>
 
   <section class="origin panel" aria-labelledby="origin-title">
-    <div><p class="eyebrow">WHY THIS SURVEY EXISTS</p><h2 id="origin-title">Discord had a sprawling debate. The survey gave it structure.</h2></div>
-    <p>Discussion moved quickly across the Druid Classic Discord channels <strong>#forever-general</strong>, <strong>#forever-feral-dps</strong>, and <strong>#forever-feral-tank</strong> during September 12–20, 2026. Several different arguments were being compressed into one: powershifting, energy downtime, bleed gameplay, hybrid identity, AoE, and raid value.</p>
-    <p class="context-note">The three archived channel exports are background for why this project was started. The survey was also shared through a <a href="https://www.reddit.com/r/classicwow/comments/1wljuy6/">public r/classicwow post</a> that invited positive, negative, mixed, and uncertain views rather than treating the loudest discussion as consensus. These contextual materials were not coded, counted, quoted, or included in the analysis. The survey responses are the evidence used below.</p>
+    <div><p class="eyebrow">PROJECT INTENT</p><h2 id="origin-title">Turn a heated design argument into feedback developers can use.</h2></div>
+    <div class="origin-copy">
+      <p>I’m <strong>JVMES</strong> in the Druid Classic Discord. I started this project after watching the Forever reveal discussion collapse several different questions into a single yes-or-no fight over powershifting. My concern was broader: removing powershifting could also remove the activity, resource conversion, and form-based decisions that made Feral rewarding unless a deliberate replacement took their place.</p>
+      <p>I did not create the survey to prove that Classic powershifting must return. It was designed to test whether that concern was actually shared, distinguish attachment to a specific mechanic from attachment to the experience it produced, and keep separate issues—bleeds, hybrid play, AoE, utility, scaling, and raid value—from being treated as one complaint.</p>
+      <p>The intended output is a practical brief for Blizzard’s developers: not a petition for one implementation, but a map of where players are flexible, what they consider non-negotiable, what the reveal already gets right, and which problems still need a direct design answer.</p>
+    </div>
+    <p class="context-note">Exports from <strong>#forever-general</strong>, <strong>#forever-feral-dps</strong>, and <strong>#forever-feral-tank</strong>, along with a <a href="https://www.reddit.com/r/classicwow/comments/1wljuy6/">public r/classicwow survey announcement</a>, document why and how the project began. They provide context only. They were not coded, counted, quoted, or included in the analysis; the survey responses are the evidence used below.</p>
   </section>
 
   <section id="story" class="story-section">
     <p class="eyebrow">THE SHORT VERSION</p>
     <h2>Three results tell the story.</h2>
     <div class="story-grid">
-      <article class="story-card"><span>01</span><strong>{{ "%.1f"|format(current["Negative toward current direction"]) }}%</strong><h3>The reveal is landing poorly.</h3><p>A majority feels negative about the current direction, and {{ "%.1f"|format(current["Less excited than Classic"]) }}% feel less excited than they do about Classic Feral.</p></article>
+      <article class="story-card"><span>01</span><strong>{{ "%.1f"|format(current["Negative toward current direction"]) }}%</strong><h3>Current sentiment is negative.</h3><p>A majority feels negative about the current direction, and {{ "%.1f"|format(current["Less excited than Classic"]) }}% feel less excited than they do about Classic Feral.</p></article>
       <article class="story-card"><span>02</span><strong>{{ "%.1f"|format(current["Functional replacement acceptable"]) }}%</strong><h3>Most do not require literal powershifting.</h3><p>They would accept a different mechanic if it delivers comparable activity and meaningful resource decisions. Another {{ "%.1f"|format(current["Prefer non-powershifting if engaging"]) }}% actively prefer an engaging non-powershifting design.</p></article>
-      <article class="story-card"><span>03</span><strong>{{ "%.1f"|format(current["Negative reaction to Furor/loss of powershifting"]) }}%</strong><h3>But the current replacement is not enough.</h3><p>Openness to a new solution should not be mistaken for approval of the revealed Furor and energy model.</p></article>
+      <article class="story-card"><span>03</span><strong>{{ "%.1f"|format(current["Negative reaction to Furor/loss of powershifting"]) }}%</strong><h3>The proposed replacement has not resolved the concern.</h3><p>Openness to a new solution should not be mistaken for approval of the revealed Furor and energy model.</p></article>
     </div>
     <div class="thesis"><p>The clearest reading is not “everyone wants Classic powershifting back.” It is: <strong>if powershifting goes away, the replacement still has to make Feral active, thoughtful, expressive, and recognizably Druid.</strong></p></div>
   </section>

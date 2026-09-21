@@ -43,15 +43,15 @@ FIG_DIR = PUBLIC_DIR / "figures"
 TABLE_DIR = PUBLIC_DIR / "tables"
 TEMPLATE_DIR = ROOT / "survey_analysis" / "templates"
 
-COLORS = {"positive": "#6f9678", "neutral": "#7f8c80", "negative": "#ad6660",
-          "info": "#718ca3", "gold": "#c6a85f", "purple": "#8d7f9c"}
+COLORS = {"positive": "#557c68", "neutral": "#8a938d", "negative": "#a35e58",
+          "info": "#5f7f99", "gold": "#9a7b3d", "purple": "#756b83"}
 
 plt.rcParams.update({
-    "figure.facecolor": "#0e1712", "axes.facecolor": "#0e1712",
-    "savefig.facecolor": "#0e1712", "text.color": "#e9ebdf",
-    "axes.labelcolor": "#aeb9aa", "axes.edgecolor": "#ffffff22",
-    "xtick.color": "#aeb9aa", "ytick.color": "#d8ded3",
-    "grid.color": "#ffffff22", "font.family": "DejaVu Sans",
+    "figure.facecolor": "#ffffff", "axes.facecolor": "#ffffff",
+    "savefig.facecolor": "#ffffff", "text.color": "#222a25",
+    "axes.labelcolor": "#4f5b54", "axes.edgecolor": "#cdd4cf",
+    "xtick.color": "#4f5b54", "ytick.color": "#303a34",
+    "grid.color": "#dbe0dc", "font.family": "DejaVu Sans",
 })
 
 
@@ -117,7 +117,7 @@ def plot_bar(frame: pd.DataFrame, label_col: str, value_col: str, path: Path, ti
         if "count" in row and "denominator" in row:
             annotation += f"  ({int(row['count'])}/{int(row['denominator'])})"
         ax.text(bar.get_width() + 0.8, bar.get_y() + bar.get_height()/2, annotation,
-                va="center", fontsize=9, color="#d8ded3")
+                va="center", fontsize=9, color="#303a34")
     ax.set_title(title, loc="left", fontweight="bold", pad=12)
     ax.set_xlabel(xlabel)
     ax.spines[["top", "right", "left"]].set_visible(False)
@@ -138,11 +138,11 @@ def plot_mechanics(table: pd.DataFrame) -> None:
     ax.barh(y, -data.negative, color=COLORS["negative"], label="Negative")
     ax.barh(y, data.positive, color=COLORS["positive"], label="Positive")
     ax.set_yticks(y, [re.sub(r"\s+", " ", x).replace("possibilities", "") for x in data.area])
-    ax.axvline(0, color="#d8ad5d88", lw=.8)
+    ax.axvline(0, color="#9a7b3d88", lw=.8)
     ax.set_xlim(-85, 85)
     ax.set_xticks([-80,-60,-40,-20,0,20,40,60,80], ["80%","60%","40%","20%","0","20%","40%","60%","80%"])
     ax.set_title("Mechanic reactions: negative vs. positive", loc="left", fontweight="bold")
-    ax.legend(frameon=False, ncol=2, loc="lower right", labelcolor="#d8ded3")
+    ax.legend(frameon=False, ncol=2, loc="lower right", labelcolor="#303a34")
     ax.spines[["top","right","left","bottom"]].set_visible(False)
     ax.grid(axis="x", alpha=.18)
     fig.tight_layout()
@@ -155,7 +155,7 @@ def plot_subgroups(table: pd.DataFrame) -> None:
     fig, ax = plt.subplots(figsize=(10, 6.4))
     y = np.arange(len(data))
     ax.errorbar(data.percent, y, xerr=[data.percent-data.ci_low, data.ci_high-data.percent],
-                fmt="o", color="#d8ad5d", ecolor="#9f8a57", capsize=3)
+                fmt="o", color="#8c7139", ecolor="#a29370", capsize=3)
     ax.set_yticks(y, [f"{g} (n={n})" for g,n in zip(data.group, data.denominator)])
     ax.set_xlim(0, 100); ax.set_xlabel("Negative toward current direction (%) with Wilson 95% CI")
     ax.set_title("Descriptive subgroup differences", loc="left", fontweight="bold")
@@ -176,14 +176,14 @@ def make_wordclouds(freqs: dict[int, pd.DataFrame]) -> None:
     for q, frame in freqs.items():
         frequencies = dict(zip(frame.term, frame.response_mentions))
         cloud_colors = LinearSegmentedColormap.from_list(
-            "forever", ["#839989", "#c1ad77", "#c8d0c5", "#9f8268"]
+            "forever", ["#2f4a3b", "#6f5d31", "#596b61", "#3f5a4b"]
         )
-        cloud = WordCloud(width=1800, height=1100, background_color="#0e1712", colormap=cloud_colors,
+        cloud = WordCloud(width=1800, height=1100, background_color="#ffffff", colormap=cloud_colors,
                           random_state=SEED, prefer_horizontal=.9, collocations=False,
                           max_words=75).generate_from_frequencies(frequencies)
         path = FIG_DIR / f"wordcloud-q{q}.png"
         cloud.to_file(str(path)); wc_paths.append(path)
-    fig, axes = plt.subplots(1, 3, figsize=(18, 6), facecolor="#0e1712")
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6), facecolor="#ffffff")
     for ax, q, path in zip(axes, freqs, wc_paths):
         ax.imshow(plt.imread(path)); ax.axis("off"); ax.set_title(f"Q{q}", fontsize=18, fontweight="bold")
     fig.tight_layout(); fig.savefig(FIG_DIR / "wordclouds-combined.png", dpi=220, bbox_inches="tight"); plt.close(fig)

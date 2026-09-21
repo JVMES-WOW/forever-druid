@@ -9,6 +9,8 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     for jargon in ("tf-idf", "non-negative matrix", "wilson", "reconstruction error"):
         assert jargon not in template
     assert "were not coded, counted, quoted, or included" in template
+    assert "i’m <strong>jvmes</strong>" in template
+    assert "not a petition for one implementation" in template
     assert "#forever-general" in template
 
 
@@ -26,6 +28,7 @@ def test_methods_page_keeps_technical_detail_and_downloads():
 def test_report_theme_matches_existing_dark_green_and_gold_palette():
     css = (ROOT / "survey_analysis/templates/report.css").read_text().casefold()
     assert "#0b1010" in css
-    assert "#c6a85f" in css
+    assert "#f4f6f3" in css
+    assert "color-scheme:light" in css
     assert ".topbar" in css and ".brand" in css
     assert "radial-gradient" not in css

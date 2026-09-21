@@ -1,610 +1,611 @@
 question,document_id,primary_topic,secondary_topic,weight_1,weight_2,weight_3,weight_4,weight_5,weight_6
-Q16,D0001,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.21172459535363922,0.0,0.0
-Q16,D0002,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04387275059667509,0.0,0.0,0.0
-Q16,D0003,Furor changes,Energy and rotation gameplay,0.0,0.06477385049379256,0.017698843641460873,0.0,0.0,0.0
-Q16,D0004,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.056825960498331066,0.0,0.0,0.0
+Q16,D0001,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.21106338575752195,0.0,0.0
+Q16,D0002,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04390099158989446,0.0,0.0,0.0
+Q16,D0003,Furor changes,Energy and rotation gameplay,0.0,0.06478212089742436,0.01759081325880263,0.0,0.0,0.0
+Q16,D0004,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05656872042649901,0.0,0.0,0.0
 Q16,D0005,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0006,Furor changes,Restore active gameplay,0.06786895624388456,0.10145566858301629,0.0,0.0,0.09880600129971999,0.0
-Q16,D0007,Energy and rotation gameplay,Restore powershifting,0.03679160446234086,0.0,0.06532829734114076,0.0,0.0,0.0
-Q16,D0008,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005624261699393533,0.0,0.0,0.0
+Q16,D0006,Furor changes,Restore active gameplay,0.06789356683309002,0.10146681810454553,0.0,0.0,0.09878762263119123,0.0
+Q16,D0007,Energy and rotation gameplay,Restore powershifting,0.03683389236737116,0.0,0.06519610507846312,0.0,0.0,0.0
+Q16,D0008,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005569511878187624,0.0,0.0,0.0
 Q16,D0009,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0010,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.004905800345380552,0.0,0.0,0.0
-Q16,D0011,Energy and rotation gameplay,Restore powershifting,0.019438351384254194,0.0,0.054130960222272505,0.0,0.0,0.0
-Q16,D0012,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.006151567907771301,0.0,0.0,0.0
+Q16,D0010,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.00482961109903424,0.0,0.0,0.0
+Q16,D0011,Energy and rotation gameplay,Restore powershifting,0.019460261664856558,0.0,0.054045087488941955,0.0,0.0,0.0
+Q16,D0012,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.006774299841429845,0.0,0.0,0.0
 Q16,D0013,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0014,Energy and rotation gameplay,Restore powershifting,0.032378431599233586,0.0,0.05139485981154605,0.0,0.0,0.0
-Q16,D0015,Furor changes,Restore powershifting,0.136641441558411,0.15299288725638813,0.0,0.0,0.0,0.0
-Q16,D0016,Restore powershifting,Energy and rotation gameplay,0.060280913128169925,0.0,0.03057955410839182,0.0,0.0,0.0
-Q16,D0017,Energy and rotation gameplay,Furor changes,0.0,0.0033405143065839814,0.08948023794351298,0.0,0.0,0.0
-Q16,D0018,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.016716603645041506,0.04825744236856481,0.0,0.0
+Q16,D0014,Energy and rotation gameplay,Restore powershifting,0.03242336399927815,0.0,0.0511741044333616,0.0,0.0,0.0
+Q16,D0015,Furor changes,Restore powershifting,0.1366496929154986,0.15300952646251811,0.0,0.0,0.0,0.0
+Q16,D0016,Restore powershifting,Energy and rotation gameplay,0.06029375622851464,0.0,0.030620498659979827,0.0,0.0,0.0
+Q16,D0017,Energy and rotation gameplay,Furor changes,0.0,0.003338055701278351,0.08954271360008204,0.0,0.0,0.0
+Q16,D0018,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.01659006900879123,0.04859527659239811,0.0,0.0
 Q16,D0019,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0020,Restore powershifting,"Energy ticks, pooling, and mastery",0.16036521813274107,0.0,0.0,0.0,0.0,0.0
+Q16,D0020,Restore powershifting,"Energy ticks, pooling, and mastery",0.16038140165546866,0.0,0.0,0.0,0.0,0.0
 Q16,D0021,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
 Q16,D0022,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0023,Restore powershifting,Energy and rotation gameplay,0.07544334349477276,0.0,0.016598203207277798,0.0,0.0,0.0
-Q16,D0024,Restore active gameplay,Restore powershifting,0.03270900614934798,0.0,0.0014600220650822686,0.0,0.245166867383108,0.0
-Q16,D0025,Furor changes,Energy and rotation gameplay,0.0,0.08100076754119706,0.014558152640474383,0.0,0.0,0.0
-Q16,D0026,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06358518401391659,0.0,0.0,0.0
-Q16,D0027,Furor changes,Energy and rotation gameplay,0.0,0.07351003004383226,0.019014509495261404,0.0,0.0,0.0
-Q16,D0028,Restore active gameplay,Restore powershifting,0.07065239671499385,0.0,0.005491430917564238,0.0,0.19809995509282882,0.0
-Q16,D0029,Energy and rotation gameplay,Furor changes,0.0,0.030823967811244246,0.04026392744432804,0.0,0.0,0.0
-Q16,D0030,Furor changes,Energy and rotation gameplay,0.0,0.03675067989552926,0.01547104029082459,0.0,0.0,0.0
+Q16,D0023,Restore powershifting,Energy and rotation gameplay,0.0754630993125948,0.0,0.0166188777391552,0.0,0.0,0.0
+Q16,D0024,Restore active gameplay,Restore powershifting,0.032828473142785385,0.0,0.0013625688517157892,0.0,0.24531191100861194,0.0
+Q16,D0025,Furor changes,Energy and rotation gameplay,0.0,0.08101632949152741,0.014500466991893836,0.0,0.0,0.0
+Q16,D0026,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06348050658160741,0.0,0.0,0.0
+Q16,D0027,Furor changes,Energy and rotation gameplay,0.0,0.07350250396257861,0.019012342317201676,0.0,0.0,0.0
+Q16,D0028,Restore active gameplay,Restore powershifting,0.07078882522976318,0.0,0.005391423421017202,0.0,0.19810948181216376,0.0
+Q16,D0029,Energy and rotation gameplay,Furor changes,0.0,0.030832047130147092,0.04008365818376371,0.0,0.0,0.0
+Q16,D0030,Furor changes,Energy and rotation gameplay,0.0,0.03674944529095763,0.015441074886785427,0.0,0.0,0.0
 Q16,D0031,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0032,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.05226340773574442,0.0010243261880032962,0.0,0.0
-Q16,D0033,Furor changes,Restore powershifting,0.055908774098548206,0.08211068173109252,0.0022414547851799214,0.0,0.0,0.0
+Q16,D0032,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.0521521931990124,0.0010806793744666471,0.0,0.0
+Q16,D0033,Furor changes,Restore powershifting,0.05590489807104891,0.08210630366362028,0.002248017431027609,0.0,0.0,0.0
 Q16,D0034,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0035,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.060250769971972,0.013828040823064274,0.0,0.0
-Q16,D0036,Energy and rotation gameplay,Restore powershifting,0.010948714168065901,0.0,0.09499832879019558,0.0,0.0,0.0
-Q16,D0037,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.2526221524324732,0.0,0.0
+Q16,D0035,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.060500137632705266,0.013734346464806256,0.0,0.0
+Q16,D0036,Energy and rotation gameplay,Restore powershifting,0.010992695107882934,0.0,0.09490479203780357,0.0,0.0,0.0
+Q16,D0037,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.2518972819135704,0.0,0.0
 Q16,D0038,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0039,Furor changes,Restore active gameplay,0.0,0.11481904126218657,0.0,0.0,0.0603534600596158,0.0
-Q16,D0040,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.009945932358660295,0.019513436995432606,0.03680066335757682,0.03944600774313016,0.0,0.0
-Q16,D0041,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.009967680559522773,0.019926235101257267,0.0,0.0
-Q16,D0042,Restore powershifting,Energy and rotation gameplay,0.05746030768190479,0.0,0.05386672437138661,0.0,0.0,0.002806182293029232
-Q16,D0043,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007240825707178565,0.0,0.0,0.0
-Q16,D0044,Energy and rotation gameplay,Restore powershifting,0.028350199565340437,0.0,0.032403076244571616,0.0,0.0055090148939187285,0.0
-Q16,D0045,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.0634059390106086,0.0,0.0
+Q16,D0039,Furor changes,Restore active gameplay,0.0,0.1148200344544972,0.0,0.0,0.06034570196887311,0.0
+Q16,D0040,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.009956320451415035,0.01950428331771599,0.03680256454445769,0.03927575538022472,0.0,0.0
+Q16,D0041,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.009854818729924962,0.02015015253493678,0.0,0.0
+Q16,D0042,Restore powershifting,Energy and rotation gameplay,0.0574916549509259,0.0,0.05379707244582288,0.0,0.0,0.002818159069303477
+Q16,D0043,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007302001434365651,0.0,0.0,0.0
+Q16,D0044,Energy and rotation gameplay,Restore powershifting,0.028392591750395293,0.0,0.0323442698449805,0.0,0.005420396463959824,0.0
+Q16,D0045,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.06316979536813769,0.0,0.0
 Q16,D0046,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0047,Energy and rotation gameplay,Furor changes,0.006347313585321222,0.008634942596683445,0.06290845247455883,0.0,0.0,0.0
-Q16,D0048,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.10495732759327764,0.0,0.0
-Q16,D0049,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.036763715131217484,0.0,0.0,0.0
-Q16,D0050,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.047478990315155345,0.0,0.0,0.0
-Q16,D0051,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.10311805487985676,0.0,0.0,0.0,0.0
-Q16,D0052,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06020316073319174,0.0,0.0,0.0
-Q16,D0053,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01535682472715449,0.0,0.0,0.0
-Q16,D0054,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.12281053048259327,0.0,0.0
-Q16,D0055,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01572303154761269,0.0,0.0,0.0
-Q16,D0056,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.10881659849577306,0.0,0.0
-Q16,D0057,Restore powershifting,Energy and rotation gameplay,0.05647163412814401,0.0,0.027968833341362614,0.0,0.0,0.0
-Q16,D0058,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.022179058728699345,0.007775897462360265,0.0,0.0
-Q16,D0059,Furor changes,Energy and rotation gameplay,0.0,0.0707637457326273,0.06860530027416623,0.0,0.0,0.0
-Q16,D0060,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01697438116420055,0.0,0.0,0.0
-Q16,D0061,Furor changes,Energy and rotation gameplay,0.0,0.051463115861225116,0.016187832815459165,0.0,0.0,0.0
-Q16,D0062,Energy and rotation gameplay,Restore powershifting,0.014445063885293425,0.0,0.01920525574038112,0.0,0.0,0.0
-Q16,D0063,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0052002921554400805,0.0,0.0,0.0
-Q16,D0064,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03925271387103075,0.0,0.0,0.004767346708097179
-Q16,D0065,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0012267872045533033,0.0,0.0,0.0
-Q16,D0066,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.0382533251340103,0.0,0.0
-Q16,D0067,Restore powershifting,"Energy ticks, pooling, and mastery",0.04005804966190849,0.0,0.0,0.0,0.0,0.0
-Q16,D0068,Energy and rotation gameplay,Restore powershifting,0.015318995560288868,0.0,0.055091815719823085,0.0,0.0,0.0
-Q16,D0069,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05775187370065691,0.0,0.0,0.003117996211337178
-Q16,D0070,Restore active gameplay,Furor changes,0.020088015462568755,0.10681580394945621,0.0,0.0,0.16686619702898786,0.0
-Q16,D0071,"Energy ticks, pooling, and mastery",Furor changes,0.0,0.09666918537447561,0.009372713170565452,0.0,0.0,0.3714165655676545
-Q16,D0072,Energy and rotation gameplay,Furor changes,0.0,0.036383637383701165,0.0551477214072902,0.0,0.0,0.0
-Q16,D0073,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.12187964571420483,0.0,0.0,0.0
-Q16,D0074,Restore powershifting,Furor changes,0.09196364862451178,0.0166666543045917,0.0,0.0,0.0,0.0
-Q16,D0075,Restore active gameplay,Restore powershifting,0.014633433748950247,0.0,0.005433728889835622,0.0,0.14016938654079916,0.0
-Q16,D0076,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.05836766795162425,0.0,0.0
-Q16,D0077,Furor changes,Energy and rotation gameplay,0.0,0.04161721405054253,0.004736498356728644,0.0,0.0,0.0
-Q16,D0078,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.007382233967054291,0.16562322309296654,0.0,0.0
-Q16,D0079,Restore powershifting,Restore active gameplay,0.35105062054789643,0.0,0.0,0.0,0.011460490100906214,0.0
-Q16,D0080,Energy and rotation gameplay,Restore powershifting,0.02520205374813402,0.0,0.08055528644359766,0.0,0.0,0.0
-Q16,D0081,Furor changes,Energy and rotation gameplay,0.0,0.03266440858790363,0.027313437164070992,0.0,0.0,0.0
-Q16,D0082,Energy and rotation gameplay,Restore powershifting,0.02122988372956541,0.0,0.0779587331691127,0.0,0.0,0.0
-Q16,D0083,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.00512093807539826,0.0,0.0,0.0
-Q16,D0084,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.029191191353626834,0.011622473974979317,0.0,0.0
-Q16,D0085,Furor changes,Energy and rotation gameplay,0.0386979297102474,0.06462455065623537,0.04603653388721746,0.0,0.0009015002857373621,0.0
-Q16,D0086,Energy and rotation gameplay,Restore powershifting,0.04420904710517372,0.0,0.06684160911946707,0.0,0.0,0.0
-Q16,D0087,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1018546883073496,0.0,0.0
-Q16,D0088,Furor changes,Energy and rotation gameplay,0.0,0.07962925155938556,0.026407372910396548,0.0,0.0,0.0
-Q16,D0089,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06387242361521313,0.0,0.0,0.0
-Q16,D0090,Energy and rotation gameplay,Restore powershifting,0.058171900175963076,0.04842680195799913,0.06121541418541673,0.0,0.0,0.0
-Q16,D0091,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07536430433555372,0.0,0.0,0.0
-Q16,D0092,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.001852819681776,0.08785857876714855,0.0,0.0
-Q16,D0093,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.010632814686976516,0.0,0.0,0.0
-Q16,D0094,Furor changes,Restore active gameplay,0.06786895624388456,0.10145566858301629,0.0,0.0,0.09880600129971999,0.0
-Q16,D0095,Energy and rotation gameplay,Restore powershifting,0.029455918953206806,0.0,0.06699536365665813,0.0,0.0,0.0
+Q16,D0047,Energy and rotation gameplay,Furor changes,0.006367511958557571,0.008627132662376528,0.06295612256549513,0.0,0.0,0.0
+Q16,D0048,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.10573252301470423,0.0,0.0
+Q16,D0049,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03683291242019513,0.0,0.0,0.0
+Q16,D0050,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04756162289394828,0.0,0.0,0.0
+Q16,D0051,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.10313685896307011,0.0,0.0,0.0,0.0
+Q16,D0052,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.060153866561879,0.0,0.0,0.0
+Q16,D0053,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01529462837522869,0.0,0.0,0.0
+Q16,D0054,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.12276422000118405,0.0,0.0
+Q16,D0055,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.015609546114550475,0.0,0.0,0.0
+Q16,D0056,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1085576676966062,0.0,0.0
+Q16,D0057,Restore powershifting,Energy and rotation gameplay,0.05653492966751642,0.0,0.028034003636698387,0.0,0.0,0.0
+Q16,D0058,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.02194778875474465,0.00796458152809086,0.0,0.0
+Q16,D0059,Furor changes,Energy and rotation gameplay,0.0,0.07076991173951906,0.06864638208799466,0.0,0.0,0.0
+Q16,D0060,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01685525288741702,0.0,0.0,0.0
+Q16,D0061,Furor changes,Energy and rotation gameplay,0.0,0.05146109829468062,0.016234755879620817,0.0,0.0,0.0
+Q16,D0062,Energy and rotation gameplay,Restore powershifting,0.014465582860349234,0.0,0.019094549732350016,0.0,0.0,0.0
+Q16,D0063,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005179457899600761,0.0,0.0,0.0
+Q16,D0064,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.039208246550310674,0.0,0.0,0.004775522804222401
+Q16,D0065,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0012117460589852998,0.0,0.0,0.0
+Q16,D0066,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.03806593173307041,0.0,0.0
+Q16,D0067,Restore powershifting,"Energy ticks, pooling, and mastery",0.04005739935759175,0.0,0.0,0.0,0.0,0.0
+Q16,D0068,Energy and rotation gameplay,Restore powershifting,0.01533127143545766,0.0,0.055079932917157,0.0,0.0,0.0
+Q16,D0069,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05884967935516159,0.0,0.0,0.0032551637786455883
+Q16,D0070,Restore active gameplay,Furor changes,0.020127407833883833,0.10682248889714478,0.0,0.0,0.16684725120123206,0.0
+Q16,D0071,"Energy ticks, pooling, and mastery",Furor changes,0.0,0.09669399280015,0.009402080418717814,0.0,0.0,0.3713056887138489
+Q16,D0072,Energy and rotation gameplay,Furor changes,0.0,0.03643540803960539,0.05542709853916187,0.0,0.0,0.0
+Q16,D0073,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.12191997521018914,0.0,0.0,0.0
+Q16,D0074,Restore powershifting,Furor changes,0.09199255810550983,0.016649425070999042,0.0,0.0,0.0,0.0
+Q16,D0075,Restore active gameplay,Restore powershifting,0.014665179898942404,0.0,0.005468369537165641,0.0,0.14014844308057706,0.0
+Q16,D0076,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.06005794907140674,0.0,0.0
+Q16,D0077,Furor changes,Energy and rotation gameplay,0.0,0.04161534824488323,0.004719244619655588,0.0,0.0,0.0
+Q16,D0078,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.007391115540156887,0.1660024748871466,0.0,0.0
+Q16,D0079,Restore powershifting,Restore active gameplay,0.3510242233565918,0.0,0.0,0.0,0.01143356095745914,0.0
+Q16,D0080,Energy and rotation gameplay,Restore powershifting,0.025257680494835753,0.0,0.0806492058452215,0.0,0.0,0.0
+Q16,D0081,Furor changes,Energy and rotation gameplay,0.0,0.032744112935526454,0.027556987451843314,0.0,0.0,0.0
+Q16,D0082,Energy and rotation gameplay,Restore powershifting,0.021257344492743673,0.0,0.07793815806647919,0.0,0.0,0.0
+Q16,D0083,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0051226085503047756,0.0,0.0,0.0
+Q16,D0084,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.02908364209592356,0.011535120866859802,0.0,0.0
+Q16,D0085,Furor changes,Energy and rotation gameplay,0.03876752609797008,0.06466974797713533,0.04587915274871503,0.0,0.0007831660918803077,0.0
+Q16,D0086,Energy and rotation gameplay,Restore powershifting,0.044252949796270515,0.0,0.0667529775644306,0.0,0.0,0.0
+Q16,D0087,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.10258685059655832,0.0,0.0
+Q16,D0088,Furor changes,Energy and rotation gameplay,0.0,0.07968258783482282,0.026210566981545894,0.0,0.0,0.0
+Q16,D0089,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06370748432646979,0.0,0.0,0.0
+Q16,D0090,Energy and rotation gameplay,Restore powershifting,0.058202062452965976,0.04842913491554881,0.06118044834102028,0.0,0.0,0.0
+Q16,D0091,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07526094379028171,0.0,0.0,0.0
+Q16,D0092,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.0018280526617998943,0.0875444531758582,0.0,0.0
+Q16,D0093,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.010512218536203495,0.0,0.0,0.0
+Q16,D0094,Furor changes,Restore active gameplay,0.06789356683309002,0.10146681810454553,0.0,0.0,0.09878762263119123,0.0
+Q16,D0095,Energy and rotation gameplay,Restore powershifting,0.02959726171387959,0.0,0.06734957898103744,0.0,0.0,0.0
 Q16,D0096,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0097,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.02424987034767397,0.0,0.0
-Q16,D0098,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.023330316620748023,0.0,0.0,0.0
-Q16,D0099,Restore powershifting,"Energy ticks, pooling, and mastery",0.08281472053715679,0.0,0.0,0.0,0.0,0.0
-Q16,D0100,Restore powershifting,Energy and rotation gameplay,0.03579506649698553,0.0,0.015250284431447658,0.0,0.0,0.0
-Q16,D0101,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.04244257815094843,0.0877869785706683,0.0,0.0
-Q16,D0102,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.0009468737189348717,0.052492651851424516,0.0,0.0
-Q16,D0103,Energy and rotation gameplay,Restore powershifting,0.020917608424045928,0.0,0.04268453629770888,0.0,0.0,0.0
-Q16,D0104,Energy and rotation gameplay,Furor changes,0.0,0.024770275377703464,0.05238173122084806,0.0,0.0,0.0
+Q16,D0097,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.02408927135242273,0.0,0.0
+Q16,D0098,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.023263797731679615,0.0,0.0,0.0
+Q16,D0099,Restore powershifting,"Energy ticks, pooling, and mastery",0.08282782245254992,0.0,0.0,0.0,0.0,0.0
+Q16,D0100,Restore powershifting,Energy and rotation gameplay,0.03581848684583208,0.0,0.01513701804191359,0.0,0.0,0.0
+Q16,D0101,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.042442226582010904,0.08838861022469167,0.0,0.0
+Q16,D0102,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.0009498237635106678,0.05235310154164723,0.0,0.0
+Q16,D0103,Energy and rotation gameplay,Restore powershifting,0.020920679733337992,0.0,0.04274908770548563,0.0,0.0,0.0
+Q16,D0104,Energy and rotation gameplay,Furor changes,0.0,0.024765649346511473,0.052438807842657024,0.0,0.0,0.0
 Q16,D0105,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0106,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.0725122321739464,0.0,0.0,0.0,0.0
-Q16,D0107,Restore powershifting,Furor changes,0.06130494328560379,0.0563523306825183,0.019555136583517412,0.0,0.0,0.0
+Q16,D0106,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.07250724477033789,0.0,0.0,0.0,0.0
+Q16,D0107,Restore powershifting,Furor changes,0.061320677829531274,0.056351099137080106,0.019511835760498315,0.0,0.0,0.0
 Q16,D0108,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0109,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1129889550609324,0.0,0.0
-Q16,D0110,Restore powershifting,Energy and rotation gameplay,0.04208748416094211,0.0,0.032834046386927745,0.0,0.0,0.0
+Q16,D0109,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.11262965690895663,0.0,0.0
+Q16,D0110,Restore powershifting,Energy and rotation gameplay,0.04213459668446976,0.0,0.03296022251166631,0.0,0.0,0.0
 Q16,D0111,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0112,Restore active gameplay,Restore powershifting,0.06163346566155618,0.0,0.0,0.0,0.3464132365847907,0.0
-Q16,D0113,Furor changes,Energy and rotation gameplay,0.0,0.058583753192379746,0.03207391984549713,0.0,0.0,0.0
-Q16,D0114,Restore active gameplay,Restore powershifting,0.023247656003917053,0.0,0.0,0.0,0.1538315541459052,0.0
-Q16,D0115,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.012330296842955857,0.0,0.0,0.3936586788381141
-Q16,D0116,Furor changes,Energy and rotation gameplay,0.0,0.037179017079265624,0.01934065395759427,0.0,0.0,0.0
-Q16,D0117,Energy and rotation gameplay,Furor changes,0.0,0.03842598422407548,0.03908843783735888,0.0,0.0,0.0
-Q16,D0118,Restore active gameplay,Energy and rotation gameplay,0.0,0.0,0.023563011547012725,0.0,0.027639305732343716,0.0
-Q16,D0119,Furor changes,Energy and rotation gameplay,0.0,0.028995555810261534,0.027947739710258972,0.0,0.0,0.0
-Q16,D0120,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.036201423468615566,0.0,0.0,0.0
+Q16,D0112,Restore active gameplay,Restore powershifting,0.061712262565891074,0.0,0.0,0.0,0.34638002306869947,0.0
+Q16,D0113,Furor changes,Energy and rotation gameplay,0.0,0.058581002946294196,0.032097108518989205,0.0,0.0,0.0
+Q16,D0114,Restore active gameplay,Restore powershifting,0.023293024319955825,0.0,0.0,0.0,0.15381330070358584,0.0
+Q16,D0115,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.012356828076314753,0.0,0.0,0.3935570933526163
+Q16,D0116,Furor changes,Energy and rotation gameplay,0.0,0.037182473037089714,0.01930442453832929,0.0,0.0,0.0
+Q16,D0117,Energy and rotation gameplay,Furor changes,0.0,0.038425286394956404,0.039071304918176,0.0,0.0,0.0
+Q16,D0118,Restore active gameplay,Energy and rotation gameplay,0.0,0.0,0.02350935690068603,0.0,0.02762639284151892,0.0
+Q16,D0119,Furor changes,Energy and rotation gameplay,0.0,0.028994327974312513,0.02789115223942238,0.0,0.0,0.0
+Q16,D0120,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03611151578023343,0.0,0.0,0.0
 Q16,D0121,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0122,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03230226055914957,0.0,0.0,0.0
-Q16,D0123,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.01616332446209143,0.0,0.050342296854000296,0.09726972390649821,0.0,0.0
-Q16,D0124,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.028888752492436127,0.0,0.0,0.0
-Q16,D0125,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.044879777472520754,0.0,0.0,0.0
-Q16,D0126,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06253337706277665,0.0,0.0,0.008069013637331151
-Q16,D0127,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.07397492520503086,0.0,0.0
-Q16,D0128,Energy and rotation gameplay,Restore powershifting,0.03516042353105424,0.0,0.07539769455356753,0.0,0.0,0.0
-Q16,D0129,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.13216481829744506,0.0,0.0,0.0
-Q16,D0130,Energy and rotation gameplay,Restore powershifting,0.047723055283250826,0.0,0.053652502764521715,0.0,0.0,0.0041729494217855835
-Q16,D0131,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.016395290531364688,0.0,0.0,0.0
-Q16,D0132,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.061359065001459906,0.0,0.0,0.012380112274212998
-Q16,D0133,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.09507472532425688,0.0,0.0,0.0
-Q16,D0134,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.10246450947297088,0.0,0.0,0.0,0.0
-Q16,D0135,Restore active gameplay,Energy and rotation gameplay,0.021487712648215494,0.0,0.03136985443930722,0.0,0.19351269468178245,0.0
-Q16,D0136,Energy and rotation gameplay,Restore powershifting,0.029310449231822876,0.009684659461039014,0.04800744438087237,0.0,0.013123886810421958,0.0
+Q16,D0122,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0320301386547643,0.0,0.0,0.0
+Q16,D0123,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.01617048963307013,0.0,0.050380475411987,0.09700504668435364,0.0,0.0
+Q16,D0124,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02877467024703541,0.0,0.0,0.0
+Q16,D0125,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04482137810094132,0.0,0.0,0.0
+Q16,D0126,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06248502067069231,0.0,0.0,0.008083869254234217
+Q16,D0127,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.07456310610792091,0.0,0.0
+Q16,D0128,Energy and rotation gameplay,Restore powershifting,0.03519835472498213,0.0,0.07558896202629337,0.0,0.0,0.0
+Q16,D0129,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.13233099523275527,0.0,0.0,0.0
+Q16,D0130,Energy and rotation gameplay,Restore powershifting,0.047757162369131134,0.0,0.053548842814645385,0.0,0.0,0.004181061594523262
+Q16,D0131,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.016425516016578705,0.0,0.0,0.0
+Q16,D0132,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.061342933894587906,0.0,0.0,0.012393220778108055
+Q16,D0133,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.09447341139069533,0.0,0.0,0.0
+Q16,D0134,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.10248587475190811,0.0,0.0,0.0,0.0
+Q16,D0135,Restore active gameplay,Energy and rotation gameplay,0.021558615914510304,0.0,0.03139556832404854,0.0,0.193538913789503,0.0
+Q16,D0136,Energy and rotation gameplay,Restore powershifting,0.02934815501085464,0.009687863260452319,0.04783520904187231,0.0,0.01311601532157457,0.0
 Q16,D0137,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0138,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.17553507327821788,0.0,0.0
-Q16,D0139,Energy and rotation gameplay,Furor changes,0.0,0.02921674373193092,0.04071622710811496,0.0,0.014570106612418105,0.0
-Q16,D0140,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.023065704011907245,0.14936096552044126,0.0,0.0
-Q16,D0141,Furor changes,Restore powershifting,0.018751865584678767,0.05278389398130688,0.0042926124235433925,0.0,0.0,0.0
+Q16,D0138,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1767344079649623,0.0,0.0
+Q16,D0139,Energy and rotation gameplay,Furor changes,0.0,0.02922121373647832,0.040697420883864154,0.0,0.014558739366679825,0.0
+Q16,D0140,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.023254106508029032,0.14915342936643528,0.0,0.0
+Q16,D0141,Furor changes,Restore powershifting,0.01874892559509114,0.05280611359378038,0.004292387290977303,0.0,0.0,0.0
 Q16,D0142,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0143,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05112210288551029,0.0,0.0,0.0
-Q16,D0144,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0384259044787274,0.0,0.0,0.0
-Q16,D0145,Energy and rotation gameplay,Furor changes,0.0,0.03152932847612127,0.08385156393470214,0.0,0.0,0.0
-Q16,D0146,Energy and rotation gameplay,Restore powershifting,0.03181952157633029,0.0,0.03488016392766499,0.0,0.0,0.0
-Q16,D0147,Furor changes,Energy and rotation gameplay,0.0,0.12064989295307534,0.02400264454634175,0.0,0.0,0.0
-Q16,D0148,Restore active gameplay,Energy and rotation gameplay,0.007019740411176507,0.02987647294560339,0.05790792760634742,0.0,0.07740647704587197,0.0
-Q16,D0149,Restore powershifting,Energy and rotation gameplay,0.028659662991788393,0.0,0.006599058396326699,0.0,0.0,0.0
-Q16,D0150,Furor changes,"Energy ticks, pooling, and mastery",0.027120609980253903,0.04608228884797743,0.009905661709034197,0.0,0.0,0.037097763349883336
-Q16,D0151,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04526050689772177,0.0,0.0,0.0
-Q16,D0152,"Energy ticks, pooling, and mastery",Restore active gameplay,0.048152472977488044,0.0,0.001592138922757505,0.0,0.08280654410184861,0.29070839072359295
-Q16,D0153,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.027569326824369203,0.1434139520694322,0.0,0.0
+Q16,D0143,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05079735255234827,0.0,0.0,0.0
+Q16,D0144,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.038199956377596316,0.0,0.0,0.0
+Q16,D0145,Energy and rotation gameplay,Furor changes,0.0,0.031544260260542696,0.08376909326564382,0.0,0.0,0.0
+Q16,D0146,Energy and rotation gameplay,Restore powershifting,0.03186517608127756,0.0,0.034707671073328845,0.0,0.0,0.0
+Q16,D0147,Furor changes,Energy and rotation gameplay,0.0,0.12064334351269068,0.024074894322995095,0.0,0.0,0.0
+Q16,D0148,Restore active gameplay,Energy and rotation gameplay,0.007078308540087386,0.02989108620076238,0.05773257004192573,0.0,0.07735646069426723,0.0
+Q16,D0149,Restore powershifting,Energy and rotation gameplay,0.028670669574964395,0.0,0.006531520564131514,0.0,0.0,0.0
+Q16,D0150,Furor changes,"Energy ticks, pooling, and mastery",0.02712463725803769,0.04611839628080302,0.010020714001399034,0.0,0.0,0.037086597832230894
+Q16,D0151,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0451628952976334,0.0,0.0,0.0
+Q16,D0152,"Energy ticks, pooling, and mastery",Restore active gameplay,0.04817768684595886,0.0,0.0016120909078007656,0.0,0.08280524883250415,0.29061624684963944
+Q16,D0153,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.027568976911877343,0.14375191594361003,0.0,0.0
 Q16,D0154,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0155,Restore active gameplay,Restore powershifting,0.06163346566155618,0.0,0.0,0.0,0.3464132365847907,0.0
+Q16,D0155,Restore active gameplay,Restore powershifting,0.061712262565891074,0.0,0.0,0.0,0.34638002306869947,0.0
 Q16,D0156,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0157,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.06066987293367894,0.0,0.0
-Q16,D0158,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0026257820089123775,0.0,0.0,0.0
-Q16,D0159,Energy and rotation gameplay,Furor changes,0.016014056469617895,0.0479706541599502,0.052443500190011934,0.0,0.0,0.0
-Q16,D0160,Energy and rotation gameplay,Furor changes,0.006598092272887744,0.007982341549180082,0.04068796153507053,0.0,0.0,0.0
+Q16,D0157,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.060484143168322145,0.0,0.0
+Q16,D0158,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0025697877687445676,0.0,0.0,0.0
+Q16,D0159,Energy and rotation gameplay,Furor changes,0.016038123018439907,0.04798857620092976,0.05242256611111898,0.0,0.0,0.0
+Q16,D0160,Energy and rotation gameplay,Furor changes,0.006610578125760993,0.007987092520243407,0.04057151690230333,0.0,0.0,0.0
 Q16,D0161,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0162,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.004303728931356991,0.0,0.0,0.0
-Q16,D0163,Energy and rotation gameplay,Restore powershifting,0.017391157921724316,0.0,0.06928241175552502,0.0,0.0,0.0
+Q16,D0162,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.004243550087849919,0.0,0.0,0.0
+Q16,D0163,Energy and rotation gameplay,Restore powershifting,0.01741937973071544,0.0,0.06921811301316831,0.0,0.0,0.0
 Q16,D0164,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0165,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.02750711970428537,0.0,0.0
-Q16,D0166,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.012944613850312928,0.0,0.0,0.0
-Q16,D0167,Restore powershifting,Energy and rotation gameplay,0.036239230869678285,0.0,0.03208424938881934,0.0,0.0,0.0
-Q16,D0168,Restore powershifting,Restore active gameplay,0.35105062054789643,0.0,0.0,0.0,0.011460490100906214,0.0
-Q16,D0169,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0699754582706262,0.0,0.0,0.0
-Q16,D0170,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014285068911322299,0.0,0.0,0.0
+Q16,D0165,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.02741094409206842,0.0,0.0
+Q16,D0166,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.013447961866540799,0.0,0.0,0.0
+Q16,D0167,Restore powershifting,Energy and rotation gameplay,0.036235126352436385,0.0,0.032207265164943405,0.0,0.0,0.0
+Q16,D0168,Restore powershifting,Restore active gameplay,0.3510242233565918,0.0,0.0,0.0,0.01143356095745914,0.0
+Q16,D0169,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07007264323730827,0.0,0.0,0.0
+Q16,D0170,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01417545659957161,0.0,0.0,0.0
 Q16,D0171,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0172,Energy and rotation gameplay,Restore powershifting,0.01612585309753273,0.0,0.0877985658104534,0.0,0.0,0.0
-Q16,D0173,Furor changes,Energy and rotation gameplay,0.0,0.10200833284849457,0.008567105798119317,0.0,0.0,0.0
-Q16,D0174,Restore active gameplay,Restore powershifting,0.04428934906674331,0.0,0.0,0.0,0.07512762128633488,0.0
-Q16,D0175,Energy and rotation gameplay,Restore powershifting,0.011994463871941467,0.0,0.05442974154691908,0.0,0.0,0.0
-Q16,D0176,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.004130971916739597,0.0,0.0,0.0
-Q16,D0177,Energy and rotation gameplay,Furor changes,0.0,0.03898025228219872,0.08440470415927406,0.0,0.0,0.0
+Q16,D0172,Energy and rotation gameplay,Restore powershifting,0.016172242317588563,0.0,0.08764091062782806,0.0,0.0,0.0
+Q16,D0173,Furor changes,Energy and rotation gameplay,0.0,0.1020057820806638,0.00863402794587836,0.0,0.0,0.0
+Q16,D0174,Restore active gameplay,Restore powershifting,0.04432411690641164,0.0,0.0,0.0,0.07510130101774164,0.0
+Q16,D0175,Energy and rotation gameplay,Restore powershifting,0.012020112063710776,0.0,0.0543442645290112,0.0,0.0,0.0
+Q16,D0176,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005333661165602926,0.0,0.0,0.0
+Q16,D0177,Energy and rotation gameplay,Furor changes,0.0,0.038974197617549534,0.08445642975150593,0.0,0.0,0.0
 Q16,D0178,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0179,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19813461661088727,0.0,0.0,0.0,0.0
+Q16,D0179,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19815209215583746,0.0,0.0,0.0,0.0
 Q16,D0180,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0181,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008281547194709301,0.0,0.0,0.0
-Q16,D0182,Furor changes,Energy and rotation gameplay,0.0,0.0861838740120533,0.025171599542319144,0.0,0.0,0.0
-Q16,D0183,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04274701793587007,0.0,0.0,0.0
-Q16,D0184,Restore powershifting,Energy and rotation gameplay,0.043203369806415606,0.030924968789584145,0.03723835586245826,0.0,0.0,0.0
-Q16,D0185,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03237424316648793,0.0,0.0,0.0
-Q16,D0186,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19813461661088727,0.0,0.0,0.0,0.0
-Q16,D0187,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0036409404411863705,0.0,0.0,0.0
+Q16,D0181,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008189819795798867,0.0,0.0,0.0
+Q16,D0182,Furor changes,Energy and rotation gameplay,0.0,0.086188573279227,0.025196834252684274,0.0,0.0,0.0
+Q16,D0183,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04274512013033437,0.0,0.0,0.0
+Q16,D0184,Restore powershifting,Energy and rotation gameplay,0.04322625826675425,0.030923823981266602,0.03720183501695,0.0,0.0,0.0
+Q16,D0185,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03213658252098096,0.0,0.0,0.0
+Q16,D0186,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19815209215583746,0.0,0.0,0.0,0.0
+Q16,D0187,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.003979595919483023,0.0,0.0,0.0
 Q16,D0188,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0189,Furor changes,Restore powershifting,0.05513875490466355,0.09323420974509788,0.0,0.0,0.0,0.0
-Q16,D0190,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.14115105891345286,0.0,0.0
-Q16,D0191,Furor changes,Restore powershifting,0.04504037173143174,0.06931164348077791,0.0,0.0,0.0,0.0
-Q16,D0192,Restore powershifting,Furor changes,0.06657403780895761,0.03817325655930593,0.01634259056085636,0.0,0.0,0.0
-Q16,D0193,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.2526221524324732,0.0,0.0
-Q16,D0194,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.036201195056931694,0.0,0.0,0.0
-Q16,D0195,Restore powershifting,"Energy ticks, pooling, and mastery",0.10981156518592985,0.0,0.0,0.0,0.0,0.0
-Q16,D0196,Restore active gameplay,Restore powershifting,0.018116766419937567,0.0,0.006316583870847976,0.0,0.1491585473456933,0.0
+Q16,D0189,Furor changes,Restore powershifting,0.05521516075845969,0.09333607743638968,0.0,0.0,0.0,0.0
+Q16,D0190,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.14080334665073665,0.0,0.0
+Q16,D0191,Furor changes,Restore powershifting,0.04504882571458439,0.06931498455564504,0.0,0.0,0.0,0.0
+Q16,D0192,Restore powershifting,Furor changes,0.06662202521909492,0.03818290729846056,0.016198438373187213,0.0,0.0,0.0
+Q16,D0193,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.2518972819135704,0.0,0.0
+Q16,D0194,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03621479021557574,0.0,0.0,0.0
+Q16,D0195,Restore powershifting,"Energy ticks, pooling, and mastery",0.10981712737224839,0.0,0.0,0.0,0.0,0.0
+Q16,D0196,Restore active gameplay,Restore powershifting,0.018153385037081495,0.0,0.006339173695965097,0.0,0.1491330365418965,0.0
 Q16,D0197,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0198,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04446608503077527,0.0,0.0,0.0
-Q16,D0199,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06367952652885843,0.0,0.0,0.0
-Q16,D0200,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.045905912221217454,0.0,0.0,0.0
-Q16,D0201,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.05828208058180132,0.0,0.0,0.0,0.0
-Q16,D0202,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08123115108749855,0.0,0.0,0.0
+Q16,D0198,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04445185682324522,0.0,0.0,0.0
+Q16,D0199,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06358379423741711,0.0,0.0,0.0
+Q16,D0200,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.045841093106412927,0.0,0.0,0.0
+Q16,D0201,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.058290804149017515,0.0,0.0,0.0,0.0
+Q16,D0202,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08115910326892758,0.0,0.0,0.0
 Q16,D0203,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0204,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.00398070974139492,0.0,0.0,0.0,0.0
-Q16,D0205,Furor changes,Restore active gameplay,0.0,0.03706884990595746,0.034500951039442646,0.0,0.03496126986288575,0.0
-Q16,D0206,Restore powershifting,Energy and rotation gameplay,0.04850578025266138,0.0,0.0176960049768024,0.0,0.0,0.0
-Q16,D0207,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1151652697967588,0.0,0.0
-Q16,D0208,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0025752064166868266,0.0,0.0,0.0
-Q16,D0209,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0855914812150138,0.0,0.0,0.016353878240177845
-Q16,D0210,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007632872580175364,0.0,0.0,0.0
-Q16,D0211,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008502580636657084,0.0,0.0,0.0
-Q16,D0212,Restore active gameplay,Restore powershifting,0.06163346566155618,0.0,0.0,0.0,0.3464132365847907,0.0
+Q16,D0204,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.003966177682422604,0.0,0.0,0.0,0.0
+Q16,D0205,Furor changes,Restore active gameplay,0.0,0.037066059430312576,0.034401559999813563,0.0,0.03495696488200667,0.0
+Q16,D0206,Restore powershifting,Energy and rotation gameplay,0.048517705555077326,0.0,0.017720586939539602,0.0,0.0,0.0
+Q16,D0207,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1147438845524466,0.0,0.0
+Q16,D0208,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0024435521166049586,0.0,0.0,0.0
+Q16,D0209,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08550215732783059,0.0,0.0,0.01638266022298184
+Q16,D0210,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007694502824863351,0.0,0.0,0.0
+Q16,D0211,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.00841168670360622,0.0,0.0,0.0
+Q16,D0212,Restore active gameplay,Restore powershifting,0.061712262565891074,0.0,0.0,0.0,0.34638002306869947,0.0
 Q16,D0213,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0214,Restore powershifting,Energy and rotation gameplay,0.06728323454484526,0.0,0.026313242578694124,0.0,0.0,0.0
+Q16,D0214,Restore powershifting,Energy and rotation gameplay,0.06731188019299315,0.0,0.02620939514942206,0.0,0.0,0.0
 Q16,D0215,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0216,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02506447888305809,0.0,0.0,0.0
-Q16,D0217,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01470314292471361,0.0,0.0,0.0
-Q16,D0218,Restore active gameplay,Energy and rotation gameplay,0.0,0.0,0.028672445566950533,0.0,0.05064015079675699,0.0
-Q16,D0219,Furor changes,Energy and rotation gameplay,0.0,0.02957669972300495,0.013277228665795648,0.0,0.0,0.0
-Q16,D0220,Restore powershifting,"Energy ticks, pooling, and mastery",0.08800793560411956,0.0,0.0,0.0,0.0,0.0
-Q16,D0221,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.07032738811867323,0.0,0.0,0.0,0.0
+Q16,D0216,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024905500237884553,0.0,0.0,0.0
+Q16,D0217,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014986665377916047,0.0,0.0,0.0
+Q16,D0218,Restore active gameplay,Energy and rotation gameplay,0.0,0.0,0.028452843114389642,0.0,0.050580356963683785,0.0
+Q16,D0219,Furor changes,Energy and rotation gameplay,0.0,0.029581336322018374,0.013224021007434477,0.0,0.0,0.0
+Q16,D0220,Restore powershifting,"Energy ticks, pooling, and mastery",0.08802478011873419,0.0,0.0,0.0,0.0,0.0
+Q16,D0221,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.0703364492422058,0.0,0.0,0.0,0.0
 Q16,D0222,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0223,Furor changes,Restore powershifting,0.061527827409424786,0.08317140922290771,0.0,0.0,0.0,0.0
-Q16,D0224,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.046275288215712626,0.0,0.0,0.0
-Q16,D0225,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.01930148845617998,0.09761366176350618,0.0,0.0
-Q16,D0226,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.030931025942505488,0.0,0.0,0.0
-Q16,D0227,Restore powershifting,Energy and rotation gameplay,0.07497969286055242,0.0,0.017204010161407303,0.0,0.0,0.0
-Q16,D0228,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03713877445697223,0.0,0.0,0.0
-Q16,D0229,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.07784001627370148,0.0,0.0,0.0,0.0
-Q16,D0230,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.0073213341415913884,0.07452048888778648,0.0,0.0
-Q16,D0231,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.010587614487883673,0.07611268489532072,0.0,0.0
-Q16,D0232,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.077965771219363,0.0,0.0,0.0
-Q16,D0233,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.012330296842955857,0.0,0.0,0.3936586788381141
-Q16,D0234,Restore powershifting,Energy and rotation gameplay,0.10443859115245475,0.0,0.003001980158308989,0.0,0.0,0.0
-Q16,D0235,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.025981414302494864,0.0,0.0,0.0015148483038712297
-Q16,D0236,Restore powershifting,Restore active gameplay,0.35105062054789643,0.0,0.0,0.0,0.011460490100906214,0.0
-Q16,D0237,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.018576551334284375,0.0,0.0,0.0
-Q16,D0238,Restore powershifting,Energy and rotation gameplay,0.20505738622690345,0.0,0.0746510328067437,0.0,0.0,0.0
-Q16,D0239,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02791865647511666,0.0,0.0,0.0
-Q16,D0240,Restore active gameplay,Energy and rotation gameplay,0.0,0.0,0.03132467834749236,0.0,0.04119816850018129,0.0
-Q16,D0241,Restore powershifting,"Energy ticks, pooling, and mastery",0.09723668935649837,0.0,0.0,0.0,0.0,0.0
-Q16,D0242,Restore active gameplay,Restore powershifting,0.0282766227862379,0.0,0.0,0.0,0.16087973501986644,0.0
-Q16,D0243,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07798861316406248,0.0,0.0,0.0
-Q16,D0244,Restore active gameplay,Restore powershifting,0.03735001750910606,0.0,0.0,0.0,0.23434424917641902,0.0
-Q16,D0245,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.17553507327821788,0.0,0.0
-Q16,D0246,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.012817559407360847,0.0,0.0,0.0
-Q16,D0247,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.32883731848174924,0.0,0.0,0.0,0.0
-Q16,D0248,Energy and rotation gameplay,Restore powershifting,0.02094913351485995,0.0,0.07825526270952192,0.0,0.0,0.0
-Q16,D0249,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.13972637572785712,0.0,0.0
-Q16,D0250,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.09484257954519601,0.0,0.0,0.0
-Q16,D0251,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.017840699718082213,0.0,0.0,0.0
+Q16,D0223,Furor changes,Restore powershifting,0.06152948129947445,0.08317575460444757,0.0,0.0,0.0,0.0
+Q16,D0224,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.046478984959020975,0.0,0.0,0.0
+Q16,D0225,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.019227279819266502,0.09738346842009452,0.0,0.0
+Q16,D0226,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.030967578498862423,0.0,0.0,0.0
+Q16,D0227,Restore powershifting,Energy and rotation gameplay,0.07501534437128018,0.0,0.017026374841049362,0.0,0.0,0.0
+Q16,D0228,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03722884848140571,0.0,0.0,0.0
+Q16,D0229,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.07785309344000137,0.0,0.0,0.0,0.0
+Q16,D0230,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.00730648279759151,0.07441752419640091,0.0,0.0
+Q16,D0231,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.010357735860016678,0.07675604450155699,0.0,0.0
+Q16,D0232,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07770872024966533,0.0,0.0,0.0
+Q16,D0233,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.012356828076314753,0.0,0.0,0.3935570933526163
+Q16,D0234,Restore powershifting,Energy and rotation gameplay,0.104467675277884,0.0,0.0029968512536945515,0.0,0.0,0.0
+Q16,D0235,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.025952118961542286,0.0,0.0,0.0015164546594039052
+Q16,D0236,Restore powershifting,Restore active gameplay,0.3510242233565918,0.0,0.0,0.0,0.01143356095745914,0.0
+Q16,D0237,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.018563254570176886,0.0,0.0,0.0
+Q16,D0238,Restore powershifting,Energy and rotation gameplay,0.20517293385879454,0.0,0.0741424847211316,0.0,0.0,0.0
+Q16,D0239,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.028008613375105285,0.0,0.0,0.0
+Q16,D0240,Restore active gameplay,Energy and rotation gameplay,0.0,0.0,0.031398342496585116,0.0,0.04118477395835713,0.0
+Q16,D0241,Restore powershifting,"Energy ticks, pooling, and mastery",0.09724905378221484,0.0,0.0,0.0,0.0,0.0
+Q16,D0242,Restore active gameplay,Restore powershifting,0.028324516507195596,0.0,0.0,0.0,0.16085572902689818,0.0
+Q16,D0243,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07806903197303745,0.0,0.0,0.0
+Q16,D0244,Restore active gameplay,Restore powershifting,0.03742261442795467,0.0,0.0,0.0,0.234311042239633,0.0
+Q16,D0245,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1767344079649623,0.0,0.0
+Q16,D0246,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.012825198511302364,0.0,0.0,0.0
+Q16,D0247,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.3288467064446671,0.0,0.0,0.0,0.0
+Q16,D0248,Energy and rotation gameplay,Restore powershifting,0.02097925846151051,0.0,0.07809921819712097,0.0,0.0,0.0
+Q16,D0249,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.13924557787516198,0.0,0.0
+Q16,D0250,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0946698594700386,0.0,0.0,0.0
+Q16,D0251,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.017799316395423415,0.0,0.0,0.0
 Q16,D0252,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0253,"AoE, bleeds, and weaving",Restore powershifting,0.04610617452335074,0.0,0.02961914024488592,0.07440494063872445,0.0,0.0
-Q16,D0254,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07576913840024402,0.0,0.0,0.0
-Q16,D0255,Energy and rotation gameplay,Restore powershifting,0.021878991430778545,0.0,0.021997921841788042,0.0,0.0,0.0
-Q16,D0256,Furor changes,Energy and rotation gameplay,0.0,0.06587903954470632,0.003431965505479859,0.0,0.0,0.0
+Q16,D0253,"AoE, bleeds, and weaving",Restore powershifting,0.04628143023631489,0.0,0.030236923314057584,0.07465706302574524,0.0,0.0
+Q16,D0254,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07679436023473352,0.0,0.0,0.0
+Q16,D0255,Energy and rotation gameplay,Restore powershifting,0.02188221506800147,0.0,0.022170502146295668,0.0,0.0,0.0
+Q16,D0256,Furor changes,Energy and rotation gameplay,0.0,0.06589618710166141,0.003387979394689808,0.0,0.0,0.0
 Q16,D0257,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0258,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.12825558325982916,0.0,0.0,0.0,0.0
-Q16,D0259,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007147695191771225,0.0,0.0,0.0
-Q16,D0260,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06642569462443373,0.0,0.0,0.0
-Q16,D0261,Energy and rotation gameplay,Restore powershifting,0.013747163007558528,0.0,0.10508455859272453,0.0,0.0,0.0
-Q16,D0262,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.002592274476720648,0.09837220559600209,0.0,0.0
-Q16,D0263,Restore powershifting,Energy and rotation gameplay,0.10986805699770953,0.0,0.003091147235618704,0.0,0.0,0.0
+Q16,D0258,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.12828824409985073,0.0,0.0,0.0,0.0
+Q16,D0259,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007140344877649539,0.0,0.0,0.0
+Q16,D0260,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06734173873559762,0.0,0.0,0.0
+Q16,D0261,Energy and rotation gameplay,Restore powershifting,0.013755696502515064,0.0,0.10547384891857248,0.0,0.0,0.0
+Q16,D0262,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.0025561298701896567,0.09847375010616487,0.0,0.0
+Q16,D0263,Restore powershifting,Energy and rotation gameplay,0.10990387710080463,0.0,0.0030381186010010513,0.0,0.0,0.0
 Q16,D0264,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0265,Energy and rotation gameplay,Restore powershifting,0.0457189229750242,0.0,0.04699188292175143,0.04513610168785002,0.0,0.0
-Q16,D0266,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03985405021563192,0.0,0.0,0.0
-Q16,D0267,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024100370445091165,0.0,0.0,0.0
-Q16,D0268,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.016944351145419968,0.0,0.0,0.0
-Q16,D0269,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.01715376687734518,0.0,0.06199921907233478,0.03720168589634634,0.0,0.0
-Q16,D0270,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.12058722444688762,0.0,0.0,0.03525228189254784
-Q16,D0271,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03952547545371095,0.0,0.0,0.0
+Q16,D0265,Energy and rotation gameplay,Restore powershifting,0.04576007245881244,0.0,0.04758643448120976,0.04504978611416879,0.0,0.0
+Q16,D0266,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0398725805043226,0.0,0.0,0.0
+Q16,D0267,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024006613711349094,0.0,0.0,0.0
+Q16,D0268,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.016758046299090803,0.0,0.0,0.0
+Q16,D0269,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.01713292187166887,0.0,0.06248500183883623,0.03707443315760256,0.0,0.0
+Q16,D0270,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.12050496350683626,0.0,0.0,0.03529301064770243
+Q16,D0271,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03965496880029116,0.0,0.0,0.0
 Q16,D0272,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0273,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03519442112957641,0.0,0.0,0.0
-Q16,D0274,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.018581229265552217,0.0,0.0,0.0
+Q16,D0273,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03514851205755677,0.0,0.0,0.0
+Q16,D0274,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.018669303555899918,0.0,0.0,0.0
 Q16,D0275,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0276,Restore active gameplay,Restore powershifting,0.03410053850564808,0.0,0.0,0.0,0.22965613554793757,0.0
-Q16,D0277,Restore powershifting,Restore active gameplay,0.35105062054789643,0.0,0.0,0.0,0.011460490100906214,0.0
+Q16,D0276,Restore active gameplay,Restore powershifting,0.03415508103323887,0.0,0.0,0.0,0.22963471121030815,0.0
+Q16,D0277,Restore powershifting,Restore active gameplay,0.3510242233565918,0.0,0.0,0.0,0.01143356095745914,0.0
 Q16,D0278,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0279,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.031082841399038077,0.0,0.0,0.0
-Q16,D0280,Restore powershifting,Furor changes,0.043247959154824746,0.001639705951279712,0.0,0.0,0.0,0.0
-Q16,D0281,Restore powershifting,"Energy ticks, pooling, and mastery",0.10981156518592985,0.0,0.0,0.0,0.0,0.0
-Q16,D0282,Restore powershifting,Energy and rotation gameplay,0.06181344200900866,0.0,0.029724966056969344,0.0,0.0,0.0
-Q16,D0283,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.0665711738516587,0.0,0.0
-Q16,D0284,Restore active gameplay,Energy and rotation gameplay,0.016963482907268932,0.0,0.04102706879602673,0.0,0.14789684079382032,0.0
-Q16,D0285,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05158160718554042,0.0,0.0,0.0
-Q16,D0286,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.009348100756752525,0.0,0.0,0.0
-Q16,D0287,Energy and rotation gameplay,Restore powershifting,0.020857639592433322,0.0,0.06637903606747993,0.0,0.0,0.0
-Q16,D0288,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.029549936991353425,0.0,0.0,0.0
-Q16,D0289,Restore powershifting,"Energy ticks, pooling, and mastery",0.09593015465347761,0.0,0.0,0.0,0.0,0.0
-Q16,D0290,Restore powershifting,Energy and rotation gameplay,0.05713742025136629,0.0,0.009594123938373895,0.0,0.0,0.0
-Q16,D0291,Furor changes,Energy and rotation gameplay,0.0,0.024545060584969566,0.018760487874876393,0.0,0.0,0.0
+Q16,D0279,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.031111955252867675,0.0,0.0,0.0
+Q16,D0280,Restore powershifting,Furor changes,0.043256186779596806,0.0016239299923522723,0.0,0.0,0.0,0.0
+Q16,D0281,Restore powershifting,"Energy ticks, pooling, and mastery",0.10981712737224839,0.0,0.0,0.0,0.0,0.0
+Q16,D0282,Restore powershifting,Energy and rotation gameplay,0.06186406273905981,0.0,0.02956482772316502,0.0,0.0,0.0
+Q16,D0283,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.06643208988017164,0.0,0.0
+Q16,D0284,Restore active gameplay,Energy and rotation gameplay,0.017028804841374454,0.0,0.040959472442267116,0.0,0.1478662087985817,0.0
+Q16,D0285,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05195600360177787,0.0,0.0,0.0
+Q16,D0286,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.009257257604259985,0.0,0.0,0.0
+Q16,D0287,Energy and rotation gameplay,Restore powershifting,0.02088139309255312,0.0,0.06638388913907163,0.0,0.0,0.0
+Q16,D0288,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.029245582445514576,0.0,0.0,0.0
+Q16,D0289,Restore powershifting,"Energy ticks, pooling, and mastery",0.09594590297109244,0.0,0.0,0.0,0.0,0.0
+Q16,D0290,Restore powershifting,Energy and rotation gameplay,0.05716150477845144,0.0,0.009553283152452968,0.0,0.0,0.0
+Q16,D0291,Furor changes,Energy and rotation gameplay,0.0,0.024546175266733642,0.018680459167996037,0.0,0.0,0.0
 Q16,D0292,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0293,Energy and rotation gameplay,Restore powershifting,0.022569637956885533,0.0,0.02497433903390516,0.0,0.0,0.0
-Q16,D0294,Restore powershifting,Energy and rotation gameplay,0.0283614942589868,0.0,0.0031045599015363753,0.0,0.0,0.0
-Q16,D0295,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.03261885190038168,0.0,0.03625678196600641,0.0,0.0,0.15623546926595233
-Q16,D0296,Furor changes,Energy and rotation gameplay,0.0,0.09061815221737117,0.00027516382997509785,0.0,0.0,0.0
-Q16,D0297,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.11959030003208167,0.0,0.0,0.0,0.0
-Q16,D0298,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.040928180204819156,0.06974895814557916,0.0,0.0
-Q16,D0299,Furor changes,Restore powershifting,0.030236066665713202,0.061282121504826086,0.01624640152042265,0.0,0.0,0.0
-Q16,D0300,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.022208123330747332,0.0,0.0,0.0
-Q16,D0301,Energy and rotation gameplay,Furor changes,0.0,0.0002535542716445096,0.05182419816347852,0.0,0.0,0.0
-Q16,D0302,Restore powershifting,Energy and rotation gameplay,0.0665655924128207,0.0,0.01936145964147822,0.0,0.0,0.0
-Q16,D0303,Restore powershifting,Restore active gameplay,0.35105062054789643,0.0,0.0,0.0,0.011460490100906214,0.0
-Q16,D0304,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.1048984245398036,0.0,0.0,0.0,0.0
-Q16,D0305,Energy and rotation gameplay,Restore powershifting,0.02177446319353871,0.0,0.0525596926225936,0.0,0.0,0.0
-Q16,D0306,Energy and rotation gameplay,Restore powershifting,0.03184634901790128,0.0,0.09207611747524522,0.0,0.0012040216965215494,0.0
-Q16,D0307,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0639655349377826,0.0,0.0,0.0
-Q16,D0308,Furor changes,Energy and rotation gameplay,0.0,0.03716955475974601,0.019628070600047887,0.0,0.0,0.0
-Q16,D0309,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.019802685456459235,0.054784138046286776,0.040916992630721016,0.0,0.0
-Q16,D0310,Furor changes,Energy and rotation gameplay,0.0,0.06690194119756708,0.006971280164526285,0.0,0.0,0.0
-Q16,D0311,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024668280435014515,0.0,0.0,0.0
+Q16,D0293,Energy and rotation gameplay,Restore powershifting,0.02257943249928756,0.0,0.024862607996865776,0.0,0.0,0.0
+Q16,D0294,Restore powershifting,Energy and rotation gameplay,0.02837639136595707,0.0,0.0029816803452281833,0.0,0.0,0.0
+Q16,D0295,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.032654883514913476,0.0,0.03611018713173589,0.0,0.0,0.15617833735987174
+Q16,D0296,Furor changes,Energy and rotation gameplay,0.0,0.0906340030146664,0.00023180566371900434,0.0,0.0,0.0
+Q16,D0297,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.11959465329184997,0.0,0.0,0.0,0.0
+Q16,D0298,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.04076721707364166,0.07027222962011268,0.0,0.0
+Q16,D0299,Furor changes,Restore powershifting,0.030251842299280008,0.06127999245271758,0.016189859969498663,0.0,0.0,0.0
+Q16,D0300,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.022404683863795922,0.0,0.0,0.0
+Q16,D0301,Energy and rotation gameplay,Furor changes,0.0,0.0002448039223551628,0.05173151405065101,0.0,0.0,0.0
+Q16,D0302,Restore powershifting,Energy and rotation gameplay,0.06661261468825111,0.0,0.019207140382510864,0.0,0.0,0.0
+Q16,D0303,Restore powershifting,Restore active gameplay,0.3510242233565918,0.0,0.0,0.0,0.01143356095745914,0.0
+Q16,D0304,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.10489365241157372,0.0,0.0,0.0,0.0
+Q16,D0305,Energy and rotation gameplay,Restore powershifting,0.02180485078955617,0.0,0.052391071519059355,0.0,0.0,0.0
+Q16,D0306,Energy and rotation gameplay,Restore powershifting,0.03192247251841825,0.0,0.09184792062952937,0.0,0.0011188171019899996,0.0
+Q16,D0307,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06392136057409838,0.0,0.0,0.0
+Q16,D0308,Furor changes,Energy and rotation gameplay,0.0,0.03722311782500602,0.019754221194982508,0.0,0.0,0.0
+Q16,D0309,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.019786236081772636,0.05512389404675888,0.04076301990224254,0.0,0.0
+Q16,D0310,Furor changes,Energy and rotation gameplay,0.0,0.06691222831754326,0.006930427605475121,0.0,0.0,0.0
+Q16,D0311,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024901271470643752,0.0,0.0,0.0
 Q16,D0312,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0313,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01774819284772272,0.0,0.0,0.0
-Q16,D0314,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005153286413408143,0.0,0.0,0.0
-Q16,D0315,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04440010463877133,0.0,0.0,0.0
-Q16,D0316,Furor changes,Energy and rotation gameplay,0.02812074328142564,0.04347854942294391,0.031145222853636526,0.0,0.0,0.0
-Q16,D0317,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03404483896179658,0.0,0.0,0.0017641632448725966
-Q16,D0318,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03240905766434319,0.0,0.0,0.0
-Q16,D0319,Furor changes,Restore active gameplay,0.0,0.0867891412994052,0.0,0.0,0.07463529950297954,0.0
-Q16,D0320,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.016735934443712675,0.060368774394448765,0.0,0.0
-Q16,D0321,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0086013666093505,0.0,0.0,0.0
+Q16,D0313,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.017735321688127803,0.0,0.0,0.0
+Q16,D0314,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005105620198879017,0.0,0.0,0.0
+Q16,D0315,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.044432328886868086,0.0,0.0,0.0
+Q16,D0316,Furor changes,Energy and rotation gameplay,0.028133211468781096,0.043489549933201824,0.031051491901674208,0.0,0.0,0.0
+Q16,D0317,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03430313137046629,0.0,0.0,0.0017857678009360594
+Q16,D0318,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.032486206407604724,0.0,0.0,0.0
+Q16,D0319,Furor changes,Restore active gameplay,0.0,0.08679682923840654,0.0,0.0,0.07461332000988935,0.0
+Q16,D0320,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.01665900114491757,0.0608337598019518,0.0,0.0
+Q16,D0321,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008553448027829664,0.0,0.0,0.0
 Q16,D0322,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0323,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014512670870673195,0.0,0.0,0.0
-Q16,D0324,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03904930197886981,0.0,0.0,0.0
-Q16,D0325,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01049302584923132,0.0,0.0,0.0
-Q16,D0326,Furor changes,Energy and rotation gameplay,0.0,0.06670508736287474,0.00453144257862077,0.0,0.0,0.0
-Q16,D0327,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.038344795704798394,0.0,0.0,0.0
-Q16,D0328,Furor changes,Energy and rotation gameplay,0.026442012805345895,0.028055536964315224,0.026976388221269472,0.0,0.0,0.0
-Q16,D0329,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06068314941943037,0.0,0.0,0.007934414971670516
-Q16,D0330,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0032667955855696556,0.0,0.0,0.0
-Q16,D0331,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014331227356456963,0.0,0.0,0.0
-Q16,D0332,Energy and rotation gameplay,Restore powershifting,0.016984420042011436,0.0,0.07896012957980747,0.0,0.0,0.0
+Q16,D0323,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014414213697007948,0.0,0.0,0.0
+Q16,D0324,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.039185971538921456,0.0,0.0,0.0
+Q16,D0325,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01037850997743768,0.0,0.0,0.0
+Q16,D0326,Furor changes,Energy and rotation gameplay,0.0,0.06670967414278868,0.004501101319612823,0.0,0.0,0.0
+Q16,D0327,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.038650395025002955,0.0,0.0,0.0
+Q16,D0328,Furor changes,Energy and rotation gameplay,0.026456397290566543,0.02806021866147197,0.026899715440917665,0.0,0.0,0.0
+Q16,D0329,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06054601059934969,0.0,0.0,0.007946973478925506
+Q16,D0330,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.003211844730644473,0.0,0.0,0.0
+Q16,D0331,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014325747316754548,0.0,0.0,0.0
+Q16,D0332,Energy and rotation gameplay,Restore powershifting,0.01623562847844839,0.0,0.07573534072691458,0.0,0.0,0.0
 Q16,D0333,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
 Q16,D0334,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0335,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02182550249037392,0.0,0.0,0.0
-Q16,D0336,Furor changes,Energy and rotation gameplay,0.0,0.05713647460417526,0.016060265520067733,0.0,0.0,0.0
-Q16,D0337,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05940456774988632,0.0,0.0,0.008868058524121925
-Q16,D0338,Restore active gameplay,Energy and rotation gameplay,0.01215300637110921,0.0,0.014233285741132853,0.0,0.11633820099500629,0.0
-Q16,D0339,Restore powershifting,Energy and rotation gameplay,0.03756468882191435,0.016830605845866323,0.03643795314623879,0.0,0.0,0.0
-Q16,D0340,Energy and rotation gameplay,Restore powershifting,0.005674917410969102,0.0,0.07074078461442054,0.0,0.0,0.0
-Q16,D0341,Restore powershifting,Energy and rotation gameplay,0.04846183587930526,0.0,0.04822451602417652,0.0,0.0,0.0
-Q16,D0342,"Energy ticks, pooling, and mastery",Restore active gameplay,0.02882517016361282,0.010395590797726069,0.03026580911819046,0.0,0.07085664463083172,0.09693314050414024
-Q16,D0343,Energy and rotation gameplay,Restore powershifting,0.0337005897105409,0.0,0.037062995168498966,0.0,0.003134467749094385,0.0
+Q16,D0335,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.021758937077896723,0.0,0.0,0.0
+Q16,D0336,Furor changes,Energy and rotation gameplay,0.0,0.0571389482838266,0.015984164191688608,0.0,0.0,0.0
+Q16,D0337,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05934772301599178,0.0,0.0,0.00888380154914906
+Q16,D0338,Restore active gameplay,Energy and rotation gameplay,0.012186095819600043,0.0,0.014254976669634899,0.0,0.11631665452072358,0.0
+Q16,D0339,Restore powershifting,Energy and rotation gameplay,0.03759752966361646,0.016831785784154944,0.03635018621315652,0.0,0.0,0.0
+Q16,D0340,Energy and rotation gameplay,Restore powershifting,0.005714737400835622,0.0,0.07058368185805923,0.0,0.0,0.0
+Q16,D0341,Restore powershifting,Energy and rotation gameplay,0.048534201193629264,0.0,0.047904893501754905,0.0,0.0,0.0
+Q16,D0342,"Energy ticks, pooling, and mastery",Restore active gameplay,0.028869802106147285,0.010397106719779685,0.030171648990897314,0.0,0.07081963766616893,0.09690566366107436
+Q16,D0343,Energy and rotation gameplay,Restore powershifting,0.03376696631994492,0.0,0.03686888979057645,0.0,0.0030361335516561204,0.0
 Q16,D0344,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0345,Energy and rotation gameplay,Furor changes,0.0,0.0015250551288031524,0.04437541887893514,0.0,0.0,0.0
-Q16,D0346,Energy and rotation gameplay,Furor changes,0.0,0.020861308620752368,0.05952924364301262,0.0,0.0,0.0
+Q16,D0345,Energy and rotation gameplay,Furor changes,0.0,0.001497785235830421,0.044473669243038375,0.0,0.0,0.0
+Q16,D0346,Energy and rotation gameplay,Furor changes,0.0,0.02085446585594802,0.05953371346895506,0.0,0.0,0.0
 Q16,D0347,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0348,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05213360346321737,0.0,0.0,0.0
-Q16,D0349,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.022683830291336422,0.0022335716161632655,0.0,0.0
-Q16,D0350,Restore active gameplay,Restore powershifting,0.025428938821595706,0.0,0.0,0.0,0.05204262370132751,0.0
-Q16,D0351,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.030676518398924605,0.0,0.0,0.0
-Q16,D0352,Energy and rotation gameplay,Furor changes,0.0,0.00254193875593163,0.1045600483313513,0.0,0.0,0.0
-Q16,D0353,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.11975283849680675,0.0,0.0,0.0015296351678577556
-Q16,D0354,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.03207830192705828,0.05797567116003664,0.0,0.0,0.06032402923922831
-Q16,D0355,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07503145263865339,0.0,0.0,0.0029764135117957558
-Q16,D0356,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02252828517884052,0.0,0.0,0.0
-Q16,D0357,Energy and rotation gameplay,Restore powershifting,0.003250849554403192,0.0,0.07896814867849235,0.0,0.0,0.0
-Q16,D0358,Restore powershifting,Energy and rotation gameplay,0.06965115650673843,0.0,0.0015154556507598514,0.0,0.0,0.0
-Q16,D0359,Energy and rotation gameplay,Restore powershifting,0.031205513339234204,0.0,0.05463710324564564,0.0,0.0,0.0
-Q16,D0360,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19965643646914433,0.0,0.0,0.0,0.0
-Q16,D0361,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.026943031287077056,0.0,0.0,0.0
-Q16,D0362,Energy and rotation gameplay,Furor changes,0.018498021206760213,0.03882702305987594,0.046682854758217464,0.0,0.0,0.0
+Q16,D0348,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05215032497255865,0.0,0.0,0.0
+Q16,D0349,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.02245279758380116,0.0023412965664859637,0.0,0.0
+Q16,D0350,Restore active gameplay,Restore powershifting,0.025449057845040417,0.0,0.0,0.0,0.05202137788517253,0.0
+Q16,D0351,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.030904040734525587,0.0,0.0,0.0
+Q16,D0352,Energy and rotation gameplay,Furor changes,0.0,0.0025381531966958706,0.10444972867384998,0.0,0.0,0.0
+Q16,D0353,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.11981002159267382,0.0,0.0,0.0015224279548952697
+Q16,D0354,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.03208426117440563,0.05788344001095789,0.0,0.0,0.060302740084245646
+Q16,D0355,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07498258433886146,0.0,0.0,0.0029899769350648707
+Q16,D0356,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02251306193594237,0.0,0.0,0.0
+Q16,D0357,Energy and rotation gameplay,Restore powershifting,0.003286470842604814,0.0,0.07889278759171425,0.0,0.0,0.0
+Q16,D0358,Restore powershifting,Energy and rotation gameplay,0.0696718471952447,0.0,0.001435524139604974,0.0,0.0,0.0
+Q16,D0359,Energy and rotation gameplay,Restore powershifting,0.031209394502046715,0.0,0.05483544397537369,0.0,0.0,0.0
+Q16,D0360,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19965966501120774,0.0,0.0,0.0,0.0
+Q16,D0361,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.026936531410339408,0.0,0.0,0.0
+Q16,D0362,Energy and rotation gameplay,Furor changes,0.018504587547469125,0.03882314337897292,0.04668415470822512,0.0,0.0,0.0
 Q16,D0363,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0364,Energy and rotation gameplay,Furor changes,0.0,0.04212854922224289,0.06024700382947136,0.0,0.0,0.0
-Q16,D0365,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.09116202403799555,0.0,0.0,0.0
-Q16,D0366,Furor changes,Energy and rotation gameplay,0.0,0.04787014348799184,0.041211125482134306,0.0,0.0,0.0
+Q16,D0364,Energy and rotation gameplay,Furor changes,0.0,0.04213259901554891,0.060192572038881946,0.0,0.0,0.0
+Q16,D0365,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0910793264513627,0.0,0.0,0.0
+Q16,D0366,Furor changes,Energy and rotation gameplay,0.0,0.0478577690972973,0.04126497381794646,0.0,0.0,0.0
 Q16,D0367,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0368,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.051628051330267065,0.0,0.0,0.0
-Q16,D0369,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.15695341861206044,0.0,0.0
-Q16,D0370,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008717012462256838,0.0,0.0,0.0
-Q16,D0371,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05931692967887204,0.0,0.0,0.008370598276775
-Q16,D0372,Restore powershifting,"Energy ticks, pooling, and mastery",0.11652530282698888,0.0,0.0,0.0,0.0,0.0
-Q16,D0373,Furor changes,Energy and rotation gameplay,0.0,0.04528076850965985,0.002382572516871812,0.0,0.0,0.0
-Q16,D0374,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0766624995014047,0.0,0.0,0.0
-Q16,D0375,Restore powershifting,"Energy ticks, pooling, and mastery",0.14813812966208223,0.0,0.0,0.0,0.0,0.0
-Q16,D0376,Energy and rotation gameplay,Restore powershifting,0.01526860108770508,0.0,0.056189651799704414,0.0,0.0,0.0
-Q16,D0377,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.02228833507564962,0.08680911833632364,0.0,0.0
-Q16,D0378,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0034245841397925734,0.0,0.0,0.0
-Q16,D0379,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.059630066656132116,0.0,0.0,0.0
-Q16,D0380,Restore active gameplay,Restore powershifting,0.032808083647583385,0.0,0.0007738614382338432,0.0,0.15371577362550684,0.0
-Q16,D0381,Restore active gameplay,Restore powershifting,0.06163346566155618,0.0,0.0,0.0,0.3464132365847907,0.0
-Q16,D0382,Energy and rotation gameplay,Furor changes,0.0,0.04199458133769062,0.04246479803702018,0.0,0.027384643361306416,0.0
-Q16,D0383,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.32883731848174924,0.0,0.0,0.0,0.0
-Q16,D0384,Furor changes,Restore powershifting,0.03671715300833576,0.048370697578992816,0.026676565556435144,0.0,0.0,0.0
-Q16,D0385,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.052850066821238155,0.0,0.0,0.0
-Q16,D0386,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.00887642004755017,0.0,0.0,0.0
-Q16,D0387,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.052893565687435834,0.0,0.0,0.0
-Q16,D0388,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.1045962380544911,0.0,0.0,0.0
+Q16,D0368,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.052235227515859656,0.0,0.0,0.0
+Q16,D0369,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.15705657518052935,0.0,0.0
+Q16,D0370,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008630548950682715,0.0,0.0,0.0
+Q16,D0371,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0592053962851906,0.0,0.0,0.008395156399592709
+Q16,D0372,Restore powershifting,"Energy ticks, pooling, and mastery",0.11654571655375331,0.0,0.0,0.0,0.0,0.0
+Q16,D0373,Furor changes,Energy and rotation gameplay,0.0,0.045291129480004085,0.002324005204979798,0.0,0.0,0.0
+Q16,D0374,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07646212488487523,0.0,0.0,0.0
+Q16,D0375,Restore powershifting,"Energy ticks, pooling, and mastery",0.14814798573347707,0.0,0.0,0.0,0.0,0.0
+Q16,D0376,Energy and rotation gameplay,Restore powershifting,0.015289536307908441,0.0,0.05632526379994713,0.0,0.0,0.0
+Q16,D0377,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.02227175548829936,0.08695901744752171,0.0,0.0
+Q16,D0378,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0032870834210839473,0.0,0.0,0.0
+Q16,D0379,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05967456672686678,0.0,0.0,0.0
+Q16,D0380,Restore active gameplay,Restore powershifting,0.032938623699750674,0.0,0.001725209715008657,0.0,0.15429712378943555,0.0
+Q16,D0381,Restore active gameplay,Restore powershifting,0.061712262565891074,0.0,0.0,0.0,0.34638002306869947,0.0
+Q16,D0382,Energy and rotation gameplay,Furor changes,0.0,0.04199335708778249,0.04244005063551899,0.0,0.027386644681829064,0.0
+Q16,D0383,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.3288467064446671,0.0,0.0,0.0,0.0
+Q16,D0384,Furor changes,Restore powershifting,0.036731197332688294,0.048359548183355104,0.026645672434285284,0.0,0.0,0.0
+Q16,D0385,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05300890273967229,0.0,0.0,0.0
+Q16,D0386,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008892966628764985,0.0,0.0,0.0
+Q16,D0387,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05263323433308605,0.0,0.0,0.0
+Q16,D0388,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.10462979759412878,0.0,0.0,0.0
 Q16,D0389,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0390,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.13335768114680097,0.0,0.0
-Q16,D0391,Restore active gameplay,Restore powershifting,0.016617193093738485,0.0,0.0010969769220122644,0.0,0.13659645560079406,0.0
-Q16,D0392,Restore powershifting,"Energy ticks, pooling, and mastery",0.1244196181440732,0.0,0.0,0.0,0.0,0.0
-Q16,D0393,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04194995973347809,0.0,0.0,0.0
-Q16,D0394,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.011117670832966305,0.0,0.0,0.0
-Q16,D0395,Furor changes,Energy and rotation gameplay,0.0,0.03648561331744676,0.004043221087877926,0.0,0.0,0.0
-Q16,D0396,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007202216812452228,0.0,0.0,0.0
-Q16,D0397,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05967618158620626,0.0,0.0,0.0
-Q16,D0398,Furor changes,Energy and rotation gameplay,0.0,0.0657957894345267,0.01899696922350492,0.0,0.0,0.0
+Q16,D0390,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1330865076878051,0.0,0.0
+Q16,D0391,Restore active gameplay,Restore powershifting,0.016870161654734313,0.0,0.0011867151643418362,0.0,0.13788032545344864,0.0
+Q16,D0392,Restore powershifting,"Energy ticks, pooling, and mastery",0.12442571792930862,0.0,0.0,0.0,0.0,0.0
+Q16,D0393,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04211377490253948,0.0,0.0,0.0
+Q16,D0394,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.011071936115123502,0.0,0.0,0.0
+Q16,D0395,Furor changes,Energy and rotation gameplay,0.0,0.0364901154832017,0.003969964962220756,0.0,0.0,0.0
+Q16,D0396,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0071160347687723915,0.0,0.0,0.0
+Q16,D0397,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05941334872823143,0.0,0.0,0.0
+Q16,D0398,Furor changes,Energy and rotation gameplay,0.0,0.06579365726363645,0.018995353527632878,0.0,0.0,0.0
 Q16,D0399,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0400,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.20869465711359433,0.0,0.0
-Q16,D0401,Energy and rotation gameplay,Furor changes,0.0,0.0041031745377668565,0.088838816022324,0.0,0.0,0.0
-Q16,D0402,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.061658186035331276,0.0,0.0
-Q16,D0403,Furor changes,Energy and rotation gameplay,0.0,0.039221544420917145,0.024563361745110777,0.0,0.0,0.0
-Q16,D0404,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04872581245719271,0.0,0.0,0.0
-Q16,D0405,Energy and rotation gameplay,Furor changes,0.0,0.021843533845454063,0.08994119922074487,0.0,0.0,0.0
-Q16,D0406,Energy and rotation gameplay,Furor changes,0.0,0.03638473839152414,0.05732933172964181,0.0,0.0,0.0
-Q16,D0407,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07679439459062289,0.0,0.0,0.0
-Q16,D0408,Energy and rotation gameplay,Restore powershifting,0.0016499140734065007,0.0,0.10312562751456827,0.0,0.0,0.0
-Q16,D0409,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.009834154718397749,0.0,0.0,0.0
-Q16,D0410,Energy and rotation gameplay,Restore powershifting,0.01109984771454144,0.0,0.028097820005916332,0.0,0.0,0.0
-Q16,D0411,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1143223709082747,0.0,0.0
-Q16,D0412,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0034177436684476783,0.0,0.0,0.0
-Q16,D0413,Furor changes,Energy and rotation gameplay,0.0,0.16741708390515286,0.012238396257566609,0.0,0.0,0.0
-Q16,D0414,Energy and rotation gameplay,Restore powershifting,0.04348109491380806,0.0,0.04395586518299677,0.0,0.0,0.0
-Q16,D0415,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.19238272120955133,0.0,0.0,0.10179921126409204
+Q16,D0400,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.20805922000812763,0.0,0.0
+Q16,D0401,Energy and rotation gameplay,Furor changes,0.0,0.004099594855284336,0.08914380378831654,0.0,0.0,0.0
+Q16,D0402,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.06143235882477452,0.0,0.0
+Q16,D0403,Furor changes,Energy and rotation gameplay,0.0,0.03921991186416109,0.024587594551543808,0.0,0.0,0.0
+Q16,D0404,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04873192586339828,0.0,0.0,0.0
+Q16,D0405,Energy and rotation gameplay,Furor changes,0.0,0.021842717729439833,0.08983743089204664,0.0,0.0,0.0
+Q16,D0406,Energy and rotation gameplay,Furor changes,0.0,0.03638413417825805,0.05732342628688535,0.0,0.0,0.0
+Q16,D0407,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07674962998609977,0.0,0.0,0.0
+Q16,D0408,Energy and rotation gameplay,Restore powershifting,0.0016632890586399513,0.0,0.10319934804463168,0.0,0.0,0.0
+Q16,D0409,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.009816611333944616,0.0,0.0,0.0
+Q16,D0410,Energy and rotation gameplay,Restore powershifting,0.01109681673402992,0.0,0.02811774269830767,0.0,0.0,0.0
+Q16,D0411,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1151716712123478,0.0,0.0
+Q16,D0412,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.003413064409760536,0.0,0.0,0.0
+Q16,D0413,Furor changes,Energy and rotation gameplay,0.0,0.1674256285369278,0.01228141381763385,0.0,0.0,0.0
+Q16,D0414,Energy and rotation gameplay,Restore powershifting,0.0435254549679607,0.0,0.04384297072333585,0.0,0.0,0.0
+Q16,D0415,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.19231042661169684,0.0,0.0,0.10185719442761597
 Q16,D0416,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0417,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.32883731848174924,0.0,0.0,0.0,0.0
-Q16,D0418,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03396901739725867,0.0,0.0,0.0
-Q16,D0419,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08340880259937394,0.0,0.0,0.0
-Q16,D0420,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.011096518787034229,0.0,0.0,0.0
-Q16,D0421,Energy and rotation gameplay,Restore powershifting,0.01189087553184086,0.0,0.05925459050174695,0.0,0.0,0.0
-Q16,D0422,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03562020344382852,0.0,0.0,0.004018565893854458
+Q16,D0417,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.3288467064446671,0.0,0.0,0.0,0.0
+Q16,D0418,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03385194324422151,0.0,0.0,0.0
+Q16,D0419,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08333591608939034,0.0,0.0,0.0
+Q16,D0420,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01096802629166259,0.0,0.0,0.0
+Q16,D0421,Energy and rotation gameplay,Restore powershifting,0.011903333638030181,0.0,0.059258757597391847,0.0,0.0,0.0
+Q16,D0422,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.035612425869474294,0.0,0.0,0.004020161382239393
 Q16,D0423,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0424,Energy and rotation gameplay,Restore active gameplay,0.00858270977226142,0.0,0.02823127287660115,0.0,0.02042903846173845,0.0
-Q16,D0425,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.08733650853301266,0.0,0.0,0.0,0.0
-Q16,D0426,Restore powershifting,"Energy ticks, pooling, and mastery",0.13593917332332417,0.0,0.0,0.0,0.0,0.0
-Q16,D0427,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024979868631952312,0.0,0.0,0.0
-Q16,D0428,Restore powershifting,Energy and rotation gameplay,0.04492719367397516,0.0,0.03089873202463024,0.0,0.0,0.0
-Q16,D0429,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.033641257855293066,0.0,0.0,0.0
-Q16,D0430,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0566420055854964,0.0,0.0,0.0
-Q16,D0431,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.05318183944457285,0.0,0.0,0.0,0.0
-Q16,D0432,Furor changes,Restore powershifting,0.042307824092370314,0.043988634327657296,0.01680685334920474,0.0,0.0,0.0
-Q16,D0433,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04967469501042382,0.0,0.0,0.0
-Q16,D0434,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.02959232139996574,0.0,0.0,0.08068245143322014
-Q16,D0435,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04747519209837143,0.0,0.0,0.0
+Q16,D0424,Energy and rotation gameplay,Restore active gameplay,0.008592019306868155,0.0,0.028209175464318302,0.0,0.020425709516628348,0.0
+Q16,D0425,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.08735607602909996,0.0,0.0,0.0,0.0
+Q16,D0426,Restore powershifting,"Energy ticks, pooling, and mastery",0.1359638459035627,0.0,0.0,0.0,0.0,0.0
+Q16,D0427,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024726084935645595,0.0,0.0,0.0
+Q16,D0428,Restore powershifting,Energy and rotation gameplay,0.04495130725179989,0.0,0.030873708446080006,0.0,0.0,0.0
+Q16,D0429,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03371908424362115,0.0,0.0,0.0
+Q16,D0430,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.056568865529135044,0.0,0.0,0.0
+Q16,D0431,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.05319450533752308,0.0,0.0,0.0,0.0
+Q16,D0432,Furor changes,Restore powershifting,0.04234377876203686,0.04400384899722435,0.01659444153232105,0.0,0.0,0.0
+Q16,D0433,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04949586813216984,0.0,0.0,0.0
+Q16,D0434,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.029715496020645694,0.0,0.0,0.0808015614339819
+Q16,D0435,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.047537652378587474,0.0,0.0,0.0
 Q16,D0436,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0437,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.013186607095423858,0.0028302452669131425,0.08212042754790702,0.021100070407005643,0.0,0.0
-Q16,D0438,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.058300350537747084,0.0,0.0,0.0016219639738325755
-Q16,D0439,Restore powershifting,Energy and rotation gameplay,0.05418684441527485,0.0,0.04781366081109317,0.0,0.0,0.0
-Q16,D0440,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.007878416911153166,0.07648908350346899,0.0,0.0
-Q16,D0441,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06237885192467007,0.0,0.0,0.0
-Q16,D0442,Energy and rotation gameplay,Furor changes,0.0,0.03444608511060575,0.07924391860467421,0.0,0.0,0.0
-Q16,D0443,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06053278568363499,0.0,0.0,0.0070439707918202145
-Q16,D0444,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.004527649719811422,0.009956486224298794,0.04437397567115204,0.05274518716767354,0.0,0.0
+Q16,D0437,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.01321328522049623,0.0028321852332697656,0.0820253301959025,0.02112817033271936,0.0,0.0
+Q16,D0438,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05816458884120336,0.0,0.0,0.0016455818310062657
+Q16,D0439,Restore powershifting,Energy and rotation gameplay,0.05440758952583413,0.0,0.047947782574481436,0.0,0.0,0.0
+Q16,D0440,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.008520116086854308,0.07632080488395757,0.0,0.0
+Q16,D0441,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06230156961184519,0.0,0.0,0.0
+Q16,D0442,Energy and rotation gameplay,Furor changes,0.0,0.03444493932210129,0.07938161186399388,0.0,0.0,0.0
+Q16,D0443,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.060484504236153466,0.0,0.0,0.0070485891410236486
+Q16,D0444,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.004535803549232842,0.009949276865740089,0.04434641413452334,0.05292137912458106,0.0,0.0
 Q16,D0445,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0446,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.025834059767545787,0.0,0.0,0.0
-Q16,D0447,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.01048170838144338,0.016569704606097614,0.0,0.0
-Q16,D0448,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.13499327558253688,0.0,0.0
-Q16,D0449,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.32883731848174924,0.0,0.0,0.0,0.0
-Q16,D0450,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.037646435793490536,0.10217091339387278,0.0,0.0
-Q16,D0451,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.06832342033465506,0.015453479221080977,0.0,0.0
-Q16,D0452,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.022033860972444162,0.0,0.0,0.0
-Q16,D0453,Energy and rotation gameplay,Restore powershifting,0.03484927536105681,0.0,0.035369153218716545,0.0,0.0,0.0
-Q16,D0454,Energy and rotation gameplay,Restore powershifting,0.01254430574602237,0.0,0.02407939133342579,0.01069392534691341,0.0,0.0
-Q16,D0455,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.06898948332508567,0.032424938996908625,0.0,0.0
+Q16,D0446,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.025736358187959787,0.0,0.0,0.0
+Q16,D0447,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.010518994517389081,0.016506055109659537,0.0,0.0
+Q16,D0448,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1346627169491681,0.0,0.0
+Q16,D0449,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.3288467064446671,0.0,0.0,0.0,0.0
+Q16,D0450,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.03755726076345733,0.10287073942760416,0.0,0.0
+Q16,D0451,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.06829650345290317,0.015565282141661986,0.0,0.0
+Q16,D0452,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.021955409434926045,0.0,0.0,0.0
+Q16,D0453,Energy and rotation gameplay,Restore powershifting,0.03485657785026645,0.0,0.035896611195983495,0.0,0.0,0.0
+Q16,D0454,Energy and rotation gameplay,Restore powershifting,0.012549512466742662,0.0,0.024055246201812805,0.010575736024045285,0.0,0.0
+Q16,D0455,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.06883263103779046,0.03244762794567472,0.0,0.0
 Q16,D0456,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0457,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.1004937457272835,0.0,0.0,0.0
-Q16,D0458,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0550678562753049,0.0,0.0,0.0
-Q16,D0459,Restore active gameplay,Furor changes,0.001324650185529084,0.052916489820686884,0.029027601217805506,0.0,0.0699914752677368,0.0
-Q16,D0460,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.21702381092973283,0.0,0.0
-Q16,D0461,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.04707589115366403,0.038723652393518014,0.0,0.0
-Q16,D0462,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.20869465711359433,0.0,0.0
-Q16,D0463,Restore powershifting,Energy and rotation gameplay,0.027280924910061663,0.0,0.0023162116734237854,0.0,0.0,0.0
-Q16,D0464,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07139037221225226,0.0,0.0,0.0
-Q16,D0465,Energy and rotation gameplay,Furor changes,0.0,0.01774697657194749,0.06205048637107417,0.0,0.0,0.0
+Q16,D0457,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.10037149785187847,0.0,0.0,0.0
+Q16,D0458,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0551383913594409,0.0,0.0,0.0
+Q16,D0459,Restore active gameplay,Furor changes,0.0013347649219044796,0.05290747913313997,0.029018742025207832,0.0,0.07002707818353966,0.0
+Q16,D0460,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.21639268583989937,0.0,0.0
+Q16,D0461,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.0,0.0,0.047205048263801994,0.03875325244304908,0.0,0.0
+Q16,D0462,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.20805922000812763,0.0,0.0
+Q16,D0463,Restore powershifting,Energy and rotation gameplay,0.027291374556264392,0.0,0.0022542942129902717,0.0,0.0,0.0
+Q16,D0464,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07157721099054618,0.0,0.0,0.0
+Q16,D0465,Energy and rotation gameplay,Furor changes,0.0,0.017752112917495896,0.06193686731486048,0.0,0.0,0.0
 Q16,D0466,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0467,Furor changes,Energy and rotation gameplay,0.0,0.04054759663692819,0.027424664645251406,0.0,0.0,0.0
-Q16,D0468,Furor changes,Energy and rotation gameplay,0.0,0.12055402358320405,0.024473071630437444,0.0,0.0,0.0
+Q16,D0467,Furor changes,Energy and rotation gameplay,0.0,0.04055058137583807,0.0274503661414794,0.0,0.0,0.0
+Q16,D0468,Furor changes,Energy and rotation gameplay,0.0,0.12055213132572606,0.024431964694964777,0.0,0.0,0.0
 Q16,D0469,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0470,Furor changes,Energy and rotation gameplay,0.0,0.11074077009163841,0.0077675724019791725,0.0,0.0,0.0
+Q16,D0470,Furor changes,Energy and rotation gameplay,0.0,0.11074389535453193,0.007715738492492639,0.0,0.0,0.0
 Q16,D0471,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0472,Energy and rotation gameplay,Furor changes,0.01815130755493046,0.019795645585430875,0.021648887317860663,0.0,0.0,0.0
-Q16,D0473,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08804506556159923,0.0,0.0,0.0
-Q16,D0474,Furor changes,Energy and rotation gameplay,0.0,0.12489107515316707,0.0026735497364225123,0.0,0.0,0.0
-Q16,D0475,Restore active gameplay,Energy and rotation gameplay,0.016185612947757704,0.023284965959078165,0.03872925634709281,0.001586750758434452,0.05149358669148582,0.0
-Q16,D0476,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05422273668407564,0.0,0.0,0.0
+Q16,D0472,Energy and rotation gameplay,Furor changes,0.01817273033971795,0.019813704590247377,0.021479924359378257,0.0,0.0,0.0
+Q16,D0473,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08807687245528632,0.0,0.0,0.0
+Q16,D0474,Furor changes,Energy and rotation gameplay,0.0,0.12488315730233414,0.002688166453008042,0.0,0.0,0.0
+Q16,D0475,Restore active gameplay,Energy and rotation gameplay,0.01622386785342019,0.02328741464560583,0.03860800521660282,0.0016805009534597735,0.051479218032618755,0.0
+Q16,D0476,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05453129440874319,0.0,0.0,0.0
 Q16,D0477,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0478,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.03870025885620272,0.05904885055206039,0.0,0.0
-Q16,D0479,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.009165622254540552,0.0,0.05366931691233875,0.05197388360655547,0.0,0.0
-Q16,D0480,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19813461661088727,0.0,0.0,0.0,0.0
-Q16,D0481,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01877316154347475,0.0,0.0,0.0
-Q16,D0482,Restore powershifting,"Energy ticks, pooling, and mastery",0.09657016944487638,0.0,0.0,0.0,0.0,0.0
-Q16,D0483,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01418366344255556,0.0,0.0,0.0
-Q16,D0484,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.07314711967050407,0.0,0.0
-Q16,D0485,Restore powershifting,Energy and rotation gameplay,0.05634657632929041,0.0,0.04187180981573984,0.0,0.0,0.0
-Q16,D0486,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.32883731848174924,0.0,0.0,0.0,0.0
+Q16,D0478,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.038837301763486196,0.05902873111391544,0.0,0.0
+Q16,D0479,Energy and rotation gameplay,"AoE, bleeds, and weaving",0.009194907834959356,0.0,0.053525139476233885,0.052138363507906654,0.0,0.0
+Q16,D0480,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19815209215583746,0.0,0.0,0.0,0.0
+Q16,D0481,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.018699725572075044,0.0,0.0,0.0
+Q16,D0482,Restore powershifting,"Energy ticks, pooling, and mastery",0.09658863649852738,0.0,0.0,0.0,0.0,0.0
+Q16,D0483,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.014221119981203017,0.0,0.0,0.0
+Q16,D0484,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.07363543370459792,0.0,0.0
+Q16,D0485,Restore powershifting,Energy and rotation gameplay,0.05641438393430307,0.0,0.04157756493769787,0.0,0.0,0.0
+Q16,D0486,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.3288467064446671,0.0,0.0,0.0,0.0
 Q16,D0487,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
 Q16,D0488,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0489,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.042361933211039746,0.0,0.0,0.0
-Q16,D0490,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.01346238655702166,0.0329128907732802,0.0,0.0
+Q16,D0489,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04235823220877386,0.0,0.0,0.0
+Q16,D0490,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.013226105753208145,0.03323580720026003,0.0,0.0
 Q16,D0491,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0492,Restore active gameplay,Energy and rotation gameplay,0.0043613815953711535,0.0,0.03764419840770179,0.0,0.0947874405229857,0.0
-Q16,D0493,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.035024724977734144,0.0,0.0,0.19073468626036158
-Q16,D0494,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05523543009786877,0.0,0.0,0.0
-Q16,D0495,Furor changes,Energy and rotation gameplay,0.0,0.09142585683015195,0.01686580632788976,0.0,0.0,0.0
-Q16,D0496,Restore powershifting,Restore active gameplay,0.07878351599284757,0.0,0.0,0.0,0.0005425825111918753,0.0
-Q16,D0497,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.016984181853146776,0.0,0.0,0.0
-Q16,D0498,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.061323687516415704,0.0,0.0,0.0
-Q16,D0499,Restore active gameplay,Restore powershifting,0.06163346566155618,0.0,0.0,0.0,0.3464132365847907,0.0
-Q16,D0500,Restore active gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.0,0.0222088645750561,0.0
-Q16,D0501,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19965643646914433,0.0,0.0,0.0,0.0
-Q16,D0502,Restore powershifting,Restore active gameplay,0.35105062054789643,0.0,0.0,0.0,0.011460490100906214,0.0
-Q16,D0503,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08578460627684376,0.0,0.0,0.015943774065740587
-Q16,D0504,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.12608544782198858,0.0,0.0
-Q16,D0505,Restore powershifting,Energy and rotation gameplay,0.09282719959320293,0.0,0.06322257059266363,0.0,0.0,0.0
-Q16,D0506,Restore powershifting,"Energy ticks, pooling, and mastery",0.06858253403415279,0.0,0.0,0.0,0.0,0.0
-Q16,D0507,Energy and rotation gameplay,Restore powershifting,0.019320465075497183,0.0,0.0655662612509436,0.0,0.0,0.0
-Q16,D0508,Restore active gameplay,Energy and rotation gameplay,0.021423623122768434,0.0,0.03199689334062086,0.0,0.04390862560209487,0.0
+Q16,D0492,Restore active gameplay,Energy and rotation gameplay,0.004397016328681636,0.0,0.03754632903152349,0.0,0.09473211083788267,0.0
+Q16,D0493,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.03503508145054366,0.0,0.0,0.19073778369004335
+Q16,D0494,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05536636703047749,0.0,0.0,0.0
+Q16,D0495,Furor changes,Energy and rotation gameplay,0.0,0.09142919577373275,0.016896566733347086,0.0,0.0,0.0
+Q16,D0496,Restore powershifting,Restore active gameplay,0.0788148545390403,0.0,0.0,0.0,0.0005178086705418878,0.0
+Q16,D0497,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.016824768309240512,0.0,0.0,0.0
+Q16,D0498,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.061310964012652944,0.0,0.0,0.0
+Q16,D0499,Restore active gameplay,Restore powershifting,0.061712262565891074,0.0,0.0,0.0,0.34638002306869947,0.0
+Q16,D0500,Restore active gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.0,0.022195209796970067,0.0
+Q16,D0501,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.19965966501120774,0.0,0.0,0.0,0.0
+Q16,D0502,Restore powershifting,Restore active gameplay,0.3510242233565918,0.0,0.0,0.0,0.01143356095745914,0.0
+Q16,D0503,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08577212228271203,0.0,0.0,0.01596029880449571
+Q16,D0504,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.12581216005884543,0.0,0.0
+Q16,D0505,Restore powershifting,Energy and rotation gameplay,0.09288454015271208,0.0,0.06306983565451348,0.0,0.0,0.0
+Q16,D0506,Restore powershifting,"Energy ticks, pooling, and mastery",0.06859336170178998,0.0,0.0,0.0,0.0,0.0
+Q16,D0507,Energy and rotation gameplay,Restore powershifting,0.019355968902845168,0.0,0.06542287314726003,0.0,0.0,0.0
+Q16,D0508,Restore active gameplay,Energy and rotation gameplay,0.021456071934481555,0.0,0.03196287112232893,0.0,0.043897390510053404,0.0
 Q16,D0509,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0510,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06504732588950635,0.0,0.0,0.0
-Q16,D0511,Restore powershifting,Energy and rotation gameplay,0.061846638610834816,0.0,0.016000871115535914,0.0,0.0,0.0
-Q16,D0512,Furor changes,Energy and rotation gameplay,0.0,0.06556491849055356,0.024878443308383943,0.0,0.0,0.0
-Q16,D0513,Energy and rotation gameplay,Furor changes,0.0,0.028837756302953304,0.059975958413322025,0.0,0.0,0.0
-Q16,D0514,Energy and rotation gameplay,Furor changes,0.0,0.002717787289235707,0.09895794228221536,0.0,0.0,0.0
-Q16,D0515,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.022625682601572453,0.0,0.0,0.0
-Q16,D0516,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05732335905015262,0.0,0.0,0.0
-Q16,D0517,Restore active gameplay,Furor changes,0.0,0.0003884934742243441,0.0,0.0,0.1597654763899138,0.0
-Q16,D0518,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.017944190415728232,0.0,0.0,0.0
-Q16,D0519,Energy and rotation gameplay,Furor changes,0.005316755848422611,0.05576518979483155,0.0637310022229752,0.0,0.0,0.0
-Q16,D0520,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.007980128370515633,0.0,0.0,0.21291475319093175
-Q16,D0521,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005467665515962162,0.0,0.0,0.0
-Q16,D0522,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.026612232712833705,0.16060702268448043,0.0,0.0
+Q16,D0510,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.065251771676428,0.0,0.0,0.0
+Q16,D0511,Restore powershifting,Energy and rotation gameplay,0.061861494415234086,0.0,0.015965552709323306,0.0,0.0,0.0
+Q16,D0512,Furor changes,Energy and rotation gameplay,0.0,0.0656557068250623,0.02557105921047279,0.0,0.0,0.0
+Q16,D0513,Energy and rotation gameplay,Furor changes,0.0,0.02883339090210805,0.05986998622776781,0.0,0.0,0.0
+Q16,D0514,Energy and rotation gameplay,Furor changes,0.0,0.002710800623450129,0.09883116115405328,0.0,0.0,0.0
+Q16,D0515,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.022453999193677562,0.0,0.0,0.0
+Q16,D0516,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.057978288167350775,0.0,0.0,0.0
+Q16,D0517,Restore active gameplay,Furor changes,0.0,0.0003769996177649181,0.0,0.0,0.1597483489148847,0.0
+Q16,D0518,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.017923289545227653,0.0,0.0,0.0
+Q16,D0519,Energy and rotation gameplay,Furor changes,0.005330716056023444,0.05576530475023183,0.06365042741787533,0.0,0.0,0.0
+Q16,D0520,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.007950917752378665,0.0,0.0,0.21283811797502505
+Q16,D0521,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.005414512889358603,0.0,0.0,0.0
+Q16,D0522,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.026560372855313378,0.16091644070988367,0.0,0.0
 Q16,D0523,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0524,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05609463306766065,0.0,0.0,0.0
-Q16,D0525,Restore powershifting,"Energy ticks, pooling, and mastery",0.037545378018255034,0.0,0.0,0.0,0.0,0.0
+Q16,D0524,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.055913731942144156,0.0,0.0,0.0
+Q16,D0525,Restore powershifting,"Energy ticks, pooling, and mastery",0.037551655414065105,0.0,0.0,0.0,0.0,0.0
 Q16,D0526,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
 Q16,D0527,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0528,Furor changes,Energy and rotation gameplay,0.0,0.0988597761443108,0.0648228157062094,0.0,0.0,0.013516529482200598
-Q16,D0529,Energy and rotation gameplay,Furor changes,0.0069694881005590665,0.05478490466670234,0.06763952744520886,0.0,0.0,0.0
-Q16,D0530,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.026725719803334103,0.0,0.0,0.0
-Q16,D0531,Energy and rotation gameplay,Restore powershifting,0.02748528357883461,0.0,0.04501694379953697,0.0,0.0,0.0
-Q16,D0532,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.008070526083170394,0.0,0.0,0.0
-Q16,D0533,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.018222864291066457,0.0,0.0,0.0
-Q16,D0534,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01985202172871246,0.0,0.0,0.0
-Q16,D0535,Energy and rotation gameplay,Restore powershifting,0.05869760465901638,0.030158191264572098,0.07144002497243368,0.0,0.0,0.0
-Q16,D0536,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04513746893023321,0.0,0.0,0.0
-Q16,D0537,Restore powershifting,"Energy ticks, pooling, and mastery",0.06441696159192832,0.0,0.0,0.0,0.0,0.0
+Q16,D0528,Furor changes,Energy and rotation gameplay,0.0,0.09888069571847243,0.06479569882715482,0.0,0.0,0.013529054188687203
+Q16,D0529,Energy and rotation gameplay,Furor changes,0.006988759132942531,0.054789261310248076,0.06755831558523212,0.0,0.0,0.0
+Q16,D0530,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.026758964188268487,0.0,0.0,0.0
+Q16,D0531,Energy and rotation gameplay,Restore powershifting,0.027539511581880102,0.0,0.0447634504467488,0.0,0.0,0.0
+Q16,D0532,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.00832711107732457,0.0,0.0,0.0
+Q16,D0533,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01838632979530642,0.0,0.0,0.0
+Q16,D0534,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.019786000662590866,0.0,0.0,0.0
+Q16,D0535,Energy and rotation gameplay,Restore powershifting,0.05871315594905783,0.030144257924588993,0.0715399929430997,0.0,0.0,0.0
+Q16,D0536,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04502568089987886,0.0,0.0,0.0
+Q16,D0537,Restore powershifting,"Energy ticks, pooling, and mastery",0.06442884506425609,0.0,0.0,0.0,0.0,0.0
 Q16,D0538,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0539,Restore powershifting,Energy and rotation gameplay,0.06468867291117975,0.0,0.012046753483527586,0.0,0.0,0.0
-Q16,D0540,Energy and rotation gameplay,Restore powershifting,0.024922552584754256,0.0,0.043314965365935015,0.0,0.0,0.0
-Q16,D0541,Energy and rotation gameplay,Furor changes,0.0,0.017681971557238083,0.03970726586375884,0.0,0.0,0.0
-Q16,D0542,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.12877273638141312,0.0,0.0
-Q16,D0543,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.013595548561296916,0.0,0.0,0.0
-Q16,D0544,Restore active gameplay,Restore powershifting,0.03531766110017873,0.0,0.0,0.0,0.2425747849025855,0.0
-Q16,D0545,Energy and rotation gameplay,Restore powershifting,0.03409337955074333,0.0,0.075513299961146,0.0,0.0,0.0
-Q16,D0546,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.025227408567332972,0.0,0.0,0.042803750308128455
-Q16,D0547,Restore powershifting,Energy and rotation gameplay,0.06941904941837264,0.0,0.01758662812892129,0.0,0.008509297890772443,0.0
-Q16,D0548,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06270218020600783,0.0,0.0,0.0
-Q16,D0549,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.023684070237329047,0.0,0.0,0.0
-Q16,D0550,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05120299123247259,0.0,0.0,0.0
-Q16,D0551,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06409232351928948,0.0,0.0,0.0
-Q16,D0552,Energy and rotation gameplay,Furor changes,0.007811422191931068,0.011019098770217058,0.01765667300980476,0.0,0.0,0.0
-Q16,D0553,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.0015249731775753847,0.0,0.0,0.0,0.0
-Q16,D0554,Energy and rotation gameplay,Furor changes,0.00944160247839365,0.014941046482466807,0.04091621255833327,0.0,0.0,0.0
-Q16,D0555,Restore powershifting,"Energy ticks, pooling, and mastery",0.10724702650281416,0.0,0.0,0.0,0.0,0.0
-Q16,D0556,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04631859149605259,0.0,0.0,0.0
-Q16,D0557,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.09507472532425688,0.0,0.0,0.0
-Q16,D0558,Restore active gameplay,Restore powershifting,0.015690177912473454,0.0,0.0,0.0,0.1383403900672027,0.0
-Q16,D0559,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01584212697086243,0.0,0.0,0.0
-Q16,D0560,Energy and rotation gameplay,Furor changes,0.0,0.01812260690932743,0.021581117340956465,0.0,0.0,0.0
-Q16,D0561,Restore powershifting,Energy and rotation gameplay,0.03221610414377891,0.0,0.028044126363990843,0.0,0.0,0.0
-Q16,D0562,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.04293604558129706,0.08443618699554094,0.0,0.0
-Q16,D0563,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02772679611731193,0.0,0.0,0.0
-Q16,D0564,Energy and rotation gameplay,Restore powershifting,0.04229338215212007,0.026080869247091857,0.05104683108527665,0.0,0.017056736602541082,0.0
+Q16,D0539,Restore powershifting,Energy and rotation gameplay,0.06472584949520128,0.0,0.011876839985071247,0.0,0.0,0.0
+Q16,D0540,Energy and rotation gameplay,Restore powershifting,0.024944470474720037,0.0,0.04323105563607161,0.0,0.0,0.0
+Q16,D0541,Energy and rotation gameplay,Furor changes,0.0,0.01767646741005065,0.039666243259065294,0.0,0.0,0.0
+Q16,D0542,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.12902065330672854,0.0,0.0
+Q16,D0543,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.013491372383253746,0.0,0.0,0.0
+Q16,D0544,Restore active gameplay,Restore powershifting,0.03537594774917336,0.0,0.0,0.0,0.24256471302905366,0.0
+Q16,D0545,Energy and rotation gameplay,Restore powershifting,0.03413253590525314,0.0,0.07541944422021199,0.0,0.0,0.0
+Q16,D0546,"Energy ticks, pooling, and mastery",Energy and rotation gameplay,0.0,0.0,0.025140440227056436,0.0,0.0,0.04279740588622245
+Q16,D0547,Restore powershifting,Energy and rotation gameplay,0.0695332544842653,0.0,0.017506500909040823,0.0,0.00835770601646174,0.0
+Q16,D0548,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0624748520692945,0.0,0.0,0.0
+Q16,D0549,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0236177751994926,0.0,0.0,0.0
+Q16,D0550,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05122337644856169,0.0,0.0,0.0
+Q16,D0551,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06401944574063388,0.0,0.0,0.0
+Q16,D0552,Energy and rotation gameplay,Furor changes,0.007817033926829482,0.011015032549642052,0.017615425043319793,0.0,0.0,0.0
+Q16,D0553,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.0015131654847943831,0.0,0.0,0.0,0.0
+Q16,D0554,Energy and rotation gameplay,Furor changes,0.009450665681471496,0.014960471617980569,0.041111505934596074,0.0,0.0,0.0
+Q16,D0555,Restore powershifting,"Energy ticks, pooling, and mastery",0.10726813821752773,0.0,0.0,0.0,0.0,0.0
+Q16,D0556,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04622501413498232,0.0,0.0,0.0
+Q16,D0557,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.09447341139069533,0.0,0.0,0.0
+Q16,D0558,Restore active gameplay,Restore powershifting,0.015723539408225518,0.0,0.0,0.0,0.13832150431855114,0.0
+Q16,D0559,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.01576851634771653,0.0,0.0,0.0
+Q16,D0560,Energy and rotation gameplay,Furor changes,0.0,0.018119929059255746,0.021542207781112106,0.0,0.0,0.0
+Q16,D0561,Restore powershifting,Energy and rotation gameplay,0.03224252458008988,0.0,0.027949385285722054,0.0,0.0,0.0
+Q16,D0562,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.042854730981283486,0.08469089732711244,0.0,0.0
+Q16,D0563,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.027767040031358377,0.0,0.0,0.0
+Q16,D0564,Energy and rotation gameplay,Restore powershifting,0.042337305015511625,0.026085644118917714,0.0509540406751019,0.0,0.017044231275504727,0.0
 Q16,D0565,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0566,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.009875712381816225,0.06433428374302626,0.0,0.0
-Q16,D0567,"Energy ticks, pooling, and mastery",Restore active gameplay,0.017333647639812093,0.0,0.0,0.0,0.12979431457424892,0.20343792628086052
+Q16,D0566,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.009698500528796164,0.06487008637956973,0.0,0.0
+Q16,D0567,"Energy ticks, pooling, and mastery",Restore active gameplay,0.017365042135228215,0.0,0.0,0.0,0.1297898330044121,0.2033571062870149
 Q16,D0568,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0569,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.001543231659884186,0.0,0.0,0.0
-Q16,D0570,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08540724317045405,0.0,0.0,0.0
-Q16,D0571,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.024041383872717086,0.0,0.0,0.0
-Q16,D0572,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06354853138156218,0.0,0.0,0.0034205261915610597
-Q16,D0573,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1242720277800168,0.0,0.0
-Q16,D0574,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03772047494010356,0.0,0.0,0.0
-Q16,D0575,Restore powershifting,Energy and rotation gameplay,0.03987931669440226,0.0,0.019344523978637295,0.0,0.0,0.0
-Q16,D0576,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07999251090922845,0.0,0.0,0.0
-Q16,D0577,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.32883731848174924,0.0,0.0,0.0,0.0
-Q16,D0578,Energy and rotation gameplay,Restore powershifting,0.030117721865165682,0.0,0.030435626138583614,0.0,0.0,0.0
-Q16,D0579,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.007034489581127769,0.0,0.0,0.0
-Q16,D0580,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.05355900654415204,0.0,0.0,0.0,0.0
+Q16,D0569,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0014875235025194578,0.0,0.0,0.0
+Q16,D0570,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.08545089017356738,0.0,0.0,0.0
+Q16,D0571,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02436093556987681,0.0,0.0,0.0
+Q16,D0572,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06417538788485688,0.0,0.0,0.003460867525842494
+Q16,D0573,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.1240019351762743,0.0,0.0
+Q16,D0574,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03786113654047771,0.0,0.0,0.0
+Q16,D0575,Restore powershifting,Energy and rotation gameplay,0.03990098065141969,0.0,0.019295414272236362,0.0,0.0,0.0
+Q16,D0576,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.07994090689079375,0.0,0.0,0.0
+Q16,D0577,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.3288467064446671,0.0,0.0,0.0,0.0
+Q16,D0578,Energy and rotation gameplay,Restore powershifting,0.030136722446234044,0.0,0.030352789085552126,0.0,0.0,0.0
+Q16,D0579,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.006974415962704653,0.0,0.0,0.0
+Q16,D0580,Furor changes,"Energy ticks, pooling, and mastery",0.0,0.053560098710917145,0.0,0.0,0.0,0.0
 Q16,D0581,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0582,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06972814761296174,0.0,0.0,0.006515297662158645
+Q16,D0582,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06961264647160717,0.0,0.0,0.006561429095811204
 Q16,D0583,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0584,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.020889167296547145,0.0,0.0,0.0
-Q16,D0585,Furor changes,Energy and rotation gameplay,0.0,0.07274034377665972,0.010101436556725588,0.0,0.0,0.0
-Q16,D0586,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.030908264532826114,0.0,0.0,0.0
-Q16,D0587,Restore powershifting,Energy and rotation gameplay,0.058157730785159345,0.0,0.022308544069091097,0.0,0.0,0.0
-Q16,D0588,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.001096630293813616,0.0,0.0,0.0
-Q16,D0589,Furor changes,Energy and rotation gameplay,0.0,0.08246099757130494,0.0755872514201933,0.0,0.0,0.0
-Q16,D0590,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.009496039834464806,0.0,0.0,0.0
-Q16,D0591,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.012412458383604288,0.0,0.05472209488274432,0.0,0.0,0.035261477708629266
+Q16,D0584,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02085084631444673,0.0,0.0,0.0
+Q16,D0585,Furor changes,Energy and rotation gameplay,0.0,0.07275006128758761,0.010081320419400389,0.0,0.0,0.0
+Q16,D0586,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.030889233358794368,0.0,0.0,0.0
+Q16,D0587,Restore powershifting,Energy and rotation gameplay,0.05817997134081636,0.0,0.022279466274489165,0.0,0.0,0.0
+Q16,D0588,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.001058462628554286,0.0,0.0,0.0
+Q16,D0589,Furor changes,Energy and rotation gameplay,0.0,0.08244491574703751,0.07570906192162026,0.0,0.0,0.0
+Q16,D0590,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.009441404728336232,0.0,0.0,0.0
+Q16,D0591,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.012429019495218767,0.0,0.054660140321475564,0.0,0.0,0.03524389108530853
 Q16,D0592,Restore powershifting,Restore active gameplay,0.0,0.0,0.0,0.0,0.0,0.0
-Q16,D0593,Restore powershifting,Energy and rotation gameplay,0.047878725137842824,0.0,0.005051046270492498,0.0,0.0,0.0
-Q16,D0594,Restore powershifting,"Energy ticks, pooling, and mastery",0.0395868921633297,0.0,0.0,0.0,0.0,0.0
-Q16,D0595,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04042840434945025,0.0,0.0,0.0
-Q16,D0596,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.031682123844395504,0.11853379610340045,0.0,0.0
-Q16,D0597,Restore active gameplay,Energy and rotation gameplay,0.012170939853545382,0.0,0.05078744373029697,0.0,0.10567041279630102,0.0
-Q16,D0598,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05124584709029229,0.0,0.0,0.0
-Q16,D0599,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.029239529804043957,0.0,0.0,0.0
-Q16,D0600,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04435853268573556,0.0,0.0,0.0
-Q16,D0601,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.03876316238475805,0.0,0.0,0.0
-Q16,D0602,Furor changes,Restore powershifting,0.10371377107303353,0.18740626952547304,0.0,0.0,0.0,0.0
-Q16,D0603,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.010904485556290554,0.0,0.0,0.0
-Q16,D0604,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.09995698142673796,0.0,0.0
-Q16,D0605,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.06010996026529802,0.0,0.0,0.0
-Q16,D0606,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.023955693983571166,0.10656737077895467,0.0,0.0
-Q16,D0607,Restore active gameplay,Restore powershifting,0.005673179816374032,0.0,0.0,0.0,0.13447651941725836,0.0
-Q16,D0608,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.019540668780623497,0.0,0.0,0.0
-Q16,D0609,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.033616893471675666,0.0,0.0,0.0
+Q16,D0593,Restore powershifting,Energy and rotation gameplay,0.04790150699418903,0.0,0.004966100706904157,0.0,0.0,0.0
+Q16,D0594,Restore powershifting,"Energy ticks, pooling, and mastery",0.039584364111708056,0.0,0.0,0.0,0.0,0.0
+Q16,D0595,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04031720211063275,0.0,0.0,0.0
+Q16,D0596,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.03170335306970176,0.11880295726100189,0.0,0.0
+Q16,D0597,Restore active gameplay,Energy and rotation gameplay,0.01222454250732085,0.0,0.05072176994141065,0.0,0.1056495735130815,0.0
+Q16,D0598,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.05121664061344652,0.0,0.0,0.0
+Q16,D0599,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.029099714635176112,0.0,0.0,0.0
+Q16,D0600,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04446240239695051,0.0,0.0,0.0
+Q16,D0601,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.04001204423147503,0.0,0.0,0.0
+Q16,D0602,Furor changes,Restore powershifting,0.10372651240999965,0.18740223972051656,0.0,0.0,0.0,0.0
+Q16,D0603,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.010850754406496176,0.0,0.0,0.0
+Q16,D0604,"AoE, bleeds, and weaving","Energy ticks, pooling, and mastery",0.0,0.0,0.0,0.09962195440006105,0.0,0.0
+Q16,D0605,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.0601087864220433,0.0,0.0,0.0
+Q16,D0606,"AoE, bleeds, and weaving",Energy and rotation gameplay,0.0,0.0,0.023923511408562824,0.10659655244539352,0.0,0.0
+Q16,D0607,Restore active gameplay,Restore powershifting,0.0057018430344360676,0.0,0.0,0.0,0.1344592148934191,0.0
+Q16,D0608,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.019417722405627842,0.0,0.0,0.0
+Q16,D0609,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.033610063961672584,0.0,0.0,0.0
+Q16,D0610,Energy and rotation gameplay,"Energy ticks, pooling, and mastery",0.0,0.0,0.02150337251848583,0.0,0.0,0.0
