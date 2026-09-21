@@ -16,8 +16,9 @@
 <main>
   <section class="hero">
     <p class="eyebrow">COMMUNITY FEEDBACK · {{ metadata.row_count }} RESPONSES</p>
-    <h1>The clearest Feral feedback is about the <em>play loop</em>, not one required mechanic.</h1>
+    <h1>The clearest Cat and hybrid Feral feedback is about the <em>play loop</em>, not one required mechanic.</h1>
     <p class="deck">This report separates the argument over literal powershifting from the broader design question: how should Feral preserve activity, resource decisions, mastery, and a meaningful reason to use more than one form?</p>
+    <p class="hero-scope"><strong>Scope:</strong> a rapid, self-selected survey of engaged players reacting to the public and test-build design available September 20–21, 2026. The survey did not record a specific build identifier, and Bear-focused respondents evaluated the direction much more favorably.</p>
     <div class="hero-actions"><a class="button" href="#story">Read the story</a><a class="ghost-button" href="methodology.html">See the evidence</a></div>
   </section>
 
@@ -61,7 +62,7 @@
   </section>
 
   <section class="split-section">
-    <div class="section-copy"><p class="eyebrow">THE POWERSHIFTING QUESTION</p><h2>Most respondents are flexible about the mechanic, but consistent about the desired experience.</h2><p>Only {{ "%.1f"|format(current["Specifically want Classic powershifting restored"]) }}% chose literal Classic-style restoration as their closest view. Most respondents leave room for another answer. The importance, agreement, priority, and written-response questions independently reinforce the demand for activity, resource decisions, and mastery.</p></div>
+    <div class="section-copy"><p class="eyebrow">THE POWERSHIFTING QUESTION</p><h2>Most respondents are flexible about the mechanic, but consistent about the desired experience.</h2><p>Only {{ "%.1f"|format(current["Specifically want Classic powershifting restored"]) }}% chose literal Classic-style restoration as their closest view. Separately, {{ "%.1f"|format(direction_summary["Restore Classic-style powershifting"]) }}% included restoration among several options they would test. These results are compatible: willingness to test a mechanic does not mean requiring it as the final design. The importance, agreement, priority, and written-response questions independently reinforce the demand for activity, resource decisions, and mastery.</p></div>
     <figure><img src="figures/powershifting-preference.svg" alt="Bar chart comparing six views of powershifting and possible replacements."><figcaption>One choice per respondent. “Not enough information” is retained.</figcaption></figure>
   </section>
 
@@ -82,16 +83,16 @@
       <article><b>1</b><div><h3>Give Cat a reliable activity engine.</h3><p>Test powershifting, faster or resettable Tiger’s Fury, richer Clearcasting interactions, bleed-driven resource gains, and other resource-conversion ideas against the same goal: less empty time with meaningful choices.</p></div></article>
       <article><b>2</b><div><h3>Make shifting feel useful, not merely thematic.</h3><p>Cat/Bear/caster weaving and hybrid off-tanking matter independently of literal powershifting. Form changes should create decisions rather than punish the player.</p></div></article>
       <article><b>3</b><div><h3>Keep the good ideas, then make them active.</h3><p>Clearcasting, Tiger’s Fury, and bleed identity are strong starting points. The bleed direction needs interaction and payoff, not only passive maintenance.</p></div></article>
-      <article><b>4</b><div><h3>Handle AoE, utility, and scaling directly.</h3><p>Swipe scaling, dungeon usefulness, raid desirability, tanking, and numerical tuning are not automatically solved by changing the Cat rotation.</p></div></article>
+      <article><b>4</b><div><h3>Handle AoE, utility, and scaling directly.</h3><p>Swipe effectiveness, multi-target toolkit coverage, dungeon usefulness, raid desirability, tanking, and numerical tuning are not automatically solved by changing the Cat rotation.</p></div></article>
     </div>
     <div class="brief-table" aria-label="Developer design brief">
-      <div class="brief-head"><span>Observed signal</span><span>Design objective</span><span>Candidate levers respondents would test</span></div>
-      <div class="brief-row"><p><strong>{{ "%.1f"|format(importance_summary["Meaningful energy and resource decisions"]) }}%</strong> rate resource decisions highly; <strong>{{ "%.1f"|format(priority_summary["Rotation/activity level"]) }}%</strong> prioritized activity; <strong>{{ "%.1f"|format(negative_mechanics["Energy generation and pooling"]) }}%</strong> react negatively to the energy model.</p><p>Create meaningful resource decisions without excessive empty time.</p><p>Tiger’s Fury changes ({{ "%.1f"|format(direction_summary["Use Tiger's Fury more frequently or allow gameplay-driven cooldown resets"]) }}%), resource conversion ({{ "%.1f"|format(direction_summary["Add another active resource-conversion mechanic"]) }}%), or Clearcasting interactions ({{ "%.1f"|format(direction_summary["Add more Clearcasting interactions"]) }}%).</p></div>
+      <div class="brief-head"><span>Observed signal</span><span>Design objective</span><span>Candidate levers and follow-up questions</span></div>
+      <div class="brief-row"><p><strong>{{ "%.1f"|format(importance_summary["Meaningful energy and resource decisions"]) }}%</strong> rate resource decisions highly; <strong>{{ "%.1f"|format(priority_summary["Rotation/activity level"]) }}%</strong> prioritized activity; <strong>{{ "%.1f"|format(negative_mechanics["Energy generation and pooling"]) }}%</strong> react negatively to the energy model.</p><p>Create meaningful resource decisions without excessive empty time.</p><p>Tiger’s Fury changes ({{ "%.1f"|format(direction_summary["Use Tiger's Fury more frequently or allow gameplay-driven cooldown resets"]) }}%), Classic powershifting ({{ "%.1f"|format(direction_summary["Restore Classic-style powershifting"]) }}%), resource conversion ({{ "%.1f"|format(direction_summary["Add another active resource-conversion mechanic"]) }}%), or Clearcasting interactions ({{ "%.1f"|format(direction_summary["Add more Clearcasting interactions"]) }}%).</p></div>
       <div class="brief-row"><p><strong>{{ "%.1f"|format(disagreement_summary["The current design preserves Feral's shapeshifting identity."]) }}%</strong> disagree that the current design preserves shapeshifting identity.</p><p>Make leaving Cat situationally valuable rather than automatically punitive.</p><p>Intentional Cat/Bear/caster incentives ({{ "%.1f"|format(direction_summary["Add intentional Cat/Bear/caster weaving incentives"]) }}%).</p></div>
       <div class="brief-row"><p><strong>{{ "%.1f"|format(mechanic_summary["Rip/Rake and the bleed emphasis"]) }}%</strong> react positively to bleed emphasis.</p><p>Turn the accepted theme into active decisions and payoff while accounting for bleed immunity, ramp time, and target switching.</p><p>Bleed-driven energy or active interactions ({{ "%.1f"|format(direction_summary["Let bleeds interact with energy or other active decisions"]) }}%).</p></div>
-      <div class="brief-row"><p><strong>{{ "%.1f"|format(negative_mechanics["AoE / Swipe tools"]) }}%</strong> react negatively to AoE / Swipe.</p><p>Give Cat and Bear dependable value in routine multi-target play.</p><p>Swipe scaling, toolkit coverage, and tuning independent of the single-target loop.</p></div>
+      <div class="brief-row"><p><strong>{{ "%.1f"|format(negative_mechanics["AoE / Swipe tools"]) }}%</strong> react negatively to AoE / Swipe.</p><p>Give Cat and Bear dependable value in routine multi-target play.</p><p>Author synthesis from the AoE response signal and written feedback: evaluate Swipe effectiveness, multi-target toolkit coverage, and tuning independently of the single-target loop.</p></div>
     </div>
-    <p class="context-note">Candidate levers are options respondents said they would be open to testing, not votes for a final implementation. The survey identifies design constraints; playtests and telemetry must determine the solution.</p>
+    <p class="context-note">Quantified candidate levers are options respondents said they would be open to testing, not votes for a final implementation. The AoE follow-up is explicitly labeled as author synthesis. The survey identifies design constraints; playtests and telemetry must determine the solution.</p>
   </section>
 
   <section class="language-section">
@@ -109,7 +110,7 @@
   </section>
 
   <section class="voices-section">
-    <div class="section-copy"><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Different problems and solutions, not one monolithic demand.</h2><p>These full excerpts were deliberately selected to represent contrasting design concerns. They were manually reviewed, stripped of accidental identifiers, and come only from respondents who allowed anonymous quotation.</p></div>
+    <div class="section-copy"><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Different problems and solutions, not one monolithic demand.</h2><p>These full excerpts were deliberately selected to illustrate contrasting design concerns. They were manually reviewed, stripped of accidental identifiers, and come only from respondents who allowed anonymous quotation. They provide context, not evidence of how common each view is.</p></div>
     <div class="quote-grid">{% for column in featured_quote_columns %}<div class="quote-column">{% for _, row in column.iterrows() %}<blockquote><span class="quote-label">{{ row.viewpoint }}</span><p>“{{ row.excerpt }}”</p><footer>{{ row.question }} · quoted with permission</footer></blockquote>{% endfor %}</div>{% endfor %}</div>
   </section>
 

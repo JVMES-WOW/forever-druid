@@ -24,6 +24,7 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "played the test build" in template
     assert "developer design brief" in template
     assert "these full excerpts" in template
+    assert "they provide context, not evidence of how common each view is" in template
     assert "featured_quote_columns" in template
     assert "shortened for display" not in template
     assert "meaningful pooling" not in template
@@ -33,6 +34,11 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "making energy irrelevant" not in template
     assert template.count("donut chart") == 3
     assert "these respondents give the design team" in template
+    assert "clearest cat and hybrid feral feedback" in template
+    assert "willingness to test a mechanic does not mean requiring it" in template
+    assert "author synthesis from the aoe response signal" in template
+    assert "the aoe follow-up is explicitly labeled as author synthesis" in template
+    assert "swipe scaling" not in template
     assert "combo points stored on the player" not in template
     assert "player-stored combo points" not in template
 
@@ -58,6 +64,8 @@ def test_methods_page_keeps_technical_detail_and_downloads():
     assert "source_spreadsheet_id" not in methods
     assert "snapshot fingerprint (sha-256)" in methods
     assert "does not authenticate the collection process" in methods
+    assert "analysis code and aggregate outputs" in methods
+    assert "reproducible source" not in methods
 
 
 def test_public_metadata_does_not_identify_private_source():
