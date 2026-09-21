@@ -12,6 +12,11 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "i’m <strong>jvmes</strong>" in template
     assert "not a petition for one implementation" in template
     assert "#forever-general" in template
+    assert "wordcloud-q14.png" in template
+    assert "competitive” is a self-report" in template
+    assert "combat logs, parses, rankings" in template
+    assert "combo points stored on the player" not in template
+    assert "player-stored combo points" not in template
 
 
 def test_methods_page_keeps_technical_detail_and_downloads():

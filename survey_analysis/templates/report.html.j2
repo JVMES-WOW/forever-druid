@@ -59,7 +59,6 @@
   <section class="mechanics-section">
     <div class="section-copy"><p class="eyebrow">WHAT TO KEEP</p><h2>There are real wins in the revealed direction.</h2><p>The criticism is not a rejection of everything new. Several individual ideas are well received and give the design a foundation to build on.</p></div>
     <div class="keep-grid">
-      <article><strong>{{ "%.1f"|format(mechanic_summary["Combo points being stored on the player"]) }}%</strong><span>positive on combo points stored on the player</span></article>
       <article><strong>{{ "%.1f"|format(mechanic_summary["Clearcasting / Omen of Clarity"]) }}%</strong><span>positive on Clearcasting / Omen</span></article>
       <article><strong>{{ "%.1f"|format(mechanic_summary["Tiger's Fury"]) }}%</strong><span>positive on Tiger’s Fury</span></article>
       <article><strong>{{ "%.1f"|format(mechanic_summary["Rip/Rake and the bleed emphasis"]) }}%</strong><span>positive on the bleed emphasis</span></article>
@@ -73,8 +72,22 @@
     <div class="recommendations">
       <article><b>1</b><div><h3>Give Cat a reliable activity engine.</h3><p>Test powershifting, faster or resettable Tiger’s Fury, richer Clearcasting interactions, bleed-driven resource gains, and other resource-conversion ideas against the same goal: less empty time with meaningful choices.</p></div></article>
       <article><b>2</b><div><h3>Make shifting feel useful, not merely thematic.</h3><p>Cat/Bear/caster weaving and hybrid off-tanking matter independently of literal powershifting. Form changes should create decisions rather than punish the player.</p></div></article>
-      <article><b>3</b><div><h3>Keep the good ideas, then make them active.</h3><p>Player-stored combo points, Clearcasting, Tiger’s Fury, and bleed identity are strong starting points. The bleed direction needs interaction and payoff, not only passive maintenance.</p></div></article>
+      <article><b>3</b><div><h3>Keep the good ideas, then make them active.</h3><p>Clearcasting, Tiger’s Fury, and bleed identity are strong starting points. The bleed direction needs interaction and payoff, not only passive maintenance.</p></div></article>
       <article><b>4</b><div><h3>Handle AoE, utility, and scaling directly.</h3><p>Swipe scaling, dungeon usefulness, raid desirability, tanking, and numerical tuning are not automatically solved by changing the Cat rotation.</p></div></article>
+    </div>
+  </section>
+
+  <section class="language-section">
+    <div class="section-copy"><p class="eyebrow">RECURRING LANGUAGE</p><h2>The written answers describe the experience respondents want to preserve.</h2><p>Across the three open questions, recurring phrases connect the same ideas in different ways: activity, energy, skill expression, form use, weapon scaling, bleeds, and specific alternatives to the revealed Furor model.</p></div>
+    <div class="cloud-grid"><figure><img src="figures/wordcloud-q14.png" alt="Phrase cloud for what developers should understand, sized by distinct response mentions."><figcaption>Q14 · What developers should understand</figcaption></figure><figure><img src="figures/wordcloud-q15.png" alt="Phrase cloud for what should be preserved, sized by distinct response mentions."><figcaption>Q15 · What should be preserved</figcaption></figure><figure><img src="figures/wordcloud-q16.png" alt="Phrase cloud for requested changes, sized by distinct response mentions."><figcaption>Q16 · One requested change</figcaption></figure></div>
+    <p class="context-note">Phrase size reflects the number of distinct responses containing that two- or three-word phrase. These are language patterns, not separate survey votes; the extraction rules and aggregate phrase tables are available on the methods page.</p>
+  </section>
+
+  <section class="profile-section">
+    <div class="section-copy"><p class="eyebrow">RESPONDENT PROFILE</p><h2>This sample is heavily composed of self-described competitive and organized-raiding Feral players.</h2><p>{{ "%.1f"|format(100 * sample_counts.experience["High-end or competitive Feral player"] / metadata.row_count) }}% selected “high-end or competitive,” while {{ "%.1f"|format(100 * sample_counts.experience["Regular organized-raiding Feral player"] / metadata.row_count) }}% selected “regular organized-raiding.” That concentration helps explain whose design priorities this report captures most clearly.</p></div>
+    <div class="profile-grid">
+      <figure><img src="figures/experience-profile.svg" alt="Bar chart of respondents' self-described Feral experience levels."><figcaption>One self-selected experience description per respondent.</figcaption></figure>
+      <div class="profile-note"><h3>“Competitive” is a self-report, not a verified rating.</h3><p>The survey did not collect combat logs, parses, rankings, progression, account history, or any other external measure of performance. The category indicates how respondents identify their own relationship to Feral; it does not establish their actual competitive level.</p><p>Within this sample, the self-described high-end/competitive group was more negative about the current direction ({{ "%.1f"|format(subgroup_summary["High-end/competitive"]["Negative direction"]) }}%) than regular organized raiders ({{ "%.1f"|format(subgroup_summary["Regular raiding"]["Negative direction"]) }}%) or the combined casual/newer/other group ({{ "%.1f"|format(subgroup_summary["Casual/newer/other"]["Negative direction"]) }}%). That is a descriptive association, not evidence that competitive experience caused the difference.</p></div>
     </div>
   </section>
 
@@ -85,7 +98,7 @@
 
   <section class="sample-section panel">
     <div><p class="eyebrow">WHO ANSWERED</p><h2>An engaged Feral audience—not the entire player base.</h2></div>
-    <p>This report covers <strong>{{ metadata.row_count }} valid responses</strong>. {{ sample_counts.familiarity["I have played the current test build"] }} respondents played the test build, while {{ sample_counts.familiarity["I have closely reviewed talents, abilities, footage, or theorycrafting"] + sample_counts.familiarity["I have followed detailed community discussion"] }} closely reviewed or discussed it. The sample leans heavily toward organized raiders and experienced Feral players.</p>
+    <p>This report covers <strong>{{ metadata.row_count }} valid responses</strong>. {{ sample_counts.familiarity["I have played the current test build"] }} respondents played the test build, while {{ sample_counts.familiarity["I have closely reviewed talents, abilities, footage, or theorycrafting"] + sample_counts.familiarity["I have followed detailed community discussion"] }} closely reviewed or discussed it.</p>
     <p class="context-note">That makes it useful for understanding this engaged community’s priorities. It does not make it representative of every potential Forever player.</p>
   </section>
 

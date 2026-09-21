@@ -130,6 +130,7 @@ def plot_bar(frame: pd.DataFrame, label_col: str, value_col: str, path: Path, ti
 
 
 def plot_mechanics(table: pd.DataFrame) -> None:
+    table = table[~table.area.eq("Combo points being stored on the player")]
     pos = table[table.category.eq("Positive")][["area", "percent"]].rename(columns={"percent": "positive"})
     neg = table[table.category.eq("Negative")][["area", "percent"]].rename(columns={"percent": "negative"})
     data = pos.merge(neg).sort_values("negative")
@@ -169,6 +170,21 @@ def plot_topics(all_prev: pd.DataFrame) -> None:
     plot_bar(data.assign(label=labels), "label", "primary_share", FIG_DIR / "topic-prevalence.svg",
              "Exclusive primary-topic shares", xlabel="Share of responses with text (not survey vote percentages)", xlim=55,
              height=max(6, .38*len(data)+1.5))
+
+
+def plot_experience(table: pd.DataFrame) -> None:
+    labels = {
+        "High-end or competitive Feral player": "High-end / competitive",
+        "Regular organized-raiding Feral player": "Regular organized raider",
+        "Experienced but primarily casual Feral player": "Experienced, primarily casual",
+        "New or prospective Feral player": "New or prospective",
+        "I mainly play another Druid role/spec": "Mainly another Druid role",
+        "I mainly play another class": "Mainly another class",
+    }
+    data = table.assign(label=table.category.map(labels).fillna(table.category))
+    plot_bar(data, "label", "percent", FIG_DIR / "experience-profile.svg",
+             "Self-described Feral experience", colors=[COLORS["info"]] * len(data),
+             xlabel="Share of respondents", xlim=65, height=4.5)
 
 
 def make_wordclouds(freqs: dict[int, pd.DataFrame]) -> None:
@@ -306,7 +322,7 @@ def main() -> None:
     imp = tables["importance_matrix"].query("category == 'Essential + Very important'").sort_values("percent", ascending=False)
     plot_bar(imp, "quality", "percent", FIG_DIR / "gameplay-qualities.svg", "Most-valued gameplay qualities", xlim=92)
     plot_mechanics(tables["mechanic_reactions"]); plot_subgroups(tables["subgroups"])
-    plot_topics(all_prev); make_wordclouds(freqs)
+    plot_topics(all_prev); plot_experience(tables["experience"]); make_wordclouds(freqs)
 
     def pct(table, category): return float(table.loc[table.category.eq(category), "percent"].iloc[0])
     attention_map = dict(zip(tables["developer_attention"].category, tables["developer_attention"].percent))
@@ -334,6 +350,9 @@ def main() -> None:
     sample_counts = {name: dict(zip(table.category, table["count"]))
                      for name, table in tables.items()
                      if name in {"familiarity", "primary_interest", "experience"}}
+    subgroup_summary: dict[str, dict[str, float]] = {}
+    for _, row in tables["subgroups"].iterrows():
+        subgroup_summary.setdefault(row["group"], {})[row["outcome"]] = float(row["percent"])
     mechanic_summary = {
         row.area: float(row.percent)
         for row in tables["mechanic_reactions"].itertuples()
@@ -343,6 +362,7 @@ def main() -> None:
                                 tables["developer_attention"].percent))
     context = {"metadata": metadata, "tables": tables, "html_tables": html_tables, "current": current,
                "sample_counts": sample_counts,
+               "subgroup_summary": subgroup_summary,
                "mechanic_summary": mechanic_summary, "priority_summary": priority_summary,
                "featured_quotes": tables["anonymous_excerpts"].iloc[[1, 4, 5, 6]] if len(tables["anonymous_excerpts"]) >= 7 else tables["anonymous_excerpts"],
                "retrieved_display": datetime.fromisoformat(retrieved).astimezone(ZoneInfo("America/Chicago")).strftime("%B %-d, %Y at %-I:%M %p %Z"),
