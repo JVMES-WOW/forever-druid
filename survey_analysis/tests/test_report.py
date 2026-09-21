@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 def test_main_report_is_plain_language_and_context_is_not_evidence():
     template = (ROOT / "survey_analysis/templates/report.html.j2").read_text().casefold()
+    assert "—" not in template
     for jargon in ("tf-idf", "non-negative matrix", "wilson", "reconstruction error"):
         assert jargon not in template
     assert "were not coded, counted, quoted, or included" in template
@@ -38,6 +39,7 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
 
 def test_methods_page_keeps_technical_detail_and_downloads():
     methods = (ROOT / "survey_analysis/templates/methodology.html.j2").read_text().casefold()
+    assert "—" not in methods
     assert "tf-idf" in methods
     assert "wilson 95%" in methods
     assert "aggregate downloads" in methods
@@ -54,6 +56,8 @@ def test_methods_page_keeps_technical_detail_and_downloads():
     assert "subject to respondent privacy and consent" in methods
     assert "docs.google.com/spreadsheets" not in methods
     assert "source_spreadsheet_id" not in methods
+    assert "snapshot fingerprint (sha-256)" in methods
+    assert "does not authenticate the collection process" in methods
 
 
 def test_public_metadata_does_not_identify_private_source():

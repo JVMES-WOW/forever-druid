@@ -16,7 +16,7 @@
 <main>
   <section class="hero">
     <p class="eyebrow">COMMUNITY FEEDBACK · {{ metadata.row_count }} RESPONSES</p>
-    <h1>The clearest Feral feedback is about the <em>play loop</em>—not one required mechanic.</h1>
+    <h1>The clearest Feral feedback is about the <em>play loop</em>, not one required mechanic.</h1>
     <p class="deck">This report separates the argument over literal powershifting from the broader design question: how should Feral preserve activity, resource decisions, mastery, and a meaningful reason to use more than one form?</p>
     <div class="hero-actions"><a class="button" href="#story">Read the story</a><a class="ghost-button" href="methodology.html">See the evidence</a></div>
   </section>
@@ -36,14 +36,14 @@
     <div><p class="eyebrow">PROJECT INTENT</p><h2 id="origin-title">Turn a heated design argument into feedback developers can use.</h2></div>
     <div class="origin-copy">
       <p>I’m <strong>JVMES</strong> in the Druid Classic Discord. I started this project after watching the Forever reveal discussion collapse several different questions into a single yes-or-no fight over powershifting. My concern was broader: removing powershifting could also remove the activity, resource conversion, and form-based decisions that made Feral rewarding unless a deliberate replacement took their place.</p>
-      <p>I did not create the survey to prove that Classic powershifting must return. It was designed to test whether that concern was shared, distinguish attachment to a mechanic from attachment to the experience it produced, and keep separate issues—bleeds, hybrid play, AoE, utility, scaling, and raid value—from being treated as one complaint.</p>
+      <p>I did not create the survey to prove that Classic powershifting must return. It was designed to test whether that concern was shared, distinguish attachment to a mechanic from attachment to the experience it produced, and keep separate issues such as bleeds, hybrid play, AoE, utility, scaling, and raid value from being treated as one complaint.</p>
       <p>The intended output is a practical brief for Blizzard’s developers: not a petition for one implementation, but a map of where respondents are flexible, what they consistently prioritize, what the reveal already gets right, and which problems still need a direct design answer.</p>
     </div>
     <p class="context-note">Exports from <strong>#forever-general</strong>, <strong>#forever-feral-dps</strong>, and <strong>#forever-feral-tank</strong>, along with a <a href="https://www.reddit.com/r/classicwow/comments/1wljuy6/">public r/classicwow survey announcement</a>, document why and how the project began. They provide context only. They were not coded, counted, quoted, or included in the analysis; the survey responses are the evidence used below.</p>
   </section>
 
   <section class="chart-section">
-    <div class="section-copy"><p class="eyebrow">HOW THE REVEAL LANDED</p><h2>Broad sentiment is negative, even though many people would still try the spec.</h2><p>Interest in playing Feral is more resilient than excitement about the design. That gives developers room to win people back—but not a reason to dismiss the criticism.</p></div>
+    <div class="section-copy"><p class="eyebrow">HOW THE REVEAL LANDED</p><h2>Broad sentiment is negative, even though many people would still try the spec.</h2><p>Interest in playing Feral is more resilient than excitement about the design. That gives developers room to win people back, but not a reason to dismiss the criticism.</p></div>
     <div class="chart-grid">
       <figure><img src="figures/overall-direction.svg" alt="Donut chart showing the share of positive, mixed or neutral, negative, and insufficient-information reactions to the current Forever Feral direction."><figcaption>Overall direction · mutually exclusive answers · all {{ metadata.row_count }} responses</figcaption></figure>
       <figure><img src="figures/excitement.svg" alt="Donut chart showing whether respondents are more, equally, or less excited than about Classic Feral, including insufficient information."><figcaption>Excitement relative to Classic · mutually exclusive answers · all {{ metadata.row_count }} responses</figcaption></figure>
@@ -109,12 +109,12 @@
   </section>
 
   <section class="voices-section">
-    <div class="section-copy"><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Different problems and solutions—not one monolithic demand.</h2><p>These full excerpts were deliberately selected to represent contrasting design concerns. They were manually reviewed, stripped of accidental identifiers, and come only from respondents who allowed anonymous quotation.</p></div>
+    <div class="section-copy"><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Different problems and solutions, not one monolithic demand.</h2><p>These full excerpts were deliberately selected to represent contrasting design concerns. They were manually reviewed, stripped of accidental identifiers, and come only from respondents who allowed anonymous quotation.</p></div>
     <div class="quote-grid">{% for column in featured_quote_columns %}<div class="quote-column">{% for _, row in column.iterrows() %}<blockquote><span class="quote-label">{{ row.viewpoint }}</span><p>“{{ row.excerpt }}”</p><footer>{{ row.question }} · quoted with permission</footer></blockquote>{% endfor %}</div>{% endfor %}</div>
   </section>
 
   <section class="sample-section panel">
-    <div><p class="eyebrow">WHO ANSWERED</p><h2>An engaged Feral audience—not the entire player base.</h2></div>
+    <div><p class="eyebrow">WHO ANSWERED</p><h2>An engaged Feral audience, not the entire player base.</h2></div>
     <p>This report covers <strong>{{ metadata.row_count }} valid responses</strong> collected from {{ collection_start }} through {{ collection_end }}. {{ sample_counts.familiarity["I have played the current test build"] }} respondents played the test build, while {{ sample_counts.familiarity["I have closely reviewed talents, abilities, footage, or theorycrafting"] + sample_counts.familiarity["I have followed detailed community discussion"] }} closely reviewed or discussed it.</p>
     <p class="context-note">Recruitment through community channels produced a rapid, self-selected response. That makes the survey useful for understanding these engaged respondents’ priorities, but not representative of every potential Forever player.</p>
   </section>
