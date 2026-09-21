@@ -18,7 +18,8 @@ EMAIL = re.compile(r"\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b")
 
 def main() -> None:
     tracked = subprocess.check_output(["git", "ls-files"], cwd=ROOT, text=True).splitlines()
-    forbidden_paths = [p for p in tracked if "/data/raw/" in f"/{p}" or "/data/interim/" in f"/{p}" or p == "analysis_raw.csv"]
+    forbidden_paths = [p for p in tracked if "/data/raw/" in f"/{p}" or "/data/interim/" in f"/{p}"
+                       or p == "analysis_raw.csv" or "discordkit" in p.casefold()]
     if forbidden_paths:
         raise SystemExit(f"Private files are tracked: {forbidden_paths}")
     issues = []

@@ -19,6 +19,7 @@ SRC = ROOT / "survey_analysis" / "src"
 sys.path.insert(0, str(SRC))
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -42,8 +43,16 @@ FIG_DIR = PUBLIC_DIR / "figures"
 TABLE_DIR = PUBLIC_DIR / "tables"
 TEMPLATE_DIR = ROOT / "survey_analysis" / "templates"
 
-COLORS = {"positive": "#1b7f79", "neutral": "#7a7f87", "negative": "#c44e52",
-          "info": "#4472a5", "gold": "#c58c21", "purple": "#6c5aa8"}
+COLORS = {"positive": "#6ca86c", "neutral": "#7f8c80", "negative": "#c35c55",
+          "info": "#658bc8", "gold": "#d8ad5d", "purple": "#a48bc0"}
+
+plt.rcParams.update({
+    "figure.facecolor": "#0e1712", "axes.facecolor": "#0e1712",
+    "savefig.facecolor": "#0e1712", "text.color": "#e9ebdf",
+    "axes.labelcolor": "#aeb9aa", "axes.edgecolor": "#ffffff22",
+    "xtick.color": "#aeb9aa", "ytick.color": "#d8ded3",
+    "grid.color": "#ffffff22", "font.family": "DejaVu Sans",
+})
 
 
 def ensure_dirs() -> None:
@@ -107,7 +116,8 @@ def plot_bar(frame: pd.DataFrame, label_col: str, value_col: str, path: Path, ti
         annotation = f"{row[value_col]:.1f}{suffix}"
         if "count" in row and "denominator" in row:
             annotation += f"  ({int(row['count'])}/{int(row['denominator'])})"
-        ax.text(bar.get_width() + 0.8, bar.get_y() + bar.get_height()/2, annotation, va="center", fontsize=9)
+        ax.text(bar.get_width() + 0.8, bar.get_y() + bar.get_height()/2, annotation,
+                va="center", fontsize=9, color="#d8ded3")
     ax.set_title(title, loc="left", fontweight="bold", pad=12)
     ax.set_xlabel(xlabel)
     ax.spines[["top", "right", "left"]].set_visible(False)
@@ -128,11 +138,11 @@ def plot_mechanics(table: pd.DataFrame) -> None:
     ax.barh(y, -data.negative, color=COLORS["negative"], label="Negative")
     ax.barh(y, data.positive, color=COLORS["positive"], label="Positive")
     ax.set_yticks(y, [re.sub(r"\s+", " ", x).replace("possibilities", "") for x in data.area])
-    ax.axvline(0, color="#333", lw=.8)
+    ax.axvline(0, color="#d8ad5d88", lw=.8)
     ax.set_xlim(-85, 85)
     ax.set_xticks([-80,-60,-40,-20,0,20,40,60,80], ["80%","60%","40%","20%","0","20%","40%","60%","80%"])
     ax.set_title("Mechanic reactions: negative vs. positive", loc="left", fontweight="bold")
-    ax.legend(frameon=False, ncol=2, loc="lower right")
+    ax.legend(frameon=False, ncol=2, loc="lower right", labelcolor="#d8ded3")
     ax.spines[["top","right","left","bottom"]].set_visible(False)
     ax.grid(axis="x", alpha=.18)
     fig.tight_layout()
@@ -145,7 +155,7 @@ def plot_subgroups(table: pd.DataFrame) -> None:
     fig, ax = plt.subplots(figsize=(10, 6.4))
     y = np.arange(len(data))
     ax.errorbar(data.percent, y, xerr=[data.percent-data.ci_low, data.ci_high-data.percent],
-                fmt="o", color=COLORS["purple"], ecolor="#afa7cf", capsize=3)
+                fmt="o", color="#d8ad5d", ecolor="#9f8a57", capsize=3)
     ax.set_yticks(y, [f"{g} (n={n})" for g,n in zip(data.group, data.denominator)])
     ax.set_xlim(0, 100); ax.set_xlabel("Negative toward current direction (%) with Wilson 95% CI")
     ax.set_title("Descriptive subgroup differences", loc="left", fontweight="bold")
@@ -165,12 +175,15 @@ def make_wordclouds(freqs: dict[int, pd.DataFrame]) -> None:
     wc_paths = []
     for q, frame in freqs.items():
         frequencies = dict(zip(frame.term, frame.response_mentions))
-        cloud = WordCloud(width=1800, height=1100, background_color="white", colormap="viridis",
+        cloud_colors = LinearSegmentedColormap.from_list(
+            "forever", ["#6ca86c", "#d8ad5d", "#e9ebdf", "#c87b47"]
+        )
+        cloud = WordCloud(width=1800, height=1100, background_color="#0e1712", colormap=cloud_colors,
                           random_state=SEED, prefer_horizontal=.9, collocations=False,
                           max_words=100).generate_from_frequencies(frequencies)
         path = FIG_DIR / f"wordcloud-q{q}.png"
         cloud.to_file(str(path)); wc_paths.append(path)
-    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6), facecolor="#0e1712")
     for ax, q, path in zip(axes, freqs, wc_paths):
         ax.imshow(plt.imread(path)); ax.axis("off"); ax.set_title(f"Q{q}", fontsize=18, fontweight="bold")
     fig.tight_layout(); fig.savefig(FIG_DIR / "wordclouds-combined.png", dpi=220, bbox_inches="tight"); plt.close(fig)
@@ -336,11 +349,23 @@ def main() -> None:
     sample_counts = {name: dict(zip(table.category, table["count"]))
                      for name, table in tables.items()
                      if name in {"familiarity", "primary_interest", "experience"}}
+    mechanic_summary = {
+        row.area: float(row.percent)
+        for row in tables["mechanic_reactions"].itertuples()
+        if row.category == "Positive"
+    }
+    priority_summary = dict(zip(tables["developer_attention"].category,
+                                tables["developer_attention"].percent))
     context = {"metadata": metadata, "tables": tables, "html_tables": html_tables, "current": current,
                "sample_counts": sample_counts,
+               "mechanic_summary": mechanic_summary, "priority_summary": priority_summary,
+               "featured_quotes": tables["anonymous_excerpts"].iloc[[1, 4, 5, 6]] if len(tables["anonymous_excerpts"]) >= 7 else tables["anonymous_excerpts"],
                "retrieved_display": datetime.fromisoformat(retrieved).astimezone(ZoneInfo("America/Chicago")).strftime("%B %-d, %Y at %-I:%M %p %Z"),
                "collection_start": duplicate_summary["collection_start"], "collection_end": duplicate_summary["collection_end"]}
     (PUBLIC_DIR / "index.html").write_text(template.render(**context), encoding="utf-8")
+    methods = env.get_template("methodology.html.j2")
+    (PUBLIC_DIR / "methodology.html").write_text(methods.render(**context), encoding="utf-8")
+    shutil.copyfile(TEMPLATE_DIR / "report.css", PUBLIC_DIR / "report.css")
     # Matplotlib SVGs and templated HTML can contain harmless trailing spaces;
     # normalize generated text so `git diff --check` remains a useful gate.
     for generated in PUBLIC_DIR.rglob("*"):

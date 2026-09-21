@@ -2,169 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A reproducible public analysis of {{ metadata.row_count }} responses to the Forever Feral Community Feedback survey.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="What {{ metadata.row_count }} engaged Feral players like, dislike, and want changed about the currently revealed Forever design.">
   <title>Forever Feral Community Feedback</title>
-  <style>
-    :root { --ink:#17212b; --muted:#5d6873; --paper:#f7f5ef; --card:#fff; --green:#1b7f79; --red:#b4474c; --blue:#345f88; --line:#d9d7cf; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.62; }
-    header { color:white; background:linear-gradient(135deg,#173a34,#315b50 65%,#84672f); padding:4.8rem 1.2rem 4rem; }
-    .wrap { width:min(1120px,calc(100% - 2rem)); margin:auto; }
-    header .wrap { width:min(920px,calc(100% - 2rem)); }
-    .eyebrow { letter-spacing:.12em; text-transform:uppercase; font-size:.78rem; font-weight:800; color:#d9c995; }
-    h1 { font-family:Georgia,serif; font-size:clamp(2.45rem,7vw,5.2rem); line-height:1.02; margin:.5rem 0 1rem; max-width:13ch; }
-    .deck { font-size:clamp(1.08rem,2.2vw,1.35rem); max-width:720px; color:#edf4f1; }
-    nav { position:sticky; top:0; z-index:4; background:rgba(247,245,239,.95); border-bottom:1px solid var(--line); backdrop-filter:blur(10px); overflow-x:auto; white-space:nowrap; }
-    nav .wrap { display:flex; gap:1.25rem; padding:.75rem 0; }
-    nav a { color:#31443f; font-size:.88rem; font-weight:700; text-decoration:none; }
-    main { padding:2rem 0 5rem; }
-    section { margin:4.2rem 0; scroll-margin-top:4rem; }
-    h2 { font-family:Georgia,serif; font-size:clamp(1.8rem,4vw,2.75rem); line-height:1.15; margin:0 0 .8rem; }
-    h3 { margin:2.2rem 0 .55rem; }
-    p, li { max-width:78ch; }
-    .lead { font-size:1.18rem; color:#33413e; }
-    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:1.8rem 0; }
-    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.15rem; box-shadow:0 5px 20px rgba(20,40,32,.04); }
-    .card strong { display:block; font-size:1.75rem; line-height:1.1; color:#214f46; }
-    .card span { display:block; color:var(--muted); font-size:.9rem; margin-top:.35rem; }
-    .finding { background:#e8f1ee; border-left:5px solid var(--green); border-radius:4px 12px 12px 4px; padding:1.2rem 1.35rem; margin:1.5rem 0; }
-    .caveat { background:#f4ead9; border-left-color:#a97926; }
-    figure { background:white; border:1px solid var(--line); border-radius:14px; padding:1rem; margin:1.4rem 0 2.4rem; overflow:hidden; }
-    figure img { display:block; width:100%; height:auto; }
-    figcaption { color:var(--muted); font-size:.86rem; margin:.6rem .3rem 0; }
-    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
-    .table-scroll { overflow:auto; background:white; border:1px solid var(--line); border-radius:12px; margin:1rem 0 2rem; }
-    .data-table { width:100%; border-collapse:collapse; font-size:.87rem; }
-    .data-table th { text-align:left; background:#eef1ed; position:sticky; top:0; }
-    .data-table th,.data-table td { padding:.65rem .75rem; border-bottom:1px solid #e5e5df; vertical-align:top; }
-    .download { display:inline-block; margin:.2rem .35rem .2rem 0; color:#245b7a; font-weight:700; }
-    blockquote { margin:1rem 0; padding:1rem 1.2rem; background:#fff; border-left:4px solid #6c5aa8; border-radius:4px 10px 10px 4px; }
-    code { font-size:.88em; background:#ecebe5; padding:.1rem .3rem; border-radius:4px; }
-    footer { border-top:1px solid var(--line); color:var(--muted); padding:2rem 0 4rem; font-size:.9rem; }
-    @media (max-width:800px) { .cards { grid-template-columns:1fr 1fr; } .grid2 { grid-template-columns:1fr; } header { padding-top:3rem; } }
-    @media (max-width:480px) { .cards { grid-template-columns:1fr; } figure { padding:.35rem; margin-left:-.35rem; margin-right:-.35rem; } .wrap { width:min(100% - 1.2rem,1120px); } }
-  </style>
+  <link rel="stylesheet" href="report.css">
 </head>
 <body>
-<header><div class="wrap">
-  <div class="eyebrow">Community survey · independent analysis</div>
-  <h1>Forever Feral feedback</h1>
-  <p class="deck">What this engaged Feral community likes, dislikes, and wants changed about the currently revealed design.</p>
-</div></header>
-<nav aria-label="Report sections"><div class="wrap">
-  <a href="#summary">Summary</a><a href="#sample">Sample</a><a href="#headline">Headline results</a>
-  <a href="#powershifting">Powershifting</a><a href="#mechanics">Mechanics</a><a href="#subgroups">Subgroups</a>
-  <a href="#text">Free response</a><a href="#methods">Methods</a><a href="#downloads">Downloads</a>
-</div></nav>
-<main class="wrap">
-<section id="summary">
-  <h2>Executive summary</h2>
-  <p class="lead">The updated data supports a nuanced central finding: the strongest rejection is aimed at the apparent loss of activity, resource agency, mastery, and shapeshifting identity—not a single unanimous demand for one historical mechanic.</p>
-  <div class="cards">
-    <div class="card"><strong>{{ "%.1f"|format(current["Negative toward current direction"]) }}%</strong><span>negative toward the current direction</span></div>
-    <div class="card"><strong>{{ "%.1f"|format(current["Less excited than Classic"]) }}%</strong><span>less excited than for Classic Feral</span></div>
-    <div class="card"><strong>{{ "%.1f"|format(current["Functional replacement acceptable"]) }}%</strong><span>accept a functional replacement for literal powershifting</span></div>
-    <div class="card"><strong>{{ "%.1f"|format(current["Specifically want Classic powershifting restored"]) }}%</strong><span>specifically ask for Classic-style powershifting</span></div>
-  </div>
-  <div class="finding"><strong>What the evidence supports.</strong> Most respondents do not insist on literal powershifting, but that does not mean its removal is well received. The revealed implementation is widely seen as too slow, passive, or shallow. An alternative has room to succeed if it restores activity, meaningful resource conversion, moment-to-moment decisions, mastery, and a recognizably shapeshifting identity.</div>
-  <p>Positive findings are real and should not be lost: combo points on the player, Clearcasting/Omen, Tiger’s Fury, and a stronger bleed identity all draw more positive than negative reaction. Respondents often approve of a broad direction while questioning its current execution—for example, liking bleeds as an identity but not finding the revealed bleed emphasis active enough.</p>
-</section>
+<header class="topbar">
+  <a class="brand" href="../"><span class="crest" aria-hidden="true">❦</span><span><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></span></a>
+  <nav aria-label="Main navigation"><a href="../">Talents</a><a href="../abilities.html">Abilities</a><a class="active" href="./" aria-current="page">Feral survey</a></nav>
+  <a class="method-link" href="methodology.html">Methods &amp; downloads</a>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">COMMUNITY FEEDBACK · {{ metadata.row_count }} RESPONSES</p>
+    <h1>Feral players are asking for <em>something to do.</em> The powershifting debate is only part of it.</h1>
+    <p class="deck">The community is divided over literal powershifting. It is far less divided over what feels missing: activity, resource decisions, mastery, and the sense that a Druid should use more than one form.</p>
+    <div class="hero-actions"><a class="button" href="#story">Read the story</a><a class="ghost-button" href="methodology.html">See the evidence</a></div>
+  </section>
 
-<section id="sample">
-  <h2>Sample and data quality</h2>
-  <p>The analysis covers <strong>{{ metadata.row_count }} valid responses</strong> collected from {{ collection_start }} through {{ collection_end }}. A valid response is a row with a populated timestamp; allocated but empty sheet rows are not counted.</p>
-  <div class="finding caveat"><strong>Who this represents.</strong> This is a self-selected sample of engaged Feral players, not a probability sample of all current or potential Forever players. Descriptive percentages should not be generalized to the entire player base without that caveat.</div>
-  <p>The sample is unusually informed: {{ sample_counts.familiarity["I have played the current test build"] }} respondents played the current test build, {{ sample_counts.familiarity["I have closely reviewed talents, abilities, footage, or theorycrafting"] }} closely reviewed source material or theorycrafting, and {{ sample_counts.familiarity["I have followed detailed community discussion"] }} followed detailed community discussion. Its largest primary-interest groups are Cat DPS ({{ sample_counts.primary_interest["Cat DPS in organized PvE"] }}), hybrid/off-tank play ({{ sample_counts.primary_interest["Hybrid Cat/Bear or off-tank play"] }}), and Bear tanking ({{ sample_counts.primary_interest["Bear tank in organized PvE"] }}). Experience is concentrated among high-end/competitive ({{ sample_counts.experience["High-end or competitive Feral player"] }}) and regular organized-raiding players ({{ sample_counts.experience["Regular organized-raiding Feral player"] }}).</p>
-  <p>The duplicate audit found {{ metadata.exact_duplicate_rows }} rows in exact duplicate-answer groups. {{ metadata.duplicate_timestamp_rows }} rows share a timestamp with another row; timestamp collisions alone were not treated as duplicates because their answers differ. Missingness is reported per question below.</p>
-  <details><summary>Missingness by question</summary><div class="table-scroll">{{ html_tables.missingness|safe }}</div></details>
-  <p><a class="download" href="tables/familiarity.csv">Familiarity CSV</a><a class="download" href="tables/primary_interest.csv">Primary interest CSV</a><a class="download" href="tables/experience.csv">Experience CSV</a><a class="download" href="tables/versions_played.csv">Versions played CSV</a></p>
-</section>
+  <section class="origin panel" aria-labelledby="origin-title">
+    <div><p class="eyebrow">WHY THIS SURVEY EXISTS</p><h2 id="origin-title">Discord had a sprawling debate. The survey gave it structure.</h2></div>
+    <p>Discussion moved quickly across the Druid Classic Discord channels <strong>#forever-general</strong>, <strong>#forever-feral-dps</strong>, and <strong>#forever-feral-tank</strong> during September 12–20, 2026. Several different arguments were being compressed into one: powershifting, energy downtime, bleed gameplay, hybrid identity, AoE, and raid value.</p>
+    <p class="context-note">The three archived channel exports are background for why this project was started. They were not coded, counted, quoted, or included in the survey analysis. The survey responses are the evidence used below.</p>
+  </section>
 
-<section id="headline">
-  <h2>Headline structured results</h2>
-  <div class="grid2">
-    <figure><img src="figures/overall-direction.svg" alt="Horizontal bar chart comparing negative, positive, mixed or neutral, and insufficient-information reactions to the current direction."><figcaption>All categories retain the full denominator; “not enough information” is never silently dropped.</figcaption></figure>
-    <figure><img src="figures/likelihood-to-play.svg" alt="Horizontal bar chart of likelihood to regularly play Feral, including would play, unsure, would not play, and not applicable."><figcaption>Intent to play is less negative than broad sentiment, but substantial uncertainty remains.</figcaption></figure>
-  </div>
-  <figure><img src="figures/excitement.svg" alt="Horizontal bar chart showing excitement relative to Classic Feral, including more, equal, less, and insufficient information."><figcaption>Comparison with Classic Feral is markedly negative in this engaged sample.</figcaption></figure>
-</section>
+  <section id="story" class="story-section">
+    <p class="eyebrow">THE SHORT VERSION</p>
+    <h2>Three results tell the story.</h2>
+    <div class="story-grid">
+      <article class="story-card"><span>01</span><strong>{{ "%.1f"|format(current["Negative toward current direction"]) }}%</strong><h3>The reveal is landing poorly.</h3><p>A majority feels negative about the current direction, and {{ "%.1f"|format(current["Less excited than Classic"]) }}% feel less excited than they do about Classic Feral.</p></article>
+      <article class="story-card"><span>02</span><strong>{{ "%.1f"|format(current["Functional replacement acceptable"]) }}%</strong><h3>Most do not require literal powershifting.</h3><p>They would accept a different mechanic if it delivers comparable activity and meaningful resource decisions. Another {{ "%.1f"|format(current["Prefer non-powershifting if engaging"]) }}% actively prefer an engaging non-powershifting design.</p></article>
+      <article class="story-card"><span>03</span><strong>{{ "%.1f"|format(current["Negative reaction to Furor/loss of powershifting"]) }}%</strong><h3>But the current replacement is not enough.</h3><p>Openness to a new solution should not be mistaken for approval of the revealed Furor and energy model.</p></article>
+    </div>
+    <div class="thesis"><p>The clearest reading is not “everyone wants Classic powershifting back.” It is: <strong>if powershifting goes away, the replacement still has to make Feral active, thoughtful, expressive, and recognizably Druid.</strong></p></div>
+  </section>
 
-<section id="powershifting">
-  <h2>Powershifting nuance</h2>
-  <p>Respondents separate the historical mechanic from the properties it supplied. {{ "%.1f"|format(current["Functional replacement acceptable"]) }}% do not require literal powershifting if another mechanic supplies comparable activity and resource decisions; {{ "%.1f"|format(current["Prefer non-powershifting if engaging"]) }}% affirmatively prefer a non-powershifting design if it retains depth. Only {{ "%.1f"|format(current["Specifically want Classic powershifting restored"]) }}% choose literal restoration as their closest view.</p>
-  <p>At the same time, {{ "%.1f"|format(current["Negative reaction to Furor/loss of powershifting"]) }}% react negatively to Furor and the loss or reduction of powershifting. Read together, these answers reject the inference that openness to alternatives equals approval of the current replacement.</p>
-  <figure><img src="figures/powershifting-preference.svg" alt="Horizontal bar chart comparing functional replacement, engaging non-powershifting, literal Classic restoration, slower rotation, no preference, and insufficient information."><figcaption>These are mutually exclusive Q8 choices (n={{ metadata.row_count }}).</figcaption></figure>
-  <p>Q15 topic assignments involving powershifting were separately polarity-coded because topic models are weak at negation. “Preserve powershifting” and “preserve its removal” are not treated as the same conclusion.</p>
-  <details><summary>Q15 powershifting polarity table</summary><div class="table-scroll">{{ html_tables.q15_powershift_polarity|safe }}</div></details>
-</section>
+  <section class="chart-section">
+    <div class="section-copy"><p class="eyebrow">HOW THE REVEAL LANDED</p><h2>Broad sentiment is negative, even though many people would still try the spec.</h2><p>Interest in playing Feral is more resilient than excitement about the design. That gives developers room to win people back—but not a reason to dismiss the criticism.</p></div>
+    <div class="chart-grid">
+      <figure><img src="figures/overall-direction.svg" alt="Bar chart comparing reactions to the current Forever Feral direction."><figcaption>Overall direction · all {{ metadata.row_count }} responses</figcaption></figure>
+      <figure><img src="figures/excitement.svg" alt="Bar chart comparing excitement with Classic Feral."><figcaption>Excitement relative to Classic · all {{ metadata.row_count }} responses</figcaption></figure>
+    </div>
+    <figure class="wide-chart"><img src="figures/likelihood-to-play.svg" alt="Bar chart showing likelihood to main or regularly play Feral."><figcaption>Would play: {{ "%.1f"|format(current["Would probably/definitely play"]) }}% · Unsure and not-applicable answers remain visible in the full data.</figcaption></figure>
+  </section>
 
-<section id="mechanics">
-  <h2>What respondents value—and where the design falls short</h2>
-  <figure><img src="figures/gameplay-qualities.svg" alt="Horizontal bars ranking gameplay qualities by the share calling each essential or very important."><figcaption>Full five-level distributions are in the downloadable matrix table.</figcaption></figure>
-  <figure><img src="figures/mechanic-reactions.svg" alt="Diverging bar chart comparing positive and negative reaction to ten revealed mechanics."><figcaption>Neutral and not-enough-information responses remain in the denominator and are available in the full table.</figcaption></figure>
-  <p>The strongest positives are combo points stored on the player and Clearcasting/Omen. Tiger’s Fury and bleed emphasis are also net positive. The sharpest negatives concern Furor/powershifting, energy generation and pooling, AoE/Swipe, and weaving possibilities. The current design also receives broad disagreement that it preserves Feral’s shapeshifting identity or provides enough engaging decisions, appropriate downtime, and room for mastery.</p>
-  <figure><img src="figures/developer-attention.svg" alt="Horizontal bars showing the ten most selected areas for developer attention."><figcaption>Q12 allowed up to three selections; percentages can legitimately sum above 100%.</figcaption></figure>
-  <p><a class="download" href="tables/importance_matrix.csv">Importance matrix CSV</a><a class="download" href="tables/agreement_matrix.csv">Agreement matrix CSV</a><a class="download" href="tables/mechanic_reactions.csv">Mechanic reactions CSV</a><a class="download" href="tables/developer_attention.csv">Attention selections CSV</a><a class="download" href="tables/directions_to_test.csv">Test directions CSV</a></p>
-</section>
+  <section class="split-section">
+    <div class="section-copy"><p class="eyebrow">THE POWERSHIFTING QUESTION</p><h2>The mechanic is negotiable. The experience is not.</h2><p>Only {{ "%.1f"|format(current["Specifically want Classic powershifting restored"]) }}% chose literal Classic-style restoration as their closest view. Most respondents leave room for another answer—but they expect that answer to keep the rotation moving and reward good decisions.</p></div>
+    <figure><img src="figures/powershifting-preference.svg" alt="Bar chart comparing six views of powershifting and possible replacements."><figcaption>One choice per respondent. “Not enough information” is retained.</figcaption></figure>
+  </section>
 
-<section id="subgroups">
-  <h2>Subgroup comparisons</h2>
-  <p>Differences below are descriptive, not causal. Every displayed subgroup has at least 30 respondents; each major proportion includes a Wilson 95% confidence interval. Overlapping intervals and self-selection limit what can be inferred.</p>
-  <figure><img src="figures/subgroups.svg" alt="Dot and interval plot of negative-direction percentages across gameplay-interest, experience, familiarity, and powershifting-preference subgroups."><figcaption>Denominators appear in labels. The downloadable table also includes likelihood to play and excitement outcomes.</figcaption></figure>
-  <p><a class="download" href="tables/subgroups.csv">All subgroup estimates CSV</a></p>
-</section>
+  <section class="mechanics-section">
+    <div class="section-copy"><p class="eyebrow">WHAT TO KEEP</p><h2>There are real wins in the revealed direction.</h2><p>The criticism is not a rejection of everything new. Several individual ideas are well received and give the design a foundation to build on.</p></div>
+    <div class="keep-grid">
+      <article><strong>{{ "%.1f"|format(mechanic_summary["Combo points being stored on the player"]) }}%</strong><span>positive on combo points stored on the player</span></article>
+      <article><strong>{{ "%.1f"|format(mechanic_summary["Clearcasting / Omen of Clarity"]) }}%</strong><span>positive on Clearcasting / Omen</span></article>
+      <article><strong>{{ "%.1f"|format(mechanic_summary["Tiger's Fury"]) }}%</strong><span>positive on Tiger’s Fury</span></article>
+      <article><strong>{{ "%.1f"|format(mechanic_summary["Rip/Rake and the bleed emphasis"]) }}%</strong><span>positive on the bleed emphasis</span></article>
+    </div>
+    <figure class="wide-chart"><img src="figures/mechanic-reactions.svg" alt="Two-sided chart comparing positive and negative reactions to individual mechanics."><figcaption>Positive and negative reactions are shown side by side; neutral and not-enough-information answers remain in the downloadable table.</figcaption></figure>
+  </section>
 
-<section id="text">
-  <h2>Free-response themes</h2>
-  <p>Word clouds size each term by the number of distinct responses mentioning it, not by raw repetition. Survey boilerplate is removed and meaningful phrases—including “Tiger’s Fury,” “energy pooling,” “skill expression,” “Bear weaving,” and “raid utility”—are preserved.</p>
-  <div class="grid2">
-    <figure><img src="figures/wordcloud-q14.png" alt="Word cloud for what developers should understand, sized by distinct response mentions."><figcaption>Q14: what developers should understand.</figcaption></figure>
-    <figure><img src="figures/wordcloud-q15.png" alt="Word cloud for what should be preserved, sized by distinct response mentions."><figcaption>Q15: what should be preserved.</figcaption></figure>
-  </div>
-  <figure><img src="figures/wordcloud-q16.png" alt="Word cloud for the one desired mechanic or design change, sized by distinct response mentions."><figcaption>Q16: one requested change and intended experience.</figcaption></figure>
-  <h3>Transparent thematic validation</h3>
-  <p>Rule-based mention coding checks the model against 14 predeclared themes. Categories are non-exclusive and ambiguous wording is not forced into a directional position. This layer distinguishes literal restoration, a functional equivalent, and non-powershifting-but-engaging requests from related complaints about energy, APM, mastery, identity, weaving, bleeds, AoE, hybrid play, Rogue similarity, tuning, and raid utility.</p>
-  <div class="table-scroll">{{ html_tables.thematic_validation|safe }}</div>
-  <h3>Topic models</h3>
-  <p>Q14, Q15, and Q16 are modeled separately with TF-IDF unigrams/bigrams and non-negative matrix factorization. Candidate solutions from 4–10 topics were compared for stability, term diversity, redundancy, and reconstruction error. Labels were assigned only after inspecting top terms and high-weight responses. Primary-topic shares are an interpretive summary—not survey vote percentages—and the downloadable tables retain soft weights and secondary topics.</p>
-  <figure><img src="figures/topic-prevalence.svg" alt="Horizontal bars showing exclusive primary-topic shares for separately modeled Q14, Q15, and Q16 responses."><figcaption>Each response receives one primary topic for this chart; many responses mix themes.</figcaption></figure>
-  <p><a class="download" href="tables/topic_prevalence.csv">Topic prevalence CSV</a><a class="download" href="tables/topic_terms_q14.csv">Q14 terms</a><a class="download" href="tables/topic_terms_q15.csv">Q15 terms</a><a class="download" href="tables/topic_terms_q16.csv">Q16 terms</a><a class="download" href="tables/topic_assignments_q14.csv">Q14 soft weights</a></p>
-  <h3>Anonymous representative excerpts</h3>
-  {% if tables.anonymous_excerpts|length %}
-    {% for _, row in tables.anonymous_excerpts.iterrows() %}<blockquote>“{{ row.excerpt }}” <small>— {{ row.question }}, quoted with permission</small></blockquote>{% endfor %}
-  {% else %}<p>No excerpts were published in this build pending final manual privacy review.</p>{% endif %}
-</section>
+  <section class="priority-section">
+    <div class="section-copy"><p class="eyebrow">WHAT NEEDS WORK</p><h2>Fix the play loop first. Treat the other concerns as their own problems.</h2><p>Rotation and activity dominate the requested attention. Energy and powershifting are closely related, but AoE, hybrid play, talents, and raid value should not be reduced to the same argument.</p></div>
+    <figure><img src="figures/developer-attention.svg" alt="Bar chart of the most-selected areas needing developer attention."><figcaption>Respondents could select up to three areas, so these percentages are not meant to add to 100%.</figcaption></figure>
+    <div class="recommendations">
+      <article><b>1</b><div><h3>Give Cat a reliable activity engine.</h3><p>Test powershifting, faster or resettable Tiger’s Fury, richer Clearcasting interactions, bleed-driven resource gains, and other resource-conversion ideas against the same goal: less empty time with meaningful choices.</p></div></article>
+      <article><b>2</b><div><h3>Make shifting feel useful, not merely thematic.</h3><p>Cat/Bear/caster weaving and hybrid off-tanking matter independently of literal powershifting. Form changes should create decisions rather than punish the player.</p></div></article>
+      <article><b>3</b><div><h3>Keep the good ideas, then make them active.</h3><p>Player-stored combo points, Clearcasting, Tiger’s Fury, and bleed identity are strong starting points. The bleed direction needs interaction and payoff, not only passive maintenance.</p></div></article>
+      <article><b>4</b><div><h3>Handle AoE, utility, and scaling directly.</h3><p>Swipe scaling, dungeon usefulness, raid desirability, tanking, and numerical tuning are not automatically solved by changing the Cat rotation.</p></div></article>
+    </div>
+  </section>
 
-<section id="change">
-  <h2>Change from the earlier 675-response snapshot</h2>
-  <p>The additional responses do not materially overturn the earlier conclusions. Percentage-point changes are shown below; the live snapshot, rather than the earlier figures, is authoritative for this report.</p>
-  <div class="table-scroll">{{ html_tables.comparison_675|safe }}</div>
-  <p><a class="download" href="tables/comparison_675.csv">Comparison CSV</a></p>
-</section>
+  <section class="voices-section">
+    <div class="section-copy"><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Different solutions, the same demand for intention.</h2><p>These excerpts were manually reviewed, stripped of accidental identifiers, and come only from respondents who allowed anonymous quotation.</p></div>
+    <div class="quote-grid">{% for _, row in featured_quotes.iterrows() %}<blockquote><p>“{{ row.excerpt }}”</p><footer>{{ row.question }} · quoted with permission</footer></blockquote>{% endfor %}</div>
+  </section>
 
-<section id="methods">
-  <h2>Methodology and limitations</h2>
-  <ul>
-    <li><strong>Source.</strong> Public CSV export of spreadsheet <code>{{ metadata.source_spreadsheet_id }}</code>, worksheet <code>{{ metadata.worksheet }}</code>, retrieved {{ retrieved_display }}.</li>
-    <li><strong>Snapshot.</strong> {{ metadata.row_count }} populated timestamp rows × {{ metadata.column_count }} columns; SHA-256 <code>{{ metadata.sha256 }}</code>.</li>
-    <li><strong>Denominators.</strong> Counts and percentages retain “not enough information.” Multiselect tables clearly permit totals above 100%.</li>
-    <li><strong>Uncertainty.</strong> Wilson 95% intervals are shown for major subgroup proportions. They quantify sampling variability conditional on this sample, not representativeness.</li>
-    <li><strong>Qualitative analysis.</strong> Fixed random seed {{ metadata.random_seed }}. NMF topics are descriptive summaries; negation and mixed statements require polarity checks and human review.</li>
-    <li><strong>Privacy.</strong> Raw responses are ignored by Git. Published excerpts require explicit Q17 permission and manual identifier screening. Aggregate-only responses are never quoted.</li>
-    <li><strong>Limitations.</strong> Self-selection, community-channel reach, response dependence, question wording, and the still-evolving revealed build all constrain interpretation. Subgroup differences are not causal effects.</li>
-  </ul>
-</section>
+  <section class="sample-section panel">
+    <div><p class="eyebrow">WHO ANSWERED</p><h2>An engaged Feral audience—not the entire player base.</h2></div>
+    <p>This report covers <strong>{{ metadata.row_count }} valid responses</strong>. {{ sample_counts.familiarity["I have played the current test build"] }} respondents played the test build, while {{ sample_counts.familiarity["I have closely reviewed talents, abilities, footage, or theorycrafting"] + sample_counts.familiarity["I have followed detailed community discussion"] }} closely reviewed or discussed it. The sample leans heavily toward organized raiders and experienced Feral players.</p>
+    <p class="context-note">That makes it useful for understanding this engaged community’s priorities. It does not make it representative of every potential Forever player.</p>
+  </section>
 
-<section id="downloads">
-  <h2>Downloadable aggregate tables</h2>
-  <p>All public tables are generated by the same refresh command as this page.</p>
-  {% for name in ["source_metadata.json","overall_direction.csv","likelihood_to_play.csv","excitement.csv","powershifting_preference.csv","developer_attention.csv","directions_to_test.csv","importance_matrix.csv","agreement_matrix.csv","mechanic_reactions.csv","subgroups.csv","thematic_validation.csv","q15_powershift_polarity.csv","topic_prevalence.csv","comparison_675.csv","wordcloud_q14_terms.csv","wordcloud_q15_terms.csv","wordcloud_q16_terms.csv"] %}
-    <a class="download" href="tables/{{ name }}">{{ name }}</a>
-  {% endfor %}
-</section>
+  <section class="closing"><p class="eyebrow">BOTTOM LINE</p><h2>Do not confuse flexibility about the solution with satisfaction about the problem.</h2><p>The community has given the design team room to move beyond Classic powershifting. What it has not given up is the expectation that Feral should stay busy, reward mastery, make resources matter, and feel like a shapeshifter rather than a slower Rogue.</p><div class="hero-actions"><a class="button" href="methodology.html">Methods, text patterns &amp; downloads</a><a class="ghost-button" href="tables/comparison_675.csv">Compare with 675-response snapshot</a></div></section>
 </main>
-<footer><div class="wrap">Independent community analysis. Source data remain with the survey owner and are not republished here. <a href="../">Return to the Forever Druid calculator</a>.</div></footer>
+<footer class="page-foot"><span>Forever Feral community feedback · live snapshot retrieved {{ retrieved_display }}</span><a href="../">Return to the Druid calculator</a></footer>
 </body>
 </html>

@@ -4,6 +4,17 @@ This directory contains the reproducible source for the public report at
 [`/analysis/`](../analysis/). Raw Google Forms responses are downloaded locally,
 analyzed, and never committed.
 
+The main page is written for the player community. Detailed methods, model
+diagnostics, limitations, and downloads are generated as
+`analysis/methodology.html` so transparency does not interrupt the narrative.
+
+## Context archives
+
+Three local DiscordKit HTML exports (`forever-general`, `forever-feral-dps`,
+and `forever-feral-tank`) document the discussion that motivated the survey.
+They are context only: the pipeline does not read, analyze, quote, copy, or
+publish them. All quantitative and qualitative findings come from the survey.
+
 ## Refresh
 
 ```bash
@@ -21,6 +32,7 @@ already-downloaded snapshot. The input remains ignored by Git.
 ## Privacy boundary
 
 - `data/raw/` and `data/interim/` are ignored.
+- Discord HTML exports are never copied into this public repository.
 - The public report contains aggregate results and a small set of manually
   reviewed anonymous excerpts from respondents who allowed quotation.
 - Topic-document tables contain anonymous document IDs and numerical weights,
