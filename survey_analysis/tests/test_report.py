@@ -17,6 +17,8 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "combat logs, parses, rankings" in template
     assert template.index("three results tell the story") < template.index("project intent")
     assert "this is primarily a cat and hybrid-play concern" in template
+    assert 'current["do not require literal powershifting"]' in template
+    assert 'current["functional replacement acceptable"]' in template
     assert "played the test build" in template
     assert "developer design brief" in template
     assert "shortened for display" in template

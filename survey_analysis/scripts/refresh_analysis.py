@@ -376,6 +376,7 @@ def main() -> None:
         "Would probably/definitely not play": pct(tables["likelihood_to_play"], "Would not play"),
         "Functional replacement acceptable": float(power_short.loc[power_short.category.eq("Functional replacement is acceptable"), "percent"].iloc[0]),
         "Prefer non-powershifting if engaging": float(power_short.loc[power_short.category.eq("Prefer non-powershifting if engaging"), "percent"].iloc[0]),
+        "Do not require literal powershifting": float(power_short.loc[power_short.category.isin(["Functional replacement is acceptable", "Prefer non-powershifting if engaging"]), "percent"].sum()),
         "Specifically want Classic powershifting restored": float(power_short.loc[power_short.category.eq("Specifically restore Classic powershifting"), "percent"].iloc[0]),
         "Negative reaction to Furor/loss of powershifting": float(tables["mechanic_reactions"].query("area == 'Furor and the loss/reduction of powershifting' and category == 'Negative'").percent.iloc[0]),
         "Rotation/activity selected for developer attention": attention_map.get("Rotation/activity level", 0),
