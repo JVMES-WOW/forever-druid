@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 
@@ -57,3 +58,9 @@ def test_report_theme_matches_existing_dark_green_and_gold_palette():
     assert "color-scheme:light" in css
     assert ".topbar" in css and ".brand" in css
     assert "radial-gradient" not in css
+
+
+def test_obsolete_rake_scaling_quote_is_not_selected():
+    config = json.loads((ROOT / "survey_analysis/config/quote_selections.json").read_text())
+    assert "e1f9bbbc08954840" not in config["selected_text_ids"]
+    assert "80e25be9def5d6b7" in config["selected_text_ids"]

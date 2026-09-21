@@ -444,7 +444,7 @@ def main() -> None:
     }
     featured_viewpoints = {
         "acad144b7596a53f": "Functional replacement",
-        "e1f9bbbc08954840": "AoE and scaling",
+        "80e25be9def5d6b7": "AoE and group viability",
         "9f8efc112574893d": "Hybrid and off-tank play",
         "b455da06728cb871": "Shapeshifting without powershifting",
     }
