@@ -110,7 +110,7 @@
 
   <section class="voices-section">
     <div class="section-copy"><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Different problems and solutions—not one monolithic demand.</h2><p>These full excerpts were deliberately selected to represent contrasting design concerns. They were manually reviewed, stripped of accidental identifiers, and come only from respondents who allowed anonymous quotation.</p></div>
-    <div class="quote-grid">{% for _, row in featured_quotes.iterrows() %}<blockquote><span class="quote-label">{{ row.viewpoint }}</span><p>“{{ row.excerpt }}”</p><footer>{{ row.question }} · quoted with permission</footer></blockquote>{% endfor %}</div>
+    <div class="quote-grid">{% for column in featured_quote_columns %}<div class="quote-column">{% for _, row in column.iterrows() %}<blockquote><span class="quote-label">{{ row.viewpoint }}</span><p>“{{ row.excerpt }}”</p><footer>{{ row.question }} · quoted with permission</footer></blockquote>{% endfor %}</div>{% endfor %}</div>
   </section>
 
   <section class="sample-section panel">

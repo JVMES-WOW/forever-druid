@@ -23,6 +23,7 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "played the test build" in template
     assert "developer design brief" in template
     assert "these full excerpts" in template
+    assert "featured_quote_columns" in template
     assert "shortened for display" not in template
     assert "meaningful pooling" not in template
     assert "meaningful resource decisions without excessive empty time" in template
@@ -80,3 +81,10 @@ def test_shapeshifting_quote_supports_non_powershifting_design_goal():
     config = json.loads((ROOT / "survey_analysis/config/quote_selections.json").read_text())
     assert "b455da06728cb871" not in config["selected_text_ids"]
     assert "d8e9ffa150c3b8b4" in config["selected_text_ids"]
+
+
+def test_five_featured_quotes_use_balanced_columns():
+    refresh = (ROOT / "survey_analysis/scripts/refresh_analysis.py").read_text()
+    assert '"0f380cd545d49755": "Activity and resource decisions"' in refresh
+    assert 'featured_quotes.loc[["80e25be9def5d6b7", "acad144b7596a53f", "9f8efc112574893d"]]' in refresh
+    assert 'featured_quotes.loc[["d8e9ffa150c3b8b4", "0f380cd545d49755"]]' in refresh

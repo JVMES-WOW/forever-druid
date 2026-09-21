@@ -457,11 +457,17 @@ def main() -> None:
         "80e25be9def5d6b7": "AoE and group viability",
         "9f8efc112574893d": "Hybrid and off-tank play",
         "d8e9ffa150c3b8b4": "Shapeshifting without powershifting",
+        "0f380cd545d49755": "Activity and resource decisions",
     }
     featured_quotes = tables["anonymous_excerpts"][
         tables["anonymous_excerpts"].text_id.isin(featured_viewpoints)
     ].copy()
     featured_quotes["viewpoint"] = featured_quotes.text_id.map(featured_viewpoints)
+    featured_quotes = featured_quotes.set_index("text_id")
+    featured_quote_columns = [
+        featured_quotes.loc[["80e25be9def5d6b7", "acad144b7596a53f", "9f8efc112574893d"]],
+        featured_quotes.loc[["d8e9ffa150c3b8b4", "0f380cd545d49755"]],
+    ]
     phrase_top = {q: frame.head(5).to_dict("records") for q, frame in freqs.items()}
     context = {"metadata": metadata, "tables": tables, "html_tables": html_tables, "current": current,
                "sample_counts": sample_counts,
@@ -473,6 +479,7 @@ def main() -> None:
                "importance_summary": importance_summary,
                "phrase_top": phrase_top,
                "featured_quotes": featured_quotes,
+               "featured_quote_columns": featured_quote_columns,
                "retrieved_display": datetime.fromisoformat(retrieved).astimezone(ZoneInfo("America/Chicago")).strftime("%B %-d, %Y at %-I:%M %p %Z"),
                "collection_start": duplicate_summary["collection_start"], "collection_end": duplicate_summary["collection_end"]}
     (PUBLIC_DIR / "index.html").write_text(template.render(**context), encoding="utf-8")
