@@ -162,6 +162,28 @@ def plot_bar(frame: pd.DataFrame, label_col: str, value_col: str, path: Path, ti
     plt.close(fig)
 
 
+def plot_donut(frame: pd.DataFrame, path: Path, title: str, colors: dict[str, str]) -> None:
+    """Show a small mutually exclusive distribution as a restrained part-to-whole chart."""
+    palette = [colors.get(category, COLORS["info"]) for category in frame["category"]]
+    labels = [
+        f"{row.category}: {row.percent:.1f}%  ({int(row['count'])}/{int(row.denominator)})"
+        for _, row in frame.iterrows()
+    ]
+    fig, ax = plt.subplots(figsize=(8, 4.6))
+    ax.pie(frame["percent"], colors=palette, startangle=90, counterclock=False,
+           wedgeprops={"width": .42, "edgecolor": "#ffffff", "linewidth": 1.5})
+    ax.text(0, .05, f"n={int(frame.denominator.iloc[0])}", ha="center", va="center",
+            fontsize=13, fontweight="bold", color="#303a34")
+    ax.text(0, -.14, "responses", ha="center", va="center", fontsize=8, color="#68746d")
+    ax.set_title(title, loc="left", fontweight="bold", pad=12)
+    ax.legend(labels, loc="center left", bbox_to_anchor=(1.0, .5), frameon=False,
+              fontsize=8.5, handlelength=1.1, labelspacing=.9)
+    ax.set_aspect("equal")
+    fig.tight_layout()
+    fig.savefig(path, bbox_inches="tight")
+    plt.close(fig)
+
+
 def plot_mechanics(table: pd.DataFrame) -> None:
     table = table[~table.area.eq("Combo points being stored on the player")]
     pos = table[table.category.eq("Positive")][["area", "percent"]].rename(columns={"percent": "positive"})
@@ -335,9 +357,10 @@ def main() -> None:
                     "More excited": COLORS["positive"], "Equally excited": COLORS["neutral"],
                     "Less excited": COLORS["negative"]}
     for name, title in [("overall_direction", "Overall reaction to the current direction"),
-                        ("likelihood_to_play", "Likelihood of regularly playing Feral"),
                         ("excitement", "Excitement relative to Classic Feral")]:
-        plot_bar(tables[name], "category", "percent", FIG_DIR / f"{name.replace('_','-')}.svg", title, label_colors)
+        plot_donut(tables[name], FIG_DIR / f"{name.replace('_','-')}.svg", title, label_colors)
+    plot_bar(tables["likelihood_to_play"], "category", "percent",
+             FIG_DIR / "likelihood-to-play.svg", "Likelihood of regularly playing Feral", label_colors)
     power_labels = {
         "I do not need literal powershifting if another mechanic provides comparable activity and meaningful resource decisions.": "Functional replacement is acceptable",
         "I prefer a non-powershifting design, provided it remains engaging and has enough depth.": "Prefer non-powershifting if engaging",
