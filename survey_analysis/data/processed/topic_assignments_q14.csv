@@ -1,750 +1,751 @@
 question,document_id,primary_topic,secondary_topic,weight_1,weight_2,weight_3,weight_4,weight_5,weight_6,weight_7
-Q14,D0001,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0002,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.21520273145654423,0.0,0.0,0.0,0.0
-Q14,D0003,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0004,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.09250381830931606,0.0,0.0,0.0,0.0
-Q14,D0005,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0006,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.00610563928180815,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0007,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.09965117148932569,0.0
-Q14,D0008,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1388252135556774,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0009,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.03008333533030057,0.0,0.0,0.04254167891697477,0.0,0.0
-Q14,D0010,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.007352456229579175,0.0,0.0,0.022083061408854604,0.0,0.0,0.0
+Q14,D0001,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.012035531567053549,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0002,APM and skill expression,Engaging active rotation,0.0,0.0,0.30202204440095826,0.0,0.0,0.0008893155679627295,0.0
+Q14,D0003,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.07343666876844371,0.005789351736218401,0.0
+Q14,D0004,APM and skill expression,Engaging active rotation,0.0,0.0,0.1475569547776122,0.0,0.0,0.06736412355100377,0.0
+Q14,D0005,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.026273499217899267,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0006,"Hybrid roles, tanking, and damage",Engaging active rotation,0.07456461476962306,0.0,0.0,0.0,0.0,0.03024587901869466,0.0
+Q14,D0007,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.2140926755149976,0.0
+Q14,D0008,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.126740115442986,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0009,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.053089216518671344,0.07974931161973861,0.03268628779265485,0.0
+Q14,D0010,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.04796652292610417,0.031420073918028896,0.0,0.0,0.0,0.0,0.0
 Q14,D0011,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0012,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0013,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.032718746183131295,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0014,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0015,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0016,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.07949185003814016,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0017,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.3227897888344269,0.0
-Q14,D0018,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01280971259850604,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0019,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.10319699581252152,0.0,0.0,0.0,0.0
-Q14,D0020,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06912483564242983,0.0,0.0,0.0
-Q14,D0021,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.00595750285041742,0.0,0.0
-Q14,D0022,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.06191929014026242,0.0,0.0,0.0,0.0
-Q14,D0023,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0024,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0025,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0026,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.017817875935359877,0.0,0.0
-Q14,D0027,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0028,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.08144566382216048,0.0,0.0,0.0,0.0
-Q14,D0029,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.1509401079216006,0.0,0.0,0.0,0.0
-Q14,D0030,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0031,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.3369140105668601
-Q14,D0032,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.021156029990366098,0.0,0.0,0.0
-Q14,D0033,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.03676701058943424,0.0,0.0,0.0
-Q14,D0034,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0035,APM and skill expression,Engaging active rotation,0.0,0.0,0.08006282720937215,0.03629121657046022,0.0,0.04062542346986284,0.0
-Q14,D0036,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0022028023324089725,0.0
-Q14,D0037,APM and skill expression,Slow or boring rotation,0.0,0.0,0.09547561972697392,0.04114017049036653,0.0,0.0,0.0
+Q14,D0012,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.01356245971045746,0.0,0.0
+Q14,D0013,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.10542106268318786,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0014,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01577470546053147,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0015,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.005119604186033407,0.0,0.0,0.0,0.011060654644272541,0.0,0.0004255671125997362
+Q14,D0016,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1143694655193317,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0017,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.35110828734916316,0.0
+Q14,D0018,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0651105133214086,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0019,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.13013638733285873,0.0,0.0,0.0,0.0
+Q14,D0020,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.11143986198178553,0.0,0.0,0.0,0.06921309695370421,0.0
+Q14,D0021,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.041212601744758735,0.0,0.0
+Q14,D0022,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.1019754025136806,0.0,0.0024749777446787724,0.0,0.016867854654855706
+Q14,D0023,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01404036045877243,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0024,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.006674049116554419,0.0,0.0
+Q14,D0025,Engaging active rotation,"Hybrid roles, tanking, and damage",0.008618662550623055,0.0,0.0,0.0,0.0,0.06731300433091893,0.0011398915948276377
+Q14,D0026,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.06440967098140873,0.0,0.0
+Q14,D0027,Energy waiting and downtime,Engaging active rotation,0.0001495626590395628,0.0,0.0,0.0,0.03283419487680182,0.013735195504080195,0.0
+Q14,D0028,APM and skill expression,Class identity and distinctiveness,0.00557038580719321,0.0,0.1378979584489189,0.0,0.0038692349442418484,0.00484227954805492,0.03554231102055956
+Q14,D0029,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.18455964885180803,0.0,0.0,0.0,0.0
+Q14,D0030,Class identity and distinctiveness,Energy waiting and downtime,0.004361548254021018,0.0,0.0,0.0,0.015906706723038923,0.0,0.03870851835490749
+Q14,D0031,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.029810057663452974,0.055945637402759686,0.0,0.0
+Q14,D0032,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.01604323424579179,0.042789982655871445,0.0,0.0,0.0,0.0,0.0
+Q14,D0033,"Powershifting, engagement, and identity",Energy waiting and downtime,0.004663518377547487,0.07545882140410325,0.0,0.0,0.007647724100037398,0.0,0.0
+Q14,D0034,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.0029500072080521546,0.0,0.0,0.0,0.0,0.0,0.054660601262061986
+Q14,D0035,Class identity and distinctiveness,APM and skill expression,0.0,0.04328106019496797,0.11710919919264566,0.0,0.0,0.0947795835586658,0.12257327430487645
+Q14,D0036,Engaging active rotation,"Hybrid roles, tanking, and damage",0.02530087196296606,0.0,0.0,0.0,0.0,0.030146500915317866,0.0
+Q14,D0037,APM and skill expression,Class identity and distinctiveness,0.0,0.046912527477465604,0.12346658424095994,0.0,0.0,0.0,0.06412923949316819
 Q14,D0038,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0039,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0040,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.12665129716368806,0.0,0.0,0.0,0.0
-Q14,D0041,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.07904254745569095,0.0,0.0
+Q14,D0039,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.02922649501263782,0.0,0.0,0.0,0.002015034208877284,0.0,0.0
+Q14,D0040,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.16014275788967902,0.0,0.0,0.0,0.06010733260102982
+Q14,D0041,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.15515818967465642,0.0,0.0
 Q14,D0042,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0043,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0044,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.3369140105668601
-Q14,D0045,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.12347100979963142,0.0,0.0,0.16936056123748325,0.0,0.0
-Q14,D0046,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.08541222496057466,0.0,0.0,0.0
-Q14,D0047,Energy waiting and downtime,"Powershifting, engagement, and identity",0.037829644584461336,0.044858188674505806,0.0,0.0,0.05099944706469393,0.0,0.0
-Q14,D0048,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0232839747364067,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0049,"Powershifting, engagement, and identity",Energy waiting and downtime,0.008559370755039186,0.04970034735982888,0.0,0.0,0.03975852671230628,0.0,0.0
+Q14,D0043,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.005251245185480161,0.0,0.0,0.0,0.0
+Q14,D0044,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.029810057663452974,0.055945637402759686,0.0,0.0
+Q14,D0045,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.15527389486918539,0.19957805872007894,0.0,0.0
+Q14,D0046,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.10899901509846902,0.0,0.0,0.0,0.0,0.0
+Q14,D0047,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.08498342918084766,0.0,0.0,0.07266748033092513,0.08602971271571996,0.0,0.012676420289303315
+Q14,D0048,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.10590161356757234,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0049,Slow or boring rotation,Energy waiting and downtime,0.039185674228307245,0.0,0.0,0.07884370891722695,0.060319748272102056,0.0,0.0
 Q14,D0050,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0051,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.02067544446492008,0.0,0.0
-Q14,D0052,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.04596816294799937,0.0,0.07201755197716282
-Q14,D0053,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.08821586069876404,0.0,0.0,0.0
-Q14,D0054,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.05961434397094519,0.0,0.0,0.0,0.0
-Q14,D0055,Class identity and distinctiveness,Slow or boring rotation,0.0,0.0,0.0,0.07421906930225332,0.0,0.0,0.14007672360133122
-Q14,D0056,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0057,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.06310898290152567
-Q14,D0058,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.143606159428525,0.0,0.0,0.0,0.0,0.15589210146382626
-Q14,D0059,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.041683194091714365
-Q14,D0060,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0061,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0062,"Hybrid roles, tanking, and damage",Engaging active rotation,0.03175384774643149,0.0,0.0,0.0,0.0,0.013497206601307694,0.0
-Q14,D0063,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.007680808656066574,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0064,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0251998737674045,0.05787531120949832,0.0,0.041919515046381
-Q14,D0065,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0066,Engaging active rotation,APM and skill expression,0.0,0.0,0.007675277848794543,0.0,0.0,0.02175487971329176,0.0
-Q14,D0067,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.07201709295917927
-Q14,D0068,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0069,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0070,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.014767554788505506,0.016565060077749806,0.0,0.0
-Q14,D0071,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.028330860103057475,0.0,0.0,0.0
-Q14,D0072,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0073,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0074,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0075,Slow or boring rotation,Engaging active rotation,0.0011119959293887627,0.0,0.0,0.0394958438072945,0.016979436651849592,0.03066170682398778,0.0
-Q14,D0076,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.023955974550575274,0.017240020729450932,0.0
-Q14,D0077,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0078,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.14542177486477803,0.0,0.0,0.0,0.0
-Q14,D0079,APM and skill expression,Energy waiting and downtime,0.0,0.032280406907313694,0.05801520973896278,0.0,0.048558783189782434,0.03153455730993622,0.0
-Q14,D0080,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.007610232735281796,0.0,0.0,0.0,0.06361374465623273,0.0,0.0
-Q14,D0081,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.03866744458964743,0.0,0.0,0.0
-Q14,D0082,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0083,"Powershifting, engagement, and identity",APM and skill expression,0.0,0.039556856117990445,0.03809601509497915,0.02031692710481498,0.0,0.0,0.0
-Q14,D0084,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0230200683820528,0.02170683255888947,0.0,0.0
-Q14,D0085,APM and skill expression,Class identity and distinctiveness,0.010112121706886993,0.0,0.11072016991882878,0.01067066497692926,0.0,0.0,0.017339584031111778
-Q14,D0086,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.10090584947449556
-Q14,D0087,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.14082652817295005,0.0,0.0,0.0,0.12629827529602775,0.0
-Q14,D0088,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.09198048542499258,0.0
-Q14,D0089,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0090,Slow or boring rotation,APM and skill expression,0.0,0.0,0.00478511468921967,0.030808986363599866,0.0,0.0,0.0
-Q14,D0091,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.06654082366309261,0.0
-Q14,D0092,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.06841070610878236,0.0
-Q14,D0093,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.17229114206395388,0.0,0.0,0.0,0.14635229851006806,0.0
-Q14,D0094,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.013533297209102953,0.01512985855113734
-Q14,D0095,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.018357252784507744,0.01489789277359522,0.0,0.0
-Q14,D0096,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.09108112303424352,0.0,0.0,0.0,0.062348342091987696,0.0
-Q14,D0097,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.020148106337952776,0.0,0.0
-Q14,D0098,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0099,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.05974484976581105,0.0,0.0168818889419291,0.0,0.02437376568150328
+Q14,D0051,Energy waiting and downtime,Engaging active rotation,1.2577296952349825e-05,0.0,0.0,0.0,0.07100568953669487,0.014201005357633174,0.0
+Q14,D0052,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.009291788466905402,0.0,0.0,0.0,0.09710559497122252,0.0,0.0
+Q14,D0053,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.11371748985037222,0.0,0.0,0.0,0.0,0.0
+Q14,D0054,APM and skill expression,Class identity and distinctiveness,0.01089754263764733,0.0,0.10952922779772746,0.0,0.0,0.0,0.01508172708097849
+Q14,D0055,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.09313908531244551,0.0,0.0014482368947697426,0.04555901554512708,0.015289918473300811,0.0
+Q14,D0056,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.003926922269994824,0.0,0.0,0.0,0.0,0.0,0.015464649930570482
+Q14,D0057,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.02432215487280469,0.004054144867850033,0.03551509556144835
+Q14,D0058,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.2077070219051558,0.013666842019947539,0.0,0.0
+Q14,D0059,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.004472967407638381,0.0,0.0,0.0,0.020232371616005385,0.0,0.0
+Q14,D0060,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.04971949472743519,0.0
+Q14,D0061,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.002839612434464462,0.0,0.0
+Q14,D0062,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.09107814515917127,0.0,0.0,0.0,0.0,0.025974578785835232,0.060144706465384716
+Q14,D0063,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0920972602515376,0.0,0.0,0.0,0.0,0.0,0.007822992911169961
+Q14,D0064,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.0538421383579417,0.0,0.0,0.1281453334997975,0.0,0.0
+Q14,D0065,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.020176068100622873,0.0,0.004861762782058646,0.0,0.0,0.0,0.0127923582886069
+Q14,D0066,Engaging active rotation,APM and skill expression,0.0,0.0,0.02505377096146964,0.0,0.0,0.038082193531775076,0.0
+Q14,D0067,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.008643450940087997,0.0,0.0,0.0,0.027491342218980988,0.0,0.0
+Q14,D0068,Engaging active rotation,Class identity and distinctiveness,0.006483519049206287,0.0,0.0,0.0,0.0004309925969062707,0.011004692516750519,0.010388325079310574
+Q14,D0069,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.004026784668903167,0.09249900165495939,0.08945468712824554
+Q14,D0070,Energy waiting and downtime,"Powershifting, engagement, and identity",0.01882841571927593,0.03386249884555953,0.0,0.0,0.0513167891776735,0.0,0.0
+Q14,D0071,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.016505562002696633,0.03855591230377857,0.0,0.0,0.0,0.0,0.11277906017658591
+Q14,D0072,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.011369694589071156,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0073,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.007831219867649557,0.04014165377891934,0.0
+Q14,D0074,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.020125936805379985,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0075,Engaging active rotation,"Powershifting, engagement, and identity",0.02577562509228101,0.055832733808620236,0.00375401715896809,0.0,0.04457208957332784,0.0794637498681182,0.0
+Q14,D0076,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.05514078374264042,0.04540220910717892,0.012157079786182929
+Q14,D0077,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.050475917474424634,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0078,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.2774871437519852,0.0,0.0,0.0,0.0
+Q14,D0079,APM and skill expression,Energy waiting and downtime,0.008875600669106405,0.0,0.10032617311948742,0.05757135321778948,0.08353788488360382,0.07764874137188728,0.02719943690948112
+Q14,D0080,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.04255131662041329,0.0,0.0,0.0,0.0950682316698332,0.0,0.0
+Q14,D0081,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.08067191335212037,0.0,0.0,0.0,0.0,0.0
+Q14,D0082,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.23661745934693562
+Q14,D0083,APM and skill expression,Slow or boring rotation,0.0,0.04432707847333548,0.07360024620293949,0.07210275401554263,0.0,0.0,0.0
+Q14,D0084,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.04071732304090668,0.0,0.0,0.04815504591767591,0.0,0.0
+Q14,D0085,APM and skill expression,"Hybrid roles, tanking, and damage",0.04794459320602791,0.017312654842324096,0.15867093368860735,0.0,0.0,0.0,0.012654193445999207
+Q14,D0086,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.003330792194730513,0.02214806450160206,0.0,0.0
+Q14,D0087,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.18099985907557026,0.0,0.12886086072999242,0.0
+Q14,D0088,Engaging active rotation,"Hybrid roles, tanking, and damage",0.04700741394105611,0.0,0.0,0.0,0.0,0.12380823134645474,0.0
+Q14,D0089,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.053348700810241206,0.0,0.0,0.0,0.011362347439301096,0.0,0.0
+Q14,D0090,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.049087976759528064,0.02241306169038682,0.0,0.0,0.03892260054685507,0.0
+Q14,D0091,Engaging active rotation,Class identity and distinctiveness,0.015023896111720256,0.0,0.0,0.0,0.0,0.0877758053629324,0.03920356294270037
+Q14,D0092,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0918383791880876,0.0
+Q14,D0093,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.2181051850455893,0.0,0.1460528902660079,0.0
+Q14,D0094,Engaging active rotation,"Hybrid roles, tanking, and damage",0.027697250377245856,0.0,0.0,0.0,0.007913966359361462,0.0376369763566381,0.013887612585269467
+Q14,D0095,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.03690998510565944,0.0,0.0,0.039009222487903866,0.0,0.0
+Q14,D0096,Slow or boring rotation,Engaging active rotation,0.024964053149416257,0.0,0.0,0.15086244987841319,0.0,0.10448784458854175,0.0
+Q14,D0097,Energy waiting and downtime,Engaging active rotation,0.002461928407250469,0.0,0.0016911202647795706,0.0,0.07184002248214923,0.013384970936851998,0.0
+Q14,D0098,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.0360730759502298,0.0,0.0,0.0,0.009615077700200501,0.0,0.0
+Q14,D0099,APM and skill expression,Energy waiting and downtime,0.012129420266053294,0.0,0.09394680391762703,0.0,0.056830892322444836,0.0,0.01837373105896237
 Q14,D0100,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0101,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0102,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0103,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03396275306898513,0.0,0.0
-Q14,D0104,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0976205657915761,0.0
-Q14,D0105,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0106,Engaging active rotation,"Powershifting, engagement, and identity",0.022119316506996414,0.07150502367131034,0.0,0.0,0.0,0.07201775026043461,0.0
-Q14,D0107,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.05147283642865222,0.0,0.0,0.0
-Q14,D0108,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.07259238126080664,0.02003296578795155,0.0330781583283291
-Q14,D0109,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.09893727124941842,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0110,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.09579058137022098,0.0,0.0,0.0
-Q14,D0111,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.0928065975024973,0.0,0.0,0.0,0.032775997129885305,0.0
-Q14,D0112,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.11349027765751836,0.0,0.0,0.04959830737334451,0.0,0.0,0.0
-Q14,D0113,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.054373794746661146,0.0,0.0,0.0,0.0
-Q14,D0114,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.15249287391411523,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0115,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.05715455099869701,0.0,0.0,0.09874200206799491,0.0,0.0,0.0
-Q14,D0116,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.0536505450929482,0.02528740209510276,0.0
-Q14,D0117,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0118,Energy waiting and downtime,Slow or boring rotation,0.0020549312347481214,0.0,0.0,0.017865091807506502,0.03325688655885938,0.0,0.0
+Q14,D0101,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04207623063495768,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0102,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0008673798753920218,0.0,0.0,0.0,0.00893691982533274,0.0,0.0
+Q14,D0103,Energy waiting and downtime,Class identity and distinctiveness,0.00035649255754943796,0.0,0.0,0.0,0.07590022958628093,0.04111877573127063,0.057775480363675705
+Q14,D0104,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.18275140740614687,0.0
+Q14,D0105,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05623763982213971,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0106,Class identity and distinctiveness,Slow or boring rotation,0.04256285871928836,0.0,0.0,0.0955440186017407,0.0,0.07478519258743985,0.11656516257881264
+Q14,D0107,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.018941446507267853,0.06961732976946924,0.0,0.0,0.0,0.0,0.08315065213046408
+Q14,D0108,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.145350828337685,0.044696267314028676,0.0
+Q14,D0109,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1461466765006708,0.0,0.0,0.0,0.0,0.0,0.09752574505342128
+Q14,D0110,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.12090495123659183,0.0,0.0,0.0,0.0,0.0
+Q14,D0111,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.15514312703337177,0.00986248272917513,0.06836650268450974,0.0
+Q14,D0112,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.12445886279259537,0.06083182325350262,0.0,0.0,0.0,0.0,0.0
+Q14,D0113,APM and skill expression,Energy waiting and downtime,0.004892267740276952,0.0,0.09566972650580878,0.0,0.005764549157093192,0.00047910987612613147,0.0
+Q14,D0114,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1588889932631461,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0115,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.1673490210052481,0.25140985848499925,0.0,0.0,0.0,0.0,0.0
+Q14,D0116,Energy waiting and downtime,Class identity and distinctiveness,0.039163820348688885,0.0,0.0,0.0,0.09830279547266754,0.057755280022901444,0.06001661690581965
+Q14,D0117,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.019257758935704666,0.0,0.0,0.0,0.0,0.0,0.012003518229706649
+Q14,D0118,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.050883722893613405,0.029466430240757152,0.003091317914713835,0.0,0.07246234232008321,0.005620848683865766,0.0
 Q14,D0119,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0120,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0120,"Hybrid roles, tanking, and damage",Engaging active rotation,0.03127437127076832,0.0,0.0,0.0,0.0,0.0018964475015816986,0.0
 Q14,D0121,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0122,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.09312795102207795,0.0,0.0,0.0,0.0
-Q14,D0123,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.030957674866334425,0.0,0.0,0.0
-Q14,D0124,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.010614200284578683,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0125,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0126,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0127,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.06679452631999207,0.0,0.0,0.0,0.0,0.0
-Q14,D0128,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.011858370280418423,0.0,0.0
-Q14,D0129,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.09087861239501688,0.0,0.0
-Q14,D0130,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.3274481367649578,0.0,0.0,0.0
-Q14,D0131,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.10423581335095798,0.0,0.0,0.0
-Q14,D0132,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.04636951732504559,0.0,0.0,0.0
+Q14,D0122,APM and skill expression,"Hybrid roles, tanking, and damage",0.029919894004441675,0.0,0.14645313192386983,0.0,0.0,0.0,0.0
+Q14,D0123,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.053603031193287895,0.0,0.0,0.0,0.0,0.0
+Q14,D0124,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0777045126107555,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0125,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03322265514936452,0.0,0.0,0.0,0.0,0.0,0.028687401710389405
+Q14,D0126,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.02392945995079031,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0127,Slow or boring rotation,APM and skill expression,0.0,0.0,0.017587846511114665,0.1248838010009484,0.0,0.0,0.0
+Q14,D0128,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0012663169132755942,0.0,0.0,0.0,0.06045455726485631,0.0,0.0
+Q14,D0129,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.18855350216775682,0.0,0.0
+Q14,D0130,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3932638839580813,0.0,0.0,0.0,0.0,0.0
+Q14,D0131,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.18437192629446478,0.0,0.0,0.0,0.10154876357946806,0.18400044297424153
+Q14,D0132,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.010789942252731987,0.05222788257037119,0.0,0.0,0.01813512138481435,0.03848368616784405,0.05129467964847628
 Q14,D0133,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0134,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0135,APM and skill expression,Slow or boring rotation,0.0,0.0,0.037731992593563336,0.022723573364395004,0.0,0.0,0.0
-Q14,D0136,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.09445251153874144,0.0,0.0,0.0,0.0,0.0
-Q14,D0137,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0138,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.019124028950109184,0.0,0.0,0.029478865013569125,0.0,0.0,0.0
-Q14,D0139,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0355376017852455,0.0,0.0
-Q14,D0140,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.04979916847623348,0.0,0.0,0.0
-Q14,D0141,APM and skill expression,Slow or boring rotation,0.0,0.0,0.045490066749142175,0.04317579205552218,0.010348093306837414,0.012259612725662589,0.0
-Q14,D0142,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0143,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.009260254682940266,0.0,0.0,0.0,0.009567201810856853,0.0,0.0
-Q14,D0144,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.05672047408988939,0.0,0.0,0.0,0.0,0.0
-Q14,D0145,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.05483141880935314,0.0,0.0
-Q14,D0146,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.019288906179085,0.0
-Q14,D0147,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.08474392900338196,0.0
-Q14,D0148,Engaging active rotation,"Hybrid roles, tanking, and damage",0.01750936366135744,0.0,0.0,0.0,0.004820888920522106,0.05556156069580079,0.0
-Q14,D0149,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.007625878677314482,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0134,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.024019257021357116,0.0,0.0,0.0,0.00043954038950879515,0.0,0.0
+Q14,D0135,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.0403354406543611,0.06319878137304731,0.0,0.0,0.03384034823658906,0.021259872180160684
+Q14,D0136,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.04107975849758567,0.0,0.0,0.12510001004351942,0.0,0.0,0.0
+Q14,D0137,Class identity and distinctiveness,Engaging active rotation,0.0010840173791047398,0.0,0.0014937754529343176,0.0,0.004854479495867597,0.006175622010944904,0.11714554404008642
+Q14,D0138,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.07875364073998807,0.04587409750878896,0.0,0.0,0.0,0.0,0.0
+Q14,D0139,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.06463098046125995,0.0,0.0
+Q14,D0140,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0023737802703403645,0.06696237963391173,0.0,0.0,0.00627609856579219,0.0,0.0
+Q14,D0141,APM and skill expression,"Powershifting, engagement, and identity",0.01901998867039188,0.06876076085357563,0.08300107205931588,0.0,0.03400651042149992,0.04067499473912669,0.005535953878674972
+Q14,D0142,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.0070805214507018025,0.0,0.0,0.0,0.0,0.0,0.011809684693818077
+Q14,D0143,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05808194614052919,0.0,0.0,0.0,0.03468250837662803,0.0026160296172080123,0.05119445168761467
+Q14,D0144,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.14376506321780036,0.0,0.0,0.0
+Q14,D0145,Energy waiting and downtime,Class identity and distinctiveness,0.024260473948547204,0.0,0.0,0.0,0.09063481888699938,0.0,0.050204193387716416
+Q14,D0146,Engaging active rotation,"Hybrid roles, tanking, and damage",0.03424230244661964,0.0,0.0,0.0,0.03401311340648869,0.04815942828429369,0.0
+Q14,D0147,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.1542963328928076,0.0
+Q14,D0148,Engaging active rotation,"Hybrid roles, tanking, and damage",0.0423261015301002,0.0,0.0,0.0,0.020799913022030925,0.0754231176629468,0.0
+Q14,D0149,Engaging active rotation,"Hybrid roles, tanking, and damage",0.028025080701072354,0.0,0.0,0.0,0.0,0.03855369919346583,0.0
 Q14,D0150,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0151,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.03506242192048743,0.02212934181442067,0.0,0.03394074300872485,0.06684024384719207,0.0,0.0
-Q14,D0152,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06740869789855854,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0153,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.004661352655233819,0.0,0.0,0.0
-Q14,D0154,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.041513958670726055,0.0,0.0
-Q14,D0155,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.03747353832543128,0.0,0.0,0.0
-Q14,D0156,"Hybrid roles, tanking, and damage",APM and skill expression,0.058817223547304606,0.0,0.0239004773527408,0.018474790708555955,0.0011538783039960019,0.0,0.00399146223761201
-Q14,D0157,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.10569196209775797,0.0625114531022789,0.0,0.0,0.0,0.0,0.0
-Q14,D0158,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.03180660985205632,0.0,0.0,0.0661490881868052,0.0,0.0006532787096121334,0.0
-Q14,D0159,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.07489586936747764,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0160,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0055958217284729096,0.0,0.03166310553233474,0.040697733798821585,0.0
-Q14,D0161,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.09260424394468197,0.0,0.0,0.1367654767493817,0.0,0.0
-Q14,D0162,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.0635487459519758,0.0,0.0,0.05686763391689955,0.013595809405472257,0.0
+Q14,D0151,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0857417311963678,0.05361195214432639,0.0,0.04429591744826378,0.12895960600887196,0.005205328107036462,0.0
+Q14,D0152,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.14010863874829257,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0153,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.12938025430608752
+Q14,D0154,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.09435444681501269,0.0,0.0
+Q14,D0155,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.18475433827138535,0.0,0.0,0.0,0.0,0.0
+Q14,D0156,"Hybrid roles, tanking, and damage",APM and skill expression,0.11088794022765466,0.02958873517394331,0.049205143586847556,0.0,0.024490692043514704,0.012089020938447796,0.013707507808719445
+Q14,D0157,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.13762921785185445,0.0,0.0,0.09547731204396002,0.0,0.0,0.0
+Q14,D0158,"Powershifting, engagement, and identity",Engaging active rotation,0.048782586903309465,0.07421239128312547,0.0,0.0,0.0,0.055125711994300934,0.034991259912766665
+Q14,D0159,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1256388413296488,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0160,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.023138934671150725,0.0,0.048821567210336814,0.06503570853682483,0.024481625250391725
+Q14,D0161,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.11894071943319481,0.17714968685955298,0.0,0.0
+Q14,D0162,Energy waiting and downtime,Slow or boring rotation,0.0001302346685979157,0.0,0.0,0.09740328438385472,0.11155669573140575,0.03661199061734467,0.0
 Q14,D0163,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0164,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.15451223599027342,0.0,0.0,0.0,0.11169341582869514,0.0
-Q14,D0165,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0166,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.033639938022362544,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0167,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.013184110898960199,0.0,0.01599635832106607,0.0
+Q14,D0164,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.19707325829942982,0.0,0.12138776694271725,0.0
+Q14,D0165,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.0017394395898792812,0.0,0.019368439037503207
+Q14,D0166,"Hybrid roles, tanking, and damage",Engaging active rotation,0.08008028723890002,0.0,0.0,0.0,0.0,0.05528728797678085,0.0
+Q14,D0167,Engaging active rotation,"Hybrid roles, tanking, and damage",0.04414115637953305,0.023208596691731437,0.0,0.0,0.003139872978766088,0.06919076077984966,0.0
 Q14,D0168,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0169,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0170,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.09299251819893906,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0171,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.03093936194653837,0.0,0.03567734427967082,0.0
-Q14,D0172,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.29460237579501114,0.0,0.0,0.0,0.0
-Q14,D0173,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.04778202820658768,0.0,0.0,0.0,0.0,0.04477541584381259
-Q14,D0174,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0175,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0176,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0177,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.10521543479765808,0.0,0.0,0.0,0.0,0.0
-Q14,D0178,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.05516399721085166,0.0,0.0,0.0,0.0
-Q14,D0179,APM and skill expression,"Hybrid roles, tanking, and damage",0.009907474035439555,0.0,0.08360250734887444,0.0,0.0,0.0,0.0
-Q14,D0180,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0181,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.008656806768247849,0.0,0.02957266990519953,0.0
-Q14,D0182,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.05466380847332572,0.0,0.0,0.0,0.0
-Q14,D0183,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.042815650800191604,0.0,0.0,0.0,0.0
-Q14,D0184,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0185,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.01616063055846477,0.0682908467829902,0.0007190644892221912,0.0,0.0,0.0,0.0
-Q14,D0186,Engaging active rotation,"Hybrid roles, tanking, and damage",0.04814620031422771,0.0,0.0,0.0,0.0,0.06086617949418101,0.0
-Q14,D0187,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.012628172132737425,0.0,0.0,0.04338586425938751,0.0,0.0,0.0
-Q14,D0188,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.07695816949622991,0.0,0.0,0.0,0.0
-Q14,D0189,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.02091061464075719,0.0,0.030216232339940412,0.0
-Q14,D0190,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.027262868609611437,0.0,0.0
-Q14,D0191,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06158444285562767,0.0,0.0,0.0
-Q14,D0192,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.05230666726973202,0.0,0.0
-Q14,D0193,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0194,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.04833988529084921,0.0,0.0,0.0
-Q14,D0195,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0196,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0197,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0198,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.011554370831745804,0.0,0.0,0.018553969780738675,0.0011763550865028936,0.0,0.0
-Q14,D0199,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.035512302831662984,0.0,0.008511468014038414
-Q14,D0200,Engaging active rotation,"Powershifting, engagement, and identity",0.0,0.033046049462954884,0.0,0.0,0.0,0.041951117420951554,0.0
+Q14,D0169,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.017175598044236597,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0170,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.17153435147280466,0.0,0.0,0.0,0.002944201450125483,0.0,0.02730072482700035
+Q14,D0171,Engaging active rotation,"Powershifting, engagement, and identity",0.0,0.06423375021644502,0.0,0.0,0.0,0.08869438947248737,0.0
+Q14,D0172,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.3535642676498243,0.0,0.0,0.0,0.0
+Q14,D0173,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.11398021502537402,0.021828744108504827,0.0,0.0
+Q14,D0174,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.007772428601628889,0.0,0.0,0.0,0.0,0.0,0.04561417024489613
+Q14,D0175,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.032769195013159794,0.0,0.0,0.0,0.00261059972804351,0.0,0.0
+Q14,D0176,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.023392523674060108,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0177,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.13903740944582313,0.0,0.0,0.049730643247997634
+Q14,D0178,APM and skill expression,Class identity and distinctiveness,0.01997831235331982,0.0,0.09737443762396855,0.0,0.005008484755266584,0.0,0.04971566334597807
+Q14,D0179,APM and skill expression,"Hybrid roles, tanking, and damage",0.08320749300041241,0.0,0.12080511084368435,0.0,0.0,0.0,0.0
+Q14,D0180,"Hybrid roles, tanking, and damage",Engaging active rotation,0.04058972480451243,0.0,0.0,0.0,0.0,0.011229103420781046,0.0
+Q14,D0181,Engaging active rotation,"Hybrid roles, tanking, and damage",0.036964517634352205,0.01678491393674462,0.0008262633611266856,0.0,0.008443242830485007,0.06683863075247298,0.02633666319807051
+Q14,D0182,APM and skill expression,"Hybrid roles, tanking, and damage",0.008044800144590698,0.0,0.08856574445422369,0.0,0.0,0.0011277372476343037,0.0
+Q14,D0183,APM and skill expression,Class identity and distinctiveness,0.013272993771821246,0.0,0.07079177687230617,0.0,0.0,0.0,0.06374780769791691
+Q14,D0184,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.017783123257243138,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0185,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.05306550933295225,0.0,0.021898611218880166,0.12691190885594328,0.0,0.0,0.0
+Q14,D0186,Engaging active rotation,"Hybrid roles, tanking, and damage",0.06637893793553845,0.0,0.0,0.0,0.0,0.07266145819675732,0.0
+Q14,D0187,Engaging active rotation,"Powershifting, engagement, and identity",0.04310266792695809,0.05823306684807942,0.0,0.0,0.00837761860926191,0.06184720117758967,0.0
+Q14,D0188,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.14849747478573472,0.0,0.0,0.0,0.0
+Q14,D0189,Engaging active rotation,"Powershifting, engagement, and identity",0.019009679859989283,0.0396171272130856,0.0,0.0,0.0,0.08054477308766146,0.02170894919432475
+Q14,D0190,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.039926955125295545,0.0,0.0,0.0,0.052858801078881586,0.0,0.0
+Q14,D0191,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.026685980687749286,0.10878515354906175,0.0,0.0,0.0,0.0,0.0
+Q14,D0192,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.07396996730821738,0.0,0.05764818143627185
+Q14,D0193,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06224206491459838,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0194,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.08507366013749842,0.0,0.0,0.0,0.0,0.0
+Q14,D0195,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.016588510350545024,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0196,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.016373863983345605,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0197,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.010230473458587703,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0198,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08799789600391493,0.02285505877619844,0.0,0.0,0.028793270789119595,0.0,0.037272425302165284
+Q14,D0199,Energy waiting and downtime,Class identity and distinctiveness,0.013125887623372608,0.0,0.0,0.0,0.09306733675688186,0.0,0.027337794796314256
+Q14,D0200,Engaging active rotation,Slow or boring rotation,0.006772610665024173,0.0,0.0014746279018812178,0.05492850853121095,0.0068686334156444154,0.07662762174919896,0.0
 Q14,D0201,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0202,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.0018133716607062718,0.0,0.0,0.0,0.0
-Q14,D0203,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.0583569104534393,0.0,0.015133906850144553,0.0,0.0
-Q14,D0204,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.022620096418538512,0.0,0.0,0.0
-Q14,D0205,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.03523707974095618,0.0357681222376577,0.0,0.0
-Q14,D0206,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03351778636382747,0.0,0.0
-Q14,D0207,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.29967748122817806,0.0,0.0
-Q14,D0208,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.1065422711487013,0.0,0.0,0.0
-Q14,D0209,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.07402583936398088,0.0,0.0,0.0
-Q14,D0210,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0013270921366798953,0.0,0.0
-Q14,D0211,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.005514745606719847,0.02144547544040695,0.0,0.0
-Q14,D0212,APM and skill expression,"Hybrid roles, tanking, and damage",0.036054194273754406,0.0,0.18500276781021668,0.0,0.0,0.0,0.0
-Q14,D0213,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0214,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.021606332962964374,0.0,0.0,0.0,0.0
-Q14,D0215,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.05015697116785789,0.0,0.0,0.0,0.021535667767399434,0.004481969140301513,0.0
-Q14,D0216,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.12792448680337062,0.0,0.0
-Q14,D0217,APM and skill expression,Slow or boring rotation,0.0,0.0,0.04265219677000935,0.034180154991512515,0.0,0.0,0.0
-Q14,D0218,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.10832774929589162,0.0,0.0,0.0,0.0,0.0
-Q14,D0219,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0220,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.11808771133173847,0.0,0.0,0.0,0.0
-Q14,D0221,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.012265192222195534,0.0,0.0,0.0,0.03941459955899504,0.0,0.0
-Q14,D0222,APM and skill expression,Slow or boring rotation,0.0,0.0,0.1001321208105903,0.03732378314451494,0.0,0.0,0.0
-Q14,D0223,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.024724137373013197,0.0,0.0,0.04859247096506088,0.0,0.0,0.0
+Q14,D0202,Class identity and distinctiveness,APM and skill expression,0.0,0.0,0.015585322830725182,0.0,0.0,0.0,0.1870342540288375
+Q14,D0203,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.0866691075046272,0.0,0.035670474179487904,0.015998574234372596,0.04347164794402816
+Q14,D0204,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.0492937040336797,0.0,0.0,0.0,0.0,0.0
+Q14,D0205,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.050382222230943054,0.0,0.0,0.05484423429935627,0.0,0.0
+Q14,D0206,Class identity and distinctiveness,Energy waiting and downtime,0.002676051222976146,0.0,0.0,0.0,0.06964181689193749,0.0,0.07784520979451545
+Q14,D0207,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.3313720930953211,0.0,0.0
+Q14,D0208,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.23268721337352063,0.0,0.0,0.0,0.0,0.23659047780408754
+Q14,D0209,"Powershifting, engagement, and identity",Energy waiting and downtime,0.004614587483599099,0.10947966642394913,0.0,0.0,0.009761505033325964,0.0,0.0
+Q14,D0210,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.009045931748821429,0.0,0.17043286153509696
+Q14,D0211,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.02143146333435509,0.01923086412858718,0.0,0.0,0.0621397300588917,0.013968567884824408,0.0
+Q14,D0212,APM and skill expression,"Hybrid roles, tanking, and damage",0.08144377860355041,0.0,0.30844073093676816,0.0,0.0,0.0,0.0
+Q14,D0213,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.004158772734368418,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0214,APM and skill expression,"Hybrid roles, tanking, and damage",0.013412978221414953,0.0,0.04646865292753545,0.0,0.0,0.0,0.001089965514644294
+Q14,D0215,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.10020013039189701,0.0,0.0,0.0,0.05356201174536154,0.0198578912009782,0.0
+Q14,D0216,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.14471558098695636,0.0,0.0
+Q14,D0217,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.07212065082578842,0.08114135111704628,0.0,0.0,0.03443110156425376,0.0
+Q14,D0218,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.19350744511279397,0.005516896746861282,0.0,0.06869494232487844
+Q14,D0219,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0028868317888442138,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0220,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.29698335069385945,0.0,0.0,0.0,0.07923787598938364
+Q14,D0221,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.03246499656040046,0.0,0.0,0.0,0.06405325098657866,0.0,0.0
+Q14,D0222,APM and skill expression,"Powershifting, engagement, and identity",0.014062572994772466,0.04923908597140586,0.13481806918706596,0.0,0.0,0.0,0.0
+Q14,D0223,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.046373817765487935,0.06399830325136825,0.0,0.0,0.0,0.0,0.0
 Q14,D0224,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0225,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.11895151841763885,0.0,0.0,0.0
-Q14,D0226,Engaging active rotation,"Powershifting, engagement, and identity",0.0,0.09596041287411021,0.0,0.0,0.0,0.12443511883037442,0.0
-Q14,D0227,Engaging active rotation,"Hybrid roles, tanking, and damage",0.0011108634880279832,0.0,0.0,0.0,0.0,0.026492388401897635,0.0
-Q14,D0228,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.056026322816771064,0.04808029473842674
-Q14,D0229,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01589654531629887,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0230,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0231,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.01361255157656122,0.0,0.0,0.03563948805787235,0.0,0.0
-Q14,D0232,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0233,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.05181928647200938,0.0,0.0,0.022248823796869103,0.0,0.0,0.0
-Q14,D0234,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.15924162246723192,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0235,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.019714801217115878,0.0,0.0,0.0
-Q14,D0236,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.012824119715284903,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0237,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.01561475100366503,0.08607009231694844,0.0,0.0
-Q14,D0238,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.09662054920261239,0.0,0.0,0.0,0.0
-Q14,D0239,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0240,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.014774736956494639,0.0,0.0
-Q14,D0241,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.04780570276437586,0.0,0.0,0.0636034762544289,0.0,0.0
-Q14,D0242,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0243,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.003992868400611921,0.0,0.0,0.02397733549571257,0.0,0.0,0.0
-Q14,D0244,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.09694026243564453,0.0,0.0,0.0
-Q14,D0245,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0246,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.041078803766730176,0.0,0.0,0.0
-Q14,D0247,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.024655156012379616,0.0,0.0,0.0
-Q14,D0248,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.03145113464668134,0.0
-Q14,D0249,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0250,APM and skill expression,"Hybrid roles, tanking, and damage",0.01530874101488112,0.0,0.09691189329407104,0.0,0.0,0.0,0.0
-Q14,D0251,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.035497273050830495,0.0,0.0,0.0697597756509336,0.0,0.0,0.0
-Q14,D0252,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.03352734548172982,0.0,0.0,0.012681660911122798,0.0,0.0,0.0
+Q14,D0225,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.14654104814150848,0.0,0.0,0.0,0.0,0.0
+Q14,D0226,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.12427120280110639,0.0,0.18004712884598023,0.0
+Q14,D0227,Engaging active rotation,"Hybrid roles, tanking, and damage",0.03988721073768335,0.0,0.0,0.0,0.0,0.05291946234530568,0.0
+Q14,D0228,Engaging active rotation,"Hybrid roles, tanking, and damage",0.013280503822635596,0.0,0.0,0.0,0.007820273116817886,0.11859442515380807,0.0
+Q14,D0229,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.049147064989699486,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0230,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.020879171463014976,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0231,Energy waiting and downtime,Class identity and distinctiveness,0.03671405846790602,0.0,0.0,0.031053167489471657,0.07680412438788768,0.0,0.037122885232465874
+Q14,D0232,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.12108143888439238
+Q14,D0233,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.08971207074872986,0.033862599731441526,0.0,0.0,0.0,0.0,0.0
+Q14,D0234,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.17227704989389292,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0235,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0012694457006285598,0.03503100731961818,0.0,0.0,0.011191541739647983,0.0,0.0
+Q14,D0236,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.07509078100881389,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0237,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.02522938394448362,0.0,0.0,0.13160844548628456,0.0,0.020616845709692924
+Q14,D0238,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.13756768289097665,0.0,0.0011668485985145023,0.0,0.03255638052554513
+Q14,D0239,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.032034241061773085,0.0,0.0,0.0,0.0,0.0,0.0005684024486975344
+Q14,D0240,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.002732275703123055,0.0,0.0,0.0,0.0681536041981243,0.0,0.0
+Q14,D0241,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.08758699801453691,0.11478319511789525,0.0,0.0
+Q14,D0242,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03507921365175918,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0243,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.03043644862549954,0.03774039045736446,0.0,0.0,0.0,0.0,0.03318437652423693
+Q14,D0244,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.027790736784097655,0.18213239098006948,0.0,0.0,0.0,0.0,0.0
+Q14,D0245,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.0034159055883328533,0.0,0.0,0.0,0.0019779495406406808,0.0,0.0
+Q14,D0246,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.01444301941153834,0.057666232621581916,0.0,0.0,0.0,0.0,0.0
+Q14,D0247,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.047402774043018854,0.0,0.0,0.0,0.0,0.0
+Q14,D0248,Engaging active rotation,"Hybrid roles, tanking, and damage",0.02148210705511302,0.0,0.0,0.0,0.0069657795070195575,0.07396588122741139,0.0
+Q14,D0249,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.0011653620456250145,0.0,0.0,0.0,0.0,0.0,0.06289265002208932
+Q14,D0250,APM and skill expression,"Hybrid roles, tanking, and damage",0.046919830479079536,0.0,0.1442943146510618,0.0,0.0,0.0,0.0
+Q14,D0251,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.08876109033748616,0.11996270088574475,0.0,0.0,0.0,0.004219619029545478,0.0
+Q14,D0252,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.10318991337129402,0.01877345773607683,0.0,0.0,0.009156932745439742,0.0,0.0016073901691280093
 Q14,D0253,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0254,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.0069406874288989225,0.0,0.0,0.027999032559561262,0.0,0.0,0.0
-Q14,D0255,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.020841687965521775,0.0,0.011492438063207933,0.0,0.0
+Q14,D0254,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.07658040621679975,0.0393547405799453,0.0,0.0,0.0,0.0,0.0
+Q14,D0255,APM and skill expression,Energy waiting and downtime,0.021519016761788246,0.0,0.04271469587929924,0.0,0.03457530940715645,0.0,0.0
 Q14,D0256,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0257,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.010910288710884846,0.0
-Q14,D0258,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.012627062904607148,0.0,0.0,0.0
-Q14,D0259,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0260,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.04093395640519163,0.004087234120508914,0.0,0.0
-Q14,D0261,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0474005648818033,0.0,0.0,0.0
-Q14,D0262,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0263,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.027366493743935336,0.0,0.0,0.0032864172363269314,0.0,0.0,0.0
-Q14,D0264,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3346716341987706,0.0,0.0,0.0,0.0,0.0
-Q14,D0265,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08660868095215282,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0266,"Hybrid roles, tanking, and damage",Engaging active rotation,0.035142640263803274,0.0,0.0,0.0,0.0,0.0028447508094215927,0.0
-Q14,D0267,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0268,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.014489137383731674,0.013605556357099079,0.010532459403692393,0.0
-Q14,D0269,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3346716341987706,0.0,0.0,0.0,0.0,0.0
-Q14,D0270,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0271,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.06836121882640124,0.0,0.0
-Q14,D0272,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.08511492988924248,0.0
-Q14,D0273,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0274,Engaging active rotation,"Hybrid roles, tanking, and damage",0.031225912950446945,0.0,0.0,0.0,0.0,0.08576760655635934,0.0
-Q14,D0275,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0276,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.04125602133495917,0.0,0.0,0.0,0.024143241794721073,0.039705450263103195
-Q14,D0277,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08145258811184704,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0278,APM and skill expression,Engaging active rotation,0.0,0.0,0.07325990996381278,0.0,0.0,0.018487471164201966,0.0
-Q14,D0279,APM and skill expression,Slow or boring rotation,0.0,0.0,0.08769462394790613,0.0713235173772929,0.0,0.0,0.0
-Q14,D0280,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0281,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.17800047818066414,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0282,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.007179303969417466,0.0
-Q14,D0283,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05732370170266166,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0284,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0285,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0286,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1265612463912073,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0287,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0288,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0289,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0290,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.08720853986501904,0.0,0.0,0.0
-Q14,D0291,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.3274481367649578,0.0,0.0,0.0
-Q14,D0292,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.09749820245449534,0.0,0.03002826988561406,0.0,0.0
-Q14,D0293,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0294,APM and skill expression,Engaging active rotation,0.0,0.0,0.11934149109729104,0.0,0.0,0.03871210092575656,0.0
-Q14,D0295,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.12104511740465934,0.0,0.0,0.0,0.0,0.0
-Q14,D0296,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0297,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.011260282317013232,0.0,0.0,0.10503797714167155,0.0,0.0,0.0
-Q14,D0298,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.08167093603583282,0.0,0.0,0.0,0.012359350976470302,0.0,0.0
-Q14,D0299,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0300,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0301,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0302,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0303,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.3274481367649578,0.0,0.0,0.0
-Q14,D0304,Energy waiting and downtime,Slow or boring rotation,0.00016941377192278027,0.0,0.0,0.013239372712919778,0.05896313905465271,0.0,0.0
-Q14,D0305,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.11821600759553996,0.0,0.06176784283074734
-Q14,D0306,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.025645149218506767,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0307,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.025526589131374195,0.023792042683427446,0.0,0.0
-Q14,D0308,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0309,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0310,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0311,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06857405132432388,0.0,0.0,0.0
-Q14,D0312,APM and skill expression,Slow or boring rotation,0.0,0.0,0.12366295354630671,0.0850517669273225,0.0,0.0,0.0
-Q14,D0313,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0314,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0257,"Hybrid roles, tanking, and damage",Engaging active rotation,0.03871712297217219,0.0,0.0,0.0,0.0,0.03406591261421605,0.0
+Q14,D0258,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.013402699721594392,0.025731151595077415,0.0,0.0,0.0,0.0,0.0
+Q14,D0259,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.1280074742243433
+Q14,D0260,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.007163333851885516,0.05723091301263871,0.0,0.0,0.03268501710582557,0.0,0.07925725159137284
+Q14,D0261,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.08118134656310888,0.0,0.0,0.0,0.0,0.004998742025616534
+Q14,D0262,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.0344485909508258,0.0,0.0,0.0,0.01109305456999419,0.0,0.12222381909916102
+Q14,D0263,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.10374830202154603,0.007484358883736557,0.0,0.006349508608889552,0.025167513969894206,0.018668949635129627,0.0
+Q14,D0264,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.41423127403453436,0.0,0.0,0.0
+Q14,D0265,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.11590214953437838,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0266,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.11036299732100278,0.0,0.0,0.0,0.0,0.013227109610251845,0.022863799853341544
+Q14,D0267,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.009084384472753202,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0268,Energy waiting and downtime,Engaging active rotation,0.008913932850669637,0.032067905288137875,0.0,0.0,0.052041169112442213,0.0384147104216191,0.0
+Q14,D0269,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.41423127403453436,0.0,0.0,0.0
+Q14,D0270,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.024357300819921733,0.0,0.0,0.0,0.012238551373021957,0.0,0.0
+Q14,D0271,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.08984979212178046,0.0,0.0
+Q14,D0272,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.10004025390800343,0.0
+Q14,D0273,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.0057099008263441315,0.0,0.0,0.0,0.0049052834389116465,0.0,0.0007894717086860073
+Q14,D0274,Engaging active rotation,"Hybrid roles, tanking, and damage",0.0622375634637309,0.0,0.0,0.0,0.0,0.12479299351472382,0.0
+Q14,D0275,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.012336184847194382,0.0,0.0,0.0,0.0
+Q14,D0276,Slow or boring rotation,Engaging active rotation,0.010867922875041064,0.0,0.0,0.09271903007537671,0.005525239113314251,0.056527104918907424,0.01970776553338755
+Q14,D0277,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.10980498988471536,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0278,APM and skill expression,Engaging active rotation,0.010247637406264052,0.0,0.11487588006715486,0.0,0.0,0.03776396486002121,1.5201732674742375e-05
+Q14,D0279,APM and skill expression,"Powershifting, engagement, and identity",0.03722781598508706,0.16144087939806764,0.192225880502417,0.0,0.016310938302558017,0.0,0.0
+Q14,D0280,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.007603926221364729,0.0,0.0,0.0,3.995358177267978e-05,0.0,0.0
+Q14,D0281,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1636952856371505,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0282,Engaging active rotation,"Powershifting, engagement, and identity",0.0,0.005055013463943462,0.0,0.0,0.0,0.10020547969902167,0.001640115840168067
+Q14,D0283,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.13428670844841814,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0284,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.021607129418174952,0.0,0.0
+Q14,D0285,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0027512801434113657,0.0030213061801820642,0.0,0.0,0.01442634011415862,0.0028008906226887646,0.0
+Q14,D0286,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.12475892996551034,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0287,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.12262363525291974
+Q14,D0288,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.050353023114033356,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0289,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0449426149323982,0.0,0.0,0.0,0.0,0.0,0.017365733713447518
+Q14,D0290,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.11123043485459909,0.0,0.0,0.0,0.0,0.0
+Q14,D0291,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3932638839580813,0.0,0.0,0.0,0.0,0.0
+Q14,D0292,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.12995728040773746,0.0,0.060185598171615104,0.0,0.0
+Q14,D0293,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.10616418086247133,0.0
+Q14,D0294,APM and skill expression,Engaging active rotation,0.0,0.0,0.1998262407284803,0.0,0.012032815631996678,0.08804505674841279,0.0
+Q14,D0295,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.15734568320026826,0.0,0.0,0.0
+Q14,D0296,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.00478473061424271,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0297,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.09377364091165388,0.11583539104044088,0.0,0.0,0.0,0.0,0.0
+Q14,D0298,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.1400597567000542,0.0,0.0,0.0,0.038613656089886164,0.0,0.0
+Q14,D0299,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.001122122922607478,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0300,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03819835084568063,0.0,0.0
+Q14,D0301,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.018563707660973653,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0302,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.007324691451000964,0.0,0.0
+Q14,D0303,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3932638839580813,0.0,0.0,0.0,0.0,0.0
+Q14,D0304,Energy waiting and downtime,"Powershifting, engagement, and identity",0.019238074294797857,0.026748664630297136,0.003912508624246839,0.0,0.11019090752860876,0.0,0.0
+Q14,D0305,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.20851932400760412,0.0,0.0
+Q14,D0306,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08984804082984159,0.0,0.0,0.0,0.0,0.0,0.023539558432033498
+Q14,D0307,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0017683402044807058,0.049024375468211284,0.0,0.0,0.06355693337076872,0.0,0.0
+Q14,D0308,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03583625900503184,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0309,"Hybrid roles, tanking, and damage",Engaging active rotation,0.013977702665623194,0.0,0.0,0.0,0.0,0.004603981756561367,0.0
+Q14,D0310,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.02902737421512994,0.0,0.0
+Q14,D0311,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.1353224486287083,0.0,0.0,0.005494040597921547,0.0,0.0
+Q14,D0312,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.21573972544163772,0.28387575022226114,0.0,0.0,0.0,0.0
+Q14,D0313,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.037285285967037375,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0314,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.035919523466735014,0.0,0.0,0.0,0.0,0.0,0.0
 Q14,D0315,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0316,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.3227897888344269,0.0
+Q14,D0316,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.35110828734916316,0.0
 Q14,D0317,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0318,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0319,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.02622573725994648,0.028495231419645883,0.0,0.0
-Q14,D0320,"Powershifting, engagement, and identity",Slow or boring rotation,0.013812227412814366,0.02473699729974609,0.0005005136443286904,0.021054475064304298,0.0,0.014633793434365985,0.0
-Q14,D0321,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.020046495092763978,0.057736850084947,0.0,0.0
-Q14,D0322,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0323,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.1456081105557713,0.0,0.0
-Q14,D0324,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0325,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0011366902963169218,0.0
-Q14,D0326,Engaging active rotation,"Hybrid roles, tanking, and damage",0.01612616263793742,0.0,0.0,0.0,0.0,0.038327236941939284,0.0
-Q14,D0327,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0328,Slow or boring rotation,Energy waiting and downtime,0.030420945276473384,0.0,0.0,0.06914617787171773,0.06089421956130944,0.0,0.0
+Q14,D0318,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0008673798753920218,0.0,0.0,0.0,0.00893691982533274,0.0,0.0
+Q14,D0319,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.044257329380944906,0.0,0.0,0.05342495801137162,0.0,0.0
+Q14,D0320,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.07362745487736969,0.02505180697486308,0.009639193186976565,0.045089401392998926,0.0,0.024035535734701238,0.04326075714005452
+Q14,D0321,Energy waiting and downtime,"Powershifting, engagement, and identity",0.003884449170588839,0.03247238363428895,0.0,0.0,0.10380633976089246,0.0,0.0
+Q14,D0322,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.053217442494329255,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0323,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.19280245094018134,0.0,0.0
+Q14,D0324,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.015164008566236316,0.0,0.0,0.0,0.004892478824759307,0.0,0.0
+Q14,D0325,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.04032111717599001,0.09562250709583728,0.0
+Q14,D0326,Engaging active rotation,"Hybrid roles, tanking, and damage",0.06266020698092219,0.0,0.0,0.0,0.0,0.0908460492968389,0.0
+Q14,D0327,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0030886147243886163,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0328,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.03252257948668009,0.06990096859741793,0.0,0.0,0.06847205002349628,0.0,0.12470179544882348
 Q14,D0329,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0330,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.03413675450307069,0.0,0.0,0.031349334332953976,0.0,0.0,0.0
-Q14,D0331,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.09436623506980997,0.0,0.14015389126171213
-Q14,D0332,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.07327065031775164,0.0,0.0,0.0
-Q14,D0333,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08241549148160675,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0334,APM and skill expression,"Hybrid roles, tanking, and damage",0.021041608378152027,0.0,0.11591139062028501,0.0,0.0,0.0,0.0
-Q14,D0335,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0336,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.017764026029234603,0.0,0.0194186112260586,0.0
-Q14,D0337,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06327077990287122,0.0,0.0,0.0
-Q14,D0338,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0596339471763515,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0339,APM and skill expression,Energy waiting and downtime,0.006323949351959914,0.0,0.03482441803297473,0.0,0.010901860675920787,0.0,0.0
-Q14,D0340,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0330,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.051268699477184564,0.03992536024402237,0.0,0.0,0.0,0.0034945068030372774,0.0817311598102525
+Q14,D0331,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.14663684456951345,0.0,0.0
+Q14,D0332,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.09665697426242768,0.0,0.0,0.010554842436900747,0.0,0.0
+Q14,D0333,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.15100897651672454,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0334,APM and skill expression,"Hybrid roles, tanking, and damage",0.05177306921736813,0.0,0.14741038474026213,0.0,0.0,0.0,0.027240833899866094
+Q14,D0335,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.02820777246544595,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0336,Engaging active rotation,"Powershifting, engagement, and identity",0.0,0.03518165771031401,0.0,0.0,0.0,0.03905427744352885,0.0
+Q14,D0337,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.11772341266512301,0.0,0.0,0.0,0.0,0.0
+Q14,D0338,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1010252920407309,0.0,0.0,0.0,0.0,0.0,0.013690145236972552
+Q14,D0339,APM and skill expression,"Hybrid roles, tanking, and damage",0.04750044538899993,0.0,0.062242683536184916,0.0,0.029256629795730876,0.0,0.010683690901780073
+Q14,D0340,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.06860111125879599
 Q14,D0341,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0342,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.06530447854941336,0.0
-Q14,D0343,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.03650495256567803,0.0,0.0,0.021045272327725534,0.0,0.0
-Q14,D0344,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.1567543532199386,0.0,0.0
-Q14,D0345,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3346716341987706,0.0,0.0,0.0,0.0,0.0
+Q14,D0342,Engaging active rotation,"Hybrid roles, tanking, and damage",0.01719295483514806,0.0,0.0,0.0,0.0,0.10071393688153059,0.0
+Q14,D0343,Slow or boring rotation,Energy waiting and downtime,0.014424284155371624,0.0,0.0,0.06524031319041838,0.0542303200818817,0.0,0.0
+Q14,D0344,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.17926756151342083,0.0,0.0
+Q14,D0345,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.41423127403453436,0.0,0.0,0.0
 Q14,D0346,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0347,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.10192182124604421,0.0,0.0,0.0
-Q14,D0348,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.08030389156631289,0.0,0.0
-Q14,D0349,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0350,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.03645165938326945,0.0,0.0,0.08189349622797315,0.0,0.0,0.0
+Q14,D0347,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3932638839580813,0.0,0.0,0.0,0.0,0.0
+Q14,D0348,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.10065933700909441,0.0,0.0
+Q14,D0349,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.23311749606709073
+Q14,D0350,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.06248168445008479,0.11994893727323534,0.0,0.0,0.0,0.0,0.12516429874465057
 Q14,D0351,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0352,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0353,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.016140977024486476,0.0,0.0,0.0,0.04031730263096205,0.0,0.0
-Q14,D0354,"Powershifting, engagement, and identity",Slow or boring rotation,0.0,0.15090173300200516,0.0,0.08698376455069297,0.0,0.0,0.0
-Q14,D0355,Engaging active rotation,"Hybrid roles, tanking, and damage",0.02509086624321355,0.0,0.0,0.0,0.0,0.048277092295807865,0.0
-Q14,D0356,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.03287220189039752,0.0,0.0,0.0,0.0,0.0,0.0928887342445801
-Q14,D0357,"Hybrid roles, tanking, and damage",APM and skill expression,0.0248216677165684,0.0,0.0041614768384489785,0.0,0.0,0.0,0.0
-Q14,D0358,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0656179514955542,0.0,0.0,0.0,0.0,0.026112992896753194,0.0
-Q14,D0359,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.05144082496073648,0.0,0.0,0.0
-Q14,D0360,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.06291060291866593,0.034959081977680544,0.0,0.0
-Q14,D0361,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0362,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0363,Class identity and distinctiveness,APM and skill expression,0.0,0.0,0.0020990045371079434,0.0,0.0,0.0,0.049009043680835536
-Q14,D0364,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.09737350654166209,0.021571777818910995,0.0,0.0,0.0,0.009033971305750496,0.0
-Q14,D0365,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0848098959027197,0.0,0.0,0.07569763283956567
+Q14,D0352,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.09946793620887463
+Q14,D0353,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.04536807668506293,0.0,0.0,0.0,0.07733601166623179,0.0,0.0
+Q14,D0354,Slow or boring rotation,"Powershifting, engagement, and identity",0.0,0.20743533203838918,0.0,0.34438798364041384,0.0,0.0,0.0
+Q14,D0355,Engaging active rotation,"Hybrid roles, tanking, and damage",0.07173663867678427,0.0,0.0,0.0,0.0,0.07419672705328303,0.0
+Q14,D0356,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.046646290188098447,0.0,0.0,0.0,0.02158067894044211,0.0,0.0
+Q14,D0357,"Hybrid roles, tanking, and damage",APM and skill expression,0.04877739279590826,0.0,0.019171051969719046,0.0,0.0,0.0,0.0
+Q14,D0358,"Hybrid roles, tanking, and damage",Engaging active rotation,0.1318412226842986,0.0,0.0,0.0,0.0,0.06224466754007537,0.0
+Q14,D0359,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.12108915953480502,0.0,0.0,0.008227170415861055,0.006529672401404106,0.0
+Q14,D0360,"Powershifting, engagement, and identity",Energy waiting and downtime,0.008395703457896161,0.10520277210906258,0.0,0.0,0.08340112114414268,0.0,0.0
+Q14,D0361,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.012383632242048666,0.0,0.0,0.0,0.0,0.0,0.008965938940925573
+Q14,D0362,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.021873017816093108,0.0,0.0,0.0,0.0,0.0,0.1028978158680821
+Q14,D0363,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.023800800378653977,0.0,0.0074107995992521635,0.0,0.0
+Q14,D0364,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.16557089232406888,0.0,0.0,0.042665674637974944,0.0,0.024141576597501643,0.0
+Q14,D0365,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.13231503882256632,0.0,0.0,0.014005475882354195,0.0,0.0
 Q14,D0366,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0367,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0368,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.07503376577204365,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0369,Slow or boring rotation,APM and skill expression,0.0,0.0,0.002570776929910994,0.04387327812179915,0.0,0.0,0.0
-Q14,D0370,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0371,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.04994454635807395,0.0,0.0
-Q14,D0372,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.052609020740495956,0.0,0.0
-Q14,D0373,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03256015429995055,0.0,0.0
+Q14,D0367,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.030057631298511828,0.0,0.0,0.0,0.002898748783720147,0.0,0.012111369652892135
+Q14,D0368,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.11508980532374201,0.0,0.0,0.0,0.0,0.0,0.030145654740464434
+Q14,D0369,"Powershifting, engagement, and identity",APM and skill expression,0.015290879822606306,0.06161486022134571,0.020214948011202768,0.0,0.008784518583481529,0.0036789467836266516,0.0
+Q14,D0370,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.019367795449022028,0.0,0.0,0.0,0.023979092364699896,0.0,0.0
+Q14,D0371,Energy waiting and downtime,Class identity and distinctiveness,0.02665987608670247,0.0,0.000781443817954935,0.0,0.11115296011318346,0.0,0.04109237563855581
+Q14,D0372,Energy waiting and downtime,Class identity and distinctiveness,0.028607292552404805,0.0,0.0,0.0,0.09263517856065688,0.0,0.05971896187565621
+Q14,D0373,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.060583989195008896,0.0,0.0
 Q14,D0374,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0375,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.04114002163274308,0.0,0.0,0.0
-Q14,D0376,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06397586841710805,0.0,0.0,0.0
-Q14,D0377,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.03720844918349711,0.0,0.0,0.0
-Q14,D0378,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.03893782698373232,0.0,0.0,0.0,0.0,0.03501721290976972
-Q14,D0379,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.049836252448612436,0.0,0.0,0.0
-Q14,D0380,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.023102564610930496,0.0,0.0,0.0
-Q14,D0381,"Hybrid roles, tanking, and damage",Engaging active rotation,0.04188088889997035,0.0,0.0,0.0004067313486853372,0.0,0.005118762018769493,0.0
-Q14,D0382,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.025786624100497094,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0383,APM and skill expression,Slow or boring rotation,0.0,0.0,0.07186779763898166,0.020915534716193403,0.0,0.0,0.0
-Q14,D0384,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0385,Slow or boring rotation,Engaging active rotation,0.003685173539980976,0.0,0.0,0.0437387860525211,0.0,0.012891610804667289,0.0
-Q14,D0386,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.030978403187249863,0.0,0.0,0.0
-Q14,D0387,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.037188597771360896,0.0,0.0,0.0
+Q14,D0375,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.06496862568664817,0.0,0.0,0.006177191450759658,0.0,0.12823195742489985
+Q14,D0376,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.08760841709938795,0.0,0.0,0.0,0.0,0.0
+Q14,D0377,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.041673424773351835,0.0,0.0,0.0,0.0,0.1350506983830912
+Q14,D0378,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.06868232235904659,0.001767306243013253,0.0,0.0
+Q14,D0379,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.11101396874441187,0.0,0.0,0.0,0.0,0.0697154431581957
+Q14,D0380,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.015386547119245154,0.04164808928419794,0.0,0.0,0.0,0.040265940830157554,0.04491239637549929
+Q14,D0381,"Hybrid roles, tanking, and damage",Engaging active rotation,0.13800845824954183,0.0,0.0,0.0,0.016396119572435558,0.018842500530470034,0.004098168185461986
+Q14,D0382,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.10749897768340505,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0383,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.03658701899076273,0.11482616195946664,0.0,0.0,0.0,0.01758306329557001
+Q14,D0384,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0044105174658781105,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0385,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.042531042363874984,0.06748161312388308,0.0,0.0,0.0,0.0314203247570686,0.06566479227013486
+Q14,D0386,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.021978883963207647,0.04452922929576022,0.0,0.0,0.0,0.0,0.12205012138718697
+Q14,D0387,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.0169720270674527,0.058695564080036476,0.0,0.0,0.0,0.0,0.0
 Q14,D0388,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Q14,D0389,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0390,APM and skill expression,"Hybrid roles, tanking, and damage",0.0160066840306605,0.0,0.1053273261437855,0.0,0.0,0.0,0.0
-Q14,D0391,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.01787408626557413,0.0,0.0
-Q14,D0392,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.0683084064328391,0.0,0.04484467586098867,0.0,0.0
-Q14,D0393,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.08606337812397125,0.0,0.0
-Q14,D0394,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0395,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0396,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0397,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.04224988866198952,0.0,0.0
-Q14,D0398,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0399,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0400,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0920634272654109,0.0
-Q14,D0401,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.1347065959272163,0.0,0.0
-Q14,D0402,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.29460237579501114,0.0,0.0,0.0,0.0
-Q14,D0403,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0404,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.10788017210991492,0.0,0.0,0.0,0.0
-Q14,D0405,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0406,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.018144403639373346,0.0,0.0,0.014657929369860118,0.029900647526737902,0.011725044845947517,0.0
-Q14,D0407,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.028283730268899555,0.0,0.0,0.0
-Q14,D0408,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.013843948051085252,0.0,0.0,0.02683068552221163,0.0,0.0,0.0
-Q14,D0409,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.032386621926332494,0.0,0.0,0.0
-Q14,D0410,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.06848094625527813,0.0,0.0
-Q14,D0411,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.08006453644598559,0.09787328985115634,0.0,0.0,0.0480106969418492,0.0
+Q14,D0390,APM and skill expression,"Hybrid roles, tanking, and damage",0.04649291486286568,0.0,0.17368680294787514,0.0,0.0,0.0367234960749026,0.0
+Q14,D0391,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.05000648326025047,0.0,0.0004696742523264693
+Q14,D0392,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.09053266167633887,0.0,0.06233601669789084,0.0,0.0
+Q14,D0393,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.12483627921833104,0.0,0.0
+Q14,D0394,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0375091483719483,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0395,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.04937554832189408
+Q14,D0396,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0012406089180698853,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0397,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.011464614670115364,0.0,0.0,0.0,0.07399925724497039,0.0,0.0
+Q14,D0398,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.02883037938320466,0.008197318289965885,0.0
+Q14,D0399,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.16481289094674564
+Q14,D0400,Engaging active rotation,Class identity and distinctiveness,0.0003680550872486989,0.0,0.0,0.0,0.0,0.17278655248788968,0.03747899800691977
+Q14,D0401,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.20825795900576344,0.0,0.0
+Q14,D0402,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.3535642676498243,0.0,0.0,0.0,0.0
+Q14,D0403,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.02617258913603063,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0404,APM and skill expression,Engaging active rotation,0.0,0.0,0.19272789359925618,0.0,0.0,0.005198658791173057,0.0
+Q14,D0405,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04197346506690318,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0406,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.06357341947923821,0.023254431884180467,0.0,0.0,0.047405635362215995,0.02400674640206926,0.019583086415463583
+Q14,D0407,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0062637917163874705,0.03240436920842918,0.0,0.0,0.0,0.0,0.08887651847344545
+Q14,D0408,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.06418223468140143,0.041931936508183526,0.0,0.0,0.0,0.0,0.0
+Q14,D0409,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.05417972246926913,0.0,0.0,0.0009570160877824982,0.0,0.0
+Q14,D0410,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.11224032623239574,0.0,0.0
+Q14,D0411,APM and skill expression,Slow or boring rotation,0.0,0.0,0.12303493691602749,0.10885825120573343,0.0,0.05548448760935374,0.015020762532195411
 Q14,D0412,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0413,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0476922932630596,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0414,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0415,APM and skill expression,Slow or boring rotation,0.004461117282944979,0.0,0.006054012601979626,0.004691344263127776,0.0,0.0,0.0
-Q14,D0416,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0002560917526474085,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0417,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.031571529891425226,0.04078064771104877,0.0
-Q14,D0418,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.13414244354210614,0.0,0.0
-Q14,D0419,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.06047049286773625,0.0,0.0,0.009628868700713923,0.0,0.0,0.0
-Q14,D0420,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.08447089031104313,0.0,0.0
-Q14,D0421,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.021314451956998968,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0422,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.08862065726249703,0.0
-Q14,D0423,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.07625397403438411,0.0,0.0
-Q14,D0424,Slow or boring rotation,APM and skill expression,0.0,0.0,0.00811649214728198,0.025129366761631692,0.007259127371500276,0.0,0.0
-Q14,D0425,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.08113539937942572,0.0
-Q14,D0426,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.05252383789266772,0.0,0.0,0.0
-Q14,D0427,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0428,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.15992088076776093,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0429,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04087147373418025,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0430,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.023039541010929407,0.009263604418192642,0.0,0.0
-Q14,D0431,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0432,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.008304863102899143,0.0,0.0,0.0
-Q14,D0433,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.029914165517832794,0.0,0.0,0.007553386669000439,0.027176810181538537,0.0,0.0
-Q14,D0434,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.020087532889074635,0.0,0.0,0.0
-Q14,D0435,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0436,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.024102545342999288,0.0,0.0601171663066532
-Q14,D0437,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.032654512437801105,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0438,Slow or boring rotation,"Powershifting, engagement, and identity",0.0037091588104098717,0.0232270620556011,0.0,0.041616335300580586,0.01687123379783191,0.0,0.0
-Q14,D0439,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.031122104634975365,0.0,0.0,0.0,0.0,0.0
-Q14,D0440,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0441,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.059694606245850296,0.0,0.0,0.008958556856636005,0.0,0.0,0.0
-Q14,D0442,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0849506618477842,0.0,0.0,0.0
-Q14,D0443,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03434702516293158,0.0,0.02055288827986422
-Q14,D0444,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.009772869632612962,0.0,0.0,0.015937923626784613,0.0,0.007933213297462788,0.0
-Q14,D0445,APM and skill expression,Slow or boring rotation,0.0,0.0,0.052575798564378266,0.01742812203729839,0.0,0.0,0.0
-Q14,D0446,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.023779000319306107,0.0,0.012059845368700787,0.0
-Q14,D0447,APM and skill expression,Slow or boring rotation,0.009501727112083993,0.0,0.013814448211996476,0.012853681731036834,0.002136142973998702,0.0,0.0
-Q14,D0448,Engaging active rotation,"Hybrid roles, tanking, and damage",0.03418562045828923,0.0,0.0,0.0,0.0,0.09625665091630614,0.0
+Q14,D0413,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.12297135082422389,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0414,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.050647763078319454,0.0,0.0,0.0,0.0,0.0031192927118989518,0.006027051724055837
+Q14,D0415,"Hybrid roles, tanking, and damage",APM and skill expression,0.06871422976890258,0.0144079927153997,0.022813940517636636,0.0,0.021181833710132443,0.010259966729736222,0.0
+Q14,D0416,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05036446834543962,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0417,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.05386797895239846,0.08028814863198319,0.0
+Q14,D0418,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.2051858694099219,0.0,0.0
+Q14,D0419,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.13456991001769006,0.011118248108754834,0.0009971535286231324,0.0,0.007341471546847826,0.0,0.026592294718602794
+Q14,D0420,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.1445546305578879,0.0,0.0
+Q14,D0421,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.03461549875768773,0.0,0.0,0.0,0.0,0.0,0.23396641489635225
+Q14,D0422,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.2955052531592961,0.0
+Q14,D0423,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.006197661140189274,0.0,0.0,0.0,0.12964132543618284,0.0009539665697793853,0.0
+Q14,D0424,"Powershifting, engagement, and identity",Energy waiting and downtime,0.006208037164852901,0.04119278308407815,0.032439542061524426,0.0,0.036018249106585756,0.0,0.0
+Q14,D0425,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.0011832868894926622,0.19488578142762086,0.0
+Q14,D0426,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.043411964502295446,0.053949403435440385,0.0,0.0,0.0,0.0,0.06656902541277882
+Q14,D0427,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03494359972568754,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0428,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1567943798452243,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0429,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.10571721898567539,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0430,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.043326894252079105,0.04034586552929721,0.01578535787435009,0.0,0.04002380599517078,0.0,0.0
+Q14,D0431,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.25959448076506053
+Q14,D0432,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.013322208414438031,0.018383042585539765,0.0,0.0,0.0,0.0,0.014768259598697257
+Q14,D0433,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.10405873823932327,0.01148103351150339,0.0,0.0,0.0548594413528842,0.0,0.0
+Q14,D0434,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.024866061485138195,0.05235940460648338,0.0,0.0,0.0,0.0,0.0
+Q14,D0435,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.21887319636180735
+Q14,D0436,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.011198914266883585,0.0,0.0,0.0,0.0842115458608642,0.0,0.0
+Q14,D0437,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06909587605892843,0.0,0.0,0.0,0.0,0.0,0.03457976613996165
+Q14,D0438,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.04291720760573942,0.053210511876460004,0.0,0.0438645216097287,0.04251594456743827,0.0,0.05769084741699089
+Q14,D0439,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0593105231725747,0.012478383441851213,0.0,0.0
+Q14,D0440,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.02564225021183701,0.0,0.0,0.0,0.01620505431703721,0.0,0.0
+Q14,D0441,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.13877985315107297,0.005814780563911844,0.007438249760833995,0.0,0.0,0.010387997052971418,0.03839043669731486
+Q14,D0442,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.057328810550450575,0.16235666337783744,0.0,0.0,0.0,0.0,0.0
+Q14,D0443,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.00869966056024869,0.0,0.003238498869799521,0.0,0.07889357284633225,0.0,0.0
+Q14,D0444,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05751222969510674,0.02087337334923476,0.0,0.0,0.012853525539871267,0.026616252481593643,0.05640236275705875
+Q14,D0445,APM and skill expression,"Powershifting, engagement, and identity",0.012736163069032566,0.03372519944412796,0.08377097652538398,0.0,0.008689440391780098,0.017270484147635993,0.010346552244958484
+Q14,D0446,Engaging active rotation,"Powershifting, engagement, and identity",0.0,0.04416600328740848,0.0,0.0,0.018134143165208092,0.08170849067339014,0.0
+Q14,D0447,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06912341799611497,0.017146547336248246,0.02934426066026722,0.0,0.022776473834830523,0.0019797776368654443,0.03193103389815834
+Q14,D0448,Engaging active rotation,"Hybrid roles, tanking, and damage",0.06386897976475839,0.0,0.0,0.0,0.0,0.18832740069965226,0.0
 Q14,D0449,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Q14,D0450,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0451,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.021317095223508713,0.0,0.023822223940861417,0.0
-Q14,D0452,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.032321574501064695,0.0,0.0,0.028923151753000212,0.0,0.0,0.0
-Q14,D0453,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.020446682203068434,0.0,0.0,0.021627123675101383,0.01576158928219908,0.007197495815759508,0.013532456818964393
-Q14,D0454,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0455,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08297388923476685,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0456,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.008661264943288423,0.0,0.06419199354611291,0.01641094311492619
-Q14,D0457,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0458,"Hybrid roles, tanking, and damage",Engaging active rotation,0.05450561466588018,0.0,0.0,0.0,0.01052912706588311,0.011365382276582243,0.0
-Q14,D0459,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.005792282640964851,0.0,0.002384867053153803,0.0
-Q14,D0460,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.03251931219779075,0.0,0.0,0.04946152236235021,0.0,0.0,0.0
-Q14,D0461,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0462,Energy waiting and downtime,Engaging active rotation,0.0009219546805599712,0.0,0.0,0.0,0.06670948871981915,0.011095527260897572,0.0
-Q14,D0463,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0464,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.04414547357682825,0.0,0.0,0.0
-Q14,D0465,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.012592036925293792,0.0,0.0
-Q14,D0466,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.07400772233541267,0.0,0.0,0.0,0.045862145168904946,0.07158436064843852
-Q14,D0467,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.09576121799577812,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0468,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0469,APM and skill expression,Slow or boring rotation,0.0,0.0,0.06614173907189227,0.02293360591877266,0.0,0.0,0.0
-Q14,D0470,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3346716341987706,0.0,0.0,0.0,0.0,0.0
-Q14,D0471,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,9.063601845227748e-05,0.0020899717591249477,0.0,0.0
-Q14,D0472,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.027584224439841296,0.017421761484967206,0.007775911917716621,0.0
-Q14,D0473,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.04402619689672963,0.0
-Q14,D0474,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.029725625679661537,0.0,0.0,0.0
-Q14,D0475,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.05350167295385921,0.0,0.0,0.015454006818503927,0.006282284225635062,0.0,0.0
-Q14,D0476,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.052409525894581,0.0,0.0
-Q14,D0477,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.03897006413800494,0.01784098069660351,0.01173425270618667,0.0
-Q14,D0478,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,9.063601845227748e-05,0.0020899717591249477,0.0,0.0
-Q14,D0479,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.1564605306464903,0.0,0.023245113956165846,0.0,0.04952207166128623
-Q14,D0480,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.031025789074602777,0.0,0.0,0.0
-Q14,D0481,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.05435769287411172,0.03293457439780189,0.0,0.0
-Q14,D0482,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0483,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0484,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.040570936552209926,0.0,0.0
-Q14,D0485,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.013910796527948157,0.00729163486441566,0.0,0.0
-Q14,D0486,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0487,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.13039482998607294,0.0,0.0,0.0
-Q14,D0488,Engaging active rotation,APM and skill expression,0.0,0.0,0.01523780604445622,0.0,0.0,0.04543814646940619,0.0
-Q14,D0489,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.043607097423135524,0.0,0.0
-Q14,D0490,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.050766127080503286,0.0,0.0
-Q14,D0491,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.02520516289519801
-Q14,D0492,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.006667381803717404,0.0,0.013304584690827258,0.0
-Q14,D0493,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.004092116891730411,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0494,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06499829743387148,0.0,0.0,0.0
-Q14,D0495,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.0094693894994704,0.0,0.022810198138600402,0.0,0.0
-Q14,D0496,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.009869458221380883,0.024175125115245822,0.0,0.0
-Q14,D0497,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0498,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0499,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.039422479871421695,0.0,0.013801816550999308,0.0,0.02743802223127223,0.0
-Q14,D0500,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.045167821446501895,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0501,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.039688488950736886,0.05593934138634072,0.0,0.0
-Q14,D0502,Energy waiting and downtime,Engaging active rotation,0.01237476273852381,0.0,0.0,0.023896978442758534,0.05187238926071275,0.03424224897977086,0.02889675313372601
-Q14,D0503,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.03420955988638035,0.0,0.0,0.01808253329455392,0.0,0.0,0.0
-Q14,D0504,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0505,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.04123989810841611,0.0,0.0
-Q14,D0506,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.036588315639477204,0.0,0.0
-Q14,D0507,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0508,APM and skill expression,Engaging active rotation,0.0,0.0,0.02894463218372765,0.0,0.0,0.003171147461358575,0.0
-Q14,D0509,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.24498060554438603
-Q14,D0510,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.056256244042807234,0.09340404193918311
+Q14,D0451,Engaging active rotation,"Hybrid roles, tanking, and damage",0.03598771819165359,0.0339542043432836,0.0,0.0,0.0,0.047132457176328274,0.0
+Q14,D0452,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.12525900360237235,0.03860382027952378,0.0,0.0,0.007907280808951951,0.0,0.0
+Q14,D0453,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.06951957162403492,0.024313946844061282,0.0,0.0,0.04888297378828863,0.02178676066972729,0.041662094571141804
+Q14,D0454,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.014927763644278677,0.0,0.02639793028237609,0.0,0.0
+Q14,D0455,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.11137428332044257,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0456,Engaging active rotation,"Hybrid roles, tanking, and damage",0.022383874255865435,0.021869942255972847,0.0,0.0,0.015430403106894997,0.1514302609846745,0.0
+Q14,D0457,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04764005804283779,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0458,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.10008106188301814,0.0,0.0,0.0,0.02405613040385452,0.022215143425084644,0.0
+Q14,D0459,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0484061827573756,0.013804285741307092,0.0,0.0,0.0,0.021021618129198796,0.0
+Q14,D0460,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.11733018135877296,0.09480127555365027,0.0,0.0,0.0,0.0,0.0
+Q14,D0461,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.007283152754887032,0.0,0.0,0.0,0.0,0.0,0.035859594187046165
+Q14,D0462,Energy waiting and downtime,Engaging active rotation,0.0287502503872484,0.0,0.0,0.0,0.11461483573774217,0.030917862592906235,0.0
+Q14,D0463,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.03956868015263598,0.0,0.0,0.0,0.0,0.0,0.15618248198504572
+Q14,D0464,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.060550226840214195,0.0,0.0,0.0,0.0,0.07241524440868363
+Q14,D0465,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0378136835932216,0.0,0.0
+Q14,D0466,Slow or boring rotation,Engaging active rotation,0.0,0.0,0.0,0.1318741220662199,0.0024443309289671577,0.07670512010149644,0.0
+Q14,D0467,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.138900802837172,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0468,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.018130608304608213,0.0,0.0,0.0,0.0,0.0,0.04539367751814541
+Q14,D0469,APM and skill expression,"Powershifting, engagement, and identity",0.012532502383239719,0.0452424008120545,0.11151036519091459,0.0,0.00199550379248566,0.011509800063809925,0.0021141243700778566
+Q14,D0470,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.41423127403453436,0.0,0.0,0.0
+Q14,D0471,Energy waiting and downtime,Engaging active rotation,0.0,0.006090839488858397,0.0,0.0,0.05989874900113704,0.012114952043177732,0.0
+Q14,D0472,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.04523026238622393,0.0,0.0,0.046487547064119956,0.024862815731205693,0.0
+Q14,D0473,Engaging active rotation,"Hybrid roles, tanking, and damage",0.02621657166263567,0.0,0.0,0.0,0.0,0.07788046075461343,0.0
+Q14,D0474,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.002988985808490454,0.04565798127961275,0.0,0.0,0.0,0.0,0.0
+Q14,D0475,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.13214591350473737,0.02056379481628786,0.0,0.0,0.031759665611648065,0.013391600941698589,0.0015506414567120078
+Q14,D0476,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.10248419239152605,0.0,0.0
+Q14,D0477,"Powershifting, engagement, and identity",Energy waiting and downtime,0.015274126668299852,0.05588227843128529,0.0,0.0,0.03919510657739281,0.03048167848389945,0.006370588073042432
+Q14,D0478,Energy waiting and downtime,Engaging active rotation,0.0,0.006090839488858397,0.0,0.0,0.05989874900113704,0.012114952043177732,0.0
+Q14,D0479,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.21325443583630668,0.0,0.055612270242832454,0.0,0.0
+Q14,D0480,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.038488003319451146,0.0,0.0,0.0,0.0,0.08104894529865109
+Q14,D0481,Class identity and distinctiveness,Energy waiting and downtime,0.0002012028965855036,0.07998948132413004,0.0,0.0,0.0828560350866207,0.0013221516446106718,0.08472397448177112
+Q14,D0482,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.0006265575760072184,0.0,0.0,0.0,0.0,0.0,0.0404044807423401
+Q14,D0483,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0019882293082623646,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0484,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.012789389142186053,0.0,0.08241097056033311,0.0,0.0
+Q14,D0485,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.03843763855394965,0.018864954561468777,0.0,0.0,0.02663338394914837,0.0,0.06318117967813244
+Q14,D0486,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.015279123720752175,0.0,0.0,0.0,0.01376983988486989,0.0,0.0
+Q14,D0487,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.15890148745322602,0.0,0.0,0.0,0.0,0.0
+Q14,D0488,Engaging active rotation,APM and skill expression,0.0,0.0,0.03864687298659611,0.0,0.0019058365904777207,0.10417367836008382,0.0
+Q14,D0489,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.09358489661236773,0.0,0.0
+Q14,D0490,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.007596135966453502,0.0,0.0,0.0,0.08086637479698018,0.0,0.0
+Q14,D0491,Energy waiting and downtime,APM and skill expression,0.003442538078576343,0.0,0.020439551800847944,0.0,0.04221006353794584,0.01305162614308677,0.0
+Q14,D0492,Engaging active rotation,"Hybrid roles, tanking, and damage",0.02156203936236871,0.020103515392389498,0.0,0.0,0.002191930810154161,0.04488869952305246,0.016662354218818173
+Q14,D0493,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.04699439884272426,0.0,0.0,0.0,0.014692427429952658,0.0,0.0
+Q14,D0494,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.11109795437754906,0.0,0.0,0.0,0.0,0.06912127150022976
+Q14,D0495,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.03896743243095033,0.0,0.04716429943177142,0.0,0.0
+Q14,D0496,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.03469757208983887,0.01893398567509408,0.004270141672529672,0.0,0.06866805864535626,0.021463673059233992,0.01550228486076238
+Q14,D0497,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.004108694157603919,0.0,0.0,0.0,0.006107830055607455,0.0,0.0001385563834735471
+Q14,D0498,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01928747506563361,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0499,Slow or boring rotation,Engaging active rotation,0.0,0.03036824595423391,0.0,0.06652061106804481,0.0,0.04371091110598327,0.0
+Q14,D0500,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.08041940684580132,0.0,0.0,0.0,0.0034039301954061243,0.0,0.0
+Q14,D0501,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.06831118642444074,0.0,0.0,0.11759688180814151,0.05076908748014381,0.0
+Q14,D0502,Energy waiting and downtime,Engaging active rotation,0.04641164984491893,0.03202716310869966,0.0,0.0,0.09145927925654156,0.08722178232272794,0.004848688656668074
+Q14,D0503,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08836948381320521,0.021734304380119716,0.0,0.0,0.0034656141141231707,0.0,0.024669462721092408
+Q14,D0504,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.007110791075090425,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0505,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.013826553591839394,0.0,0.0,0.0,0.10407542380388506,0.0,0.0
+Q14,D0506,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.03938216239876108,0.0,0.0,0.0,0.08448625049055337,0.0,0.00462573738651737
+Q14,D0507,Engaging active rotation,"Hybrid roles, tanking, and damage",0.008724940505816185,0.0,0.0052313773473192555,0.0,0.0,0.011960418214285375,0.0
+Q14,D0508,APM and skill expression,Engaging active rotation,0.0,0.0,0.04985111492018409,0.0,0.003804800748374199,0.02553395573613566,0.0
+Q14,D0509,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.019569928586277686,0.0,0.0,0.01569135674228605,0.034328740469499956,0.0,0.0
+Q14,D0510,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0077744591724625695,0.025350039304189637,0.1322779772121189,0.059264707726633704
 Q14,D0511,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0512,APM and skill expression,Engaging active rotation,0.0,0.0,0.10038710978816293,0.0,0.0,0.03754444071032661,0.0
-Q14,D0513,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06489893711583652,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0514,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.03943164094248152,0.041754160447414965,0.0,0.0
-Q14,D0515,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.011542068043328108,0.0,0.0,0.03610667642112394,8.040331816942165e-05,0.0,0.0
-Q14,D0516,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.06955653966439,0.0
-Q14,D0517,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0518,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0519,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.0379382507223799,0.0,0.023401605925694156,0.0,0.03670723045952993,0.03885735779745819
+Q14,D0512,Class identity and distinctiveness,APM and skill expression,0.0,0.0,0.15215158200359638,0.0,0.0,0.05758847724786519,0.1732330711768893
+Q14,D0513,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.13779465746879202,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0514,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.05350795602519524,0.0,0.0,0.07683386779484838,0.0,0.0
+Q14,D0515,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.040149433003440045,0.0527347052115513,0.0,0.0,0.01794674696196756,0.0,0.04233176213285039
+Q14,D0516,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.0024683815722768496,0.12254946831928913,0.0
+Q14,D0517,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01627890542169888,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0518,Engaging active rotation,"Hybrid roles, tanking, and damage",0.004794250840261253,0.0,0.0,0.0,0.001986959171110352,0.02213127318149763,0.0
+Q14,D0519,Engaging active rotation,Slow or boring rotation,0.004572593779402491,0.037080773804473964,0.0,0.06629651943085595,0.001911415249784586,0.08759339393838192,0.0
 Q14,D0520,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0521,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.015209533396507026,0.043692735995338045,0.0,0.0
-Q14,D0522,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.038334659262399685,0.0,0.0
-Q14,D0523,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03814083756350989,0.0,0.0
-Q14,D0524,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.3274481367649578,0.0,0.0,0.0
-Q14,D0525,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.04377560242897018,0.0,0.028253813074557568,0.03771559435867723,0.0,0.0
-Q14,D0526,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0442272851019297,0.0
-Q14,D0527,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0528,APM and skill expression,Slow or boring rotation,0.0,0.0,0.06038537659335673,0.01960642041278586,0.01520313434796742,0.0,0.0
-Q14,D0529,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.019514694487645926,0.02108174094852345,0.0,0.0
-Q14,D0530,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0531,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.05342492035154182,0.0,0.0,0.0
+Q14,D0521,Energy waiting and downtime,"Powershifting, engagement, and identity",0.015807716600933257,0.03029593319732992,0.0,0.0,0.08982667096514595,0.026369369456529457,0.0
+Q14,D0522,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.009516111504324843,0.0,0.0,0.0,0.06792070706850309,0.0,0.0059337209438506296
+Q14,D0523,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.06480920398768951,0.0,0.0
+Q14,D0524,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3932638839580813,0.0,0.0,0.0,0.0,0.0
+Q14,D0525,Energy waiting and downtime,Slow or boring rotation,0.0,0.048095995497845795,0.0,0.0709343510569082,0.0821589205987049,0.02564690483812116,0.0
+Q14,D0526,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.08022138638384847,0.0
+Q14,D0527,"Hybrid roles, tanking, and damage",Engaging active rotation,0.04341313267779302,0.005969841884886774,0.0,0.0,0.0062977475785539055,0.0417745039860025,0.0
+Q14,D0528,APM and skill expression,Energy waiting and downtime,0.015819328668996182,0.029959256842789488,0.10079385562255357,0.0,0.04163561553969207,0.0,0.029479246806953553
+Q14,D0529,Energy waiting and downtime,"Powershifting, engagement, and identity",0.02495024582492931,0.035764508500052555,0.0,0.0,0.05366228646782664,0.0,0.0
+Q14,D0530,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.027296245550569725,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0531,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.06839699995130692,0.0,0.0,0.004425704217382693,0.0,0.08913463414262522
 Q14,D0532,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0533,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0013078642780177947,0.016223755763481104,0.011164242248961292,0.0,0.0
-Q14,D0534,Slow or boring rotation,APM and skill expression,0.0,0.0,0.0011219708822263067,0.037310992376535526,0.0,0.0,0.0
-Q14,D0535,Energy waiting and downtime,Slow or boring rotation,0.01421025077158424,0.0,0.0,0.0274222463162646,0.0316609521808509,0.0,0.0
-Q14,D0536,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0537,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0538,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0772652629289543,0.0,0.0
-Q14,D0539,Slow or boring rotation,"Powershifting, engagement, and identity",0.0,0.005872874890687992,0.0,0.006134752636987634,0.0,0.0,0.0
-Q14,D0540,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0541,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0542,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.054471781162632626,0.0,0.01652911841043683,0.03436031506016774,0.0,0.0030476312269003725,0.0
-Q14,D0543,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.071277182756253
-Q14,D0544,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.024297081867692274,0.0
-Q14,D0545,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.3346716341987706,0.0,0.0,0.0,0.0,0.0
+Q14,D0533,Class identity and distinctiveness,Energy waiting and downtime,0.012900439302773197,0.02504987738329699,0.019624118364540973,0.0,0.03951789884424834,0.0,0.08534778793964726
+Q14,D0534,"Powershifting, engagement, and identity",APM and skill expression,0.0,0.05416875945606023,0.019850002610139937,0.0,0.0,0.0,0.0
+Q14,D0535,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.057038224817849925,0.0354739727502159,0.0,0.0,0.05120485656168117,0.0,0.010742634403673288
+Q14,D0536,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05327254736100284,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0537,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03819835084568063,0.0,0.0
+Q14,D0538,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.09563751751251173,0.0,0.0
+Q14,D0539,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.038135743077934305,0.0067344569401904366,0.0,0.020106219201867944,0.0,0.0,0.09766312024686429
+Q14,D0540,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0027970454745734567,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0541,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04251806958198678,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0542,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.14215701475069487,0.04558341318621045,0.02965146708960602,0.0,0.0,0.010785363862964975,0.0
+Q14,D0543,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.0018935759021388228,0.0,0.022963875127599537,0.0,0.0
+Q14,D0544,Engaging active rotation,Class identity and distinctiveness,0.004776794920762868,0.0,0.0,0.0,0.0,0.04392751791098551,0.026187556890644014
+Q14,D0545,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.41423127403453436,0.0,0.0,0.0
 Q14,D0546,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0547,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0548,Class identity and distinctiveness,Slow or boring rotation,0.0,0.0,0.0,0.02645278659081919,0.025474460664518535,0.0,0.04231838040896677
-Q14,D0549,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.055681914484643526,0.0,0.0,0.0
-Q14,D0550,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1808785330328586,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0551,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0552,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.16240486495543344,0.0,0.0
-Q14,D0553,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0554,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0314508406208623,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0555,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.022869502291378074,0.029603036142893124,0.0,0.01295424968705529,0.0,0.0,0.02402330481806941
-Q14,D0556,APM and skill expression,Slow or boring rotation,0.0,0.0,0.12960506785704007,0.08959299518885472,0.0,0.0,0.0
-Q14,D0557,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.011147430002033568,0.0,0.0,0.0
-Q14,D0558,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0559,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0560,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.04592494717956462,0.049006038629116504,0.0,0.0,0.0,0.029704601727248234,0.0
-Q14,D0561,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.0716861827182348,0.0,0.0,0.0,0.0,0.0
-Q14,D0562,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0563,"Powershifting, engagement, and identity",Slow or boring rotation,0.0,0.041080293518404455,0.0,0.029910028289032033,0.022932863414839248,0.0,0.0
-Q14,D0564,Engaging active rotation,"Hybrid roles, tanking, and damage",0.007819139210762197,0.0,0.0,0.0,0.0,0.014965475397901117,0.0
+Q14,D0547,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.031074539573349484,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0548,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.04043747130466504,0.0,0.0,0.06045411591403848,0.0,0.012549090193590027
+Q14,D0549,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.07564485767722907,0.0,0.0,0.0,0.0,0.0
+Q14,D0550,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1804290342937706,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0551,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,8.786934591666393e-06
+Q14,D0552,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.25556321198149207,0.0,0.0
+Q14,D0553,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0338181991263414,0.0,0.0,0.0,0.0,0.0,0.012698438133399909
+Q14,D0554,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06068377738670031,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0555,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.07499851022133919,0.03311501839158743,0.0,0.07696913280109288,0.00013729998221693063,0.0,0.0
+Q14,D0556,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.21573972544163772,0.28387575022226114,0.0,0.0,0.0,0.0
+Q14,D0557,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03499299006751407,0.02132647884536699,0.0,0.0,0.0,0.0,0.02373624679809592
+Q14,D0558,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0661573739526313,0.0,0.0,0.0,0.0,0.04634496652366685,0.0
+Q14,D0559,"Hybrid roles, tanking, and damage",Engaging active rotation,0.046131342591690605,0.0,0.0,0.0,0.0,0.00355766334254245,0.0
+Q14,D0560,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.09648823509911247,0.0,0.0,0.0704519961332889,0.0,0.03579850157646407,0.0
+Q14,D0561,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.14254601837532194,0.0,0.0,0.0006172103100797548
+Q14,D0562,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.000984853244727272,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0563,Slow or boring rotation,Class identity and distinctiveness,0.0,0.04262684202005855,0.0,0.06895683633636025,0.045292111435367884,0.0,0.054575517261154415
+Q14,D0564,Engaging active rotation,"Hybrid roles, tanking, and damage",0.049687987370530276,0.0,0.009007746146781277,0.0,0.008618484227021285,0.061106369956494995,0.0
 Q14,D0565,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0566,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.08342473505716949,0.0,0.0,0.0,0.011028762091673548,0.0049771141110562436,0.0
-Q14,D0567,APM and skill expression,Engaging active rotation,0.0,0.0,0.07303205919973361,0.0,0.0,0.05791134198195421,0.0
-Q14,D0568,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.017047389366943527,0.0,0.0,0.0,0.0
-Q14,D0569,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0570,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.04316245678478046,0.0,0.0,0.0,0.004084479614351036,0.0,0.0
-Q14,D0571,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0572,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.02130388039717308,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0573,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0574,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.05271020167339269,0.0,0.0,0.0
-Q14,D0575,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.06525428640784528,0.0,0.0
-Q14,D0576,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.026025534087906702,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0577,Engaging active rotation,"Hybrid roles, tanking, and damage",0.0447286877735654,0.0,0.0,0.0,0.0,0.054222145693662925,0.032188247521936435
-Q14,D0578,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.009754464612085229,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0579,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.07266432944136755,0.0
-Q14,D0580,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0566,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.1708964645405136,0.0,0.0,0.0,0.03095581580024682,0.018774219735416348,0.0
+Q14,D0567,APM and skill expression,Engaging active rotation,0.0,0.0,0.12001871310409522,0.0,0.0,0.09729941788017026,0.0
+Q14,D0568,APM and skill expression,Energy waiting and downtime,0.001083982499169811,0.0,0.06013522241789857,0.0,0.011835059192055882,0.0,0.0006416578719636876
+Q14,D0569,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.021824567293368374,0.0,0.0,0.0,0.0,0.0,0.004264484690577004
+Q14,D0570,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.12889862157865992,0.0,0.0,0.0,0.034682925957171956,0.01315891622549745,0.0
+Q14,D0571,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.005944537721501188,0.0010415775016705887,0.0
+Q14,D0572,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08131886015572444,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0573,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.018954333620381427,0.023165854386284556,0.14248725295942327
+Q14,D0574,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.005688020468140144,0.07403716994108787,0.0,0.0,0.0,0.0,0.0
+Q14,D0575,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.11687675568392332,0.0,0.0
+Q14,D0576,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0704647735885981,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0577,Engaging active rotation,"Hybrid roles, tanking, and damage",0.08008745716647042,0.0,0.0,0.0,0.0,0.11821782888154099,0.0
+Q14,D0578,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.02495143463742097,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0579,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.2016285768052031,0.0
+Q14,D0580,Engaging active rotation,Energy waiting and downtime,0.0055795039560670645,0.0,0.0,0.0,0.010209742601041167,0.0780790264937006,0.0
 Q14,D0581,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0582,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.04548986276525732,0.055000025953614515,0.0,0.0
-Q14,D0583,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.002122912810870286,0.0,0.03437814063158359
-Q14,D0584,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0582,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.06256864590170452,0.0,0.0,0.07194511913316393,0.0,0.0
+Q14,D0583,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0019010136298721965,0.0,0.0,0.0,0.0495927764872253,0.0,0.0
+Q14,D0584,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.033545428407319895,0.0,0.0,0.0,0.0,0.0,0.0
 Q14,D0585,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0586,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0586,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.007573330385563758,0.0
 Q14,D0587,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0588,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.027184581604575302,0.0,0.0
-Q14,D0589,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03272368644397839,0.0,0.0
-Q14,D0590,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.01160711976554586,0.0,0.0,0.0
-Q14,D0591,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0592,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0455877712613607,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0593,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.043379834788170146,0.0,0.0
-Q14,D0594,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0595,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0596,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.052496382644560705,0.0,0.02556539532414067,0.0,0.0
-Q14,D0597,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.028001235329007727,0.0043034520648093984,0.03859374698965551,0.0,0.0
-Q14,D0598,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04857096660173146,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0599,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.056106058961569436,0.0,0.0,0.0
-Q14,D0600,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0601,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.06937065199095721,0.023675718263942214,0.03460101939267009,0.018202870529752637,0.0
-Q14,D0602,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.10500924714714911,0.0,0.0,0.0,0.0
-Q14,D0603,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0604,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0588,Energy waiting and downtime,Class identity and distinctiveness,0.007999729458351089,0.0,0.0,0.0,0.05563454226770199,0.0,0.04843744083931139
+Q14,D0589,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.060239007793969956,0.0023871213158378588,0.0
+Q14,D0590,Engaging active rotation,Class identity and distinctiveness,0.013389038388280658,0.018382828660184005,0.0,0.0,0.025086883006652388,0.02983314674226531,0.026402705905410752
+Q14,D0591,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0418602464710416,0.10057936205384604
+Q14,D0592,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.09775729453707016,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0593,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.08095497139067126,0.0,0.0
+Q14,D0594,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.014667969709451835,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0595,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.027907069223945535,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0596,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.06775121951509688,0.0,0.040205107812268534,0.0,0.021987429737707335
+Q14,D0597,Energy waiting and downtime,APM and skill expression,0.008405162806965419,0.01652545978646076,0.05078330106386124,0.0,0.08051357248071762,0.0,0.0
+Q14,D0598,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0809181490520829,0.0,0.0,0.0,0.0,0.0,0.02982698580061624
+Q14,D0599,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0202315145853874,0.07929364014231642,0.0,0.0,0.0,0.0,0.0560249212288578
+Q14,D0600,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.009763053345949825,0.03095069540150601,0.0
+Q14,D0601,APM and skill expression,Energy waiting and downtime,0.0,0.03633887327092133,0.1017886576962288,0.0,0.06100768708212303,0.032712114866618416,0.03297364337025062
+Q14,D0602,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.1328429695956325,0.0,0.0,0.0,0.0
+Q14,D0603,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.0006451620435500508,0.0,0.05788237721360918
+Q14,D0604,Engaging active rotation,"Hybrid roles, tanking, and damage",0.015399595174899935,0.0,0.0,0.0,0.0,0.01898665874912062,0.0
 Q14,D0605,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0606,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06930304889081676,0.0,0.0,0.0
+Q14,D0606,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.08651364037990868,0.0,0.0,0.020420348572102186,0.0,0.0
 Q14,D0607,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0608,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.055506395282093,0.056599599546469065,0.0,0.0
+Q14,D0608,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.09116002158577634,0.0,0.0,0.09424614868195294,0.0,0.005936019477269083
 Q14,D0609,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0610,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0611,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.040791999209501426,0.0,0.0
-Q14,D0612,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.04047349074228369,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0613,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0610,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.035981102010116686,0.0,0.0,0.0,0.0023462758912179364,0.0,0.0
+Q14,D0611,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0906407348101161,0.0,0.038649078640831364
+Q14,D0612,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08260137209884828,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0613,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03587767945259083,0.0,0.0,0.0,0.0,0.0,0.013900421276408476
 Q14,D0614,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0615,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.003519500815519397,0.0,0.0,0.0,0.0
-Q14,D0616,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.04213945656227848,0.0,0.0,0.03838178955763939,0.0,0.0,0.0
-Q14,D0617,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.01643659502108922,0.05799475833462626,0.0,0.0
-Q14,D0618,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0615,Engaging active rotation,Class identity and distinctiveness,0.008370271867652311,0.0,0.023422868711548604,0.0,0.006911153927020131,0.06557627486951688,0.03777228184062904
+Q14,D0616,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.12871649573480992,0.048930152989581796,0.0,0.0,0.0002905056284040956,0.0,0.0
+Q14,D0617,Energy waiting and downtime,"Powershifting, engagement, and identity",0.0,0.03310921775836195,0.0,0.0,0.1031752472525167,0.0,0.0
+Q14,D0618,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01235135632539581,0.0,0.0,0.0,0.0,0.0,0.0
 Q14,D0619,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0620,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.06607676181044339,0.0,0.0,0.0
-Q14,D0621,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03967164620765748,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0622,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.10707062767914614,0.0,0.0,0.0
-Q14,D0623,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.00545756820965476,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0624,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.049978843376582205,0.0,0.0,0.0
-Q14,D0625,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.03517211759355222,0.00781780858320591,0.03373871504646699,0.0034008433247611942,0.0
-Q14,D0626,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0627,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.02086566204253992,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0628,Slow or boring rotation,Energy waiting and downtime,0.0120290976886572,0.0,0.0,0.019429416003247192,0.014910167086460716,0.0,0.0
+Q14,D0620,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.09406575194255108,0.0,0.0,0.0,0.0,0.0795058449956864
+Q14,D0621,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.11650641452945976,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0622,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.13395191730931041,0.0,0.0,0.0,0.0,0.0
+Q14,D0623,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05885482137668384,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0624,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.06453681785027937,0.0,0.0,0.005477961650071891,0.0,0.027544372097590676
+Q14,D0625,APM and skill expression,Energy waiting and downtime,0.015330579472787032,0.015898071519297733,0.05761581498310635,0.0,0.05754151082573991,0.022650869904414093,0.0
+Q14,D0626,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.013662767708807099,0.0,0.0,0.0,0.0,0.0,0.06607708489035875
+Q14,D0627,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08383958324187073,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0628,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.05560463000184035,0.036718093060957836,0.0,0.0,0.03912861172138152,0.0,0.031039766015227278
 Q14,D0629,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0630,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.29460237579501114,0.0,0.0,0.0,0.0
-Q14,D0631,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.024554134306194905,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0632,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.02697061108824345,0.0,0.0,0.0
-Q14,D0633,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.17068670675091197,0.0,0.0,0.0,0.0,0.0
-Q14,D0634,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.014238647695797843,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0635,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0636,Engaging active rotation,"Hybrid roles, tanking, and damage",0.003947622688719934,0.0,0.0,0.0,0.0,0.024236003950736454,0.0
-Q14,D0637,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.07904439278828802,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0638,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.1169428367954901,0.0,0.0,0.0,0.0
-Q14,D0639,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.024708481699389724,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0640,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.006503512561546761,0.0,0.009776324387401924,0.025239760405967798,0.0
-Q14,D0641,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.01591271543277708,0.0,0.0,0.02717007813963263,0.0,0.0,0.0
-Q14,D0642,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.010367210589768357,0.0
-Q14,D0643,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.021413594544453483,0.0,0.0,0.05916007422811298,0.0,0.0,0.0
-Q14,D0644,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.030589065792168153,0.0,0.0,0.0
-Q14,D0645,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.11609792090778909,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0646,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.03278622778146139,0.006327164983232446,0.0,0.0
-Q14,D0647,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0648,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0649,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0630,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.3535642676498243,0.0,0.0,0.0,0.0
+Q14,D0631,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.061657127010207056,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0632,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.02001221239681326,0.0492578123364199,0.0,0.0,0.0,0.0,0.0
+Q14,D0633,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.21524484199437333,0.0,0.0,0.0
+Q14,D0634,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0567323937211038,0.0,0.0,0.0,0.0,0.03660865718596258,0.0
+Q14,D0635,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.07135881902195618
+Q14,D0636,Engaging active rotation,"Hybrid roles, tanking, and damage",0.04778897968582613,0.0,0.0,0.0,0.0,0.05827354129971546,0.020785036375127713
+Q14,D0637,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.158781592980144,0.0,0.0,0.0,0.0,0.0,0.02295588632722853
+Q14,D0638,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.14667547974597048,0.0,0.0,0.0,0.08159881652268756
+Q14,D0639,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.07100443287767204,0.0,0.0,0.0,0.009175893871803748,0.0,0.007386873812737581
+Q14,D0640,Engaging active rotation,Energy waiting and downtime,0.031408547789677325,0.0,0.02455002797892169,0.0,0.033183325779183766,0.045440769278729365,0.006769956139531123
+Q14,D0641,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.06678384456220798,0.04569242770215246,0.0,0.0,0.0,0.0,0.019120924179572955
+Q14,D0642,Engaging active rotation,Class identity and distinctiveness,0.029337699315675977,0.0,0.0,0.0,0.0,0.037808412196137606,0.0330726245111298
+Q14,D0643,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.058637436044499024,0.09859844246638011,0.013947900257010142,0.0,0.0,0.0,0.0
+Q14,D0644,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.03197249127054472,0.04477089178866974,0.0,0.0,0.005539562700146905,0.0,0.05114554474812746
+Q14,D0645,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.1310518253000403,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0646,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.031357787758790154,0.040415181977187305,0.0,0.0,0.029315707538867048,0.0,0.054888649414976745
+Q14,D0647,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.2511170212419014
+Q14,D0648,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.005665736190953022,0.0,0.0,0.0,0.00880107758983076,0.0,0.0
+Q14,D0649,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.01992610783017954,0.0,0.0,0.0,0.043513407739416074,0.0011242025140656999,0.0
 Q14,D0650,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0651,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.09182820523588195,0.0,0.0,0.0,0.0
-Q14,D0652,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.005531343715969137,0.0,0.0,0.04631731984471505,0.0,0.0,0.0
-Q14,D0653,Class identity and distinctiveness,APM and skill expression,0.0,0.0,0.005641667546482183,0.0,0.0,0.0,0.08124244667197698
-Q14,D0654,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0655,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0656,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.015025818390388374,0.0,0.0,0.0,0.014621848176252334,0.0,0.01926936187670281
-Q14,D0657,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.10122767189054437,0.035835324784398125,0.0
-Q14,D0658,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.08973631001045984,0.039181644522310544,0.0,0.0,0.0,0.0,0.0
-Q14,D0659,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0660,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.29967748122817806,0.0,0.0
-Q14,D0661,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.13374545640894742,0.0,0.0,0.0,0.0
-Q14,D0662,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05547676089012526,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0663,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.037572607107790826,0.0,0.05382455445248348
-Q14,D0664,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03601691787669943,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0665,Engaging active rotation,Slow or boring rotation,0.0,0.0,0.0,0.013067659789267388,0.0,0.013361855000151801,0.0
-Q14,D0666,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0667,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0006660872331131206,0.0,0.0,0.0
-Q14,D0668,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0669,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.030607755108383265,0.0,0.0,0.0
-Q14,D0670,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0671,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0672,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0651,APM and skill expression,"Hybrid roles, tanking, and damage",0.0030924446723459343,0.0,0.11710494624150887,0.0,0.0,0.0,0.0024093207670546897
+Q14,D0652,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.05724297213441394,0.06873076376343489,0.0,0.0,0.0,0.0,0.0
+Q14,D0653,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.041575438995462316,0.009572903294856555,0.03197678207995816,0.0,0.0
+Q14,D0654,APM and skill expression,"Hybrid roles, tanking, and damage",0.011328815936085323,0.0,0.012276931084648378,0.0,0.0,0.0,0.0
+Q14,D0655,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.0033402890034198835,0.0,0.0,0.0,0.0,0.0,0.08435138040134257
+Q14,D0656,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.05845804859527575,0.0,0.0,0.0,0.04280868379775224,0.0,0.0
+Q14,D0657,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.16573708947797872,0.05984775569206397,0.0
+Q14,D0658,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.11610822085956814,0.0,0.0,0.06078796676285389,0.0,0.0,0.019303130204408547
+Q14,D0659,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.028371154645614752,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0660,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.3313720930953211,0.0,0.0
+Q14,D0661,APM and skill expression,"Hybrid roles, tanking, and damage",0.023852549915895038,0.0,0.20857364431046616,0.0,0.0,0.0,0.0
+Q14,D0662,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.13479129059570916,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0663,Energy waiting and downtime,Engaging active rotation,0.0,0.0,0.0,0.0,0.1103597256531929,0.022957611110175434,0.0
+Q14,D0664,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.08276009134833914,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0665,Engaging active rotation,"Powershifting, engagement, and identity",0.013667582369740857,0.03176397525998314,0.0,0.0,0.0025573676768871068,0.03812707128265394,0.0
+Q14,D0666,Engaging active rotation,"Hybrid roles, tanking, and damage",0.0316437609133627,0.0,0.0,0.0,0.0,0.06171425868237239,0.0
+Q14,D0667,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.054957577899996876,0.0,0.0034290432176625526,0.0,0.0,0.0,0.006589370120430548
+Q14,D0668,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0039047685414473543,0.0,0.0,0.0,0.004554965878223988,0.0,0.0
+Q14,D0669,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0018751764867465412,0.03778604346152234,0.0,0.0,0.0,0.0,0.08387113257370159
+Q14,D0670,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.005394841850977046,0.0,0.0,0.0,0.0,0.0,0.13002321474710213
+Q14,D0671,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0389232408218956,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0672,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.009427794288284554,0.0,0.013336629049030744,0.0,0.0
 Q14,D0673,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0674,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0675,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0676,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0677,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.055230292593522155,0.0,0.0,0.0
-Q14,D0678,Slow or boring rotation,Energy waiting and downtime,0.0019016373514427955,0.0,0.0,0.005306359113701957,0.00231593657518729,0.0,0.0
-Q14,D0679,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03159570090651628,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0680,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0637274804683512,0.0
-Q14,D0681,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0682,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0683,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.010252722644872776,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0684,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.054289494464184025,0.0,0.0,0.0,0.0
-Q14,D0685,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.013145463096503386,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0686,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06320527863983305,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0687,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0688,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0299247455489647,0.017964059950047115,0.0,0.014389352767284074,0.0,0.02344248545688656,0.0
+Q14,D0674,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.020651185178980503,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0675,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.003767594699039114,0.0,0.0,0.0,0.009032951542425685,0.0,0.0
+Q14,D0676,Class identity and distinctiveness,Engaging active rotation,0.0019445280676285964,0.0,0.0,0.0,0.0,0.010574718866394833,0.03163273610840944
+Q14,D0677,"Powershifting, engagement, and identity",Energy waiting and downtime,0.0,0.07569657318737891,0.0,0.0,0.007644472384160794,0.0,0.0
+Q14,D0678,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.0378888268504865,0.013656791854393628,0.0,0.0,0.03155199123964492,0.0,0.0
+Q14,D0679,"Hybrid roles, tanking, and damage",Engaging active rotation,0.11783543033404888,0.0,0.0,0.0,0.0,0.04805182996508459,0.0
+Q14,D0680,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0885933788847747,0.0
+Q14,D0681,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.013266981430529866,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0682,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.031824114148751824,0.0,0.0,0.0,0.0020810909184837785,0.0,0.0
+Q14,D0683,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03544629935637,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0684,APM and skill expression,Energy waiting and downtime,0.0,0.0,0.08386986755290957,0.0,0.015230240795947076,0.0,0.0
+Q14,D0685,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05753588529857762,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0686,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.09278665894894224,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0687,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.15516821438572145
+Q14,D0688,Engaging active rotation,"Hybrid roles, tanking, and damage",0.06789579374831638,0.024580055850597773,0.0,0.03454970910266909,0.015926210230488208,0.07933800329623271,0.0
 Q14,D0689,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0690,APM and skill expression,Slow or boring rotation,0.0,0.0,0.037650589361420635,0.005308196422610609,0.0,0.0,0.0
-Q14,D0691,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0692,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.06869980548217436,0.06883969256727701,0.0
-Q14,D0693,"Hybrid roles, tanking, and damage",Engaging active rotation,0.13699320213433383,0.0,0.0,0.0,0.0,0.03951835297135434,0.0
-Q14,D0694,Engaging active rotation,APM and skill expression,0.0,0.0,0.08092684423253105,0.0,0.0,0.08990632320466772,0.0
-Q14,D0695,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0089554548222003,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0696,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.023588106116403572,0.0,0.0
-Q14,D0697,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.0911866344954831,0.0
-Q14,D0698,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.03531527955292578,0.0,0.0
-Q14,D0699,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0023339909890857514,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0700,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0701,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.0246476236724483,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0702,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.04710791515794039,0.0,0.0,0.0
-Q14,D0703,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0704,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.013993051628747357,0.0,0.0,0.0,0.04002744089149091,0.0,0.0
-Q14,D0705,Slow or boring rotation,Energy waiting and downtime,0.01694682005473104,0.0,0.0,0.031139053329248285,0.027427929273357396,0.0,0.0
-Q14,D0706,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0193621809709799,0.0,0.0,0.0
-Q14,D0707,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.08680929893584453,0.0,0.0,0.0
-Q14,D0708,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0709,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.006762842838979838,0.0
+Q14,D0690,APM and skill expression,Class identity and distinctiveness,0.0,0.016083775672325894,0.06968617918377953,0.0,0.00394455737829873,0.0,0.03026413530171648
+Q14,D0691,Energy waiting and downtime,Engaging active rotation,0.005178756875688627,0.0031039885224503467,0.0,0.0,0.0437415003854988,0.015185642069740641,0.0
+Q14,D0692,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.10680943367338942,0.11274733624636177,0.04606756891528492
+Q14,D0693,"Hybrid roles, tanking, and damage",Engaging active rotation,0.1791066593438983,0.0,0.0,0.0,0.0,0.08659906030688622,0.0
+Q14,D0694,Engaging active rotation,APM and skill expression,0.035941874523796664,0.0,0.09553929871799428,0.0,0.0,0.15202695180082482,0.0
+Q14,D0695,"Hybrid roles, tanking, and damage",Engaging active rotation,0.06455887923324992,0.0,0.0,0.0,0.005334155257265354,0.02256285236964813,0.01856687313246915
+Q14,D0696,Energy waiting and downtime,Class identity and distinctiveness,0.008177586081095896,0.0,0.0,0.0,0.05452247851393929,0.0,0.015003560980213378
+Q14,D0697,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.02814853207877361,0.1743419063576502,0.0
+Q14,D0698,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.05281604674474016,0.0,0.07705488290245831
+Q14,D0699,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.05162043760088155,0.0,0.0,0.0,0.0,0.0,0.0238025325663432
+Q14,D0700,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.004538092182757252,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0701,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06069760451018601,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0702,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.026128103894989204,0.05383388920677216,0.0,0.0,0.0,0.0,0.059128477951548186
+Q14,D0703,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.0008057299550444429,0.0,0.0,0.0,0.016733262384151838,0.0,0.0
+Q14,D0704,Energy waiting and downtime,"Hybrid roles, tanking, and damage",0.08844722950082219,0.0,0.0,0.0,0.12412342221471526,0.0,0.0
+Q14,D0705,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.0486845008133608,0.04517370180848465,0.0,0.0,0.04627452185885003,0.0,0.0
+Q14,D0706,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.0017826036003519181,0.037179306268703846,0.0,0.0,0.0,0.0,0.0
+Q14,D0707,"Powershifting, engagement, and identity",Engaging active rotation,0.0,0.15661216264006897,0.0,0.0,0.0,0.09843323909994903,0.0
+Q14,D0708,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.08750497351506575
+Q14,D0709,"Hybrid roles, tanking, and damage",Engaging active rotation,0.026732159525010988,0.0,0.0016381345209739355,0.0,0.0,0.023090451746626346,0.0
 Q14,D0710,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0711,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.013697826529059397,0.0,0.0,0.0
-Q14,D0712,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.06481258425395914,0.08413778895297251,0.0,0.0,0.0,0.0
+Q14,D0711,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.01205415707569701,0.02129277771296352,0.0,0.0,0.0,9.223975609472688e-06,0.06722953747049483
+Q14,D0712,APM and skill expression,Slow or boring rotation,0.0,0.0,0.12114108657649182,0.10371252790569842,0.008905201993519156,0.0,0.019766718623102034
 Q14,D0713,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0714,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0715,Slow or boring rotation,"Powershifting, engagement, and identity",0.0,0.03501939371418525,0.0,0.04273817007025118,0.0,0.017553162588914567,0.0
-Q14,D0716,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0717,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.03711522292135621,0.0
-Q14,D0718,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01586736736897779,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0714,Engaging active rotation,"Hybrid roles, tanking, and damage",0.011946461437564927,0.0,0.0,0.0,0.0011096435069176498,0.021458870778601823,0.0
+Q14,D0715,"Powershifting, engagement, and identity",Slow or boring rotation,0.005382018274410856,0.06275264983020994,0.0,0.051101773951825816,0.012236123994702926,0.048290236134513095,0.0
+Q14,D0716,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.03231268106812568,0.0,0.0,0.0,0.0,0.0,0.09971909929826799
+Q14,D0717,Engaging active rotation,"Hybrid roles, tanking, and damage",0.009803813176361817,0.0,0.0,0.0,0.0,0.06490359477550714,0.0
+Q14,D0718,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.06008184159690446,0.0,0.0,0.0,0.0,0.0,0.0
 Q14,D0719,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0720,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.01709283549730948,0.03176128730022827
-Q14,D0721,Engaging active rotation,"Hybrid roles, tanking, and damage",0.020954411724814097,0.0,0.0,0.0,0.0,0.04542821752688206,0.0
-Q14,D0722,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.00720222323397611,0.0,0.0,0.015927144420010517,0.0,0.0,0.0
-Q14,D0723,Engaging active rotation,"Hybrid roles, tanking, and damage",0.03390346356612209,0.0,0.0,0.0,0.0,0.06614698575301033,0.0
-Q14,D0724,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.033136381687364505,0.0,0.0,0.0
-Q14,D0725,"Hybrid roles, tanking, and damage",Slow or boring rotation,0.03761484402632614,0.0,0.0,0.005110875708799714,0.0037503418557937192,0.0,0.0
-Q14,D0726,APM and skill expression,"Powershifting, engagement, and identity",0.0,0.08881071252378536,0.11097116967382215,0.0,0.0,0.0,0.0
-Q14,D0727,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.017781138995547157,0.0400530363375121,0.005635921570818324,0.0
-Q14,D0728,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0013606495604586012,0.0,0.0,0.0
-Q14,D0729,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.06282009097074855,0.0
-Q14,D0730,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.09364633921104978,0.0,0.0,0.0
-Q14,D0731,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0732,Class identity and distinctiveness,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.028272504128885947,0.0,0.04304182920938578
-Q14,D0733,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0734,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.039726857316993394,0.0,0.0,0.0
-Q14,D0735,APM and skill expression,"Hybrid roles, tanking, and damage",0.027262475667663523,0.0,0.08772883229476452,0.0,0.0,0.0,0.0
-Q14,D0736,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.005891886039608684,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0737,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.03768999869700272,0.0,0.0,0.0
-Q14,D0738,Energy waiting and downtime,Slow or boring rotation,0.0,0.0,0.0,0.017401121245099745,0.022160800778232997,0.0,0.0
-Q14,D0739,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0740,Slow or boring rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.017062269360957744,0.0,0.0,0.0
-Q14,D0741,Engaging active rotation,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.0,0.024300582942554418,0.005088291923521018
-Q14,D0742,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03786164399109167,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0743,Class identity and distinctiveness,"Powershifting, engagement, and identity",0.0,0.22637558949956518,0.0,0.0,0.0,0.0,0.23476840881613414
-Q14,D0744,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.04893322063878719
-Q14,D0745,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0746,Slow or boring rotation,"Hybrid roles, tanking, and damage",0.01949390271850419,0.0,0.0,0.027286098169405627,0.014192277701616678,0.01737165848728339,0.0
-Q14,D0747,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-Q14,D0748,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.11083094748008322,0.0,0.07151497262328071
-Q14,D0749,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.0014570193812196213,0.0,0.0,0.0,0.0
+Q14,D0720,Engaging active rotation,Energy waiting and downtime,0.0,0.0,0.0,0.0,0.0032793302735411225,0.05165914118966269,0.0
+Q14,D0721,"Hybrid roles, tanking, and damage",Engaging active rotation,0.0695299937314227,0.0,0.0,0.0,0.00026002679755080194,0.05868810368739042,0.0
+Q14,D0722,"Hybrid roles, tanking, and damage","Powershifting, engagement, and identity",0.0631353277302427,0.02956812325559952,0.0,0.0,0.0,0.0,0.0
+Q14,D0723,Engaging active rotation,"Hybrid roles, tanking, and damage",0.05523061908553762,0.0,0.0,0.0,0.0,0.1075501670627372,0.0
+Q14,D0724,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.028846966513553934,0.05339727444171469,0.0,0.0,0.0,0.025362953484305378,0.0256442814604052
+Q14,D0725,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.10117654253913404,0.011418934210657192,0.0,0.0,0.022641034284691858,0.0,0.008442404332676866
+Q14,D0726,APM and skill expression,Slow or boring rotation,0.0,0.0,0.16302079207297995,0.14712783530021095,0.0,0.0,0.0
+Q14,D0727,Class identity and distinctiveness,Energy waiting and downtime,0.01527161844717155,0.01700651894390721,0.0,0.0,0.06209573851064177,0.015934670701709328,0.11669020601075124
+Q14,D0728,Class identity and distinctiveness,"Hybrid roles, tanking, and damage",0.03567299128314091,0.0,0.0,0.0,0.0,0.0,0.10480395126888488
+Q14,D0729,Engaging active rotation,Class identity and distinctiveness,0.02670456168073104,0.0,0.0,0.0,0.0,0.12876963969610122,0.11833993517706962
+Q14,D0730,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.22640124853862256,0.0,0.0,0.0,0.0,0.0
+Q14,D0731,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.009866438731095738,0.0,0.0,0.0,0.00723302458284309,0.0,0.0
+Q14,D0732,Energy waiting and downtime,APM and skill expression,0.0,0.0,0.01704972811574878,0.0,0.07380829677706414,0.0,0.0
+Q14,D0733,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.008771545170225558,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0734,"Powershifting, engagement, and identity",APM and skill expression,0.0,0.08528534112440073,0.003759463445606512,0.0,0.0,0.0,0.0
+Q14,D0735,APM and skill expression,"Hybrid roles, tanking, and damage",0.06880697804345573,0.0,0.14609110631987268,0.0,0.0,0.0,0.0
+Q14,D0736,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.01623067190070351,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0737,"Powershifting, engagement, and identity",Class identity and distinctiveness,0.0,0.057592510868966405,0.0,0.0,0.0,0.0,0.0
+Q14,D0738,Energy waiting and downtime,"Powershifting, engagement, and identity",0.016520290763966924,0.03672661544322541,0.0,0.0,0.06105071254301981,0.0,0.0
+Q14,D0739,"Hybrid roles, tanking, and damage",Energy waiting and downtime,0.02404226366850841,0.0,0.0,0.0,0.008757247560920382,0.0035254294436957035,0.0
+Q14,D0740,"Powershifting, engagement, and identity","Hybrid roles, tanking, and damage",0.007394777544381361,0.031168608423500783,0.0,0.0,0.0030864374929754045,0.0,0.0
+Q14,D0741,Engaging active rotation,"Hybrid roles, tanking, and damage",0.03091669767831308,0.0,0.0,0.0,0.0018269367526211823,0.05425189305546389,0.013655375915174373
+Q14,D0742,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.07732633674446489,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0743,Slow or boring rotation,Energy waiting and downtime,0.0,0.0,0.0,0.31455730107235635,0.03039671737789079,0.0,0.0
+Q14,D0744,Class identity and distinctiveness,Energy waiting and downtime,0.004638428316192346,0.0,0.01063848095619954,8.129325471801923e-05,0.02363659764670638,0.005864692470911148,0.03897391582857868
+Q14,D0745,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.028071526228622617,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0746,"Hybrid roles, tanking, and damage",Engaging active rotation,0.06999598975560373,0.03967681935146398,0.0,0.0,0.03603562522924134,0.04436292533781079,0.0
+Q14,D0747,"Hybrid roles, tanking, and damage",Class identity and distinctiveness,0.03891147935910119,0.0,0.0,0.0,0.0,0.0,0.0
+Q14,D0748,Energy waiting and downtime,Class identity and distinctiveness,0.0,0.0,0.0,0.0,0.18123302167461042,0.0,0.030938472753217892
+Q14,D0749,APM and skill expression,Class identity and distinctiveness,0.0,0.0,0.024122463139671427,0.0,0.0,0.0,0.0
+Q14,D0750,Class identity and distinctiveness,Engaging active rotation,0.0,0.0,0.0,0.0,0.0,0.0,0.07127263570255986

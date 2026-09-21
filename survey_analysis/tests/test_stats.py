@@ -1,4 +1,5 @@
 from forever_survey.stats import can_quote, clean, grouped_percent, normalize_text, parse_multiselect
+from forever_survey.text import document_frequency
 
 
 def test_multiselect_parsing():
@@ -24,3 +25,15 @@ def test_quote_permission_enforcement():
 
 def test_text_normalization():
     assert normalize_text(" Tiger’s  Fury — TEST! https://x.invalid ") == "tiger's fury test"
+
+
+def test_phrase_frequency_counts_distinct_responses():
+    result = document_frequency([
+        "Energy pooling, energy pooling, and skill expression matter.",
+        "Energy pooling makes the rotation more engaging.",
+        "Waiting for energy makes rotation gameplay too slow.",
+    ])
+    mentions = result.set_index("term")["response_mentions"].to_dict()
+
+    assert mentions["energy pooling"] == 2
+    assert all(" " in term for term in result["term"])

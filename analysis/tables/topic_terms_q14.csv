@@ -1,8 +1,8 @@
 question,topic_number,label,top_terms
-Q14,1,"Hybrid roles, tanking, and damage",cat; bear; bear cat; hybrid; talents; cat bear; dps; tank; talent; bleed
-Q14,2,"Powershifting, engagement, and identity",boring; rotation boring; rotation; slow; boring rotation; kinda; energy boring; powershifting boring; slow boring; waiting
-Q14,3,APM and skill expression,apm; high apm; high; low; low apm; class; gameplay; apm cat; skill expression; higher apm
-Q14,4,Slow or boring rotation,powershifting; identity; dps; engaging; cat; fun; gameplay; remove; love powershifting; energy
-Q14,5,Energy waiting and downtime,energy; waiting energy; waiting; energy boring; fun; rogue; mana; energy playing; time; energy economy
-Q14,6,Engaging active rotation,rotation; engaging; rotation boring; engaging rotation; cat rotation; boring; simple; class; cat; active
-Q14,7,Class identity and distinctiveness,slow; aoe; slow gameplay; slow boring; boring; energy economy; gameplay; economy; little; rotations
+Q14,1,"Hybrid roles, tanking, and damage",cat; bear; dps; tank; hybrid; bear cat; talents; cat bear; damage; aoe
+Q14,2,"Powershifting, engagement, and identity",powershifting; identity; dps; engaging; fun; cat; play; apm; using; fix
+Q14,3,APM and skill expression,apm; high; high apm; low; low apm; class; skill expression; gameplay; higher apm; afk
+Q14,4,Slow or boring rotation,boring; slow; rotation boring; rotation; slow boring; boring rotation; boring low; energy boring; kinda; low
+Q14,5,Energy waiting and downtime,energy; waiting; waiting energy; fun; slow; downtime; gameplay; mana; lack; time
+Q14,6,Engaging active rotation,rotation; engaging; engaging rotation; gameplay; active; unique; rotation boring; rotation engaging; fun; cat rotation
+Q14,7,Class identity and distinctiveness,identity; rogue; class; class identity; needs; worse; Cat form; distinct; shifting; core

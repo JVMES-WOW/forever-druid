@@ -1,6 +1,6 @@
 category,count,denominator,percent
-Not mentioned,685,758,90.36939313984169
-Mentioned; polarity unclear,33,758,4.353562005277045
-Preserve removal/non-powershifting,31,758,4.089709762532982
-Ambiguous/mixed,7,758,0.9234828496042217
-Preserve/restore,2,758,0.2638522427440633
+Not mentioned,686,759,90.38208168642952
+Mentioned; polarity unclear,33,759,4.3478260869565215
+Preserve removal/non-powershifting,31,759,4.084321475625823
+Ambiguous/mixed,7,759,0.922266139657444
+Preserve/restore,2,759,0.2635046113306983

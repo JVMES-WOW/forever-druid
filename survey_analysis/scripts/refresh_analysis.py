@@ -43,8 +43,8 @@ FIG_DIR = PUBLIC_DIR / "figures"
 TABLE_DIR = PUBLIC_DIR / "tables"
 TEMPLATE_DIR = ROOT / "survey_analysis" / "templates"
 
-COLORS = {"positive": "#6ca86c", "neutral": "#7f8c80", "negative": "#c35c55",
-          "info": "#658bc8", "gold": "#d8ad5d", "purple": "#a48bc0"}
+COLORS = {"positive": "#6f9678", "neutral": "#7f8c80", "negative": "#ad6660",
+          "info": "#718ca3", "gold": "#c6a85f", "purple": "#8d7f9c"}
 
 plt.rcParams.update({
     "figure.facecolor": "#0e1712", "axes.facecolor": "#0e1712",
@@ -176,11 +176,11 @@ def make_wordclouds(freqs: dict[int, pd.DataFrame]) -> None:
     for q, frame in freqs.items():
         frequencies = dict(zip(frame.term, frame.response_mentions))
         cloud_colors = LinearSegmentedColormap.from_list(
-            "forever", ["#6ca86c", "#d8ad5d", "#e9ebdf", "#c87b47"]
+            "forever", ["#839989", "#c1ad77", "#c8d0c5", "#9f8268"]
         )
         cloud = WordCloud(width=1800, height=1100, background_color="#0e1712", colormap=cloud_colors,
                           random_state=SEED, prefer_horizontal=.9, collocations=False,
-                          max_words=100).generate_from_frequencies(frequencies)
+                          max_words=75).generate_from_frequencies(frequencies)
         path = FIG_DIR / f"wordcloud-q{q}.png"
         cloud.to_file(str(path)); wc_paths.append(path)
     fig, axes = plt.subplots(1, 3, figsize=(18, 6), facecolor="#0e1712")
@@ -308,16 +308,6 @@ def main() -> None:
     plot_mechanics(tables["mechanic_reactions"]); plot_subgroups(tables["subgroups"])
     plot_topics(all_prev); make_wordclouds(freqs)
 
-    old = {
-        "Negative toward current direction": 59.6, "Positive toward current direction": 22.5,
-        "Less excited than Classic": 61.9, "More excited than Classic": 25.0,
-        "Would probably/definitely play": 44.4, "Would probably/definitely not play": 33.6,
-        "Functional replacement acceptable": 59.1, "Prefer non-powershifting if engaging": 22.2,
-        "Specifically want Classic powershifting restored": 14.8,
-        "Negative reaction to Furor/loss of powershifting": 70.1,
-        "Rotation/activity selected for developer attention": 65.9, "Powershifting/Furor selected": 44.6,
-        "Energy economy selected": 33.9, "Shapeshifting/weaving identity selected": 27.6, "AoE selected": 26.7,
-    }
     def pct(table, category): return float(table.loc[table.category.eq(category), "percent"].iloc[0])
     attention_map = dict(zip(tables["developer_attention"].category, tables["developer_attention"].percent))
     current = {
@@ -337,11 +327,6 @@ def main() -> None:
         "Shapeshifting/weaving identity selected": attention_map.get("Shapeshifting or weaving identity", 0),
         "AoE selected": attention_map.get("AoE", 0),
     }
-    comparison = pd.DataFrame([{"metric": key, "earlier_675_percent": old[key],
-                                "current_percent": current[key], "change_pp": current[key]-old[key]}
-                               for key in old])
-    save_table("comparison_675", comparison); tables["comparison_675"] = comparison
-
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=select_autoescape())
     template = env.get_template("report.html.j2")
     html_tables = {name: table.round(1).to_html(index=False, classes="data-table", border=0)

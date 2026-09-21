@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import linear_sum_assignment
 from sklearn.decomposition import NMF
-from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, ENGLISH_STOP_WORDS, TfidfVectorizer
 
 from . import SEED
 from .stats import normalize_text
@@ -40,6 +40,15 @@ CUSTOM_STOP = set(ENGLISH_STOP_WORDS) | {
     "classic", "wow", "spec", "mechanic", "mechanics", "direction",
 }
 
+PHRASE_ANCHORS = {
+    "powershifting", "energy", "rotation", "bleed", "bleeds", "furor", "cat", "bear",
+    "swipe", "aoe", "gameplay", "skill", "identity", "shapeshifting", "form", "forms",
+    "tigers_fury", "clearcasting", "weapon_scaling", "raid_utility", "combo_points",
+    "downtime", "apm", "talent", "talents", "damage", "hybrid", "tank", "utility",
+    "resource", "resources", "shifting", "buttons", "engaging", "waiting", "activity",
+    "mastery", "scaling", "mana", "cooldown", "proc", "procs", "rake", "rip", "berserk",
+}
+
 
 def preprocess(text: object) -> str:
     value = normalize_text(text)
@@ -62,12 +71,33 @@ def display_term(term: str) -> str:
 
 
 def document_frequency(texts: list[str], limit: int = 120) -> pd.DataFrame:
+    """Count distinct-response mentions of meaningful two- and three-word phrases."""
     docs = [preprocess(t) for t in texts if normalize_text(t)]
+    vectorizer = CountVectorizer(ngram_range=(2, 3),
+                                 binary=True, min_df=max(2, len(docs) // 250),
+                                 token_pattern=r"(?u)\b[a-z][a-z0-9_+'/\-]{2,}\b",
+                                 max_features=6000)
     counts: Counter[str] = Counter()
-    token_pattern = re.compile(r"(?u)\b[a-z][a-z0-9_+'/\-]{2,}\b")
-    for doc in docs:
-        terms = {t for t in token_pattern.findall(doc) if t not in CUSTOM_STOP and not t.isdigit()}
-        counts.update(terms)
+    try:
+        matrix = vectorizer.fit_transform(docs)
+    except ValueError as exc:
+        if "no terms remain" not in str(exc).lower() and "empty vocabulary" not in str(exc).lower():
+            raise
+    else:
+        for term, count in zip(vectorizer.get_feature_names_out(), np.asarray(matrix.sum(axis=0)).ravel()):
+            tokens = term.split()
+            content_tokens = [token for token in tokens if token not in CUSTOM_STOP]
+            if (any(token in PHRASE_ANCHORS for token in tokens)
+                    and len(set(content_tokens)) > 1
+                    and tokens[0] not in CUSTOM_STOP
+                    and tokens[-1] not in CUSTOM_STOP):
+                counts[term] = int(count)
+    # Protected phrases are single vectorizer tokens after preprocessing. Add
+    # their binary document counts so they remain intact alongside n-grams.
+    for canonical in PHRASES.values():
+        count = sum(canonical in set(doc.split()) for doc in docs)
+        if count and " " in display_term(canonical):
+            counts[canonical] = count
     rows = [{"term": display_term(term), "response_mentions": n,
              "responses_with_text": len(docs), "percent_of_responses": 100 * n / len(docs)}
             for term, n in counts.most_common(limit)]

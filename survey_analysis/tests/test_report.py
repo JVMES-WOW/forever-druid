@@ -17,10 +17,15 @@ def test_methods_page_keeps_technical_detail_and_downloads():
     assert "tf-idf" in methods
     assert "wilson 95%" in methods
     assert "aggregate downloads" in methods
+    assert "two- or three-word phrase" in methods
+    assert "675-response" not in methods
+    assert "reddit.com/r/classicwow/comments/1wljuy6/" in methods
+    assert "not part of the analyzed corpus" in methods
 
 
 def test_report_theme_matches_existing_dark_green_and_gold_palette():
     css = (ROOT / "survey_analysis/templates/report.css").read_text().casefold()
-    assert "#080d0a" in css
-    assert "#d8ad5d" in css
+    assert "#0b1010" in css
+    assert "#c6a85f" in css
     assert ".topbar" in css and ".brand" in css
+    assert "radial-gradient" not in css
