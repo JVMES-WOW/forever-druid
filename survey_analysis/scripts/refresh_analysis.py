@@ -137,13 +137,6 @@ def survey_instrument(df: pd.DataFrame, columns) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def shorten_excerpt(text: str, limit: int = 390) -> str:
-    if len(text) <= limit:
-        return text
-    shortened = text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:")
-    return shortened + "…"
-
-
 def plot_bar(frame: pd.DataFrame, label_col: str, value_col: str, path: Path, title: str,
              colors=None, xlabel="Percent of respondents", suffix="%", xlim=None, height=None) -> None:
     data = frame.iloc[::-1].copy()
@@ -414,6 +407,11 @@ def main() -> None:
         for row in tables["agreement_matrix"].itertuples()
         if row.category == "Disagree + Strongly disagree"
     }
+    importance_summary = {
+        row.quality: float(row.percent)
+        for row in tables["importance_matrix"].itertuples()
+        if row.category == "Essential + Very important"
+    }
     featured_viewpoints = {
         "acad144b7596a53f": "Functional replacement",
         "e1f9bbbc08954840": "AoE and scaling",
@@ -424,7 +422,6 @@ def main() -> None:
         tables["anonymous_excerpts"].text_id.isin(featured_viewpoints)
     ].copy()
     featured_quotes["viewpoint"] = featured_quotes.text_id.map(featured_viewpoints)
-    featured_quotes["display_excerpt"] = featured_quotes.excerpt.map(shorten_excerpt)
     phrase_top = {q: frame.head(5).to_dict("records") for q, frame in freqs.items()}
     context = {"metadata": metadata, "tables": tables, "html_tables": html_tables, "current": current,
                "sample_counts": sample_counts,
@@ -433,6 +430,7 @@ def main() -> None:
                "direction_summary": direction_summary,
                "negative_mechanics": negative_mechanics,
                "disagreement_summary": disagreement_summary,
+               "importance_summary": importance_summary,
                "phrase_top": phrase_top,
                "featured_quotes": featured_quotes,
                "retrieved_display": datetime.fromisoformat(retrieved).astimezone(ZoneInfo("America/Chicago")).strftime("%B %-d, %Y at %-I:%M %p %Z"),

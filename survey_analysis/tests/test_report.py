@@ -21,7 +21,10 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert 'current["functional replacement acceptable"]' in template
     assert "played the test build" in template
     assert "developer design brief" in template
-    assert "shortened for display" in template
+    assert "these full excerpts" in template
+    assert "shortened for display" not in template
+    assert "meaningful pooling" not in template
+    assert "meaningful resource decisions without excessive empty time" in template
     assert "these respondents give the design team" in template
     assert "combo points stored on the player" not in template
     assert "player-stored combo points" not in template
