@@ -4,9 +4,330 @@
 <body>
 <header class="topbar"><a class="brand" href="../"><span class="crest" aria-hidden="true">❦</span><span><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></span></a><nav aria-label="Main navigation"><a href="../">Talents</a><a href="../abilities.html">Abilities</a><a href="./">Feral survey</a></nav><a class="method-link active" href="methodology.html" aria-current="page">Methods &amp; downloads</a></header>
 <main class="methods-main">
-  <section class="methods-hero"><p class="eyebrow">TRANSPARENCY WITHOUT THE DETOUR</p><h1>Methods, limitations &amp; downloads</h1><p class="deck">Everything needed to inspect or reproduce the analysis lives here, separate from the main community story.</p><a class="ghost-button" href="./">← Back to the report</a></section>
-  <section class="method-section panel"><h2>Source and privacy boundary</h2><ul><li><strong>Project author:</strong> JVMES, a participant in the referenced Druid Classic Discord discussion.</li><li><strong>Authoritative source:</strong> Google spreadsheet <code>1muybYt_lCb0MZvsquooyl1X5JbDz0K4gP-zT72lrM6E</code>, worksheet <code>Form Responses 1</code>.</li><li><strong>Retrieved:</strong> September 21, 2026 at 6:09 PM CDT.</li><li><strong>Snapshot:</strong> 761 populated timestamp rows × 45 columns.</li><li><strong>SHA-256:</strong> <code>9230eaf07dcd4ba41df0fe738c4f8f2af4858882f0c830b90833a2bc1793a73e</code>.</li><li><strong>Privacy:</strong> raw responses and local snapshots are gitignored. Only aggregates, anonymous model weights, and permission-checked excerpts are public.</li></ul><p>The local project also contains DiscordKit exports of the Druid Classic channels <strong>#forever-general</strong>, <strong>#forever-feral-dps</strong>, and <strong>#forever-feral-tank</strong>, covering discussion from September 12–20, 2026. A <a href="https://www.reddit.com/r/classicwow/comments/1wljuy6/">public r/classicwow announcement</a> documents how the survey was framed and circulated. These materials establish the author’s perspective and project context only. They are not part of the analyzed corpus, quoted, or counted.</p></section>
-  <section class="method-section"><h2>Sample and data quality</h2><p>Valid responses are rows with populated timestamps, not allocated sheet rows. Exact answer duplicates and timestamp collisions are checked separately. “Not enough information” remains in every stated denominator.</p><div class="table-scroll"><table class="dataframe data-table">
+  <section class="methods-hero"><p class="eyebrow">TRANSPARENCY WITHOUT THE DETOUR</p><h1>Methods, limitations &amp; downloads</h1><p class="deck">The public evidence, survey instrument, analysis rules, code, and aggregate outputs live here, separate from the main community story.</p><a class="ghost-button" href="./">← Back to the report</a></section>
+  <section class="method-section panel"><h2>Source, timing, and privacy boundary</h2><ul><li><strong>Project author:</strong> JVMES, a participant in the referenced Druid Classic Discord discussion.</li><li><strong>Authoritative source:</strong> <a href="https://docs.google.com/spreadsheets/d/1muybYt_lCb0MZvsquooyl1X5JbDz0K4gP-zT72lrM6E/edit">Google spreadsheet</a> <code>1muybYt_lCb0MZvsquooyl1X5JbDz0K4gP-zT72lrM6E</code>, worksheet <code>Form Responses 1</code>.</li><li><strong>Collection period:</strong> September 20, 2026 at 10:01 AM through September 21, 2026 at 6:23 PM America/Chicago.</li><li><strong>Retrieved:</strong> September 21, 2026 at 6:24 PM CDT.</li><li><strong>Snapshot:</strong> 762 populated timestamp rows × 45 columns.</li><li><strong>SHA-256:</strong> <code>2d13fe0dc5c1d2a85939a457d335042d126d8e3eeba4cdee69d6b7e6dc16dbee</code>.</li><li><strong>Reproducible source:</strong> <a href="https://github.com/JVMES-WOW/forever-druid/tree/main/survey_analysis">analysis code and documentation on GitHub</a>.</li><li><strong>Privacy:</strong> raw responses and local snapshots are gitignored. Only aggregates, anonymous model weights, and permission-checked excerpts are public.</li></ul><p><strong>Design reference boundary:</strong> the survey asked about the “currently revealed” design available during the collection window; it did not collect a patch or build identifier. Results should be read as reactions to the public and test-build state respondents encountered on those dates, not to later revisions.</p><p>The local project also contains DiscordKit exports of the Druid Classic channels <strong>#forever-general</strong>, <strong>#forever-feral-dps</strong>, and <strong>#forever-feral-tank</strong>, covering discussion from September 12–20, 2026. A <a href="https://www.reddit.com/r/classicwow/comments/1wljuy6/">public r/classicwow announcement</a> documents how the survey was framed and circulated. These materials establish the author’s perspective and project context only. They are not part of the analyzed corpus, quoted, or counted.</p></section>
+  <section class="method-section"><h2>Survey instrument and interpretation boundary</h2><p>The exact wording and response formats are provided below. Q8 contains an answer choice that explicitly names “comparable activity and meaningful resource decisions,” so Q8 alone cannot independently establish that those properties matter. The main interpretation is triangulated across the importance matrix (Q9), current-design agreement matrix (Q10), forced-priority selection (Q12), test-direction selection (Q13), and written responses (Q14–Q16).</p><details class="instrument"><summary>View all question wording and response options</summary><div class="table-scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>question</th>
+      <th>wording</th>
+      <th>item</th>
+      <th>response_format</th>
+      <th>response_options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q1</td>
+      <td>1. How familiar are you with the currently revealed Forever Feral design?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>I have closely reviewed talents, abilities, footage, or theorycrafting; I have followed detailed community discussion; I have not seen enough to evaluate it; I have played the current test build; I have seen only a basic overview</td>
+    </tr>
+    <tr>
+      <td>Q2</td>
+      <td>2. Which versions of Feral have you played extensively? Select all that apply.</td>
+      <td></td>
+      <td>Multiple selection</td>
+      <td>Cataclysm or later Classic; I have limited prior Feral experience; Original Vanilla / 2019 Classic; Private servers; Retail WoW; Season of Discovery; Season of Mastery / Hardcore; The Burning Crusade; Wrath of the Lich King</td>
+    </tr>
+    <tr>
+      <td>Q3</td>
+      <td>3. Which best describes your main interest in Forever Feral?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>Bear tank in organized PvE; Cat DPS in organized PvE; Hybrid Cat/Bear or off-tank play; Leveling, dungeons, or casual PvE; PvP; Theorycrafting, even if I may not main Feral; Undecided / other</td>
+    </tr>
+    <tr>
+      <td>Q4</td>
+      <td>4. How would you describe your Feral experience level?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>Experienced but primarily casual Feral player; High-end or competitive Feral player; I mainly play another Druid role/spec; I mainly play another class; New or prospective Feral player; Regular organized-raiding Feral player</td>
+    </tr>
+    <tr>
+      <td>Q5</td>
+      <td>5. Based on what is currently known, how do you feel about the direction of Forever Feral?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>I do not yet have enough information to judge; Mixed / neutral; Somewhat negative; Somewhat positive; Very negative; Very positive</td>
+    </tr>
+    <tr>
+      <td>Q6</td>
+      <td>6. If Forever launched with the currently known design, how likely would you be to main or regularly play Feral?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>Definitely would; Definitely would not; Not applicable; I did not expect to play Feral; Probably would; Probably would not; Unsure</td>
+    </tr>
+    <tr>
+      <td>Q7</td>
+      <td>7. Compared with Classic Feral, the currently known Forever Feral design makes me…</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>About equally excited; Much less excited; Much more excited to play Feral; Not enough experience/information to compare; Somewhat less excited; Somewhat more excited</td>
+    </tr>
+    <tr>
+      <td>Q8</td>
+      <td>8. Which statement is closest to your view of powershifting?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>I do not need literal powershifting if another mechanic provides comparable activity and meaningful resource decisions.; I do not yet have enough information.; I have no strong preference.; I prefer a non-powershifting design, provided it remains engaging and has enough depth.; I prefer a slower, less input-intensive Feral rotation than Classic powershifting.; I specifically want Classic-style powershifting restored.</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Frequent actions with little empty time</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Meaningful energy and resource decisions</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>A high mastery ceiling</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Shifting between forms during combat</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Maintaining and timing bleeds</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Strong burst windows</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Competitive single-target damage</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Useful multi-target/AoE tools</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Raid utility or a clear reason to bring Feral</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>9. How important is each quality to your enjoyment of Feral?</td>
+      <td>Accessibility for players who prefer a simpler rotation</td>
+      <td>Matrix, one choice per item</td>
+      <td>Essential; Very important; Moderately important; Slightly important; Not important</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>The rotation appears engaging enough to remain enjoyable over a full raid tier.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>Feral appears to have enough meaningful moment-to-moment decisions.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>The design appears to have an appropriate amount of downtime.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>The design appears to offer enough room for player mastery.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>A stronger bleed identity is appealing to me.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>The current bleed emphasis appears active rather than passive.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>The current design preserves Feral's shapeshifting identity.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>The current design appears distinct from other melee specs.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>Numerical tuning is a bigger concern for me than rotational design.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>10. How much do you agree with each statement about the currently known design?</td>
+      <td>I would accept no DPS increase if a change made the rotation more engaging.</td>
+      <td>Matrix, one choice per item</td>
+      <td>Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Furor and the loss/reduction of powershifting</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Energy generation and pooling</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Rip/Rake and the bleed emphasis</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Tiger's Fury</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Clearcasting / Omen of Clarity</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Combo points being stored on the player</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Berserk</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>AoE / Swipe tools</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>Cat/Bear/caster weaving possibilities</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q11</td>
+      <td>11. What is your current reaction to each area?</td>
+      <td>The revealed talent structure</td>
+      <td>Matrix, one choice per item</td>
+      <td>Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information</td>
+    </tr>
+    <tr>
+      <td>Q12</td>
+      <td>12. Which areas most need developer attention? Select up to three.</td>
+      <td></td>
+      <td>Multiple selection</td>
+      <td>AoE; Bleed gameplay; Clearcasting/Omen; Combo-point generation/spending; Energy economy; Itemization/scaling; Not enough information; Nothing currently stands out; Powershifting/Furor; PvP; Raid utility/desirability; Rotation/activity level; Shapeshifting or weaving identity; Single-target damage/tuning; Talent design; Tiger's Fury</td>
+    </tr>
+    <tr>
+      <td>Q13</td>
+      <td>13. Which possible directions would you be open to testing? Select all that apply.</td>
+      <td></td>
+      <td>Multiple selection</td>
+      <td>Add another active resource-conversion mechanic; Add intentional Cat/Bear/caster weaving incentives; Add more Clearcasting interactions; I would rather evaluate a complete build before choosing solutions; Increase passive energy generation; Let bleeds interact with energy or other active decisions; Preserve a slower rotation with fewer required inputs; Restore Classic-style powershifting; Use Tiger's Fury more frequently or allow gameplay-driven cooldown resets</td>
+    </tr>
+    <tr>
+      <td>Q14</td>
+      <td>14. What is the single most important thing you want the developers to understand about the current Feral design?</td>
+      <td></td>
+      <td>Open text</td>
+      <td>Free response</td>
+    </tr>
+    <tr>
+      <td>Q15</td>
+      <td>15. What part of the current Forever Feral direction do you most want preserved?</td>
+      <td></td>
+      <td>Open text</td>
+      <td>Free response</td>
+    </tr>
+    <tr>
+      <td>Q16</td>
+      <td>16. If you could change one mechanic or design decision, what would you change—and what player experience would that improve?</td>
+      <td></td>
+      <td>Open text</td>
+      <td>Free response</td>
+    </tr>
+    <tr>
+      <td>Q17</td>
+      <td>17. May your written response be quoted anonymously in a community feedback report?</td>
+      <td></td>
+      <td>Single choice</td>
+      <td>No, summarize it only in aggregate; Yes, it may be quoted anonymously</td>
+    </tr>
+  </tbody>
+</table></div></details></section>
+  <section class="method-section"><h2>Sample and data quality</h2><p>Valid responses are rows with populated timestamps, not allocated sheet rows. The snapshot contains <strong>0 exact duplicate answer rows</strong> and <strong>18 rows sharing a timestamp</strong>. Shared timestamps are possible in a rapid-response survey and are not treated as duplicates without matching answers; all were retained. “Not enough information” remains in every stated denominator.</p><div class="table-scroll"><table class="dataframe data-table">
   <thead>
     <tr style="text-align: right;">
       <th>question</th>
@@ -23,7 +344,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -31,7 +352,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -39,7 +360,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -47,7 +368,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -55,7 +376,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -63,7 +384,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -71,7 +392,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -79,7 +400,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -87,7 +408,7 @@
       <td>10</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -95,7 +416,7 @@
       <td>10</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -103,7 +424,7 @@
       <td>10</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -111,7 +432,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
     <tr>
@@ -119,15 +440,15 @@
       <td>1</td>
       <td>8</td>
       <td>8</td>
-      <td>761</td>
-      <td>98.9</td>
+      <td>762</td>
+      <td>99.0</td>
     </tr>
     <tr>
       <td>Q14</td>
       <td>1</td>
       <td>3</td>
       <td>3</td>
-      <td>761</td>
+      <td>762</td>
       <td>99.6</td>
     </tr>
     <tr>
@@ -135,7 +456,7 @@
       <td>1</td>
       <td>119</td>
       <td>119</td>
-      <td>761</td>
+      <td>762</td>
       <td>84.4</td>
     </tr>
     <tr>
@@ -143,7 +464,7 @@
       <td>1</td>
       <td>148</td>
       <td>148</td>
-      <td>761</td>
+      <td>762</td>
       <td>80.6</td>
     </tr>
     <tr>
@@ -151,7 +472,7 @@
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>761</td>
+      <td>762</td>
       <td>100.0</td>
     </tr>
   </tbody>
@@ -173,31 +494,31 @@
     <tr>
       <td>Cat DPS interest</td>
       <td>Negative direction</td>
-      <td>258</td>
-      <td>385</td>
-      <td>67.0</td>
-      <td>62.2</td>
-      <td>71.5</td>
+      <td>259</td>
+      <td>386</td>
+      <td>67.1</td>
+      <td>62.3</td>
+      <td>71.6</td>
       <td>30</td>
     </tr>
     <tr>
       <td>Cat DPS interest</td>
       <td>Would play</td>
       <td>148</td>
-      <td>385</td>
-      <td>38.4</td>
-      <td>33.7</td>
-      <td>43.4</td>
+      <td>386</td>
+      <td>38.3</td>
+      <td>33.6</td>
+      <td>43.3</td>
       <td>30</td>
     </tr>
     <tr>
       <td>Cat DPS interest</td>
       <td>Less excited</td>
-      <td>262</td>
-      <td>385</td>
+      <td>263</td>
+      <td>386</td>
       <td>68.1</td>
-      <td>63.2</td>
-      <td>72.5</td>
+      <td>63.3</td>
+      <td>72.6</td>
       <td>30</td>
     </tr>
     <tr>
@@ -263,31 +584,31 @@
     <tr>
       <td>High-end/competitive</td>
       <td>Negative direction</td>
-      <td>274</td>
-      <td>417</td>
-      <td>65.7</td>
-      <td>61.0</td>
-      <td>70.1</td>
+      <td>275</td>
+      <td>418</td>
+      <td>65.8</td>
+      <td>61.1</td>
+      <td>70.2</td>
       <td>30</td>
     </tr>
     <tr>
       <td>High-end/competitive</td>
       <td>Would play</td>
       <td>185</td>
-      <td>417</td>
-      <td>44.4</td>
-      <td>39.7</td>
-      <td>49.2</td>
+      <td>418</td>
+      <td>44.3</td>
+      <td>39.6</td>
+      <td>49.1</td>
       <td>30</td>
     </tr>
     <tr>
       <td>High-end/competitive</td>
       <td>Less excited</td>
-      <td>282</td>
-      <td>417</td>
-      <td>67.6</td>
-      <td>63.0</td>
-      <td>71.9</td>
+      <td>283</td>
+      <td>418</td>
+      <td>67.7</td>
+      <td>63.1</td>
+      <td>72.0</td>
       <td>30</td>
     </tr>
     <tr>
@@ -383,31 +704,31 @@
     <tr>
       <td>Reviewed/discussed only</td>
       <td>Negative direction</td>
-      <td>217</td>
-      <td>327</td>
-      <td>66.4</td>
-      <td>61.1</td>
-      <td>71.3</td>
+      <td>218</td>
+      <td>328</td>
+      <td>66.5</td>
+      <td>61.2</td>
+      <td>71.4</td>
       <td>30</td>
     </tr>
     <tr>
       <td>Reviewed/discussed only</td>
       <td>Would play</td>
       <td>132</td>
-      <td>327</td>
-      <td>40.4</td>
-      <td>35.2</td>
-      <td>45.8</td>
+      <td>328</td>
+      <td>40.2</td>
+      <td>35.1</td>
+      <td>45.6</td>
       <td>30</td>
     </tr>
     <tr>
       <td>Reviewed/discussed only</td>
       <td>Less excited</td>
-      <td>221</td>
-      <td>327</td>
-      <td>67.6</td>
-      <td>62.3</td>
-      <td>72.4</td>
+      <td>222</td>
+      <td>328</td>
+      <td>67.7</td>
+      <td>62.4</td>
+      <td>72.5</td>
       <td>30</td>
     </tr>
     <tr>
@@ -443,29 +764,29 @@
     <tr>
       <td>Functional replacement</td>
       <td>Negative direction</td>
-      <td>301</td>
-      <td>447</td>
-      <td>67.3</td>
+      <td>302</td>
+      <td>448</td>
+      <td>67.4</td>
       <td>62.9</td>
-      <td>71.5</td>
+      <td>71.6</td>
       <td>30</td>
     </tr>
     <tr>
       <td>Functional replacement</td>
       <td>Would play</td>
       <td>180</td>
-      <td>447</td>
-      <td>40.3</td>
-      <td>35.8</td>
-      <td>44.9</td>
+      <td>448</td>
+      <td>40.2</td>
+      <td>35.7</td>
+      <td>44.8</td>
       <td>30</td>
     </tr>
     <tr>
       <td>Functional replacement</td>
       <td>Less excited</td>
-      <td>330</td>
-      <td>447</td>
-      <td>73.8</td>
+      <td>331</td>
+      <td>448</td>
+      <td>73.9</td>
       <td>69.6</td>
       <td>77.7</td>
       <td>30</td>
@@ -516,98 +837,98 @@
     <tr>
       <td>Bleed identity</td>
       <td>269</td>
-      <td>761</td>
+      <td>762</td>
       <td>35.3</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Powershifting or a functional equivalent</td>
       <td>126</td>
-      <td>761</td>
-      <td>16.6</td>
+      <td>762</td>
+      <td>16.5</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>AoE/Swipe</td>
       <td>114</td>
-      <td>761</td>
+      <td>762</td>
       <td>15.0</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>High APM/activity</td>
       <td>93</td>
-      <td>761</td>
+      <td>762</td>
       <td>12.2</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Cat/Bear/caster weaving</td>
       <td>90</td>
-      <td>761</td>
+      <td>762</td>
       <td>11.8</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Hybrid/off-tank identity</td>
       <td>89</td>
-      <td>761</td>
+      <td>762</td>
       <td>11.7</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Distinctiveness from Rogue</td>
       <td>89</td>
-      <td>761</td>
+      <td>762</td>
       <td>11.7</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Energy downtime</td>
-      <td>68</td>
-      <td>761</td>
-      <td>8.9</td>
+      <td>69</td>
+      <td>762</td>
+      <td>9.1</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Skill expression/mastery</td>
-      <td>62</td>
-      <td>761</td>
-      <td>8.1</td>
+      <td>63</td>
+      <td>762</td>
+      <td>8.3</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Shapeshifting identity</td>
       <td>49</td>
-      <td>761</td>
+      <td>762</td>
       <td>6.4</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Literal powershifting restoration</td>
       <td>45</td>
-      <td>761</td>
+      <td>762</td>
       <td>5.9</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Raid utility</td>
       <td>43</td>
-      <td>761</td>
-      <td>5.7</td>
+      <td>762</td>
+      <td>5.6</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Numerical tuning</td>
       <td>26</td>
-      <td>761</td>
+      <td>762</td>
       <td>3.4</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
     <tr>
       <td>Non-powershifting but engaging</td>
       <td>4</td>
-      <td>761</td>
+      <td>762</td>
       <td>0.5</td>
       <td>Rule-based mention; non-exclusive</td>
     </tr>
@@ -624,38 +945,38 @@
   <tbody>
     <tr>
       <td>Not mentioned</td>
-      <td>688</td>
-      <td>761</td>
+      <td>689</td>
+      <td>762</td>
       <td>90.4</td>
     </tr>
     <tr>
       <td>Mentioned; polarity unclear</td>
       <td>33</td>
-      <td>761</td>
+      <td>762</td>
       <td>4.3</td>
     </tr>
     <tr>
       <td>Preserve removal/non-powershifting</td>
       <td>31</td>
-      <td>761</td>
+      <td>762</td>
       <td>4.1</td>
     </tr>
     <tr>
       <td>Ambiguous/mixed</td>
       <td>7</td>
-      <td>761</td>
+      <td>762</td>
       <td>0.9</td>
     </tr>
     <tr>
       <td>Preserve/restore</td>
       <td>2</td>
-      <td>761</td>
+      <td>762</td>
       <td>0.3</td>
     </tr>
   </tbody>
 </table></div></section>
-  <section class="method-section"><h2>Limitations</h2><ul><li>This is a self-selected sample of engaged Feral players.</li><li>Community-channel reach, question wording, response dependence, and an evolving test build limit generalization.</li><li>Topic models summarize language; they do not measure votes and are weak at negation.</li><li>Rule-based themes favor transparency over perfect recall and should be read as mentions, not exhaustive hand coding.</li><li>Subgroup differences are associations inside this sample, not causal effects.</li></ul></section>
-  <section class="method-section" id="downloads"><h2>Aggregate downloads</h2><p>Multiselect files explicitly note that percentages may exceed 100%. No raw response export is included.</p><div class="download-grid"><a href="tables/source_metadata.json">source_metadata.json</a><a href="tables/overall_direction.csv">overall_direction.csv</a><a href="tables/likelihood_to_play.csv">likelihood_to_play.csv</a><a href="tables/excitement.csv">excitement.csv</a><a href="tables/powershifting_preference.csv">powershifting_preference.csv</a><a href="tables/familiarity.csv">familiarity.csv</a><a href="tables/primary_interest.csv">primary_interest.csv</a><a href="tables/experience.csv">experience.csv</a><a href="tables/versions_played.csv">versions_played.csv</a><a href="tables/developer_attention.csv">developer_attention.csv</a><a href="tables/directions_to_test.csv">directions_to_test.csv</a><a href="tables/importance_matrix.csv">importance_matrix.csv</a><a href="tables/agreement_matrix.csv">agreement_matrix.csv</a><a href="tables/mechanic_reactions.csv">mechanic_reactions.csv</a><a href="tables/subgroups.csv">subgroups.csv</a><a href="tables/thematic_validation.csv">thematic_validation.csv</a><a href="tables/q15_powershift_polarity.csv">q15_powershift_polarity.csv</a><a href="tables/topic_prevalence.csv">topic_prevalence.csv</a><a href="tables/topic_terms_q14.csv">topic_terms_q14.csv</a><a href="tables/topic_terms_q15.csv">topic_terms_q15.csv</a><a href="tables/topic_terms_q16.csv">topic_terms_q16.csv</a><a href="tables/topic_assignments_q14.csv">topic_assignments_q14.csv</a><a href="tables/topic_assignments_q15.csv">topic_assignments_q15.csv</a><a href="tables/topic_assignments_q16.csv">topic_assignments_q16.csv</a><a href="tables/topic_diagnostics_q14.csv">topic_diagnostics_q14.csv</a><a href="tables/topic_diagnostics_q15.csv">topic_diagnostics_q15.csv</a><a href="tables/topic_diagnostics_q16.csv">topic_diagnostics_q16.csv</a><a href="tables/wordcloud_q14_terms.csv">wordcloud_q14_terms.csv</a><a href="tables/wordcloud_q15_terms.csv">wordcloud_q15_terms.csv</a><a href="tables/wordcloud_q16_terms.csv">wordcloud_q16_terms.csv</a></div></section>
+  <section class="method-section"><h2>Limitations</h2><ul><li>This is a self-selected sample of engaged Feral players recruited through community channels over a short period.</li><li>Community-channel reach, question wording, response dependence, and an evolving test build limit generalization.</li><li>No combat logs, telemetry, parses, account history, or externally verified skill measures were collected.</li><li>The survey measures reactions and design priorities, not whether a proposed mechanic will balance correctly in raids, dungeons, leveling, or PvP.</li><li>Topic models summarize language; they do not measure votes and are weak at negation.</li><li>Rule-based themes favor transparency over perfect recall and should be read as mentions, not exhaustive hand coding.</li><li>Subgroup differences are associations inside this sample, not causal effects.</li></ul></section>
+  <section class="method-section" id="downloads"><h2>Aggregate downloads</h2><p>Multiselect files explicitly note that percentages may exceed 100%. No raw response export is included.</p><div class="download-grid"><a href="tables/source_metadata.json">source_metadata.json</a><a href="tables/survey_instrument.csv">survey_instrument.csv</a><a href="tables/overall_direction.csv">overall_direction.csv</a><a href="tables/likelihood_to_play.csv">likelihood_to_play.csv</a><a href="tables/excitement.csv">excitement.csv</a><a href="tables/powershifting_preference.csv">powershifting_preference.csv</a><a href="tables/familiarity.csv">familiarity.csv</a><a href="tables/primary_interest.csv">primary_interest.csv</a><a href="tables/experience.csv">experience.csv</a><a href="tables/versions_played.csv">versions_played.csv</a><a href="tables/developer_attention.csv">developer_attention.csv</a><a href="tables/directions_to_test.csv">directions_to_test.csv</a><a href="tables/importance_matrix.csv">importance_matrix.csv</a><a href="tables/agreement_matrix.csv">agreement_matrix.csv</a><a href="tables/mechanic_reactions.csv">mechanic_reactions.csv</a><a href="tables/subgroups.csv">subgroups.csv</a><a href="tables/thematic_validation.csv">thematic_validation.csv</a><a href="tables/q15_powershift_polarity.csv">q15_powershift_polarity.csv</a><a href="tables/topic_prevalence.csv">topic_prevalence.csv</a><a href="tables/topic_terms_q14.csv">topic_terms_q14.csv</a><a href="tables/topic_terms_q15.csv">topic_terms_q15.csv</a><a href="tables/topic_terms_q16.csv">topic_terms_q16.csv</a><a href="tables/topic_assignments_q14.csv">topic_assignments_q14.csv</a><a href="tables/topic_assignments_q15.csv">topic_assignments_q15.csv</a><a href="tables/topic_assignments_q16.csv">topic_assignments_q16.csv</a><a href="tables/topic_diagnostics_q14.csv">topic_diagnostics_q14.csv</a><a href="tables/topic_diagnostics_q15.csv">topic_diagnostics_q15.csv</a><a href="tables/topic_diagnostics_q16.csv">topic_diagnostics_q16.csv</a><a href="tables/wordcloud_q14_terms.csv">wordcloud_q14_terms.csv</a><a href="tables/wordcloud_q15_terms.csv">wordcloud_q15_terms.csv</a><a href="tables/wordcloud_q16_terms.csv">wordcloud_q16_terms.csv</a></div></section>
 </main>
 <footer class="page-foot"><span>Fixed random seed 20260921 · tests and privacy audit run before publication</span><a href="./">Return to the report</a></footer>
 </body>

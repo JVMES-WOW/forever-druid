@@ -28,7 +28,7 @@ from wordcloud import WordCloud
 from forever_survey import SEED
 from forever_survey.analysis import HEADLINE_MAP, structured_tables, subgroup_table
 from forever_survey.schema import detect_columns
-from forever_survey.stats import can_quote, clean
+from forever_survey.stats import can_quote, clean, parse_multiselect
 from forever_survey.text import document_frequency, private_text_id, topic_outputs
 from forever_survey.themes import THEME_RULES, code_themes, powershift_polarity
 
@@ -102,6 +102,46 @@ def quality_checks(df: pd.DataFrame, columns) -> tuple[pd.DataFrame, dict]:
         "collection_end": timestamps.max().strftime("%B %-d, %Y at %-I:%M %p") if timestamps.notna().any() else "Unavailable",
     }
     return pd.DataFrame(rows), summary
+
+
+def survey_instrument(df: pd.DataFrame, columns) -> pd.DataFrame:
+    """Publish question wording and response formats without respondent-level data."""
+    rows = []
+    fixed_scales = {
+        9: "Essential; Very important; Moderately important; Slightly important; Not important",
+        10: "Strongly agree; Agree; Neither; Disagree; Strongly disagree; Not enough information",
+        11: "Very positive; Somewhat positive; Neutral; Somewhat negative; Very negative; Not enough information",
+    }
+    for q, question_columns in columns.by_question.items():
+        for column in question_columns:
+            item = ""
+            bracketed = re.search(r"\[([^\]]+)\]\s*$", column)
+            if bracketed:
+                item = bracketed.group(1)
+            if q in (14, 15, 16):
+                response_format = "Open text"
+                options = "Free response"
+            elif q in (2, 12, 13):
+                response_format = "Multiple selection"
+                options = sorted({choice for value in df[column] for choice in parse_multiselect(value)})
+                options = "; ".join(options)
+            elif q in fixed_scales:
+                response_format = "Matrix, one choice per item"
+                options = fixed_scales[q]
+            else:
+                response_format = "Single choice"
+                options = "; ".join(sorted({clean(value) for value in df[column] if clean(value)}))
+            stem = re.sub(r"\s*\[[^\]]+\]\s*$", "", column)
+            rows.append({"question": f"Q{q}", "wording": stem, "item": item,
+                         "response_format": response_format, "response_options": options})
+    return pd.DataFrame(rows)
+
+
+def shorten_excerpt(text: str, limit: int = 390) -> str:
+    if len(text) <= limit:
+        return text
+    shortened = text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:")
+    return shortened + "…"
 
 
 def plot_bar(frame: pd.DataFrame, label_col: str, value_col: str, path: Path, title: str,
@@ -249,6 +289,7 @@ def main() -> None:
     tables = structured_tables(df, columns)
     tables["missingness"] = missingness
     tables["subgroups"] = subgroup_table(df, columns)
+    tables["survey_instrument"] = survey_instrument(df, columns)
 
     theme_counts = []
     combined_text = df[[columns.one(q) for q in (14,15,16)]].agg(" ".join, axis=1)
@@ -360,11 +401,39 @@ def main() -> None:
     }
     priority_summary = dict(zip(tables["developer_attention"].category,
                                 tables["developer_attention"].percent))
+    direction_summary = dict(zip(tables["directions_to_test"].category,
+                                 tables["directions_to_test"].percent))
+    negative_mechanics = {
+        row.area: float(row.percent)
+        for row in tables["mechanic_reactions"].itertuples()
+        if row.category == "Negative"
+    }
+    disagreement_summary = {
+        row.statement: float(row.percent)
+        for row in tables["agreement_matrix"].itertuples()
+        if row.category == "Disagree + Strongly disagree"
+    }
+    featured_viewpoints = {
+        "acad144b7596a53f": "Functional replacement",
+        "e1f9bbbc08954840": "AoE and scaling",
+        "9f8efc112574893d": "Hybrid and off-tank play",
+        "b455da06728cb871": "Shapeshifting without powershifting",
+    }
+    featured_quotes = tables["anonymous_excerpts"][
+        tables["anonymous_excerpts"].text_id.isin(featured_viewpoints)
+    ].copy()
+    featured_quotes["viewpoint"] = featured_quotes.text_id.map(featured_viewpoints)
+    featured_quotes["display_excerpt"] = featured_quotes.excerpt.map(shorten_excerpt)
+    phrase_top = {q: frame.head(5).to_dict("records") for q, frame in freqs.items()}
     context = {"metadata": metadata, "tables": tables, "html_tables": html_tables, "current": current,
                "sample_counts": sample_counts,
                "subgroup_summary": subgroup_summary,
                "mechanic_summary": mechanic_summary, "priority_summary": priority_summary,
-               "featured_quotes": tables["anonymous_excerpts"].iloc[[1, 4, 5, 6]] if len(tables["anonymous_excerpts"]) >= 7 else tables["anonymous_excerpts"],
+               "direction_summary": direction_summary,
+               "negative_mechanics": negative_mechanics,
+               "disagreement_summary": disagreement_summary,
+               "phrase_top": phrase_top,
+               "featured_quotes": featured_quotes,
                "retrieved_display": datetime.fromisoformat(retrieved).astimezone(ZoneInfo("America/Chicago")).strftime("%B %-d, %Y at %-I:%M %p %Z"),
                "collection_start": duplicate_summary["collection_start"], "collection_end": duplicate_summary["collection_end"]}
     (PUBLIC_DIR / "index.html").write_text(template.render(**context), encoding="utf-8")

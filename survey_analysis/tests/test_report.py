@@ -12,9 +12,15 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "i’m <strong>jvmes</strong>" in template
     assert "not a petition for one implementation" in template
     assert "#forever-general" in template
-    assert "wordcloud-q14.png" in template
+    assert "wordcloud-q{{ q }}.png" in template
     assert "competitive” is a self-report" in template
     assert "combat logs, parses, rankings" in template
+    assert template.index("three results tell the story") < template.index("project intent")
+    assert "this is primarily a cat and hybrid-play concern" in template
+    assert "played the test build" in template
+    assert "developer design brief" in template
+    assert "shortened for display" in template
+    assert "these respondents give the design team" in template
     assert "combo points stored on the player" not in template
     assert "player-stored combo points" not in template
 
@@ -28,6 +34,11 @@ def test_methods_page_keeps_technical_detail_and_downloads():
     assert "675-response" not in methods
     assert "reddit.com/r/classicwow/comments/1wljuy6/" in methods
     assert "not part of the analyzed corpus" in methods
+    assert "survey instrument and interpretation boundary" in methods
+    assert "exact duplicate answer rows" in methods
+    assert "design reference boundary" in methods
+    assert "github.com/jvmes-wow/forever-druid/tree/main/survey_analysis" in methods
+    assert "survey_instrument.csv" in methods
 
 
 def test_report_theme_matches_existing_dark_green_and_gold_palette():

@@ -1,61 +1,61 @@
 quality,category,count,denominator,percent
-Frequent actions with little empty time,Essential,235,761,30.88042049934297
-Frequent actions with little empty time,Very important,227,761,29.829172141918527
-Frequent actions with little empty time,Moderately important,171,761,22.470433639947437
-Frequent actions with little empty time,Slightly important,73,761,9.592641261498029
-Frequent actions with little empty time,Not important,55,761,7.227332457293035
-Frequent actions with little empty time,Essential + Very important,462,761,60.7095926412615
-Meaningful energy and resource decisions,Essential,248,761,32.58869908015769
-Meaningful energy and resource decisions,Very important,288,761,37.844940867279895
-Meaningful energy and resource decisions,Moderately important,163,761,21.419185282522996
-Meaningful energy and resource decisions,Slightly important,48,761,6.307490144546649
-Meaningful energy and resource decisions,Not important,14,761,1.8396846254927726
-Meaningful energy and resource decisions,Essential + Very important,536,761,70.43363994743758
-A high mastery ceiling,Essential,254,761,33.37713534822602
-A high mastery ceiling,Very important,226,761,29.69776609724047
-A high mastery ceiling,Moderately important,174,761,22.864651773981603
-A high mastery ceiling,Slightly important,64,761,8.409986859395532
-A high mastery ceiling,Not important,43,761,5.650459921156373
-A high mastery ceiling,Essential + Very important,480,761,63.074901445466494
-Shifting between forms during combat,Essential,79,761,10.38107752956636
-Shifting between forms during combat,Very important,125,761,16.4257555847569
-Shifting between forms during combat,Moderately important,183,761,24.0473061760841
-Shifting between forms during combat,Slightly important,144,761,18.922470433639948
-Shifting between forms during combat,Not important,230,761,30.223390275952696
-Shifting between forms during combat,Essential + Very important,204,761,26.806833114323258
-Maintaining and timing bleeds,Essential,165,761,21.681997371879106
-Maintaining and timing bleeds,Very important,190,761,24.967148488830485
-Maintaining and timing bleeds,Moderately important,214,761,28.12089356110381
-Maintaining and timing bleeds,Slightly important,116,761,15.243101182654403
-Maintaining and timing bleeds,Not important,76,761,9.986859395532194
-Maintaining and timing bleeds,Essential + Very important,355,761,46.649145860709595
-Strong burst windows,Essential,134,761,17.608409986859396
-Strong burst windows,Very important,180,761,23.653088042049934
-Strong burst windows,Moderately important,214,761,28.12089356110381
-Strong burst windows,Slightly important,120,761,15.768725361366624
-Strong burst windows,Not important,113,761,14.848883048620236
-Strong burst windows,Essential + Very important,314,761,41.26149802890933
-Competitive single-target damage,Essential,316,761,41.52431011826544
-Competitive single-target damage,Very important,233,761,30.61760840998686
-Competitive single-target damage,Moderately important,148,761,19.44809461235217
-Competitive single-target damage,Slightly important,44,761,5.781865965834428
-Competitive single-target damage,Not important,20,761,2.628120893561104
-Competitive single-target damage,Essential + Very important,549,761,72.1419185282523
-Useful multi-target/AoE tools,Essential,68,761,8.935611038107753
-Useful multi-target/AoE tools,Very important,134,761,17.608409986859396
-Useful multi-target/AoE tools,Moderately important,219,761,28.777923784494085
-Useful multi-target/AoE tools,Slightly important,183,761,24.0473061760841
-Useful multi-target/AoE tools,Not important,157,761,20.630749014454665
-Useful multi-target/AoE tools,Essential + Very important,202,761,26.544021024967147
-Raid utility or a clear reason to bring Feral,Essential,295,761,38.76478318002628
-Raid utility or a clear reason to bring Feral,Very important,203,761,26.675427069645202
-Raid utility or a clear reason to bring Feral,Moderately important,156,761,20.49934296977661
-Raid utility or a clear reason to bring Feral,Slightly important,72,761,9.461235216819974
-Raid utility or a clear reason to bring Feral,Not important,35,761,4.599211563731932
-Raid utility or a clear reason to bring Feral,Essential + Very important,498,761,65.44021024967148
-Accessibility for players who prefer a simpler rotation,Essential,30,761,3.942181340341656
-Accessibility for players who prefer a simpler rotation,Very important,50,761,6.570302233902759
-Accessibility for players who prefer a simpler rotation,Moderately important,145,761,19.053876478318003
-Accessibility for players who prefer a simpler rotation,Slightly important,202,761,26.544021024967147
-Accessibility for players who prefer a simpler rotation,Not important,334,761,43.88961892247043
-Accessibility for players who prefer a simpler rotation,Essential + Very important,80,761,10.512483574244415
+Frequent actions with little empty time,Essential,236,762,30.971128608923884
+Frequent actions with little empty time,Very important,227,762,29.79002624671916
+Frequent actions with little empty time,Moderately important,171,762,22.440944881889763
+Frequent actions with little empty time,Slightly important,73,762,9.58005249343832
+Frequent actions with little empty time,Not important,55,762,7.217847769028872
+Frequent actions with little empty time,Essential + Very important,463,762,60.76115485564304
+Meaningful energy and resource decisions,Essential,249,762,32.67716535433071
+Meaningful energy and resource decisions,Very important,288,762,37.79527559055118
+Meaningful energy and resource decisions,Moderately important,163,762,21.391076115485564
+Meaningful energy and resource decisions,Slightly important,48,762,6.299212598425197
+Meaningful energy and resource decisions,Not important,14,762,1.837270341207349
+Meaningful energy and resource decisions,Essential + Very important,537,762,70.4724409448819
+A high mastery ceiling,Essential,255,762,33.46456692913386
+A high mastery ceiling,Very important,226,762,29.658792650918635
+A high mastery ceiling,Moderately important,174,762,22.834645669291337
+A high mastery ceiling,Slightly important,64,762,8.398950131233596
+A high mastery ceiling,Not important,43,762,5.6430446194225725
+A high mastery ceiling,Essential + Very important,481,762,63.123359580052494
+Shifting between forms during combat,Essential,79,762,10.36745406824147
+Shifting between forms during combat,Very important,126,762,16.53543307086614
+Shifting between forms during combat,Moderately important,183,762,24.015748031496063
+Shifting between forms during combat,Slightly important,144,762,18.89763779527559
+Shifting between forms during combat,Not important,230,762,30.183727034120736
+Shifting between forms during combat,Essential + Very important,205,762,26.902887139107612
+Maintaining and timing bleeds,Essential,166,762,21.78477690288714
+Maintaining and timing bleeds,Very important,190,762,24.93438320209974
+Maintaining and timing bleeds,Moderately important,214,762,28.083989501312335
+Maintaining and timing bleeds,Slightly important,116,762,15.223097112860893
+Maintaining and timing bleeds,Not important,76,762,9.973753280839896
+Maintaining and timing bleeds,Essential + Very important,356,762,46.71916010498688
+Strong burst windows,Essential,135,762,17.716535433070867
+Strong burst windows,Very important,180,762,23.62204724409449
+Strong burst windows,Moderately important,214,762,28.083989501312335
+Strong burst windows,Slightly important,120,762,15.748031496062993
+Strong burst windows,Not important,113,762,14.829396325459317
+Strong burst windows,Essential + Very important,315,762,41.338582677165356
+Competitive single-target damage,Essential,317,762,41.6010498687664
+Competitive single-target damage,Very important,233,762,30.57742782152231
+Competitive single-target damage,Moderately important,148,762,19.42257217847769
+Competitive single-target damage,Slightly important,44,762,5.774278215223097
+Competitive single-target damage,Not important,20,762,2.6246719160104988
+Competitive single-target damage,Essential + Very important,550,762,72.17847769028872
+Useful multi-target/AoE tools,Essential,69,762,9.05511811023622
+Useful multi-target/AoE tools,Very important,134,762,17.58530183727034
+Useful multi-target/AoE tools,Moderately important,219,762,28.74015748031496
+Useful multi-target/AoE tools,Slightly important,183,762,24.015748031496063
+Useful multi-target/AoE tools,Not important,157,762,20.603674540682416
+Useful multi-target/AoE tools,Essential + Very important,203,762,26.64041994750656
+Raid utility or a clear reason to bring Feral,Essential,295,762,38.71391076115486
+Raid utility or a clear reason to bring Feral,Very important,204,762,26.771653543307085
+Raid utility or a clear reason to bring Feral,Moderately important,156,762,20.47244094488189
+Raid utility or a clear reason to bring Feral,Slightly important,72,762,9.448818897637794
+Raid utility or a clear reason to bring Feral,Not important,35,762,4.593175853018373
+Raid utility or a clear reason to bring Feral,Essential + Very important,499,762,65.48556430446195
+Accessibility for players who prefer a simpler rotation,Essential,30,762,3.937007874015748
+Accessibility for players who prefer a simpler rotation,Very important,50,762,6.561679790026247
+Accessibility for players who prefer a simpler rotation,Moderately important,145,762,19.028871391076116
+Accessibility for players who prefer a simpler rotation,Slightly important,202,762,26.509186351706038
+Accessibility for players who prefer a simpler rotation,Not important,335,762,43.963254593175854
+Accessibility for players who prefer a simpler rotation,Essential + Very important,80,762,10.498687664041995
