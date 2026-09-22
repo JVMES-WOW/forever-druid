@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "survey_analysis" / "src"
 sys.path.insert(0, str(SRC))
 
+# Keep generated SVG metadata and internal identifiers stable across reruns.
+os.environ.setdefault("SOURCE_DATE_EPOCH", "1789952400")
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
@@ -26,7 +28,12 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from wordcloud import WordCloud
 
 from forever_survey import SEED
-from forever_survey.analysis import HEADLINE_MAP, structured_tables, subgroup_table
+from forever_survey.analysis import (
+    HEADLINE_MAP,
+    experience_sensitivity_tables,
+    structured_tables,
+    subgroup_table,
+)
 from forever_survey.schema import detect_columns
 from forever_survey.stats import can_quote, clean, parse_multiselect
 from forever_survey.text import document_frequency, private_text_id, topic_outputs
@@ -50,6 +57,7 @@ plt.rcParams.update({
     "axes.labelcolor": "#4f5b54", "axes.edgecolor": "#cdd4cf",
     "xtick.color": "#4f5b54", "ytick.color": "#303a34",
     "grid.color": "#dbe0dc", "font.family": "DejaVu Sans",
+    "svg.hashsalt": "forever-feral-20260921",
 })
 
 
@@ -261,6 +269,46 @@ def plot_experience(table: pd.DataFrame) -> None:
                "Self-described Feral experience", experience_colors)
 
 
+def plot_experience_sensitivity(table: pd.DataFrame) -> None:
+    """Show whether the four headline outcomes change across exposure breadth."""
+    outcomes = [
+        "Negative direction",
+        "Less excited",
+        "Do not require literal powershifting",
+        "Negative on Furor/loss",
+    ]
+    group_colors = {
+        "0-2 versions": "#8296a6",
+        "3-4 versions": "#8c7139",
+        "5+ versions": "#405d4d",
+    }
+    fig, axes = plt.subplots(2, 2, figsize=(11, 7.4), sharex=True)
+    for ax, outcome in zip(axes.flat, outcomes):
+        data = table[table.outcome.eq(outcome)]
+        for y, row in enumerate(data.itertuples()):
+            ax.errorbar(
+                row.percent,
+                y,
+                xerr=[[row.percent - row.ci_low], [row.ci_high - row.percent]],
+                fmt="o",
+                color=group_colors[row.group],
+                ecolor=group_colors[row.group],
+                capsize=3,
+            )
+            ax.text(row.percent + 1.2, y, f"{row.percent:.1f}%", va="center", fontsize=8)
+        ax.set_yticks(range(len(data)), [f"{row.group} (n={row.denominator})" for row in data.itertuples()])
+        ax.set_title(outcome, loc="left", fontsize=10.5, fontweight="bold")
+        ax.set_xlim(35, 95)
+        ax.grid(axis="x", alpha=.2)
+        ax.spines[["top", "right", "left"]].set_visible(False)
+    axes[1, 0].set_xlabel("Percent with Wilson 95% CI")
+    axes[1, 1].set_xlabel("Percent with Wilson 95% CI")
+    fig.suptitle("Headline responses by number of Feral versions played extensively", x=.08, ha="left", fontweight="bold")
+    fig.tight_layout(rect=(0, 0, 1, .95))
+    fig.savefig(FIG_DIR / "experience-sensitivity.svg", bbox_inches="tight")
+    plt.close(fig)
+
+
 def make_wordclouds(freqs: dict[int, pd.DataFrame]) -> None:
     wc_paths = []
     for q, frame in freqs.items():
@@ -323,6 +371,7 @@ def main() -> None:
     tables = structured_tables(df, columns)
     tables["missingness"] = missingness
     tables["subgroups"] = subgroup_table(df, columns)
+    tables.update(experience_sensitivity_tables(df, columns))
     tables["survey_instrument"] = survey_instrument(df, columns)
 
     theme_counts = []
@@ -396,7 +445,8 @@ def main() -> None:
     imp = tables["importance_matrix"].query("category == 'Essential + Very important'").sort_values("percent", ascending=False)
     plot_bar(imp, "quality", "percent", FIG_DIR / "gameplay-qualities.svg", "Most-valued gameplay qualities", xlim=92)
     plot_mechanics(tables["mechanic_reactions"]); plot_subgroups(tables["subgroups"])
-    plot_topics(all_prev); plot_experience(tables["experience"]); make_wordclouds(freqs)
+    plot_topics(all_prev); plot_experience(tables["experience"])
+    plot_experience_sensitivity(tables["experience_breadth"]); make_wordclouds(freqs)
 
     def pct(table, category): return float(table.loc[table.category.eq(category), "percent"].iloc[0])
     attention_map = dict(zip(tables["developer_attention"].category, tables["developer_attention"].percent))
@@ -420,14 +470,29 @@ def main() -> None:
     }
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=select_autoescape())
     template = env.get_template("report.html.j2")
-    html_tables = {name: table.round(1).to_html(index=False, classes="data-table", border=0)
-                   for name, table in tables.items()}
+    html_tables = {
+        name: table.round(4 if name.endswith("_tests") else 1).to_html(
+            index=False, classes="data-table", border=0
+        )
+        for name, table in tables.items()
+    }
     sample_counts = {name: dict(zip(table.category, table["count"]))
                      for name, table in tables.items()
                      if name in {"familiarity", "primary_interest", "experience"}}
     subgroup_summary: dict[str, dict[str, float]] = {}
     for _, row in tables["subgroups"].iterrows():
         subgroup_summary.setdefault(row["group"], {})[row["outcome"]] = float(row["percent"])
+    breadth_summary: dict[str, dict[str, float]] = {}
+    for _, row in tables["experience_breadth"].iterrows():
+        breadth_summary.setdefault(row["group"], {})[row["outcome"]] = float(row["percent"])
+    breadth_test_summary = {
+        row.outcome: {"adjusted_p": float(row.bh_adjusted_p), "cramers_v": float(row.cramers_v)}
+        for row in tables["experience_breadth_tests"].itertuples()
+    }
+    familiarity_test_summary = {
+        row.outcome: {"adjusted_p": float(row.bh_adjusted_p), "cramers_v": float(row.cramers_v)}
+        for row in tables["familiarity_tests"].itertuples()
+    }
     mechanic_summary = {
         row.area: float(row.percent)
         for row in tables["mechanic_reactions"].itertuples()
@@ -472,6 +537,9 @@ def main() -> None:
     context = {"metadata": metadata, "tables": tables, "html_tables": html_tables, "current": current,
                "sample_counts": sample_counts,
                "subgroup_summary": subgroup_summary,
+               "breadth_summary": breadth_summary,
+               "breadth_test_summary": breadth_test_summary,
+               "familiarity_test_summary": familiarity_test_summary,
                "mechanic_summary": mechanic_summary, "priority_summary": priority_summary,
                "direction_summary": direction_summary,
                "negative_mechanics": negative_mechanics,
@@ -485,6 +553,8 @@ def main() -> None:
     (PUBLIC_DIR / "index.html").write_text(template.render(**context), encoding="utf-8")
     methods = env.get_template("methodology.html.j2")
     (PUBLIC_DIR / "methodology.html").write_text(methods.render(**context), encoding="utf-8")
+    addendum = env.get_template("methods-addendum.html.j2")
+    (PUBLIC_DIR / "methods-addendum.html").write_text(addendum.render(**context), encoding="utf-8")
     social_preview = env.get_template("social-preview.html.j2")
     (PUBLIC_DIR / "social-preview.html").write_text(social_preview.render(**context), encoding="utf-8")
     shutil.copyfile(TEMPLATE_DIR / "report.css", PUBLIC_DIR / "report.css")

@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import pandas as pd
+
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -113,3 +115,37 @@ def test_social_preview_is_code_generated_and_uses_headline_results():
     assert 'current["Negative toward current direction"]' in preview
     assert 'current["Do not require literal powershifting"]' in preview
     assert 'current["Negative reaction to Furor/loss of powershifting"]' in preview
+
+
+def test_post_publication_methods_addendum_is_explicit_about_scope():
+    report = (ROOT / "survey_analysis/templates/report.html.j2").read_text().casefold()
+    methods = (ROOT / "survey_analysis/templates/methodology.html.j2").read_text().casefold()
+    addendum = (ROOT / "survey_analysis/templates/methods-addendum.html.j2").read_text().casefold()
+    assert "methods-addendum.html" in report
+    assert "reader feedback prompted" in report
+    assert "post-publication extension" in methods
+    assert "pragmatic thematic analysis" in addendum
+    assert "not grounded theory" in addendum
+    assert "not interpretative phenomenological analysis" in addendum
+    assert "not preregistered" in addendum
+    assert "benjamini-hochberg" in addendum
+    assert "not verified expertise" in addendum
+    assert "structural equation model was not fitted" in addendum
+    assert "—" not in addendum
+
+
+def test_experience_extension_uses_complete_mutually_exclusive_breadth_groups():
+    breadth = pd.read_csv(ROOT / "analysis/tables/experience_breadth.csv")
+    tests = pd.read_csv(ROOT / "analysis/tables/experience_breadth_tests.csv")
+    expected = {"0-2 versions", "3-4 versions", "5+ versions"}
+    assert set(breadth["group"]) == expected
+    for _, outcome in breadth.groupby("outcome"):
+        assert outcome.drop_duplicates("group")["denominator"].sum() == 767
+    assert set(tests["outcome"]) == {
+        "Negative direction",
+        "Less excited",
+        "Do not require literal powershifting",
+        "Negative on Furor/loss",
+    }
+    assert tests["bh_adjusted_p"].between(0, 1).all()
+    assert tests["cramers_v"].between(0, 1).all()

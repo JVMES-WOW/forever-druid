@@ -1,0 +1,5 @@
+outcome,groups_compared,n,chi_square,degrees_freedom,p_value,cramers_v,bh_adjusted_p
+Negative direction,Played test build | Reviewed/discussed only,739,12.85996269447621,1,0.0003356872852598446,0.13191604895112055,0.0013427491410393784
+Less excited,Played test build | Reviewed/discussed only,739,11.131692464277004,1,0.0008486512150037367,0.12273216085259271,0.0015535349948175216
+Do not require literal powershifting,Played test build | Reviewed/discussed only,739,0.2450976900985426,1,0.6205482961995772,0.01821157010403881,0.6205482961995772
+Negative on Furor/loss,Played test build | Reviewed/discussed only,739,10.54480483879294,1,0.0011651512461131413,0.11945299797986426,0.0015535349948175216

@@ -1,0 +1,21 @@
+group,outcome,count,denominator,percent,ci_low,ci_high
+"Competitive, 0-4 versions",Negative direction,123,182,67.58241758241758,60.479653058289074,73.95830303941318
+"Competitive, 0-4 versions",Less excited,126,182,69.23076923076923,62.18569279084842,75.48082169101342
+"Competitive, 0-4 versions",Do not require literal powershifting,146,182,80.21978021978022,73.83407506723866,85.3561619756871
+"Competitive, 0-4 versions",Negative on Furor/loss,144,182,79.12087912087912,72.64443831699384,84.39342646982551
+"Competitive, 5+ versions",Negative direction,152,236,64.40677966101696,58.11215870112153,70.23990367139638
+"Competitive, 5+ versions",Less excited,157,236,66.52542372881356,60.28263825453387,72.23884505511903
+"Competitive, 5+ versions",Do not require literal powershifting,192,236,81.35593220338983,75.89928473043433,85.80814513916347
+"Competitive, 5+ versions",Negative on Furor/loss,175,236,74.15254237288136,68.21159708134374,79.31980160199512
+"Regular raider, 0-4 versions",Negative direction,96,186,51.61290322580645,44.47138794087141,58.68914403000173
+"Regular raider, 0-4 versions",Less excited,95,186,51.075268817204304,43.94261759633446,58.16440371758097
+"Regular raider, 0-4 versions",Do not require literal powershifting,156,186,83.87096774193549,77.90894681189806,88.4622245764379
+"Regular raider, 0-4 versions",Negative on Furor/loss,114,186,61.29032258064516,54.12929224075151,67.99443155536046
+"Regular raider, 5+ versions",Negative direction,54,99,54.54545454545455,44.75069462953557,64.00063980621145
+"Regular raider, 5+ versions",Less excited,62,99,62.62626262626262,52.792445322902914,71.51681699861666
+"Regular raider, 5+ versions",Do not require literal powershifting,81,99,81.81818181818181,73.08120572440596,88.17813532582333
+"Regular raider, 5+ versions",Negative on Furor/loss,68,99,68.68686868686869,58.99849550902347,76.97921272682547
+Other/self-described casual or newer,Negative direction,25,64,39.0625,28.055569188240348,51.3080821197272
+Other/self-described casual or newer,Less excited,27,64,42.1875,30.86978247434577,54.38996845991676
+Other/self-described casual or newer,Do not require literal powershifting,50,64,78.125,66.56721604337451,86.49768059328034
+Other/self-described casual or newer,Negative on Furor/loss,30,64,46.875,35.175987425176345,58.927912948528686
