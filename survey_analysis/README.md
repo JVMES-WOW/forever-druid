@@ -7,9 +7,6 @@ analyzed, and never committed.
 The main page is written for the player community. Detailed methods, model
 diagnostics, limitations, and downloads are generated as
 `analysis/methodology.html` so transparency does not interrupt the narrative.
-The post-publication `analysis/methods-addendum.html` documents the qualitative
-approach and an exploratory sensitivity analysis using design familiarity,
-self-described experience, and breadth of extensively played Feral versions.
 
 ## Context archives
 

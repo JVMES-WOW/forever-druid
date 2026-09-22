@@ -2,10 +2,8 @@
 from __future__ import annotations
 
 from collections import Counter
-import math
 
 import pandas as pd
-from scipy.stats import chi2_contingency
 
 from .schema import Columns
 from .stats import clean, distribution, grouped_percent, parse_multiselect, wilson_interval
@@ -142,118 +140,3 @@ def subgroup_table(df: pd.DataFrame, columns: Columns, minimum_n: int = 30) -> p
                          "ci_low": low, "ci_high": high,
                          "minimum_group_size": minimum_n})
     return pd.DataFrame(rows)
-
-
-def _headline_outcomes(df: pd.DataFrame, columns: Columns) -> dict[str, pd.Series]:
-    """Binary outcomes reused by the post-publication sensitivity analysis."""
-    furor = next(col for col in columns.by_question[11] if "Furor" in col)
-    return {
-        "Negative direction": df[columns.one(5)].isin({"Somewhat negative", "Very negative"}),
-        "Less excited": df[columns.one(7)].isin({"Somewhat less excited", "Much less excited"}),
-        "Do not require literal powershifting": df[columns.one(8)].isin({
-            "I do not need literal powershifting if another mechanic provides comparable activity and meaningful resource decisions.",
-            "I prefer a non-powershifting design, provided it remains engaging and has enough depth.",
-        }),
-        "Negative on Furor/loss": df[furor].isin({"Somewhat negative", "Very negative"}),
-    }
-
-
-def _outcome_table(groups: pd.Series, outcomes: dict[str, pd.Series], order: list[str]) -> pd.DataFrame:
-    rows = []
-    for group in order:
-        mask = groups.eq(group)
-        denominator = int(mask.sum())
-        if not denominator:
-            continue
-        for outcome, values in outcomes.items():
-            count = int(values[mask].sum())
-            low, high = wilson_interval(count, denominator)
-            rows.append({
-                "group": group,
-                "outcome": outcome,
-                "count": count,
-                "denominator": denominator,
-                "percent": 100 * count / denominator,
-                "ci_low": low,
-                "ci_high": high,
-            })
-    return pd.DataFrame(rows)
-
-
-def _inference_table(groups: pd.Series, outcomes: dict[str, pd.Series], order: list[str]) -> pd.DataFrame:
-    """Exploratory omnibus tests with multiplicity correction and effect sizes."""
-    included = groups.isin(order)
-    rows = []
-    for outcome, values in outcomes.items():
-        table = pd.crosstab(groups[included], values[included]).reindex(
-            index=order, columns=[False, True], fill_value=0
-        )
-        chi_square, p_value, degrees_freedom, _ = chi2_contingency(table, correction=False)
-        n = int(table.to_numpy().sum())
-        dimension = min(table.shape[0] - 1, table.shape[1] - 1)
-        cramers_v = math.sqrt(chi_square / (n * dimension)) if n and dimension else 0.0
-        rows.append({
-            "outcome": outcome,
-            "groups_compared": " | ".join(order),
-            "n": n,
-            "chi_square": chi_square,
-            "degrees_freedom": int(degrees_freedom),
-            "p_value": p_value,
-            "cramers_v": cramers_v,
-        })
-
-    # Benjamini-Hochberg correction across the four planned outcomes.
-    ranked = sorted(range(len(rows)), key=lambda i: rows[i]["p_value"])
-    previous = 1.0
-    adjusted = [1.0] * len(rows)
-    for rank, index in reversed(list(enumerate(ranked, start=1))):
-        previous = min(previous, rows[index]["p_value"] * len(rows) / rank)
-        adjusted[index] = previous
-    for row, value in zip(rows, adjusted):
-        row["bh_adjusted_p"] = value
-    return pd.DataFrame(rows)
-
-
-def experience_sensitivity_tables(df: pd.DataFrame, columns: Columns) -> dict[str, pd.DataFrame]:
-    """Build the documented post-publication experience and familiarity addendum."""
-    outcomes = _headline_outcomes(df, columns)
-    versions = df[columns.one(2)].map(parse_multiselect)
-    breadth = versions.map(
-        lambda choices: len([choice for choice in choices if choice != "I have limited prior Feral experience"])
-    )
-    breadth_order = ["0-2 versions", "3-4 versions", "5+ versions"]
-    breadth_groups = pd.cut(
-        breadth, bins=[-1, 2, 4, float("inf")], labels=breadth_order
-    ).astype("string")
-
-    experience = df[columns.one(4)]
-    profiles = pd.Series("Other/self-described casual or newer", index=df.index, dtype="string")
-    competitive = experience.eq("High-end or competitive Feral player")
-    regular = experience.eq("Regular organized-raiding Feral player")
-    profiles[competitive & breadth.le(4)] = "Competitive, 0-4 versions"
-    profiles[competitive & breadth.ge(5)] = "Competitive, 5+ versions"
-    profiles[regular & breadth.le(4)] = "Regular raider, 0-4 versions"
-    profiles[regular & breadth.ge(5)] = "Regular raider, 5+ versions"
-    profile_order = [
-        "Competitive, 0-4 versions",
-        "Competitive, 5+ versions",
-        "Regular raider, 0-4 versions",
-        "Regular raider, 5+ versions",
-        "Other/self-described casual or newer",
-    ]
-
-    familiarity = df[columns.one(1)]
-    familiarity_groups = pd.Series("Other", index=df.index, dtype="string")
-    familiarity_groups[familiarity.eq("I have played the current test build")] = "Played test build"
-    familiarity_groups[familiarity.isin([
-        "I have closely reviewed talents, abilities, footage, or theorycrafting",
-        "I have followed detailed community discussion",
-    ])] = "Reviewed/discussed only"
-    familiarity_order = ["Played test build", "Reviewed/discussed only"]
-
-    return {
-        "experience_breadth": _outcome_table(breadth_groups, outcomes, breadth_order),
-        "experience_profiles": _outcome_table(profiles, outcomes, profile_order),
-        "experience_breadth_tests": _inference_table(breadth_groups, outcomes, breadth_order),
-        "familiarity_tests": _inference_table(familiarity_groups, outcomes, familiarity_order),
-    }
