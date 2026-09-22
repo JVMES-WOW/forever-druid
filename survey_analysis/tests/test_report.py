@@ -36,6 +36,8 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "these respondents give the design team" in template
     assert "clearest cat and hybrid feral feedback" in template
     assert "willingness to test a mechanic does not mean requiring it" in template
+    assert "somewhat or very negatively" in template
+    assert "the proposed replacement has not resolved the concern" not in template
     assert "author synthesis from the aoe response signal" in template
     assert "the aoe follow-up is explicitly labeled as author synthesis" in template
     assert "swipe scaling" not in template
