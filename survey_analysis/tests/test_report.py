@@ -38,6 +38,9 @@ def test_main_report_is_plain_language_and_context_is_not_evidence():
     assert "willingness to test a mechanic does not mean requiring it" in template
     assert "somewhat or very negatively" in template
     assert "the proposed replacement has not resolved the concern" not in template
+    assert 'property="og:title"' in template
+    assert 'property="og:image"' in template
+    assert "analysis/og-report.png" in template
     assert "author synthesis from the aoe response signal" in template
     assert "the aoe follow-up is explicitly labeled as author synthesis" in template
     assert "swipe scaling" not in template
@@ -102,3 +105,11 @@ def test_five_featured_quotes_use_balanced_columns():
     assert '"0f380cd545d49755": "Activity and resource decisions"' in refresh
     assert 'featured_quotes.loc[["80e25be9def5d6b7", "acad144b7596a53f", "9f8efc112574893d"]]' in refresh
     assert 'featured_quotes.loc[["d8e9ffa150c3b8b4", "0f380cd545d49755"]]' in refresh
+
+
+def test_social_preview_is_code_generated_and_uses_headline_results():
+    preview = (ROOT / "survey_analysis/templates/social-preview.html.j2").read_text()
+    assert "metadata.row_count" in preview
+    assert 'current["Negative toward current direction"]' in preview
+    assert 'current["Do not require literal powershifting"]' in preview
+    assert 'current["Negative reaction to Furor/loss of powershifting"]' in preview

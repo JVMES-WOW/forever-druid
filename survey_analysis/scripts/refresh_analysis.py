@@ -485,6 +485,8 @@ def main() -> None:
     (PUBLIC_DIR / "index.html").write_text(template.render(**context), encoding="utf-8")
     methods = env.get_template("methodology.html.j2")
     (PUBLIC_DIR / "methodology.html").write_text(methods.render(**context), encoding="utf-8")
+    social_preview = env.get_template("social-preview.html.j2")
+    (PUBLIC_DIR / "social-preview.html").write_text(social_preview.render(**context), encoding="utf-8")
     shutil.copyfile(TEMPLATE_DIR / "report.css", PUBLIC_DIR / "report.css")
     # Matplotlib SVGs and templated HTML can contain harmless trailing spaces;
     # normalize generated text so `git diff --check` remains a useful gate.
