@@ -54,9 +54,16 @@
   }
   function decode(code) {
     const match = /^FF2\.(\d{1,3})\.([01])\.([0-5]+)$/.exec(code.trim());
-    if (!match || match[3].length !== talents.length) throw new Error('This is not a valid Forever Druid build code.');
+    const legacyDruid = data.gameClass === 'druid' && match?.[3].length === talents.length + 1;
+    if (!match || (match[3].length !== talents.length && !legacyDruid)) throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
+    // Builds created before Balance of Nature was removed contain one extra
+    // Balance digit. Discard that retired talent while preserving every other
+    // allocation, including the renamed Feral talents at their old positions.
+    const ranks = legacyDruid
+      ? match[3].slice(0, 8) + match[3].slice(9)
+      : match[3];
     const rules = { budget: Number(match[1]), gates: match[2] === '1' };
-    const points = Object.fromEntries(talents.map((t, i) => [t.id, Number(match[3][i])]).filter(([, n]) => n));
+    const points = Object.fromEntries(talents.map((t, i) => [t.id, Number(ranks[i])]).filter(([, n]) => n));
     const error = validate(points, rules);
     if (error) throw new Error(error);
     return { points, rules };

@@ -24,6 +24,16 @@
   <meta name="twitter:image" content="https://jvmes-wow.github.io/forever-druid/abilities-og.png">
   <meta name="twitter:image:alt" content="Druid Abilities by Level for World of Warcraft Forever">
   <link rel="stylesheet" href="abilities.css">
+  <style>
+    .ability-tooltip{width:min(430px,calc(100vw - 28px));border:1px solid #b89a54;background:linear-gradient(145deg,#121d16,#080d0a);color:#f1eee2;border-radius:10px;padding:20px;box-shadow:0 24px 70px #000c;position:fixed;inset:auto 20px 20px auto;margin:0;z-index:10}
+    .ability-tooltip:not([data-pinned="true"]){pointer-events:none}
+    .ability-tooltip::backdrop{background:#020503b8;backdrop-filter:blur(3px)}
+    .tooltip-close{position:absolute;right:10px;top:8px;border:0;background:transparent;color:#9eaa9d;font-size:1.5rem;cursor:pointer}
+    .tooltip-head{display:flex;align-items:center;gap:13px;padding-right:24px}.tooltip-head img{width:54px;height:54px;border:1px solid #b49c60;border-radius:7px}
+    .tooltip-head h2{margin:0;font:500 1.3rem Georgia,serif;color:#f6d887}.tooltip-head p{margin:4px 0 0;color:#9eaa9d;font-size:.75rem}
+    .tooltip-details{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;margin:18px 0 14px}.tooltip-details span{font-size:.77rem;border-bottom:1px solid #ffffff12;padding-bottom:7px}
+    .tooltip-description{margin:0;color:#e8dfb7;font-size:.88rem;line-height:1.58}
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -50,8 +60,17 @@
       <div id="trainer-levels" class="level-grid"></div>
     </section>
   </main>
-  <script src="abilities-data.js"></script>
-  <script src="ability-icons.js"></script>
-  <script src="abilities-ui.js"></script>
+  <aside id="ability-tooltip" class="ability-tooltip" aria-labelledby="tooltip-name" aria-live="polite" hidden>
+    <button class="tooltip-close" type="button" aria-label="Close tooltip">×</button>
+    <div class="tooltip-head">
+      <img id="tooltip-icon" alt="">
+      <div><h2 id="tooltip-name"></h2><p id="tooltip-rank"></p></div>
+    </div>
+    <div id="tooltip-details" class="tooltip-details"></div>
+    <p id="tooltip-description" class="tooltip-description"></p>
+  </aside>
+  <script src="abilities-data.js?v=5"></script>
+  <script src="ability-icons.js?v=5"></script>
+  <script src="abilities-ui.js?v=5"></script>
 </body>
 </html>

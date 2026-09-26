@@ -2,15 +2,18 @@
 (() => {
   'use strict';
   const data = window.FOREVER_DATA;
+  const classes = window.FOREVER_CLASSES;
   const calc = window.FOREVER_CALCULATOR;
   const $ = selector => document.querySelector(selector);
   const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-  const storageKey = 'forever-druid-screenshots-v2';
+  const storageKey = `forever-${data.gameClass}-talents-v1`;
   const shareBase = 'https://jvmes-wow.github.io/forever-druid/';
   let points = {}, rules = { ...calc.defaults }, selected = calc.talents[0].id;
   let undoStack = [], query = '';
   let initialMessage = '';
   const sectionNav = '<nav class="section-nav" aria-label="Main navigation"><span aria-current="page">Talents</span><a href="abilities.html">Abilities</a><a href="raid.html">Raid</a></nav>';
+  const classOptions = Object.values(classes).map(item => `<option value="${item.gameClass}" ${item.gameClass === data.gameClass ? 'selected' : ''}>${item.name}</option>`).join('');
+  document.title = `WoW Forever — ${data.name} Talents`;
   try {
     const code = location.hash.startsWith('#FF2.') ? location.hash.slice(1) : localStorage.getItem(storageKey);
     if (code) {
@@ -31,14 +34,18 @@
   }
 
   $('#root').innerHTML = `<main>
-    <header><div class="brand"><span class="crest" aria-hidden="true">❦</span><div><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></div></div>${sectionNav}<button class="ghost" id="share">Share build ↗</button></header>
-    <h1 class="sr-only">Druid talent calculator</h1>
+    <header><div class="brand"><span class="crest" aria-hidden="true">❦</span><div><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></div></div>${sectionNav}<label class="class-picker">Class <select id="class-picker">${classOptions}</select></label><button class="ghost" id="share">Share build ↗</button></header>
+    <h1 class="sr-only">${data.name} talent calculator</h1>
     <div class="calculator-bar"><div class="toolbar"><label class="search-label">Find a talent <input id="search" type="search" placeholder="Name or effect…" autocomplete="off"></label><span>Click to add · Right-click to refund</span><button class="ghost" id="undo">Undo</button><button class="ghost" id="reset">Reset build</button></div><div class="points"><span>Talent points</span><b id="total"></b><div class="meter"><i id="meter"></i></div><small id="remaining"></small></div></div>
     <p id="status" role="status" aria-live="polite"></p>
-    <section class="workspace"><div class="trees-scroll"><div class="trees" id="trees" aria-label="All Druid talent trees"></div></div><aside><section class="tooltip" id="inspector" aria-label="Talent details"></section><section class="summary"><p class="eyebrow">YOUR BUILD</p><div class="split" id="split"></div><div id="build-list"></div></section></aside></section>
-    <footer class="page-foot">Forever Druid · 17 Balance / 19 Feral Combat / 16 Restoration · Game artwork © Blizzard Entertainment</footer>
+    <section class="workspace"><div class="trees-scroll"><div class="trees" id="trees" aria-label="All ${data.name} talent trees"></div></div><aside><section class="tooltip" id="inspector" aria-label="Talent details"></section><section class="summary"><p class="eyebrow">YOUR BUILD</p><div class="split" id="split"></div><div id="build-list"></div></section></aside></section>
+    <footer class="page-foot">Forever ${data.name} · ${data.trees.map(tree => `${tree.talents.length} ${tree.name}`).join(' / ')} · Game artwork © Blizzard Entertainment</footer>
     <dialog id="build-dialog"><div class="dialog-head"><h2>Share your build</h2><button class="ghost" data-close="build-dialog" aria-label="Close build sharing">×</button></div><p>Anyone with this link can open your exact talent build.</p><label for="build-link">Build link</label><input id="build-link" type="url" readonly spellcheck="false"><div class="actions"><button id="copy-link">Copy build link</button></div><p id="share-status" role="status" aria-live="polite"></p><details class="build-code-options"><summary>Import / export build code</summary><label for="build-code">Build code</label><textarea id="build-code" rows="4" spellcheck="false"></textarea><div class="actions"><button id="copy-code" class="ghost">Copy code</button><button id="import-code" class="ghost">Import code</button></div></details></dialog>
   </main>`;
+  $('#class-picker').onchange = event => {
+    const gameClass = event.target.value;
+    location.href = gameClass === 'druid' ? location.pathname : `${location.pathname}?class=${encodeURIComponent(gameClass)}`;
+  };
 
   function renderTrees() {
     $('#trees').innerHTML = data.trees.map(tree => {
@@ -71,7 +78,7 @@
     const details = value => value?.length ? `<div class="spell-details">${value.map(item => `<span>${escape(item)}</span>`).join('')}</div>` : '';
     const description = value => value.split('\n\n').map(p => `<p class="effect">${escape(p)}</p>`).join('');
     const nextEffect = rank > 0 && rank < t.max ? `<section class="next-effect"><p class="effect-label">Next rank (${rank + 1}/${t.max})</p>${description(calc.descriptionAtRank(t, rank + 1))}</section>` : '';
-    $('#inspector').innerHTML = `<small class="eyebrow">${escape(data.trees.find(tree => tree.id === t.tree).name)} · ROW ${t.row}</small><div class="talent-heading"><img src="${t.icon}" alt=""><h3>${escape(t.name)}</h3></div><div class="rank-line"><b>Rank ${rank}/${t.max}</b><span>${t.type}</span></div><p class="effect-label">${rank ? 'Current effect' : 'Rank 1 preview'}</p>${details(t.details)}${t.requires ? `<p class="form-requirement">Requires ${escape(t.requires)}</p>` : ''}${description(calc.descriptionAtRank(t, rank))}${nextEffect}${t.max > 1 && rank > 0 ? '<p class="scaling-note">Higher-rank values are estimates.</p>' : ''}${t.alternate ? `<h4>${escape(t.alternate.name)}</h4>${details(t.alternate.details)}<p class="form-requirement">Requires ${escape(t.alternate.requires)}</p>${description(t.alternate.description)}` : ''}${t.prerequisite ? `<p class="prerequisite">Requires <strong>${escape(calc.byId[t.prerequisite].name)}</strong></p>` : ''}${lock ? `<p class="lock-reason">${escape(lock)}</p>` : ''}<div class="actions"><button id="add-rank" ${rank === t.max || lock || calc.total(points) >= rules.budget ? 'disabled' : ''}>+ Add point</button><button id="refund-rank" class="ghost" ${!rank ? 'disabled' : ''}>− Refund</button></div>`;
+    $('#inspector').innerHTML = `<small class="eyebrow">${escape(data.trees.find(tree => tree.id === t.tree).name)} · ROW ${t.row}</small><div class="talent-heading"><img src="${t.icon}" alt=""><h3>${escape(t.name)}</h3></div><div class="rank-line"><b>Rank ${rank}/${t.max}</b><span>${t.type}</span></div><p class="effect-label">${rank ? 'Current effect' : 'Rank 1 preview'}</p>${details(t.details)}${t.requires ? `<p class="form-requirement">Requires ${escape(t.requires)}</p>` : ''}${description(calc.descriptionAtRank(t, rank))}${nextEffect}${t.alternate ? `<h4>${escape(t.alternate.name)}</h4>${details(t.alternate.details)}<p class="form-requirement">Requires ${escape(t.alternate.requires)}</p>${description(t.alternate.description)}` : ''}${t.prerequisite ? `<p class="prerequisite">Requires <strong>${escape(calc.byId[t.prerequisite].name)}</strong></p>` : ''}${lock ? `<p class="lock-reason">${escape(lock)}</p>` : ''}<div class="actions"><button id="add-rank" ${rank === t.max || lock || calc.total(points) >= rules.budget ? 'disabled' : ''}>+ Add point</button><button id="refund-rank" class="ghost" ${!rank ? 'disabled' : ''}>− Refund</button></div>`;
     $('#add-rank').onclick = () => learn(t.id, 1);
     $('#refund-rank').onclick = () => learn(t.id, -1);
   }
@@ -129,7 +136,7 @@
   $('#share').onclick = () => {
     const code = calc.encode(points, rules);
     $('#build-code').value = code;
-    $('#build-link').value = `${shareBase}#${code}`;
+    $('#build-link').value = `${shareBase}${data.gameClass === 'druid' ? '' : `?class=${data.gameClass}`}#${code}`;
     $('#share-status').textContent = '';
     $('#build-dialog').showModal();
   };
