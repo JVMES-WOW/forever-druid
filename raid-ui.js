@@ -484,6 +484,14 @@
     const heading = document.createElement('h2'); heading.textContent = playerLabel(player);
     const summary = document.createElement('p'); summary.textContent = `${player.className} · ${roleLabel(player)} · Group ${position.g + 1}, slot ${position.s + 1}`;
     root.append(heading, summary);
+    const provides = document.createElement('section'); provides.className = 'coverage-section'; provides.innerHTML = '<h3>EFFECTS PROVIDED</h3>';
+    if (!player.provides.length) provides.innerHTML += '<p class="empty-coverage">None</p>';
+    const activeGroupEffects = new Set((analysis.groupCoverage[position.g] || []).map(item => item.buffId));
+    for (const id of player.provides) {
+      if (data.buffs[id].scope === 'party' && exclusiveKeys(data.buffs[id]).length && !activeGroupEffects.has(id)) continue;
+      provides.append(coverageRow(id, analysis, { provider: player, state: scopeLabel(data.buffs[id].scope) }));
+    }
+    root.append(provides);
     const applied = analysis.playerCoverage.get(player.uid) || [];
     for (const [scope, title] of [['party','PARTY EFFECTS RECEIVED'],['raid','RAID BUFFS RECEIVED']]) {
       const section = document.createElement('section'); section.className = 'coverage-section'; section.innerHTML = `<h3>${title}</h3>`;
@@ -502,14 +510,7 @@
       }
       root.append(campSection);
     }
-    const provides = document.createElement('section'); provides.className = 'coverage-section'; provides.innerHTML = '<h3>EFFECTS PROVIDED</h3>';
-    if (!player.provides.length) provides.innerHTML += '<p class="empty-coverage">None</p>';
-    const activeGroupEffects = new Set((analysis.groupCoverage[position.g] || []).map(item => item.buffId));
-    for (const id of player.provides) {
-      if (data.buffs[id].scope === 'party' && exclusiveKeys(data.buffs[id]).length && !activeGroupEffects.has(id)) continue;
-      provides.append(coverageRow(id, analysis, { provider: player, state: scopeLabel(data.buffs[id].scope) }));
-    }
-    root.append(provides); return root;
+    return root;
   }
   function renderCoverage(analysis) {
     $('#overview-tab').classList.toggle('active', detailMode === 'overview'); $('#player-tab').classList.toggle('active', detailMode === 'player');
