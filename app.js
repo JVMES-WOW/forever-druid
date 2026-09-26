@@ -10,7 +10,7 @@
   let points = {}, rules = { ...calc.defaults }, selected = calc.talents[0].id;
   let undoStack = [], query = '';
   let initialMessage = '';
-  const sectionNav = '<nav class="section-nav" aria-label="Main navigation"><span aria-current="page">Talents</span><a href="abilities.html">Abilities</a><a href="analysis/">Feral survey</a></nav>';
+  const sectionNav = '<nav class="section-nav" aria-label="Main navigation"><span aria-current="page">Talents</span><a href="abilities.html">Abilities</a><a href="raid.html">Raid</a></nav>';
   try {
     const code = location.hash.startsWith('#FF2.') ? location.hash.slice(1) : localStorage.getItem(storageKey);
     if (code) {
