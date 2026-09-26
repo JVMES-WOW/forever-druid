@@ -48,7 +48,7 @@
   const classes = [
     ['warrior', 'Warrior', '#c79c6e', [['arms','Arms','damage',['battleShout','sunder','attackPowerReduction','thunderClap']],['fury','Fury','damage',['battleShout','sunder','attackPowerReduction','thunderClap']],['protection','Protection','tank',['battleShout','sunder','attackPowerReduction','thunderClap']]]],
     ['paladin', 'Paladin', '#f58cba', [['holy','Holy','healer',['kings','might','wisdom','salvation']],['protection','Protection','tank',['kings','might','wisdom','salvation','attackPowerReduction']],['retribution','Retribution','damage',['kings','might','wisdom','salvation','attackPowerReduction']]]],
-    ['hunter', 'Hunter', '#abd473', [['beast-mastery','Beast Mastery','damage',['huntersMark','trueshot','scorpidSting'],{ roleLabel: 'Ranged Damage' }],['marksmanship','Marksmanship','damage',['huntersMark','trueshot','scorpidSting'],{ roleLabel: 'Ranged Damage' }],['survival','Survival','damage',['huntersMark','trueshot','scorpidSting'],{ roleLabel: 'Melee / Ranged' }]]],
+    ['hunter', 'Hunter', '#abd473', [['beast-mastery','Beast Mastery','damage',['huntersMark','trueshot','scorpidSting'],{ roleLabel: 'Ranged Damage' }],['marksmanship','Marksmanship','damage',['huntersMark','trueshot','scorpidSting'],{ roleLabel: 'Ranged Damage' }],['survival','Survival','damage',['huntersMark','trueshot','scorpidSting'],{ roleLabel: 'Melee Damage' }]]],
     ['rogue', 'Rogue', '#fff569', [['assassination','Assassination','damage',['expose']],['combat','Combat','damage',['expose']],['subtlety','Subtlety','damage',['expose']]]],
     ['priest', 'Priest', '#f3f3f3', [['discipline','Discipline','healer',['fortitude','spirit']],['holy','Holy','healer',['fortitude','spirit']],['shadow','Shadow','damage',['fortitude','spirit','vampiric']]]],
     ['shaman', 'Shaman', '#0070de', [['elemental','Elemental','damage',['strength','windfury','grace','tranquil','manaSpring','flametongue']],['enhancement','Enhancement','damage',['strength','windfury','grace','tranquil','manaSpring','flametongue']],['restoration','Restoration','healer',['strength','windfury','grace','tranquil','manaSpring','flametongue','manaTide']]]],
@@ -62,7 +62,7 @@
     'warrior:arms': ['physical','melee'], 'warrior:fury': ['physical','melee'],
     'paladin:holy': ['mana','spell','holy'], 'paladin:protection': ['physical','melee','mana','holy','magicDamage'],
     'paladin:retribution': ['physical','melee','mana','holy','magicDamage'], 'hunter:beast-mastery': ['physical','rangedPhysical','mana'],
-    'hunter:marksmanship': ['physical','rangedPhysical','mana'], 'hunter:survival': ['physical','melee','rangedPhysical','mana'],
+    'hunter:marksmanship': ['physical','rangedPhysical','mana'], 'hunter:survival': ['physical','melee','mana'],
     'rogue:assassination': ['physical','melee'], 'rogue:combat': ['physical','melee'], 'rogue:subtlety': ['physical','melee'],
     'priest:shadow': ['mana','spell','shadowArcane','magicDamage'], 'shaman:elemental': ['mana','spell','magicDamage'], 'shaman:enhancement': ['physical','melee','mana','magicDamage'],
     'mage:arcane': ['mana','spell','shadowArcane','magicDamage'], 'mage:fire': ['mana','spell','fireFrost','magicDamage'], 'mage:frost': ['mana','spell','fireFrost','magicDamage'],
