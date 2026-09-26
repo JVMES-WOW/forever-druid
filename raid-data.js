@@ -19,13 +19,13 @@
     leader: { name: 'Leader of the Pack', scope: 'party', helps: 'all', status: 'confirmed', exclusive: ['druid-crit'], note: 'Feral talent. While in Cat, Bear, or Dire Bear Form, all party members in range gain 3% critical chance. Exclusive with Moonkin Aura.', evidence: 'https://www.wowhead.com/forever/spell=17007/leader-of-the-pack' },
     trueshot: { name: 'Trueshot Aura', scope: 'party', helps: 'rangedPhysical', status: 'confirmed', note: 'Forever trains this Hunter party aura at level 32; it is not Marksmanship-only. It grants ranged attack power to party members in range.', evidence: 'https://www.wowhead.com/forever/spell=1299348/trueshot-aura' },
     vampiric: { name: 'Vampiric Embrace', scope: 'party', helps: 'all', status: 'confirmed', note: 'Shadow talent and 30-second effect on a 1-minute cooldown. Shadow damage heals the Priest’s party; this is not an always-on stat buff.', evidence: 'https://www.wowhead.com/forever/spell=15286/vampiric-embrace' },
-    windfury: { name: 'Windfury Totem', scope: 'party', helps: 'melee', status: 'confirmed', exclusive: ['air-totem','weapon-imbue'], note: 'Baseline Shaman party weapon enhancement. Competes with Grace of Air and Tranquil Air, and does not stack with Flametongue Totem on a weapon.', evidence: 'https://www.wowhead.com/forever/spell=8512/windfury-totem' },
+    windfury: { name: 'Windfury Totem', scope: 'party', helps: 'melee', status: 'confirmed', exclusive: ['air-totem'], note: 'Baseline Shaman party weapon enhancement. Competes with Grace of Air and Tranquil Air for the Air Totem slot; a Shaman can still keep a personal Flametongue Weapon enchant.', evidence: 'https://www.wowhead.com/forever/spell=8512/windfury-totem' },
     grace: { name: 'Grace of Air Totem', scope: 'party', helps: 'physical', status: 'confirmed', exclusive: ['air-totem'], note: 'Baseline Shaman party Agility effect. Competes with Windfury and Tranquil Air in the same group.', evidence: 'https://www.wowhead.com/forever/spell=25359/grace-of-air-totem' },
     tranquil: { name: 'Tranquil Air Totem', scope: 'party', helps: 'all', status: 'confirmed', exclusive: ['air-totem'], note: 'Baseline Shaman party threat reduction. Competes with Windfury and Grace of Air in the same group.', evidence: 'https://www.wowhead.com/forever/spell=25908/tranquil-air-totem' },
     strength: { name: 'Strength of Earth Totem', scope: 'party', helps: 'melee', status: 'confirmed', note: 'Baseline Shaman party Strength effect.', evidence: 'https://www.wowhead.com/forever/spell=25361/strength-of-earth-totem' },
     manaSpring: { name: 'Mana Spring Totem', scope: 'party', helps: 'mana', status: 'confirmed', note: 'Baseline Shaman party mana regeneration effect.', evidence: 'https://www.wowhead.com/forever/spell=10496/mana-spring-totem' },
     manaTide: { name: 'Mana Tide Totem', scope: 'party', helps: 'mana', status: 'confirmed', note: 'Restoration talent and 5-minute cooldown; restores mana to group members in range.', evidence: 'https://www.wowhead.com/forever/spell=17359/mana-tide-totem' },
-    flametongue: { name: 'Flametongue Totem', scope: 'party', helps: 'melee', status: 'confirmed', exclusive: ['weapon-imbue'], note: 'Baseline Shaman party weapon enhancement. It does not stack with Windfury Totem or Flametongue Weapon on the same weapon.', evidence: 'https://www.wowhead.com/forever/spell=16387/flametongue-totem' },
+    flametongue: { name: 'Flametongue Totem', scope: 'party', helps: 'melee', status: 'confirmed', note: 'Baseline Shaman Fire Totem weapon enhancement. It can be dropped alongside an Air Totem, while a Shaman may instead use the personal Flametongue Weapon enchant.', evidence: 'https://www.wowhead.com/forever/spell=16387/flametongue-totem' },
     sanctity: { name: 'Sanctity Aura', scope: 'party', helps: 'holy', status: 'unresolved', note: 'Legacy spell data exists, but the current Forever Paladin talent calculator does not expose Sanctity Aura as a learnable talent. Excluded from coverage pending playable-beta confirmation.', evidence: 'https://www.wowhead.com/forever/talent-calc/paladin' },
     sunder: { name: 'Sunder Armor', scope: 'boss', helps: 'physical', status: 'confirmed', exclusive: ['major-armor'], note: 'Baseline Warrior armor reduction, stacking to five applications. It does not stack with Expose Armor.', evidence: 'https://www.wowhead.com/forever/spell=11597/sunder-armor' },
     expose: { name: 'Expose Armor', scope: 'boss', helps: 'physical', status: 'confirmed', exclusive: ['major-armor'], note: 'Baseline Rogue finishing move and alternative to Sunder Armor. Improved Expose Armor is a talent, but the base debuff is available to every Rogue.', evidence: 'https://www.wowhead.com/forever/spell=8647/expose-armor' },
@@ -76,6 +76,7 @@
   })));
   return {
     version: '2026-09-25-beta-audit-5', groupSize: 5, raidSizes: [5, 10, 20, 40], buffs, specs,
+    blessingIds: ['kings','might','wisdom','salvation'],
     legacySpecIds: { 'druid:feral-cat': 'druid:feral', 'druid:feral-bear': 'druid:feral' },
     recommended: { raid: ['mark','fortitude','spirit','intellect','kings','might','wisdom','salvation'] },
     providerAssignmentTargets: { 'paladin-blessing': 3 },
@@ -99,6 +100,12 @@
       ] },
       { id: 'mana-regen', name: 'Mana regeneration', helps: 'mana', effects: ['manaSpring'] }
     ],
+    groupChoiceLabels: {
+      'air-totem': 'Air Totem'
+    },
+    groupEffectPriority: {
+      'druid-crit': ['moonkin', 'leader']
+    },
     optionalGroupEffects: [
       { id: 'paladin-auras', classId: 'paladin', name: 'Paladin auras', options: ['Devotion Aura', 'Retribution Aura', 'Concentration Aura'] }
     ],

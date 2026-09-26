@@ -7,12 +7,17 @@
   const storageKey = 'forever-raid-planner-v1';
   let raidSize = 10;
   let groups = [];
+  let groupChoices = [];
+  let bossChoices = {};
   let selectedPlayer = null;
   let selectedBuff = null;
+  let expandedBossChoice = null;
   let detailMode = 'overview';
   let dragPayload = null;
   let editingPlayer = null;
   let editingCampPlayer = null;
+  let editingBlessingPlayer = null;
+  let blessingDragIndex = null;
   let nextUid = 1;
 
   const $ = selector => document.querySelector(selector);
@@ -21,8 +26,21 @@
   const roleLabel = spec => spec.roleLabel || defaultRoleLabels[spec.role] || spec.role;
   const scopeLabel = scope => ({ party: 'Party buff', raid: 'Raid buff', boss: 'Boss debuff' })[scope] || 'Effect';
   const playerLabel = player => player.customName || player.name;
-  const makePlayer = specId => ({ ...bySpec[specId], uid: `p${Date.now().toString(36)}-${nextUid++}`, campBuffs: [] });
+  const defaultBlessingPriority = spec => spec.role === 'healer' ? ['kings','wisdom','salvation','might']
+    : (spec.role === 'tank' || spec.id === 'druid:feral') ? ['kings','might','wisdom','salvation']
+      : spec.tags.includes('melee') ? ['salvation','kings','might','wisdom']
+        : ['salvation','kings','wisdom','might'];
+  const makePlayer = specId => ({ ...bySpec[specId], uid: `p${Date.now().toString(36)}-${nextUid++}`, campBuffs: [], blessingPriority: defaultBlessingPriority(bySpec[specId]) });
   const blankGroups = size => Array.from({ length: size / data.groupSize }, () => Array(data.groupSize).fill(null));
+  const exclusiveKeys = buff => Array.isArray(buff?.exclusive) ? buff.exclusive : (buff?.exclusive ? [buff.exclusive] : []);
+  function normalizeGroupChoices() {
+    groupChoices = groups.map((group, groupIndex) => {
+      const available = new Set(group.filter(Boolean).flatMap(player => player.provides));
+      return Object.fromEntries(Object.entries(groupChoices[groupIndex] || {}).filter(([choiceId, effectId]) =>
+        data.groupChoiceLabels?.[choiceId] && available.has(effectId) && exclusiveKeys(data.buffs[effectId]).includes(choiceId)
+      ));
+    });
+  }
   function hydrate(saved) {
     raidSize = data.raidSizes.includes(saved?.raidSize) ? saved.raidSize : 10;
     const validCampIds = new Set((data.campBuffs || []).map(camp => camp.id));
@@ -32,13 +50,22 @@
       if (specId && bySpec[specId]) {
         const player = makePlayer(specId);
         const campBuffs = raidSize === 5 && Array.isArray(item.campBuffs) ? [...new Set(item.campBuffs)].filter(id => validCampIds.has(id)).slice(0, 1) : [];
-        groups[groupIndex][slotIndex] = { ...player, uid: item.uid || player.uid, customName: raidState.normalizeName(item.name || item.customName || ''), campBuffs };
+        const savedBlessings = Array.isArray(item.blessingPriority) ? item.blessingPriority : null;
+        const legacyFeralDefault = specId === 'druid:feral' && savedBlessings?.join(',') === 'salvation,kings,might,wisdom';
+        const requestedBlessings = legacyFeralDefault || !savedBlessings ? defaultBlessingPriority(player) : savedBlessings;
+        const blessingPriority = [...new Set(requestedBlessings)].filter(id => data.blessingIds.includes(id));
+        groups[groupIndex][slotIndex] = { ...player, uid: item.uid || player.uid, customName: raidState.normalizeName(item.name || item.customName || ''), campBuffs, blessingPriority: [...blessingPriority, ...data.blessingIds.filter(id => !blessingPriority.includes(id))] };
       }
     }));
+    groupChoices = groups.map((_, groupIndex) => ({ ...(saved?.groupChoices?.[groupIndex] || {}) }));
+    bossChoices = { ...(saved?.bossChoices || {}) };
+    normalizeGroupChoices();
   }
   function seed() {
     const ids = ['warrior:protection','paladin:holy','druid:balance','rogue:combat','shaman:enhancement','druid:feral','priest:shadow','mage:fire','hunter:marksmanship','warlock:affliction'];
     groups = blankGroups(10);
+    groupChoices = groups.map(() => ({}));
+    bossChoices = {};
     ids.forEach((id, index) => groups[Math.floor(index / 5)][index % 5] = makePlayer(id));
   }
   let initialStatus = '';
@@ -51,9 +78,10 @@
   } else loadLocal();
 
   function save() {
-    try { localStorage.setItem(storageKey, JSON.stringify({ raidSize, groups: groups.map(group => group.map(player => player && ({ specId: player.id, uid: player.uid, name: player.customName || '', campBuffs: player.campBuffs || [] }))) })); } catch (_) {}
+    normalizeGroupChoices();
+    try { localStorage.setItem(storageKey, JSON.stringify({ raidSize, groups: groups.map(group => group.map(player => player && ({ specId: player.id, uid: player.uid, name: player.customName || '', campBuffs: player.campBuffs || [], blessingPriority: player.blessingPriority || data.blessingIds }))), groupChoices, bossChoices })); } catch (_) {}
   }
-  const shareSnapshot = () => ({ raidSize, groups: groups.map(group => group.map(player => player && ({ specId: player.id, name: player.customName || '', campBuffs: player.campBuffs || [] }))) });
+  const shareSnapshot = () => ({ raidSize, groups: groups.map(group => group.map(player => player && ({ specId: player.id, name: player.customName || '', campBuffs: player.campBuffs || [], blessingPriority: player.blessingPriority || data.blessingIds }))), groupChoices, bossChoices });
   function setStatus(message) { $('#raid-status').textContent = message; }
   function setPlayerName(uid, value) {
     const position = locate(uid);
@@ -81,6 +109,28 @@
       groups[origin.g][origin.s] = target;
     }
     save(); render();
+  }
+  function setGroupChoice(groupIndex, choiceId, effectId) {
+    const choices = { ...(groupChoices[groupIndex] || {}) };
+    if (choices[choiceId] === effectId) {
+      for (const key of exclusiveKeys(data.buffs[effectId])) if (choices[key] === effectId) delete choices[key];
+    } else {
+      const selectedKeys = exclusiveKeys(data.buffs[effectId]);
+      for (const [key, selectedId] of Object.entries(choices)) {
+        if (key !== choiceId && exclusiveKeys(data.buffs[selectedId]).some(existingKey => selectedKeys.includes(existingKey))) delete choices[key];
+      }
+      for (const key of selectedKeys) choices[key] = effectId;
+    }
+    groupChoices[groupIndex] = choices;
+    save(); render();
+    setStatus(`${data.groupChoiceLabels[choiceId]} ${groupChoices[groupIndex][choiceId] ? `set to ${data.buffs[effectId].name}` : 'selection cleared'}.`);
+  }
+  function setBossChoice(recommendationId, choiceId) {
+    if (bossChoices[recommendationId] === choiceId) delete bossChoices[recommendationId];
+    else bossChoices[recommendationId] = choiceId;
+    expandedBossChoice = null; save(); render();
+    const label = data.bossRecommendations.find(item => item.id === recommendationId)?.name || 'Debuff';
+    setStatus(`${label} priority ${bossChoices[recommendationId] ? 'overridden' : 'reset to default'}.`);
   }
   function providersLabel(players) { return players.map(playerLabel).join(', '); }
   function providerVariant(buff, player) { return buff.providerVariants?.[player?.classId] || null; }
@@ -125,13 +175,75 @@
       root.append(button);
     }
   }
+  function moveBlessing(uid, fromIndex, toIndex) {
+    const position = locate(uid), player = position && groups[position.g][position.s];
+    if (!player || toIndex < 0 || toIndex >= data.blessingIds.length) return;
+    const priority = [...(player.blessingPriority || data.blessingIds)];
+    const [moved] = priority.splice(fromIndex, 1); priority.splice(toIndex, 0, moved);
+    player.blessingPriority = priority; save(); render(); renderBlessingDialog();
+    setStatus(`Blessing priority updated for ${playerLabel(player)}.`);
+  }
+  function renderBlessingDialog() {
+    const position = locate(editingBlessingPlayer), player = position && groups[position.g][position.s];
+    if (!player) return;
+    const campAssignments = Object.fromEntries(groups.flat().filter(Boolean).map(item => [item.uid, raidSize === 5 ? (item.campBuffs || []) : []]));
+    const analysis = engine.analyze(groups, data, { campAssignments, groupChoices, bossChoices });
+    const assigned = new Set(analysis.blessingAssignments.get(player.uid) || []);
+    const priority = player.blessingPriority || data.blessingIds;
+    $('#blessing-priority-title').textContent = `${playerLabel(player)}’s Blessing priority`;
+    $('#blessing-priority-summary').textContent = `${analysis.paladinCount} Paladin${analysis.paladinCount === 1 ? '' : 's'} available. Camp replacements apply independently.`;
+    const root = $('#blessing-priority-options'); root.innerHTML = '';
+    priority.forEach((id, index) => {
+      const buff = data.buffs[id], useful = engine.eligible(buff, player);
+      const row = document.createElement('div'); row.className = `blessing-priority-row${assigned.has(id) ? ' active' : ''}${!useful ? ' ineligible' : ''}`;
+      row.draggable = true;
+      row.ondragstart = event => { blessingDragIndex = index; event.dataTransfer.effectAllowed = 'move'; row.classList.add('dragging'); };
+      row.ondragend = () => { blessingDragIndex = null; row.classList.remove('dragging'); };
+      row.ondragover = event => { event.preventDefault(); event.dataTransfer.dropEffect = 'move'; row.classList.add('drag-over'); };
+      row.ondragleave = () => row.classList.remove('drag-over');
+      row.ondrop = event => { event.preventDefault(); row.classList.remove('drag-over'); if (blessingDragIndex != null && blessingDragIndex !== index) moveBlessing(player.uid, blessingDragIndex, index); blessingDragIndex = null; };
+      row.innerHTML = `<span class="blessing-rank">${index + 1}</span><img class="effect-icon" src="${buff.icon}" alt=""><span class="blessing-priority-copy"><b>${buff.name}</b><small>${!useful ? 'Not useful for this specialization' : (assigned.has(id) ? 'Assigned' : 'Waiting for another source')}</small></span>`;
+      const controls = document.createElement('span'); controls.className = 'blessing-priority-controls';
+      const up = document.createElement('button'); up.textContent = '↑'; up.title = `Move ${buff.name} earlier`; up.disabled = index === 0; up.onclick = () => moveBlessing(player.uid, index, index - 1);
+      const down = document.createElement('button'); down.textContent = '↓'; down.title = `Move ${buff.name} later`; down.disabled = index === priority.length - 1; down.onclick = () => moveBlessing(player.uid, index, index + 1);
+      controls.append(up, down); row.append(controls); root.append(row);
+    });
+  }
   function selectedRecipients(analysis) {
     if (!selectedBuff) return new Set();
     const buff = data.buffs[selectedBuff];
     if (buff.scope !== 'party') return new Set(analysis.players.filter(player => engine.eligible(buff, player)).map(player => player.uid));
     return new Set(analysis.groupCoverage.flat().filter(item => item.buffId === selectedBuff).flatMap(item => item.recipients.map(player => player.uid)));
   }
-  function renderPalette() {
+  function specializationGapReasons(spec, analysis) {
+    if (!analysis || analysis.players.length >= raidSize) return [];
+    const reasons = new Set();
+    const provided = new Set(spec.provides);
+    for (const buffId of analysis.missing.raid) {
+      if (!data.blessingIds.includes(buffId) && provided.has(buffId)) reasons.add(data.buffs[buffId].name);
+    }
+    for (const item of analysis.bossChecklist) {
+      if (item.providers.length) continue;
+      for (const effectId of item.effects) if (provided.has(effectId)) reasons.add(data.buffs[effectId].name);
+    }
+    groups.forEach((group, groupIndex) => {
+      if (!group.some(player => !player)) return;
+      for (const gap of analysis.groupGaps[groupIndex] || []) {
+        const matches = gap.effects.filter(effectId => provided.has(effectId));
+        for (const effectId of matches) reasons.add(`${data.buffs[effectId].name} for Group ${groupIndex + 1}`);
+      }
+    });
+    const needsBlessing = !analysis.players.length || analysis.players.some(player => {
+      const topThree = (analysis.blessingPriorities.get(player.uid) || data.blessingIds)
+        .filter(id => engine.eligible(data.buffs[id], player)).slice(0, 3);
+      const assigned = new Set(analysis.blessingAssignments.get(player.uid) || []);
+      return topThree.some(id => !assigned.has(id));
+    });
+    if (spec.classId === 'paladin' && needsBlessing) reasons.add('Blessing coverage');
+    if (spec.classId === 'warlock' && analysis.assignmentConflicts.some(item => item.exclusive === 'warlock-curse')) reasons.add('another curse');
+    return [...reasons];
+  }
+  function renderPalette(analysis) {
     const query = $('#spec-search').value.trim().toLowerCase();
     const root = $('#spec-palette'); root.innerHTML = '';
     const classIds = [...new Set(data.specs.map(spec => spec.classId))]
@@ -144,8 +256,11 @@
       const block = document.createElement('section'); block.className = 'class-block'; block.style.setProperty('--class', specs[0].color);
       block.innerHTML = `<h3 class="class-title"><i></i>${specs[0].className}</h3>`;
       for (const spec of specs) {
-        const button = document.createElement('button'); button.className = 'spec-button'; button.draggable = true;
-        button.innerHTML = `<img class="spec-mark" src="${spec.icon}" alt=""><span><b>${spec.name}</b><small>${roleLabel(spec)} · ${spec.provides.length} effect${spec.provides.length === 1 ? '' : 's'}</small></span>`;
+        const gapReasons = specializationGapReasons(spec, analysis);
+        const button = document.createElement('button'); button.className = `spec-button${gapReasons.length ? ' gap-match' : ''}`; button.draggable = true;
+        if (gapReasons.length) button.title = `Fills missing coverage: ${gapReasons.join(', ')}`;
+        const gapLabel = gapReasons.length === 1 ? gapReasons[0] : `${gapReasons.length} gaps`;
+        button.innerHTML = `<img class="spec-mark" src="${spec.icon}" alt=""><span><b>${spec.name}</b><small>${roleLabel(spec)}</small></span>${gapReasons.length ? `<em>${gapLabel}</em>` : ''}`;
         button.onclick = () => addSpec(spec.id);
         button.ondragstart = event => { dragPayload = { type: 'spec', specId: spec.id }; event.dataTransfer.effectAllowed = 'copy'; };
         block.append(button);
@@ -200,13 +315,34 @@
             const campArtwork = selectedCamp ? `<img class="camp-player-effect" src="${data.buffs[selectedCamp.covers[0]].icon}" alt="">` : '';
             campButton.innerHTML = `<span class="camp-player-icon" aria-hidden="true">♨</span>${campArtwork}<span class="camp-player-copy"><small>CAMP BUFF</small><b>${selectedCamp?.name || 'Choose'}</b></span>`;
             campButton.onclick = event => { event.stopPropagation(); editingCampPlayer = player.uid; renderCampDialog(); $('#camp-buff-dialog').showModal(); };
+            const blessingButton = document.createElement('button'); blessingButton.className = 'blessing-player';
+            const assignedBlessings = analysis.blessingAssignments.get(player.uid) || [];
+            blessingButton.title = `Blessing priority for ${playerLabel(player)}`; blessingButton.setAttribute('aria-label', blessingButton.title);
+            blessingButton.innerHTML = `<span aria-hidden="true">✦</span><span><small>BLESSINGS</small><b>${assignedBlessings.length} assigned</b></span>`;
+            blessingButton.onclick = event => { event.stopPropagation(); editingBlessingPlayer = player.uid; renderBlessingDialog(); $('#blessing-priority-dialog').showModal(); };
             const remove = document.createElement('button'); remove.className = 'remove-player'; remove.title = `Remove ${playerLabel(player)}`; remove.setAttribute('aria-label', remove.title); remove.textContent = '×';
             remove.onclick = event => { event.stopPropagation(); groups[groupIndex][slotIndex] = null; if (selectedPlayer === player.uid) { selectedPlayer = null; detailMode = 'overview'; } if (editingPlayer === player.uid) editingPlayer = null; save(); render(); };
-            slot.append(playerButton, ...(raidSize === 5 ? [campButton] : []), rename, remove);
+            slot.append(playerButton, ...(raidSize === 5 ? [campButton] : []), blessingButton, rename, remove);
           }
         }
         card.append(slot);
       });
+      const choiceRoot = document.createElement('div'); choiceRoot.className = 'group-choices';
+      for (const choice of analysis.groupChoiceOptions[groupIndex] || []) {
+        const row = document.createElement('div'); row.className = 'group-choice';
+        const label = document.createElement('small'); label.textContent = choice.name;
+        const options = document.createElement('div'); options.className = 'group-choice-options';
+        for (const option of choice.options) {
+          const button = document.createElement('button'); button.className = `group-choice-option${choice.selected === option.id ? ' active' : ''}`;
+          button.setAttribute('aria-pressed', String(choice.selected === option.id));
+          button.title = `${choice.selected === option.id ? 'Clear' : 'Choose'} ${option.name} for Group ${groupIndex + 1}`;
+          button.innerHTML = `<img class="effect-icon" src="${option.icon}" alt=""><span>${option.name}</span>`;
+          button.onclick = () => setGroupChoice(groupIndex, choice.id, option.id);
+          options.append(button);
+        }
+        row.append(label, options); choiceRoot.append(row);
+      }
+      if (choiceRoot.childElementCount) card.append(choiceRoot);
       const buffRoot = document.createElement('div'); buffRoot.className = 'group-buffs';
       const coverage = analysis.groupCoverage[groupIndex];
       const optionalEffects = analysis.groupOptionalEffects[groupIndex] || [];
@@ -253,13 +389,16 @@
   function coverageRow(buffId, analysis, options = {}) {
     const buff = data.buffs[buffId], providerList = analysis.providers[buffId] || [];
     const camp = analysis.campCoverageSummary[buffId];
+    const blessingCount = Object.hasOwn(analysis.blessingCounts || {}, buffId) ? analysis.blessingCounts[buffId] : null;
+    const blessingTotal = blessingCount == null ? 0 : analysis.players.filter(player => engine.eligible(buff, player)).length;
     const preferredCamp = camp.preferredComplete && camp.camps.find(item => item.preferCamp);
     const campFallback = !providerList.length && camp.complete ? camp.camps[0] : null;
-    const covered = providerList.length || camp.complete;
+    const covered = blessingCount == null ? (providerList.length || camp.complete) : blessingCount > 0;
     const variant = providerVariant(buff, options.provider);
     const button = document.createElement('button');
     const conflicted = analysis.conflictIds.has(buffId);
-    button.className = `coverage-row ${buff.status !== 'confirmed' ? 'provisional' : ''}${!covered ? ' missing' : ''}${preferredCamp || campFallback ? ' camp-covered' : ''}${conflicted ? ' conflict' : ''}${selectedBuff === buffId ? ' selected' : ''}`;
+    const blessingPartial = blessingCount != null && blessingCount > 0 && blessingCount < blessingTotal;
+    button.className = `coverage-row ${buff.status !== 'confirmed' ? 'provisional' : ''}${!covered ? ' missing' : ''}${blessingPartial ? ' partial' : ''}${preferredCamp || campFallback ? ' camp-covered' : ''}${conflicted ? ' conflict' : ''}${selectedBuff === buffId ? ' selected' : ''}`;
     const defaultState = preferredCamp
       ? `Replaces ${buff.name} · party-wide`
       : (providerList.length
@@ -267,8 +406,8 @@
         : (campFallback
           ? `Weaker ${buff.name} substitute · party-wide`
           : (camp.recipients.length ? `Camp assigned to ${camp.recipients.length}/${camp.eligibleRecipients.length} · still needed` : 'Missing')));
-    const state = preferredCamp || campFallback ? defaultState : (options.state || defaultState);
-    const marker = !covered ? (camp.recipients.length ? '⚠' : '×') : (preferredCamp || campFallback ? '≈' : (conflicted ? '⚠' : '✓'));
+    const state = blessingCount != null && !options.state ? `${blessingCount} of ${blessingTotal} eligible players` : (preferredCamp || campFallback ? defaultState : (options.state || defaultState));
+    const marker = !covered ? (camp.recipients.length ? '⚠' : '×') : (blessingPartial ? '≈' : (preferredCamp || campFallback ? '≈' : (conflicted ? '⚠' : '✓')));
     const icon = document.createElement('span'); icon.className = 'coverage-icon';
     const image = document.createElement('img'); image.src = variant?.icon || buff.icon; image.alt = ''; icon.append(image);
     const copy = document.createElement('span'); copy.className = 'coverage-copy';
@@ -281,12 +420,18 @@
   }
   function bossCoverageRow(item, analysis) {
     const conflicted = item.effects.some(id => analysis.conflictIds.has(id));
+    const requiresChoiceWarning = conflicted && (item.choiceOptions?.length || 0) < 2;
     const button = document.createElement('button');
-    button.className = `coverage-row${!item.providers.length ? ' missing' : ''}${conflicted ? ' conflict' : ''}${selectedBuff && item.effects.includes(selectedBuff) ? ' selected' : ''}`;
-    const state = item.providers.length ? `${item.providers.length} provider${item.providers.length === 1 ? '' : 's'}${conflicted ? ' · choice needed' : ''}` : 'Missing';
-    const marker = !item.providers.length ? '×' : (conflicted ? '⚠' : '✓');
+    button.className = `coverage-row${!item.providers.length ? ' missing' : ''}${requiresChoiceWarning ? ' conflict' : ''}${selectedBuff && item.effects.includes(selectedBuff) ? ' selected' : ''}`;
+    const state = item.providers.length ? `${item.providers.length} provider${item.providers.length === 1 ? '' : 's'}${requiresChoiceWarning ? ' · choice needed' : ''}` : 'Missing';
+    const marker = !item.providers.length ? '×' : (requiresChoiceWarning ? '⚠' : '✓');
     button.innerHTML = `<span class="coverage-icon"><img src="${item.displayIcon}" alt=""></span><span class="coverage-copy"><b>${item.displayName}</b><small>${state}</small></span><span class="confidence" title="${state}">${marker}</span>`;
-    button.onclick = () => { const id = item.displayEffect; selectedBuff = selectedBuff === id ? null : id; render(); };
+    button.onclick = () => {
+      const id = item.displayEffect;
+      selectedBuff = id;
+      expandedBossChoice = item.choiceOptions?.length > 1 && expandedBossChoice !== item.id ? item.id : null;
+      render();
+    };
     return button;
   }
   function overview(analysis) {
@@ -295,7 +440,19 @@
     for (const id of data.recommended.raid) raid.append(coverageRow(id, analysis));
     root.append(raid);
     const boss = document.createElement('section'); boss.className = 'coverage-section'; boss.innerHTML = '<h3>DEBUFFS</h3>';
-    for (const item of analysis.bossChecklist) boss.append(bossCoverageRow(item, analysis));
+    for (const item of analysis.bossChecklist) {
+      boss.append(bossCoverageRow(item, analysis));
+      if (item.choiceOptions?.length > 1 && expandedBossChoice === item.id) {
+        const choices = document.createElement('div'); choices.className = 'boss-choice-options';
+        for (const option of item.choiceOptions) {
+          const button = document.createElement('button'); button.className = `boss-choice-option${item.selectedChoice === option.id ? ' active' : ''}${item.requestedChoice === option.id ? ' overridden' : ''}`;
+          button.title = item.requestedChoice === option.id ? 'Use the default priority' : `Prefer ${option.name}`;
+          button.innerHTML = `<img class="effect-icon" src="${option.icon}" alt=""><span>${option.name}</span>`;
+          button.onclick = () => setBossChoice(item.id, option.id); choices.append(button);
+        }
+        boss.append(choices);
+      }
+    }
     root.append(boss);
     const party = document.createElement('section'); party.className = 'coverage-section'; party.innerHTML = '<h3>GROUPS</h3>';
     groups.forEach((group, index) => {
@@ -347,7 +504,9 @@
     }
     const provides = document.createElement('section'); provides.className = 'coverage-section'; provides.innerHTML = '<h3>EFFECTS PROVIDED</h3>';
     if (!player.provides.length) provides.innerHTML += '<p class="empty-coverage">None</p>';
+    const activeGroupEffects = new Set((analysis.groupCoverage[position.g] || []).map(item => item.buffId));
     for (const id of player.provides) {
+      if (data.buffs[id].scope === 'party' && exclusiveKeys(data.buffs[id]).length && !activeGroupEffects.has(id)) continue;
       provides.append(coverageRow(id, analysis, { provider: player, state: scopeLabel(data.buffs[id].scope) }));
     }
     root.append(provides); return root;
@@ -359,20 +518,23 @@
   }
   function render() {
     const campAssignments = Object.fromEntries(groups.flat().filter(Boolean).map(player => [player.uid, raidSize === 5 ? (player.campBuffs || []) : []]));
-    const analysis = engine.analyze(groups, data, { campAssignments });
+    const analysis = engine.analyze(groups, data, { campAssignments, groupChoices, bossChoices });
     $('#raid-size').value = raidSize;
     $('#filled-count').textContent = analysis.players.length;
     $('#player-noun').textContent = analysis.players.length === 1 ? 'player' : 'players';
     $('#groups').classList.toggle('single-group', raidSize === 5);
-    renderPalette(); renderGroups(analysis); renderCoverage(analysis);
+    $('#planner-layout').classList.toggle('compact-roster', raidSize <= 20);
+    $('#planner-layout').classList.toggle('balanced-coverage', raidSize <= 10);
+    renderPalette(analysis); renderGroups(analysis); renderCoverage(analysis);
   }
-  $('#spec-search').oninput = renderPalette;
+  $('#spec-search').oninput = render;
   $('#raid-size').onchange = event => {
     const nextSize = Number(event.target.value), next = blankGroups(nextSize);
     groups.flat().filter(Boolean).slice(0, nextSize).forEach((player, index) => next[Math.floor(index / 5)][index % 5] = player);
+    groupChoices = Array.from({ length: next.length }, (_, index) => ({ ...(groupChoices[index] || {}) }));
     groups = next; raidSize = nextSize; if (raidSize !== 5) groups.flat().filter(Boolean).forEach(player => { player.campBuffs = []; }); editingPlayer = null; editingCampPlayer = null; if (selectedPlayer && !locate(selectedPlayer)) selectedPlayer = null; save(); render();
   };
-  $('#clear').onclick = () => { groups = blankGroups(raidSize); selectedPlayer = null; selectedBuff = null; editingPlayer = null; editingCampPlayer = null; detailMode = 'overview'; save(); render(); };
+  $('#clear').onclick = () => { groups = blankGroups(raidSize); groupChoices = groups.map(() => ({})); bossChoices = {}; selectedPlayer = null; selectedBuff = null; editingPlayer = null; editingCampPlayer = null; editingBlessingPlayer = null; detailMode = 'overview'; save(); render(); };
   $('#share-raid').onclick = () => {
     const code = raidState.encode(shareSnapshot(), data);
     $('#raid-link').value = `${location.href.split('#')[0]}#${code}`;
@@ -382,6 +544,7 @@
     $('#raid-share-dialog').showModal();
   };
   $('#close-camp-buffs').onclick = () => { editingCampPlayer = null; $('#camp-buff-dialog').close(); };
+  $('#close-blessing-priority').onclick = () => { editingBlessingPlayer = null; $('#blessing-priority-dialog').close(); };
   $('#close-raid-share').onclick = () => $('#raid-share-dialog').close();
   $('#copy-raid-link').onclick = async () => {
     try { await navigator.clipboard.writeText($('#raid-link').value); $('#raid-share-status').textContent = 'Raid link copied.'; }
