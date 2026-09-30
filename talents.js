@@ -472,7 +472,7 @@
             "name": "Predatory Instincts",
             "max": 2,
             "row": 5,
-            "col": 3,
+            "col": 4,
             "description": "Increases the critical strike damage bonus of your melee abilities by 10%.",
             "rankDescriptions": [
               "Increases the critical strike damage bonus of your melee abilities by 10%.",

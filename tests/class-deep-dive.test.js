@@ -32,7 +32,7 @@ test('the updated Feral tree has 20 nodes and 51 maximum points', () => {
       ['improved-shifting-power', 5, 1, 2, 'shifting-power']
     ]
   );
-  assert.equal(calc.byId['predatory-instincts'].col, 3);
+  assert.equal(calc.byId['predatory-instincts'].col, 4);
   assert.equal(calc.byId['king-of-the-jungle'], undefined);
   assert.equal(calc.byId.ferocity.max, 5);
   assert.equal(calc.byId['shifting-power'].icon, 'ability-icons/displacer-beast.jpg');
