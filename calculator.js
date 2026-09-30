@@ -50,19 +50,37 @@
   }
 
   function encode(points, rules = defaults) {
-    return 'FF2.' + rules.budget + '.' + Number(rules.gates) + '.' + talents.map(t => points[t.id] || 0).join('');
+    const format = data.gameClass === 'druid' && data.version >= 5 ? 'FF3' : 'FF2';
+    return format + '.' + rules.budget + '.' + Number(rules.gates) + '.' + talents.map(t => points[t.id] || 0).join('');
   }
   function decode(code) {
-    const match = /^FF2\.(\d{1,3})\.([01])\.([0-5]+)$/.exec(code.trim());
-    const legacyDruid = data.gameClass === 'druid' && match?.[3].length === talents.length + 1;
-    if (!match || (match[3].length !== talents.length && !legacyDruid)) throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
-    // Builds created before Balance of Nature was removed contain one extra
-    // Balance digit. Discard that retired talent while preserving every other
-    // allocation, including the renamed Feral talents at their old positions.
-    const ranks = legacyDruid
-      ? match[3].slice(0, 8) + match[3].slice(9)
-      : match[3];
-    const rules = { budget: Number(match[1]), gates: match[2] === '1' };
+    const match = /^FF([23])\.(\d{1,3})\.([01])\.([0-5]+)$/.exec(code.trim());
+    if (!match) throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
+    const format = Number(match[1]);
+    let ranks = match[4];
+    if (data.gameClass === 'druid' && data.version >= 5 && format === 2) {
+      // FF2 Druid builds predate Shifting Power. The oldest form also contains
+      // the retired Balance of Nature digit, which is removed first.
+      if (ranks.length === talents.length) ranks = ranks.slice(0, 8) + ranks.slice(9);
+      if (ranks.length !== talents.length - 1) throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
+      const oldFeralStart = data.trees[0].talents.length;
+      const oldShreddingAttacks = oldFeralStart + 9;
+      const oldKingOfTheJungle = oldFeralStart + 15;
+      const oldRestorationStart = oldFeralStart + 19;
+      // Move old King of the Jungle points into the replacement branch in
+      // prerequisite order so the allocation and tier totals remain valid.
+      const replacementPoints = Number(ranks[oldShreddingAttacks]) + Number(ranks[oldKingOfTheJungle]);
+      const shreddingRank = Math.min(3, replacementPoints);
+      const branchPoints = replacementPoints - shreddingRank;
+      const shiftingRank = Math.min(1, branchPoints);
+      const improvedRank = Math.min(2, Math.max(0, branchPoints - shiftingRank));
+      ranks = ranks.slice(0, oldShreddingAttacks) + shreddingRank + ranks.slice(oldShreddingAttacks + 1);
+      ranks = ranks.slice(0, oldKingOfTheJungle) + improvedRank + ranks.slice(oldKingOfTheJungle + 1);
+      ranks = ranks.slice(0, oldRestorationStart) + shiftingRank + ranks.slice(oldRestorationStart);
+    } else if (ranks.length !== talents.length) {
+      throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
+    }
+    const rules = { budget: Number(match[2]), gates: match[3] === '1' };
     const points = Object.fromEntries(talents.map((t, i) => [t.id, Number(ranks[i])]).filter(([, n]) => n));
     const error = validate(points, rules);
     if (error) throw new Error(error);

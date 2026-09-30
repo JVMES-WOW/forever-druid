@@ -1,6 +1,6 @@
 (function(root){const classes={
   "druid": {
-    "version": 4,
+    "version": 5,
     "gameClass": "druid",
     "name": "Druid",
     "color": "#ff7d0a",
@@ -408,7 +408,7 @@
             "id": "shredding-attacks",
             "name": "Shredding Attacks",
             "max": 3,
-            "row": 4,
+            "row": 3,
             "col": 1,
             "description": "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
             "rankDescriptions": [
@@ -472,7 +472,7 @@
             "name": "Predatory Instincts",
             "max": 2,
             "row": 5,
-            "col": 1,
+            "col": 3,
             "description": "Increases the critical strike damage bonus of your melee abilities by 10%.",
             "rankDescriptions": [
               "Increases the critical strike damage bonus of your melee abilities by 10%.",
@@ -492,18 +492,18 @@
             "icon": "icons/druid/leader-of-the-pack.jpg"
           },
           {
-            "id": "king-of-the-jungle",
-            "name": "King of the Jungle",
-            "max": 3,
+            "id": "improved-shifting-power",
+            "name": "Improved Shifting Power",
+            "max": 2,
             "row": 5,
-            "col": 4,
-            "description": "Tiger’s Fury now instantly grants you 20 Energy.",
+            "col": 1,
+            "description": "Reduces the cooldown of your Shifting Power ability by 4 sec.",
             "rankDescriptions": [
-              "Tiger’s Fury now instantly grants you 20 Energy.",
-              "Tiger’s Fury now instantly grants you 40 Energy.",
-              "Tiger’s Fury now instantly grants you 60 Energy."
+              "Reduces the cooldown of your Shifting Power ability by 4 sec.",
+              "Reduces the cooldown of your Shifting Power ability by 8 sec."
             ],
             "type": "Passive",
+            "prerequisite": "shifting-power",
             "icon": "icons/druid/king-of-the-jungle.jpg"
           },
           {
@@ -557,6 +557,22 @@
             "requires": "Cat Form, Bear Form, Dire Bear Form",
             "prerequisite": "leader-of-the-pack",
             "icon": "icons/druid/berserk.jpg"
+          },
+          {
+            "id": "shifting-power",
+            "name": "Shifting Power",
+            "max": 1,
+            "row": 4,
+            "col": 1,
+            "description": "At a significant Mana cost, instantly grants 40 Energy. Shifting Power has a 16 sec cooldown.",
+            "type": "Active",
+            "details": [
+              "Instant",
+              "16 sec cooldown"
+            ],
+            "requires": "Cat Form",
+            "prerequisite": "shredding-attacks",
+            "icon": "ability-icons/tigers-fury.jpg"
           }
         ]
       },

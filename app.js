@@ -15,10 +15,10 @@
   const classOptions = Object.values(classes).map(item => `<option value="${item.gameClass}" ${item.gameClass === data.gameClass ? 'selected' : ''}>${item.name}</option>`).join('');
   document.title = `WoW Forever — ${data.name} Talents`;
   try {
-    const code = location.hash.startsWith('#FF2.') ? location.hash.slice(1) : localStorage.getItem(storageKey);
+    const code = /^#FF[23]\./.test(location.hash) ? location.hash.slice(1) : localStorage.getItem(storageKey);
     if (code) {
       ({ points, rules } = calc.decode(code));
-      if (location.hash.startsWith('#FF2.')) initialMessage = 'Shared build loaded.';
+      if (/^#FF[23]\./.test(location.hash)) initialMessage = 'Shared build loaded.';
     }
   } catch (error) { initialMessage = `Starting a fresh build. ${error.message}`; }
 
@@ -157,7 +157,7 @@
     } catch (error) { $('#share-status').textContent = error.message; }
   };
   window.addEventListener('hashchange', () => {
-    if (!location.hash.startsWith('#FF2.')) return;
+    if (!/^#FF[23]\./.test(location.hash)) return;
     try {
       const shared = calc.decode(location.hash.slice(1));
       undoStack.push({ points: { ...points }, rules: { ...rules } });
