@@ -36,7 +36,7 @@ test('the updated Feral tree has 20 nodes and 51 maximum points', () => {
   assert.equal(calc.byId['king-of-the-jungle'], undefined);
   assert.equal(calc.byId.ferocity.max, 5);
   assert.equal(calc.byId['shifting-power'].icon, 'ability-icons/displacer-beast.jpg');
-  assert.equal(calc.byId['improved-shifting-power'].icon, 'ability-icons/tigers-fury.jpg');
+  assert.equal(calc.byId['improved-shifting-power'].icon, 'ability-icons/the-great-hunt.jpg');
 });
 
 test('Shifting Power prerequisites use the existing full-rank enforcement', () => {

@@ -504,7 +504,7 @@
             ],
             "type": "Passive",
             "prerequisite": "shifting-power",
-            "icon": "ability-icons/tigers-fury.jpg"
+            "icon": "ability-icons/the-great-hunt.jpg"
           },
           {
             "id": "natural-reaction",
