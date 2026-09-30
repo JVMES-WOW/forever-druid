@@ -504,7 +504,7 @@
             ],
             "type": "Passive",
             "prerequisite": "shifting-power",
-            "icon": "icons/druid/king-of-the-jungle.jpg"
+            "icon": "ability-icons/tigers-fury.jpg"
           },
           {
             "id": "natural-reaction",
@@ -572,7 +572,7 @@
             ],
             "requires": "Cat Form",
             "prerequisite": "shredding-attacks",
-            "icon": "ability-icons/tigers-fury.jpg"
+            "icon": "ability-icons/displacer-beast.jpg"
           }
         ]
       },
