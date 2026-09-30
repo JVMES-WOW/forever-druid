@@ -564,9 +564,10 @@
             "max": 1,
             "row": 4,
             "col": 1,
-            "description": "At a significant Mana cost, instantly grants 40 Energy. Shifting Power has a 16 sec cooldown.",
+            "description": "Instantly grants 40 Energy. Shifting Power has a 16 sec cooldown.",
             "type": "Active",
             "details": [
+              "55% of base Mana",
               "Instant",
               "16 sec cooldown"
             ],
