@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Feral Rotation Simulator · WoW Forever</title>
+  <meta name="description" content="Time-based Monte Carlo Feral Druid rotation and resource simulator for WoW Forever.">
+  <link rel="stylesheet" href="feral-sim.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="crest" aria-hidden="true">❦</span><span><small>WORLD OF WARCRAFT</small><strong>FOREVER</strong></span></a>
+    <nav aria-label="Main navigation"><a href="./">Talents</a><a href="abilities.html">Abilities</a><a href="raid.html">Raid</a></nav>
+  </header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">FERAL LAB</p><h1>Rotation <em>Simulator</em></h1><p>A seeded, time-based Monte Carlo model of energy, mana, combo points, procs, bleeds, buffs, attacks, and consumables.</p></div><div class="hero-actions"><button id="run" type="button">Run simulation</button><button id="replay" class="ghost" type="button">Replay iteration</button></div></section>
+    <aside class="model-warning" aria-labelledby="model-warning-title">
+      <h2 id="model-warning-title">Experimental resource model — not a DPS simulator</h2>
+      <p>Results depend on the selected settings and modeled assumptions, including mechanics that may differ from the live game. More casts or a higher optimizer score do not prove higher damage or a best rotation. <a href="#model-assumptions">Review the assumptions</a> and the notes beside each setting before interpreting or sharing results.</p>
+    </aside>
+    <p id="status" role="status" aria-live="polite">Ready.</p>
+    <div class="layout">
+      <aside class="controls">
+        <form id="config">
+          <details open><summary>Run</summary><div class="fields">
+            <label>Fight length <span>seconds</span><input name="duration" type="number" min="1" max="7200" step="0.1" value="300" aria-describedby="duration-note"></label>
+            <label>± Fight length <span>seconds · 0 = fixed</span><input id="duration-variance" name="durationVariance" type="number" min="0" max="7200" step="0.1" value="0" aria-describedby="duration-note"></label>
+            <label>Iterations <span>max 10,000</span><input name="iterations" type="number" min="1" max="10000" step="1" value="1000"></label>
+            <label>Random seed<input id="seed" name="seed" type="number" min="0" max="4294967295" step="1" value="8675309" aria-describedby="seed-note"></label>
+            <label>Replay iteration<input name="replayIteration" type="number" min="1" max="10000" step="1" value="1"></label>
+          </div><p class="assumption" id="duration-note">Each fight samples uniformly within the ± range at 0.1s precision, bounded to 1–7,200s. For example, 300 ±15 means 285–315s. The seed reproduces each length.</p><div class="toggles"><label><input id="fresh-seed" type="checkbox" checked aria-describedby="seed-note"> New seed each run</label></div><p class="assumption" id="seed-note">Run draws a fresh seed. Turn off to reuse or enter one. Replay keeps the displayed seed.</p></details>
+          <details open><summary>Character</summary><div class="fields">
+            <label>Starting mana<input name="startingMana" type="number" min="0" step="1" value="4000"></label>
+            <label>Spirit<input name="spirit" type="number" min="0" step="1" value="200"></label>
+            <label>Equipped weapon speed <span>unhasted seconds</span><input name="weaponSpeed" type="number" min="0.1" max="10" step="0.1" value="3" aria-describedby="omen-note"></label>
+            <label>Base crit <span>%</span><input name="crit" type="number" min="0" max="100" step="0.1" value="35"></label>
+            <label>Blood Frenzy<select name="bloodFrenzy"><option value="0">0/2 (0%)</option><option value="50">1/2 (50%)</option><option value="100" selected>2/2 (100%)</option></select></label>
+            <label>Natural Shapeshifter<select id="natural-shapeshifter" name="naturalShapeshifter" aria-describedby="natural-shapeshifter-note"><option value="0" selected>0/3 (0%)</option><option value="10">1/3 (10%)</option><option value="20">2/3 (20%)</option><option value="30">3/3 (30%)</option></select></label>
+            <label>Reflection<select id="reflection" name="reflection" aria-describedby="reflection-note"><option value="0" selected>0/3 (0%)</option><option value="17">1/3 (17%)</option><option value="33">2/3 (33%)</option><option value="50">3/3 (50%)</option></select></label>
+          </div></details>
+          <details open><summary>Equipment</summary><div class="toggles">
+            <label><input id="howling-idol" name="howlingIdol" type="checkbox" checked aria-describedby="shifting-equipment-note"> Howling Idol (Shifting Power CD −1s)</label>
+            <label><input id="wolfshead-helm" name="wolfsheadHelm" type="checkbox" aria-describedby="shifting-equipment-note"> Wolfshead Helm (Shifting Power +20 energy)</label>
+            <label><input id="tier1-feral-5pc" name="tier1Feral5pc" type="checkbox" aria-describedby="shifting-equipment-note"> Tier 1 Feral 5pc (Shifting Power CD −1.1s)</label>
+          </div><p class="assumption" id="shifting-equipment-note">Shifting Power normally grants 40 energy on an 8s cooldown. Howling Idol reduces the cooldown to 7s; Tier 1 Feral 5pc reduces it to 6.9s, or 5.9s with the idol. Wolfshead Helm changes the gain to 60 energy. All three can be enabled together. Mana cost and 1s GCD stay unchanged. Automatic timing uses the selected gain and cooldown; manual mode keeps your chosen threshold. With the helm, shifting above 40 energy wastes energy immediately, before GCD regeneration. Optimization keeps these equipment choices fixed.</p></details>
+          <details><summary>Attack table</summary><div class="fields">
+            <label>Miss <span>%</span><input name="miss" type="number" min="0" max="100" step="0.1" value="1"></label>
+            <label>Dodge <span>%</span><input name="dodge" type="number" min="0" max="100" step="0.1" value="6.5"></label>
+            <label>Parry <span>%</span><input name="parry" type="number" min="0" max="100" step="0.1" value="0"></label>
+            <label>Swing timer <span>seconds</span><input name="swingTimer" type="number" min="0.1" step="0.1" value="1"></label>
+            <label>JoW proc chance <span>%</span><input name="jowChance" type="number" min="0" max="100" step="0.1" value="50"></label>
+          </div></details>
+          <details><summary>Rotation</summary><div class="fields">
+            <label>Rip minimum CP<select id="ripMinCP" name="ripMinCP" aria-describedby="finisher-cp-note"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected>5</option></select></label>
+            <label>Bite minimum CP<select id="biteMinCP" name="biteMinCP" aria-describedby="finisher-cp-note"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected>5</option></select></label>
+            <label>Shifting mode<select id="shifting-mode" name="shiftingMode" aria-describedby="shift-timing-note"><option value="automatic" selected>Automatic · energy-loss comparison</option><option value="manual">Manual · energy threshold</option></select></label>
+            <label>Manual shifting threshold <span>energy · manual mode only</span><input id="shiftingThreshold" name="shiftingThreshold" type="number" min="0" max="100" step="1" value="50"></label>
+            <label>Bite max energy<input id="biteMaxEnergy" name="biteMaxEnergy" type="number" min="35" max="100" step="1" value="35"></label>
+            <label>Minimum Rip remaining before Bite—outside Berserk (s)<input id="biteRipOutside" name="biteRipOutside" type="number" min="0" step="0.5" value="12"></label>
+            <label>Minimum Rip remaining before Bite—during Berserk (s)<input id="biteRipBerserk" name="biteRipBerserk" type="number" min="0" step="0.5" value="12"></label>
+            <label>Potion policy<select id="potion-policy" name="potionPolicy"><option value="sustain">Sustain / extra-use aware</option><option value="full">Full value only</option></select></label>
+            <label>Tea policy<select name="teaPolicy"><option value="berserk">Near zero in Berserk</option><option value="any">Near zero anytime</option><option value="disabled">Disabled</option></select></label>
+          </div><p class="assumption" id="finisher-cp-note">Finishers require at least their selected CP minimum, then consume all current CP on a landed cast. Rip lasts 12s; damage is not modeled. With less than 12s left in the actual fight, eligible Bite takes priority over Rip/Rake and ignores both Rip-safety timers. Bite's CP minimum and energy limits still apply; Rip remains a fallback if Bite is unavailable. The optimizer can search both CP minimums; uncheck their search toggles to hold them fixed.</p></details>
+          <details open><summary>Buffs &amp; actions</summary><div class="toggles">
+            <label><input id="berserk-gcd" name="berserkGCD" type="checkbox" checked aria-describedby="berserk-note"> Berserk uses GCD (prezerk)</label>
+            <label><input name="blessingWisdom" type="checkbox"> Blessing of Wisdom</label>
+            <label><input name="manaSpring" type="checkbox" checked> Mana Spring Totem</label>
+            <label><input name="divineSpirit" type="checkbox" checked> Divine Spirit</label>
+            <label><input name="judgmentWisdom" type="checkbox" checked> Judgment of Wisdom</label>
+            <label><input id="windfury" name="windfury" type="checkbox" checked aria-describedby="windfury-note"> Windfury Totem (allowed in cat form)</label>
+            <label><input id="omen-of-clarity" name="omenOfClarity" type="checkbox" checked aria-describedby="omen-note"> Omen of Clarity / Clearcasting</label>
+            <label><input id="starting-clearcasting" name="startingClearcasting" type="checkbox" checked aria-describedby="starting-clearcasting-note"> Start with Clearcasting (fresh at pull)</label>
+            <label><input id="faerie-fire" name="faerieFire" type="checkbox" checked aria-describedby="filler-note"> Faerie Fire (pre-pull + free GCDs)</label>
+            <label><input id="use-potions" name="usePotions" type="checkbox" checked> Use Major Mana Potions</label>
+          </div></details>
+          <details id="optimizer-controls" open><summary>Optimize rotation CPM</summary>
+            <div class="fields optimizer-objective">
+              <label>Optimize for<select id="opt-objective"><option value="attack" selected>Attack CPM</option><option value="finishers">Finisher CPM (Rip + Bite)</option><option value="weightedFinishers">Weighted finisher score</option></select></label>
+              <label>Rip weight<input id="opt-rip-weight" type="number" min="0" max="100" step="0.1" value="1" disabled></label>
+              <label>Bite weight<input id="opt-bite-weight" type="number" min="0" max="100" step="0.1" value="1" disabled></label>
+            </div>
+            <p id="opt-objective-note" class="assumption"></p>
+            <p class="assumption">Stats, equipment, buffs, fight length, shifting mode, and casting priorities stay fixed. Weights score casts; they do not force a Rip:Bite cast ratio or change Rip maintenance. Attack CPM breaks ties, then current settings win exact ties. Automatic shifting skips the threshold search. Uncheck a parameter to lock it; current values are always included. For a 5-CP comparison, set both CP minimums to 5 and uncheck their search toggles. Otherwise the optimizer may favor cheap low-CP finishers; no damage penalty is modeled.</p>
+            <div class="optimizer-parameters">
+              <div><label><input id="opt-shiftingThreshold-on" type="checkbox" checked> Shifting threshold</label><input id="opt-shiftingThreshold-values" type="text" value="20,30,40,45,50,55,60" aria-label="Shifting threshold search values"></div>
+              <div><label><input id="opt-biteMaxEnergy-on" type="checkbox" checked> Bite max energy</label><input id="opt-biteMaxEnergy-values" type="text" value="35,40,45,50,60" aria-label="Bite max energy search values"></div>
+              <div><label><input id="opt-biteRipOutside-on" type="checkbox" checked> Bite Rip safety</label><input id="opt-biteRipOutside-values" type="text" value="0,2,4,6,8,10,12" aria-label="Bite Rip safety search values"></div>
+              <div><label><input id="opt-biteRipBerserk-on" type="checkbox" checked> Berserk Bite safety</label><input id="opt-biteRipBerserk-values" type="text" value="0,2,4,6,8,10,12" aria-label="Berserk Bite safety search values"></div>
+              <div><label><input id="opt-ripMinCP-on" type="checkbox" checked> Rip minimum CP</label><input id="opt-ripMinCP-values" type="text" value="1,2,3,4,5" aria-label="Rip minimum CP search values"></div>
+              <div><label><input id="opt-biteMinCP-on" type="checkbox" checked> Bite minimum CP</label><input id="opt-biteMinCP-values" type="text" value="1,2,3,4,5" aria-label="Bite minimum CP search values"></div>
+            </div>
+            <div class="fields"><label>Search size<select id="opt-preset"><option value="quick">Quick · up to 24 candidates</option><option value="standard" selected>Standard · up to 64</option><option value="thorough">Thorough · up to 128</option></select></label></div>
+            <div class="optimizer-actions"><button id="optimize" type="button">Optimize rotation</button><button id="opt-stop" type="button" disabled>Stop</button></div>
+            <p class="assumption">Compares candidates on shared seeds, then retests finalists on fresh fights. Honors “New seed each run” once per search. This finds the best tested settings, not a guaranteed global maximum or highest DPS.</p>
+          </details>
+          <details id="tradeoff-controls"><summary>Bite tradeoffs</summary>
+            <p class="assumption">Compare Bite CPM, Rip uptime, and attack CPM—no universal winner. Both finishers are fixed at 5 CP for this exploration; all other non-Bite settings stay fixed. Your live settings do not change until Apply.</p>
+            <div class="optimizer-parameters">
+              <div><label for="trade-biteMaxEnergy">Bite maximum energy</label><input id="trade-biteMaxEnergy" type="text" value="35,40,45,50,60"></div>
+              <div><label for="trade-biteRipOutside">Minimum Rip remaining—outside Berserk (s)</label><input id="trade-biteRipOutside" type="text" value="0,2,4,6,8,10,12"></div>
+              <div><label for="trade-biteRipBerserk">Minimum Rip remaining—during Berserk (s)</label><input id="trade-biteRipBerserk" type="text" value="0,2,4,6,8,10,12"></div>
+            </div>
+            <div class="fields"><label>Fights per candidate<input id="trade-iterations" type="number" min="1" max="1000" step="1" value="100"></label></div>
+            <div class="optimizer-actions"><button id="trade-explore" type="button">Explore tradeoffs</button><button id="trade-stop" type="button" disabled>Stop</button></div>
+            <p class="assumption">Exhaustive selected grid + current settings at 5 CP + terminal-only control (30/30 safety). Shared seeds and fight lengths, 25,000-fight limit. Lower safety permits more aggressive weaving. At a 35-energy ceiling a non-Clearcast Bite requires exactly 35 energy; 12s safety on a 12s Rip effectively disables ordinary weaving.</p>
+          </details>
+        </form>
+        <h2 id="model-assumptions" tabindex="-1">Model assumptions</h2>
+        <p class="assumption" id="berserk-note"><b>Berserk GCD:</b> enabled by default: Berserk at −1s, first attack at 0s, 14s of combat uptime, cooldown ready at 179s. Disabled: Berserk at 0s with the first attack, 15s uptime, cooldown ready at 180s; later uses are also off GCD. If Faerie Fire is enabled, cast it at −2s with on-GCD Berserk or −1s with off-GCD Berserk. Pre-pull casts count in totals; regeneration, attacks, and measured combat time start at 0s.</p>
+        <p class="assumption" id="omen-note"><b>Clearcasting:</b> vanilla <a href="https://github.com/wowsims/classic/blob/7779ebbf79dc7f1341e6ab939b28a3402c9a730a/sim/druid/talents.go#L251-L310">WoWSims Classic</a> model: 2 PPM, 10s internal cooldown, 15s buff. Landed cat autos roll 3.33%; landed specials use equipped weapon speed × 2 / 60. Default weapon speed is an assumed 3.0s; set yours above. Swing timer only changes autoattack frequency. Rake, Shred, Rip, and Bite consume the buff even on avoidance; landed Bite still drains remaining energy. Shifting Power neither benefits from nor consumes Clearcasting.</p>
+        <p class="assumption" id="starting-clearcasting-note"><b>Starting Clearcasting:</b> optional, requires Omen of Clarity. Assumes a fresh proc at pull (t=0): 15s buff remaining and no new Omen roll before t=10s, even after the free cast consumes it. Pre-pull Faerie Fire/Berserk do not shorten it. Shifting Power does not consume it. The starting buff is reported separately from rolled procs; its free cast and energy savings are included. Optimization keeps this starting condition fixed.</p>
+        <p class="assumption" id="natural-shapeshifter-note"><b>Natural Shapeshifter:</b> 0/10/20/30% reduction makes Shifting Power cost 684/615.6/547.2/478.8 mana, without integer rounding. Energy gain, cooldown, GCD, and the five-second-rule reset are unchanged.</p>
+        <p class="assumption" id="reflection-note"><b>Reflection:</b> retain 0/17/33/50% of Spirit regeneration inside the five-second rule. Outside it, Spirit regeneration is always 100%.</p>
+        <p class="assumption" id="windfury-note"><b>Windfury:</b> vanilla <a href="https://github.com/wowsims/classic/blob/7779ebbf79dc7f1341e6ab939b28a3402c9a730a/sim/core/buffs.go#L1528-L1614">WoWSims Classic</a> Totem rules, with the feral restriction removed: 20% on landed autos and Rake/Shred/Rip/Bite, 1.5s internal cooldown. One attack advances and resets the swing timer; auto-triggered attacks wait the <a href="https://github.com/wowsims/classic/blob/7779ebbf79dc7f1341e6ab939b28a3402c9a730a/sim/core/attack.go#L311-L373">10ms batch</a>, special-triggered attacks occur immediately. These white attacks can miss/dodge/parry/crit and proc Omen or Judgment; the ICD prevents Windfury chaining. No GCD, energy, or CP gain. This resource simulator does not calculate damage, so the Totem's bonus AP is not modeled.</p>
+        <p class="assumption" id="shift-timing-note"><b>Shift timing:</b> automatic mode compares cap loss now (including regeneration during Shift's GCD) against later cap loss + energy gain × delay / cooldown. It considers spending first, Clearcasting, known Tea, and gear bonuses; ties favor shifting now. Imminent cooldowns use the actual delay caused by another GCD. Forecasts assume landed attacks and only guaranteed bonus CP, without predicting new random procs. This is a local energy-loss heuristic, not a guarantee of maximum CPM. Manual mode restores the fixed threshold. Shift remains highest priority when the selected rule favors it and mana is available. The optimizer holds the mode fixed and skips threshold search in automatic mode.</p>
+        <p class="assumption"><b>Shred &amp; Tea:</b> Shred's 4s refresh lookahead counts regeneration during the GCD, reachable off-GCD Tea, and Shifting Power's mana, selected timing mode, cooldown, and full GCD. It checks Rake/Rip together and only pools if Shred would delay a protected refresh compared with waiting. Tea is checked immediately after spending energy as well as between GCDs; the selected ≤10-energy policy still applies.</p>
+        <p class="assumption" id="filler-note"><b>Faerie Fire:</b> lowest-priority filler, only when a full 1s GCD will not delay a known higher-priority action. Forecasts include scheduled energy/mana ticks, cooldowns, bleed and buff timing, and usable Tea. Future random procs are not predicted; any affordable Shred is conservatively protected even while pooling for a refresh.</p>
+        <p class="assumption"><b>Model note:</b> failed finishers retain combo points and spend their base energy cost unless Clearcasting is active. OOM means the first time Shifting Power is due by policy but its current mana cost is unavailable.</p>
+      </aside>
+      <section class="results" aria-live="polite">
+        <article id="optimizer-results" class="panel" hidden>
+          <div class="panel-head"><div><p class="eyebrow">PARAMETER SEARCH</p><h2>Rotation CPM optimizer</h2></div><button id="opt-apply" type="button" disabled>Apply best &amp; run</button></div>
+          <p id="optimizer-status" class="panel-note" role="status"></p>
+          <progress id="optimizer-progress" max="1" value="0" aria-label="Optimization progress"></progress>
+          <p id="optimizer-summary" class="panel-note"></p>
+          <p id="optimizer-best-settings" class="panel-note"></p>
+          <div class="table-wrap"><table><thead><tr><th>Candidate</th><th title="Selected objective per minute; weighted scores are not raw CPM or DPS.">Objective / min</th><th>Objective Δ</th><th title="Paired sampling standard error for the selected objective. Not a selection-corrected significance test.">Objective Δ SE</th><th>Attack CPM</th><th>Finisher CPM</th><th>Rip CPM</th><th>Bite CPM</th><th>Rip uptime</th><th title="Automatic timing, or the manual energy threshold">Shift mode / ≤</th><th>Bite ≤</th><th>Rip safety</th><th>Berserk safety</th><th>Rip min CP</th><th>Bite min CP</th><th>Rake uptime</th><th>OOM rate</th></tr></thead><tbody id="optimizer-table"></tbody></table></div>
+          <p class="panel-note optimizer-warning">CPM is not DPS. Check bleed uptime and OOM before applying. Small gains may be sampling noise; finalists are ranked on validation results, so sampling error is not proof of an improvement. No settings change until you apply a result.</p>
+        </article>
+        <article id="tradeoff-results" class="panel" hidden>
+          <div class="panel-head"><div><p class="eyebrow">BITE THRESHOLD SPRINT · 5 CP</p><h2>Bite tradeoff explorer</h2></div><div class="trade-actions"><button id="trade-validate" type="button" disabled>Validate selected</button><button id="trade-apply" type="button" disabled>Apply selected &amp; run</button></div></div>
+          <p id="trade-status" class="panel-note" role="status"></p>
+          <progress id="trade-progress" max="1" value="0" aria-label="Tradeoff exploration progress"></progress>
+          <p id="trade-summary" class="panel-note"></p>
+          <div id="trade-chart" aria-label="Bite CPM versus Rip uptime, colored by attack CPM"></div>
+          <p id="trade-legend" class="panel-note"></p>
+          <div class="log-toolbar"><label><input id="trade-show-dominated" type="checkbox"> Show dominated candidates too</label><span>References and your selection remain visible. Select a point or candidate button.</span></div>
+          <div class="table-wrap"><table><thead><tr><th>Candidate</th><th>Bite CPM</th><th>Δ Bite</th><th>Rip uptime</th><th>Δ Rip (pp)</th><th>Attack CPM</th><th>Δ Attack</th><th>Bite energy ≤</th><th>Outside (s)</th><th>Berserk (s)</th><th>Landed Bite CPM</th><th>Ordinary Bite CPM</th><th>Terminal Bite CPM</th><th>All-action CPM</th><th>Total casts / fight</th></tr></thead><tbody id="trade-table"></tbody></table></div>
+          <div id="trade-details" class="trade-details"></div>
+          <div id="trade-validation" class="trade-details"></div>
+          <p class="panel-note optimizer-warning">Sample-estimated Pareto frontier: no tested alternative improves one outcome without worsening another. Equal outcomes remain separate choices. This is not DPS, a significance test, or a global optimum. Validate your selection on 1,000 fresh paired fights before applying. Attack/Bite CPM count attempts, including misses and dodges; landed Bites are separate. All-action CPM includes pre-pull cooldowns and filler, excluding autos, procs, and consumables.</p>
+        </article>
+        <p id="duration-summary" class="panel-note"></p>
+        <div id="summary" class="summary-grid"></div>
+        <div class="chart-grid"><article class="panel"><div class="panel-head"><div><p class="eyebrow">THROUGHPUT</p><h2>Ability CPM</h2></div><span id="total-cpm" title="Sum of all ability CPM, including Shifting Power, Berserk, and Faerie Fire. Excludes autoattacks, procs, and consumables. Includes pre-pull Berserk and Faerie Fire casts, consistent with cast totals."></span></div><div id="casts-chart" class="bars"></div></article><article class="panel"><div class="panel-head mana-head"><div><p class="eyebrow">SUSTAIN</p><h2 id="mana-flow-title">Mana flow / minute</h2></div><label class="mana-rate-toggle"><input id="mana-per-five" type="checkbox" aria-describedby="mana-rate-note"> Show MP5</label></div><p class="mana-flow-legend">← Spending <span>Gains →</span></p><div id="mana-chart" class="mana-flow-chart" role="group" aria-labelledby="mana-flow-title" aria-describedby="mana-net-note"></div><p id="mana-net-flow" class="mana-net-flow"></p><p id="mana-net-note" class="panel-note">Net = effective gains − spending. Starting mana is not income; gains already exclude overflow.</p><p id="mana-rate-note" class="panel-note">Switches all mana rates between per minute and per 5 seconds; fight totals stay unchanged.</p></article></div>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">DISTRIBUTION</p><h2>Ability casts</h2></div><small>Per fight, except CPM</small></div><div class="table-wrap"><table><thead><tr><th>Ability</th><th>Mean</th><th>CPM</th><th>SD</th><th>Median</th><th>P5</th><th>P95</th><th>During Berserk</th></tr></thead><tbody id="ability-table"></tbody></table></div></article>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">COOLDOWN VALUE</p><h2>Berserk crit conversions</h2></div><small id="berserk-crits-sample"></small></div><div class="table-wrap"><table><thead><tr><th>Ability</th><th>Created / fight</th><th>Created / Berserk</th></tr></thead><tbody id="berserk-crits-table"></tbody></table></div><p class="panel-note">Counts landed Rakes and Shreds whose normal crit roll failed, but Berserk turned into a crit. Naturally rolled crits, avoided attacks, autos, and finishers are excluded. Per-Berserk averages divide total conversions by all uses, including prezerk and uses cut short by fight end. This measures direct crit conversions, not a separate rotation without Berserk.</p></article>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">COMBO POINT WASTE</p><h2>Builders cast at 5 CP</h2></div><small>Mean per fight</small></div><div class="table-wrap"><table><thead><tr><th>Ability</th><th>Casts at 5 CP</th><th>CP wasted</th></tr></thead><tbody id="cp-cap-table"></tbody></table></div><p id="cp-cap-summary" class="panel-note"></p><p class="panel-note">Counts Rake/Shred casts that start at 5 CP, and the CP they generate but lose to the cap, including actual Blood Frenzy bonus CP. Misses/dodges/parries count as casts but generate zero CP. A crit starting at 4 CP is separate overflow, not a cast at 5 CP. Raw CP includes retained CP plus all wasted CP. Replay marks casts that start at the cap. This is reporting only; it does not change the rotation.</p></article>
+        <div class="table-grid">
+          <article class="panel"><div class="panel-head"><h2>Mana sources</h2></div><div class="table-wrap"><table><thead><tr><th>Source</th><th>Mean</th><th id="mana-rate-label">MPM</th></tr></thead><tbody id="mana-table"></tbody></table></div></article>
+          <article class="panel"><div class="panel-head"><h2>Energy &amp; combo points</h2></div><div class="table-wrap"><table><thead><tr><th>Metric</th><th>Mean</th></tr></thead><tbody id="resource-table"></tbody></table></div><p class="panel-note">Clearcasting energy saved accounts for avoidance refunds; landed Bite still drains all energy. Base cost waived is tracked separately and is not generated energy.</p></article>
+          <article class="panel"><div class="panel-head"><h2>Bleed &amp; buff uptime</h2></div><div id="uptime" class="uptimes"></div></article>
+        </div>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">MANA FAILURE</p><h2>Time to OOM</h2></div><span id="oom-label"></span></div><p id="oom-detail" class="panel-note"></p><div id="oom-chart" class="histogram"></div></article>
+        <article class="panel debug-panel">
+          <div class="panel-head"><div><p class="eyebrow">DETERMINISTIC REPLAY</p><h2>Combat log</h2></div><span id="debug-seed"></span></div>
+          <div class="log-toolbar">
+            <label>Log view <select id="log-view"><option value="all">All events</option><option value="casts">Casts only</option></select></label>
+            <label><input id="log-autoattacks" type="checkbox" checked> Show autoattacks</label>
+            <label><input id="log-procs" type="checkbox" checked aria-describedby="log-filter-note"> Show procs / passive events</label>
+            <span id="log-oom"></span>
+          </div>
+          <p id="log-filter-note" class="panel-note">Hide autoattacks and procs / passive events to see only your casts and consumable uses. Casts only also hides consumables. Cast details such as Clearcasting and Berserk-created crits stay visible.</p>
+          <p id="log-count" class="panel-note">Filters only change this view, never the simulation.</p>
+          <div class="table-wrap log-wrap"><table><thead><tr><th>Time</th><th>Event</th><th>Detail</th><th>Energy</th><th>Mana</th><th>CP</th></tr></thead><tbody id="combat-log"><tr><td colspan="6">Choose Replay iteration to generate a detailed single-fight log.</td></tr></tbody></table></div>
+        </article>
+      </section>
+    </div>
+  </main>
+  <script src="feral-sim.js"></script><script src="feral-optimizer.js"></script><script src="feral-tradeoffs.js"></script><script src="feral-sim-ui.js"></script>
+</body>
+</html>
