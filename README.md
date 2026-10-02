@@ -11,8 +11,9 @@ A static, browser-based toolkit for planning characters and groups in **World of
 ### Talent calculators
 
 - Current calculators for all nine classes: Druid, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock, and Warrior.
-- 27 talent trees and 468 talents with ranks, prerequisites, row requirements, and point limits.
+- 27 talent trees and 467 talents with ranks, prerequisites, row requirements, and point limits.
 - Per-class local saves, undo, reset, portable build codes, and shareable links.
+- Share links preserve talent identities across layout changes. Older builds remain importable; points in removed talents or branches with unmet requirements are refunded with a notice.
 - Locally hosted game icons with no third-party requests during normal use.
 
 ### Druid abilities

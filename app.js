@@ -15,10 +15,12 @@
   const classOptions = Object.values(classes).map(item => `<option value="${item.gameClass}" ${item.gameClass === data.gameClass ? 'selected' : ''}>${item.name}</option>`).join('');
   document.title = `WoW Forever — ${data.name} Talents`;
   try {
-    const code = /^#FF[23]\./.test(location.hash) ? location.hash.slice(1) : localStorage.getItem(storageKey);
+    const isShared = /^#FF[234]\./.test(location.hash);
+    const code = isShared ? location.hash.slice(1) : localStorage.getItem(storageKey);
     if (code) {
-      ({ points, rules } = calc.decode(code));
-      if (/^#FF[23]\./.test(location.hash)) initialMessage = 'Shared build loaded.';
+      const loaded = calc.decode(code);
+      ({ points, rules } = loaded);
+      initialMessage = [isShared ? 'Shared build loaded.' : '', loaded.notice].filter(Boolean).join(' ');
     }
   } catch (error) { initialMessage = `Starting a fresh build. ${error.message}`; }
 
@@ -153,16 +155,16 @@
       const imported = calc.decode($('#build-code').value);
       undoStack.push({ points: { ...points }, rules: { ...rules } });
       ({ points, rules } = imported);
-      save(); update(); $('#build-dialog').close(); status('Build imported.');
+      save(); update(); $('#build-dialog').close(); status(['Build imported.', imported.notice].filter(Boolean).join(' '));
     } catch (error) { $('#share-status').textContent = error.message; }
   };
   window.addEventListener('hashchange', () => {
-    if (!/^#FF[23]\./.test(location.hash)) return;
+    if (!/^#FF[234]\./.test(location.hash)) return;
     try {
       const shared = calc.decode(location.hash.slice(1));
       undoStack.push({ points: { ...points }, rules: { ...rules } });
       ({ points, rules } = shared);
-      save(); update(); status('Shared build loaded.');
+      save(); update(); status(['Shared build loaded.', shared.notice].filter(Boolean).join(' '));
     } catch (error) { status(`Could not load shared build. ${error.message}`); }
   });
   document.querySelectorAll('[data-close]').forEach(button => button.onclick = () => $(`#${button.dataset.close}`).close());

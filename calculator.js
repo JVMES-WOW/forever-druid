@@ -25,7 +25,7 @@
     if (!points || typeof points !== 'object' || Array.isArray(points)) return 'Invalid build.';
     if (!Number.isInteger(rules.budget) || rules.budget < 1 || rules.budget > 200 || typeof rules.gates !== 'boolean') return 'Invalid calculator rules.';
     for (const [id, rank] of Object.entries(points)) {
-      if (!byId[id] || !Number.isInteger(rank) || rank < 0 || rank > byId[id].max) return 'Invalid talent or rank.';
+      if (!Object.hasOwn(byId, id) || !Number.isInteger(rank) || rank < 0 || rank > byId[id].max) return 'Invalid talent or rank.';
     }
     if (total(points) > rules.budget) return 'The build exceeds the point budget.';
     for (const talent of talents) {
@@ -50,41 +50,84 @@
   }
 
   function encode(points, rules = defaults) {
-    const format = data.gameClass === 'druid' && data.version >= 5 ? 'FF3' : 'FF2';
-    return format + '.' + rules.budget + '.' + Number(rules.gates) + '.' + talents.map(t => points[t.id] || 0).join('');
-  }
-  function decode(code) {
-    const match = /^FF([23])\.(\d{1,3})\.([01])\.([0-5]+)$/.exec(code.trim());
-    if (!match) throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
-    const format = Number(match[1]);
-    let ranks = match[4];
-    if (data.gameClass === 'druid' && data.version >= 5 && format === 2) {
-      // FF2 Druid builds predate Shifting Power. The oldest form also contains
-      // the retired Balance of Nature digit, which is removed first.
-      if (ranks.length === talents.length) ranks = ranks.slice(0, 8) + ranks.slice(9);
-      if (ranks.length !== talents.length - 1) throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
-      const oldFeralStart = data.trees[0].talents.length;
-      const oldShreddingAttacks = oldFeralStart + 9;
-      const oldKingOfTheJungle = oldFeralStart + 15;
-      const oldRestorationStart = oldFeralStart + 19;
-      // Move old King of the Jungle points into the replacement branch in
-      // prerequisite order so the allocation and tier totals remain valid.
-      const replacementPoints = Number(ranks[oldShreddingAttacks]) + Number(ranks[oldKingOfTheJungle]);
-      const shreddingRank = Math.min(3, replacementPoints);
-      const branchPoints = replacementPoints - shreddingRank;
-      const shiftingRank = Math.min(1, branchPoints);
-      const improvedRank = Math.min(2, Math.max(0, branchPoints - shiftingRank));
-      ranks = ranks.slice(0, oldShreddingAttacks) + shreddingRank + ranks.slice(oldShreddingAttacks + 1);
-      ranks = ranks.slice(0, oldKingOfTheJungle) + improvedRank + ranks.slice(oldKingOfTheJungle + 1);
-      ranks = ranks.slice(0, oldRestorationStart) + shiftingRank + ranks.slice(oldRestorationStart);
-    } else if (ranks.length !== talents.length) {
-      throw new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
-    }
-    const rules = { budget: Number(match[2]), gates: match[3] === '1' };
-    const points = Object.fromEntries(talents.map((t, i) => [t.id, Number(ranks[i])]).filter(([, n]) => n));
     const error = validate(points, rules);
     if (error) throw new Error(error);
-    return { points, rules };
+    const ranks = Object.entries(points).filter(([, rank]) => rank > 0)
+      .sort(([a], [b]) => a.localeCompare(b)).map(([id, rank]) => `${id}:${rank}`).join(',') || '-';
+    // Name each talent and class so future display-order changes cannot move points.
+    return `FF4.${data.gameClass}.${rules.budget}.${Number(rules.gates)}.${ranks}`;
+  }
+  function decode(code) {
+    const invalid = () => new Error(`This is not a valid Forever ${data.name || 'Druid'} build code.`);
+    if (typeof code !== 'string' || code.length > 10000) throw invalid();
+    const current = /^FF4\.([a-z]+)\.(\d{1,3})\.([01])\.(-|[a-z][a-z0-9-]*:[1-5](?:,[a-z][a-z0-9-]*:[1-5])*)$/.exec(code.trim());
+    if (current) {
+      if (current[1] !== data.gameClass) throw invalid();
+      const rules = { budget: Number(current[2]), gates: Number(current[3]) === 1 };
+      const entries = current[4] === '-' ? [] : current[4].split(',').map(entry => {
+        const [id, rank] = entry.split(':');
+        return [id, Number(rank)];
+      });
+      if (new Set(entries.map(([id]) => id)).size !== entries.length) throw invalid();
+      const points = Object.fromEntries(entries);
+      const error = validate(points, rules);
+      if (error) throw new Error(error);
+      return { points, rules };
+    }
+    const match = /^FF([23])\.(\d{1,3})\.([01])\.([0-5]+)$/.exec(code.trim());
+    if (!match) throw invalid();
+    const layout = data.legacyBuilds?.[`FF${match[1]}`];
+    if (!layout) throw invalid();
+    const rules = { budget: Number(match[2]), gates: Number(match[3]) === 1 };
+    const rulesError = validate({}, rules);
+    if (rulesError) throw new Error(rulesError);
+    let ranks = match[4];
+    if ([...ranks].reduce((sum, rank) => sum + Number(rank), 0) > rules.budget) throw new Error('The build exceeds the point budget.');
+    const refunded = [];
+    const notices = [];
+    if (data.gameClass === 'druid' && match[1] === '2' && ranks.length === layout.length + 1) {
+      if (Number(ranks[8])) refunded.push({ name: 'Balance of Nature', rank: Number(ranks[8]) });
+      ranks = ranks.slice(0, 8) + ranks.slice(9);
+    }
+    if (ranks.length !== layout.length || layout.some(([, max], i) => Number(ranks[i]) > max)) throw invalid();
+    const oldPoints = Object.fromEntries(layout.map(([id], i) => [id, Number(ranks[i])]).filter(([, rank]) => rank));
+    // Retain the already-published conversion for pre-Shifting Power Druid builds.
+    if (data.gameClass === 'druid' && match[1] === '2' && oldPoints['king-of-the-jungle']) {
+      const branch = (oldPoints['shredding-attacks'] || 0) + oldPoints['king-of-the-jungle'];
+      oldPoints['shredding-attacks'] = Math.min(3, branch);
+      oldPoints['shifting-power'] = Math.min(1, Math.max(0, branch - 3));
+      oldPoints['improved-shifting-power'] = Math.min(2, Math.max(0, branch - 4));
+      delete oldPoints['king-of-the-jungle'];
+      notices.push('King of the Jungle points were moved into the Shifting Power branch.');
+    }
+    const aliases = { 'hot-streak': 'heating-up', 'soul-harvesting': 'soul-harvest' };
+    const points = {};
+    for (const [oldId, rank] of Object.entries(oldPoints)) {
+      if (!rank) continue;
+      const id = aliases[oldId] || oldId;
+      if (byId[id]) points[id] = rank;
+      else refunded.push({ name: oldId.replaceAll('-', ' '), rank });
+    }
+    // Removed talents and changed gates may invalidate dependents. Refund them
+    // visibly rather than silently assigning their points to a different talent.
+    let changed;
+    do {
+      changed = false;
+      for (const talent of talents) {
+        if (points[talent.id] && requirements(points, talent, rules)) {
+          refunded.push({ name: talent.name, rank: points[talent.id] });
+          delete points[talent.id];
+          changed = true;
+        }
+      }
+    } while (changed);
+    const error = validate(points, rules);
+    if (error) throw new Error(error);
+    if (refunded.length) {
+      const count = refunded.reduce((sum, item) => sum + item.rank, 0);
+      notices.push(`Talent trees changed: ${count} point${count === 1 ? '' : 's'} refunded from removed talents or unmet requirements (${refunded.map(item => item.name).join(', ')}).`);
+    }
+    return notices.length ? { points, rules, notice: notices.join(' ') } : { points, rules };
   }
   root.FOREVER_CALCULATOR = { talents, byId, defaults, total, treeTotal, descriptionAtRank, requirements, validate, change, encode, decode };
   if (typeof module !== 'undefined') module.exports = root.FOREVER_CALCULATOR;

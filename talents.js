@@ -1,9 +1,427 @@
 (function(root){const classes={
   "druid": {
-    "version": 5,
+    "version": 6,
     "gameClass": "druid",
     "name": "Druid",
     "color": "#ff7d0a",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "improved-wrath",
+          5
+        ],
+        [
+          "genesis",
+          5
+        ],
+        [
+          "moonglow",
+          3
+        ],
+        [
+          "improved-moonfire",
+          2
+        ],
+        [
+          "natures-majesty",
+          2
+        ],
+        [
+          "natures-reach",
+          2
+        ],
+        [
+          "improved-entangling-roots",
+          3
+        ],
+        [
+          "natures-splendor",
+          1
+        ],
+        [
+          "insect-swarm",
+          1
+        ],
+        [
+          "vengeance",
+          5
+        ],
+        [
+          "improved-starfire",
+          5
+        ],
+        [
+          "overgrowth",
+          2
+        ],
+        [
+          "natures-grace",
+          1
+        ],
+        [
+          "eclipse",
+          3
+        ],
+        [
+          "moonfury",
+          5
+        ],
+        [
+          "moonkin-form",
+          1
+        ],
+        [
+          "ferocity",
+          5
+        ],
+        [
+          "heart-of-the-wild",
+          5
+        ],
+        [
+          "feral-swiftness",
+          2
+        ],
+        [
+          "feral-instinct",
+          3
+        ],
+        [
+          "brutal-impact",
+          2
+        ],
+        [
+          "thick-hide",
+          3
+        ],
+        [
+          "savage-fury",
+          2
+        ],
+        [
+          "feral-charge",
+          1
+        ],
+        [
+          "sharpened-claws",
+          2
+        ],
+        [
+          "shredding-attacks",
+          3
+        ],
+        [
+          "primal-bite",
+          1
+        ],
+        [
+          "predatory-strikes",
+          3
+        ],
+        [
+          "blood-frenzy",
+          2
+        ],
+        [
+          "predatory-instincts",
+          2
+        ],
+        [
+          "leader-of-the-pack",
+          1
+        ],
+        [
+          "king-of-the-jungle",
+          3
+        ],
+        [
+          "natural-reaction",
+          5
+        ],
+        [
+          "rend-and-tear",
+          5
+        ],
+        [
+          "berserk",
+          1
+        ],
+        [
+          "natures-focus",
+          5
+        ],
+        [
+          "furor",
+          5
+        ],
+        [
+          "naturalist",
+          5
+        ],
+        [
+          "subtlety",
+          3
+        ],
+        [
+          "natural-shapeshifter",
+          3
+        ],
+        [
+          "reflection",
+          3
+        ],
+        [
+          "gift-of-nature",
+          5
+        ],
+        [
+          "gift-of-the-earthmother",
+          1
+        ],
+        [
+          "tranquil-spirit",
+          5
+        ],
+        [
+          "improved-rejuvenation",
+          3
+        ],
+        [
+          "swiftmend",
+          1
+        ],
+        [
+          "natures-swiftness",
+          1
+        ],
+        [
+          "living-spirit",
+          3
+        ],
+        [
+          "improved-tranquility",
+          2
+        ],
+        [
+          "improved-regrowth",
+          5
+        ],
+        [
+          "wild-growth",
+          1
+        ]
+      ],
+      "FF3": [
+        [
+          "improved-wrath",
+          5
+        ],
+        [
+          "genesis",
+          5
+        ],
+        [
+          "moonglow",
+          3
+        ],
+        [
+          "improved-moonfire",
+          2
+        ],
+        [
+          "natures-majesty",
+          2
+        ],
+        [
+          "natures-reach",
+          2
+        ],
+        [
+          "improved-entangling-roots",
+          3
+        ],
+        [
+          "natures-splendor",
+          1
+        ],
+        [
+          "insect-swarm",
+          1
+        ],
+        [
+          "vengeance",
+          5
+        ],
+        [
+          "improved-starfire",
+          5
+        ],
+        [
+          "overgrowth",
+          2
+        ],
+        [
+          "natures-grace",
+          1
+        ],
+        [
+          "eclipse",
+          3
+        ],
+        [
+          "moonfury",
+          5
+        ],
+        [
+          "moonkin-form",
+          1
+        ],
+        [
+          "ferocity",
+          5
+        ],
+        [
+          "heart-of-the-wild",
+          5
+        ],
+        [
+          "feral-swiftness",
+          2
+        ],
+        [
+          "feral-instinct",
+          3
+        ],
+        [
+          "brutal-impact",
+          2
+        ],
+        [
+          "thick-hide",
+          3
+        ],
+        [
+          "savage-fury",
+          2
+        ],
+        [
+          "feral-charge",
+          1
+        ],
+        [
+          "sharpened-claws",
+          2
+        ],
+        [
+          "shredding-attacks",
+          3
+        ],
+        [
+          "primal-bite",
+          1
+        ],
+        [
+          "predatory-strikes",
+          3
+        ],
+        [
+          "blood-frenzy",
+          2
+        ],
+        [
+          "predatory-instincts",
+          2
+        ],
+        [
+          "leader-of-the-pack",
+          1
+        ],
+        [
+          "improved-shifting-power",
+          2
+        ],
+        [
+          "natural-reaction",
+          5
+        ],
+        [
+          "rend-and-tear",
+          5
+        ],
+        [
+          "berserk",
+          1
+        ],
+        [
+          "shifting-power",
+          1
+        ],
+        [
+          "natures-focus",
+          5
+        ],
+        [
+          "furor",
+          5
+        ],
+        [
+          "naturalist",
+          5
+        ],
+        [
+          "subtlety",
+          3
+        ],
+        [
+          "natural-shapeshifter",
+          3
+        ],
+        [
+          "reflection",
+          3
+        ],
+        [
+          "gift-of-nature",
+          5
+        ],
+        [
+          "gift-of-the-earthmother",
+          1
+        ],
+        [
+          "tranquil-spirit",
+          5
+        ],
+        [
+          "improved-rejuvenation",
+          3
+        ],
+        [
+          "swiftmend",
+          1
+        ],
+        [
+          "natures-swiftness",
+          1
+        ],
+        [
+          "living-spirit",
+          3
+        ],
+        [
+          "improved-tranquility",
+          2
+        ],
+        [
+          "improved-regrowth",
+          5
+        ],
+        [
+          "wild-growth",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "balance",
@@ -240,7 +658,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+            "description": "Shapeshift into Moonkin Form, increasing Omen of Clarity’s chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
             "type": "Active",
             "details": [
               "35% of base Mana",
@@ -350,6 +768,21 @@
             "icon": "icons/druid/thick-hide.jpg"
           },
           {
+            "id": "shredding-attacks",
+            "name": "Shredding Attacks",
+            "max": 3,
+            "row": 3,
+            "col": 1,
+            "description": "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
+            "rankDescriptions": [
+              "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
+              "Reduces the Energy cost of your Shred ability by 12 and reduces the Rage cost of your Lacerate ability by 2.",
+              "Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3."
+            ],
+            "type": "Passive",
+            "icon": "icons/druid/shredding-attacks.jpg"
+          },
+          {
             "id": "savage-fury",
             "name": "Savage Fury",
             "max": 2,
@@ -405,19 +838,21 @@
             "icon": "icons/druid/sharpened-claws.jpg"
           },
           {
-            "id": "shredding-attacks",
-            "name": "Shredding Attacks",
-            "max": 3,
-            "row": 3,
+            "id": "shifting-power",
+            "name": "Shifting Power",
+            "max": 1,
+            "row": 4,
             "col": 1,
-            "description": "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
-            "rankDescriptions": [
-              "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1.",
-              "Reduces the Energy cost of your Shred ability by 12 and reduces the Rage cost of your Lacerate ability by 2.",
-              "Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3."
+            "description": "Instantly convert 55% of base Mana into 40 Energy. Shifting Power’s cost is reduced by effects that reduce the cost of Shapeshifting.",
+            "type": "Active",
+            "details": [
+              "55% of base Mana",
+              "Instant",
+              "16 sec cooldown"
             ],
-            "type": "Passive",
-            "icon": "icons/druid/shredding-attacks.jpg"
+            "requires": "Cat Form",
+            "prerequisite": "shredding-attacks",
+            "icon": "icons/druid/shifting-power.jpg"
           },
           {
             "id": "primal-bite",
@@ -425,7 +860,7 @@
             "max": 1,
             "row": 4,
             "col": 2,
-            "description": "Bite the target for 100% normal damage plus 26.",
+            "description": "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.",
             "type": "Active",
             "details": [
               "20 Rage",
@@ -468,18 +903,19 @@
             "icon": "icons/druid/blood-frenzy.jpg"
           },
           {
-            "id": "predatory-instincts",
-            "name": "Predatory Instincts",
+            "id": "improved-shifting-power",
+            "name": "Improved Shifting Power",
             "max": 2,
             "row": 5,
-            "col": 4,
-            "description": "Increases the critical strike damage bonus of your melee abilities by 10%.",
+            "col": 1,
+            "description": "Reduces the cooldown of your Shifting Power spell by 4 sec.",
             "rankDescriptions": [
-              "Increases the critical strike damage bonus of your melee abilities by 10%.",
-              "Increases the critical strike damage bonus of your melee abilities by 20%."
+              "Reduces the cooldown of your Shifting Power spell by 4 sec.",
+              "Reduces the cooldown of your Shifting Power spell by 8 sec."
             ],
             "type": "Passive",
-            "icon": "icons/druid/predatory-instincts.jpg"
+            "prerequisite": "shifting-power",
+            "icon": "icons/druid/improved-shifting-power.jpg"
           },
           {
             "id": "leader-of-the-pack",
@@ -492,19 +928,18 @@
             "icon": "icons/druid/leader-of-the-pack.jpg"
           },
           {
-            "id": "improved-shifting-power",
-            "name": "Improved Shifting Power",
+            "id": "predatory-instincts",
+            "name": "Predatory Instincts",
             "max": 2,
             "row": 5,
-            "col": 1,
-            "description": "Reduces the cooldown of your Shifting Power ability by 4 sec.",
+            "col": 4,
+            "description": "Increases the critical strike damage bonus of your melee abilities by 10%.",
             "rankDescriptions": [
-              "Reduces the cooldown of your Shifting Power ability by 4 sec.",
-              "Reduces the cooldown of your Shifting Power ability by 8 sec."
+              "Increases the critical strike damage bonus of your melee abilities by 10%.",
+              "Increases the critical strike damage bonus of your melee abilities by 20%."
             ],
             "type": "Passive",
-            "prerequisite": "shifting-power",
-            "icon": "ability-icons/the-great-hunt.jpg"
+            "icon": "icons/druid/predatory-instincts.jpg"
           },
           {
             "id": "natural-reaction",
@@ -557,23 +992,6 @@
             "requires": "Cat Form, Bear Form, Dire Bear Form",
             "prerequisite": "leader-of-the-pack",
             "icon": "icons/druid/berserk.jpg"
-          },
-          {
-            "id": "shifting-power",
-            "name": "Shifting Power",
-            "max": 1,
-            "row": 4,
-            "col": 1,
-            "description": "Instantly grants 40 Energy. Shifting Power has a 16 sec cooldown.",
-            "type": "Active",
-            "details": [
-              "55% of base Mana",
-              "Instant",
-              "16 sec cooldown"
-            ],
-            "requires": "Cat Form",
-            "prerequisite": "shredding-attacks",
-            "icon": "ability-icons/displacer-beast.jpg"
           }
         ]
       },
@@ -839,10 +1257,218 @@
     ]
   },
   "hunter": {
-    "version": 4,
+    "version": 6,
     "gameClass": "hunter",
     "name": "Hunter",
     "color": "#abd473",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "deadly-aspects",
+          5
+        ],
+        [
+          "endurance-training",
+          5
+        ],
+        [
+          "focused-fire",
+          2
+        ],
+        [
+          "improved-aspect-of-the-monkey",
+          3
+        ],
+        [
+          "pathfinding",
+          2
+        ],
+        [
+          "improved-revive-pet",
+          2
+        ],
+        [
+          "bestial-swiftness",
+          1
+        ],
+        [
+          "unleashed-fury",
+          5
+        ],
+        [
+          "improved-mend-pet",
+          2
+        ],
+        [
+          "ferocity",
+          5
+        ],
+        [
+          "summon-hawk",
+          1
+        ],
+        [
+          "spirit-bond",
+          2
+        ],
+        [
+          "intimidation",
+          1
+        ],
+        [
+          "bestial-discipline",
+          2
+        ],
+        [
+          "frenzy",
+          5
+        ],
+        [
+          "bestial-wrath",
+          1
+        ],
+        [
+          "hawk-eye",
+          3
+        ],
+        [
+          "improved-concussive-shot",
+          5
+        ],
+        [
+          "lethal-attacks",
+          5
+        ],
+        [
+          "improved-stings",
+          3
+        ],
+        [
+          "efficiency",
+          5
+        ],
+        [
+          "careful-aim",
+          5
+        ],
+        [
+          "rapid-killing",
+          2
+        ],
+        [
+          "improved-arcane-shot",
+          5
+        ],
+        [
+          "lone-wolf",
+          1
+        ],
+        [
+          "trueshot-aura",
+          1
+        ],
+        [
+          "mortal-shots",
+          5
+        ],
+        [
+          "improved-serpent-sting",
+          5
+        ],
+        [
+          "rapid-recuperation",
+          2
+        ],
+        [
+          "barrage",
+          3
+        ],
+        [
+          "scatter-shot",
+          1
+        ],
+        [
+          "ranged-weapon-specialization",
+          5
+        ],
+        [
+          "sniper-shot",
+          1
+        ],
+        [
+          "improved-tracking",
+          5
+        ],
+        [
+          "deflection",
+          5
+        ],
+        [
+          "entrapment",
+          5
+        ],
+        [
+          "savage-strikes",
+          2
+        ],
+        [
+          "survivalist",
+          5
+        ],
+        [
+          "improved-wing-clip",
+          3
+        ],
+        [
+          "clever-traps",
+          2
+        ],
+        [
+          "surefooted",
+          3
+        ],
+        [
+          "deterrence",
+          1
+        ],
+        [
+          "survival-tactics",
+          2
+        ],
+        [
+          "predators-edge",
+          5
+        ],
+        [
+          "counterattack",
+          1
+        ],
+        [
+          "resourcefulness",
+          2
+        ],
+        [
+          "expose-prey",
+          2
+        ],
+        [
+          "survivalists-discipline",
+          2
+        ],
+        [
+          "strider-kick",
+          1
+        ],
+        [
+          "lightning-reflexes",
+          5
+        ],
+        [
+          "lacerating-strikes",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "beast-mastery",
@@ -1160,11 +1786,11 @@
             "max": 3,
             "row": 2,
             "col": 1,
-            "description": "Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
+            "description": "Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
             "rankDescriptions": [
-              "Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
-              "Increased the damage of your Serpent Sting ability by 13%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.",
-              "Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
+              "Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
+              "Increases the damage of your Serpent Sting ability by 13%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.",
+              "Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
             ],
             "type": "Passive",
             "icon": "icons/hunter/improved-stings.jpg"
@@ -1250,7 +1876,7 @@
             "max": 1,
             "row": 4,
             "col": 2,
-            "description": "Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min.",
+            "description": "Increases the Ranged Attack Power of party members within 45 yds by 30.",
             "type": "Active",
             "details": [
               "180 Mana",
@@ -1362,11 +1988,11 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "A steady snipe that increases ranged damage by 160.",
+            "description": "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
             "type": "Active",
             "details": [
               "365 Mana",
-              "8–35 yd range",
+              "8–45 yd range",
               "4 sec cast",
               "15 sec cooldown"
             ],
@@ -1405,13 +2031,13 @@
             "max": 5,
             "row": 1,
             "col": 3,
-            "description": "Increases your Parry chance by 2%.",
+            "description": "Increases your Parry chance by 1%.",
             "rankDescriptions": [
+              "Increases your Parry chance by 1%.",
               "Increases your Parry chance by 2%.",
+              "Increases your Parry chance by 3%.",
               "Increases your Parry chance by 4%.",
-              "Increases your Parry chance by 6%.",
-              "Increases your Parry chance by 8%.",
-              "Increases your Parry chance by 10%."
+              "Increases your Parry chance by 5%."
             ],
             "type": "Passive",
             "icon": "icons/hunter/deflection.jpg"
@@ -1542,13 +2168,13 @@
             "max": 5,
             "row": 4,
             "col": 2,
-            "description": "Increases your melee critical strike damage by 6% and your offhand weapon damage by 10%.",
+            "description": "Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%.",
             "rankDescriptions": [
-              "Increases your melee critical strike damage by 6% and your offhand weapon damage by 10%.",
-              "Increases your melee critical strike damage by 12% and your offhand weapon damage by 20%.",
-              "Increases your melee critical strike damage by 18% and your offhand weapon damage by 30%.",
-              "Increases your melee critical strike damage by 24% and your offhand weapon damage by 40%.",
-              "Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%."
+              "Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%.",
+              "Increases your melee critical strike damage by 12% and your Off Hand weapon damage by 20%.",
+              "Increases your melee critical strike damage by 18% and your Off Hand weapon damage by 30%.",
+              "Increases your melee critical strike damage by 24% and your Off Hand weapon damage by 40%.",
+              "Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%."
             ],
             "type": "Passive",
             "icon": "icons/hunter/predators-edge.jpg"
@@ -1651,7 +2277,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite.",
+            "description": "Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec",
             "type": "Passive",
             "prerequisite": "expose-prey",
             "icon": "icons/hunter/lacerating-strikes.jpg"
@@ -1661,10 +2287,230 @@
     ]
   },
   "mage": {
-    "version": 4,
+    "version": 6,
     "gameClass": "mage",
     "name": "Mage",
     "color": "#69ccf0",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "wand-specialization",
+          2
+        ],
+        [
+          "arcane-focus",
+          5
+        ],
+        [
+          "improved-channeling",
+          5
+        ],
+        [
+          "arcane-subtlety",
+          2
+        ],
+        [
+          "magic-absorption",
+          2
+        ],
+        [
+          "arcane-concentration",
+          5
+        ],
+        [
+          "arcane-resilience",
+          2
+        ],
+        [
+          "arcane-geometry",
+          2
+        ],
+        [
+          "arcane-impact",
+          3
+        ],
+        [
+          "arcane-blast",
+          1
+        ],
+        [
+          "arcane-shielding",
+          2
+        ],
+        [
+          "improved-counterspell",
+          2
+        ],
+        [
+          "arcane-meditation",
+          3
+        ],
+        [
+          "missile-barrage",
+          1
+        ],
+        [
+          "presence-of-mind",
+          1
+        ],
+        [
+          "arcane-mind",
+          5
+        ],
+        [
+          "arcane-instability",
+          3
+        ],
+        [
+          "arcane-power",
+          1
+        ],
+        [
+          "wake-of-fire",
+          2
+        ],
+        [
+          "incineration",
+          3
+        ],
+        [
+          "improved-fireball",
+          5
+        ],
+        [
+          "ignite",
+          5
+        ],
+        [
+          "flame-throwing",
+          2
+        ],
+        [
+          "impact",
+          3
+        ],
+        [
+          "burning-soul",
+          3
+        ],
+        [
+          "improved-flamestrike",
+          3
+        ],
+        [
+          "pyroblast",
+          1
+        ],
+        [
+          "improved-scorch",
+          3
+        ],
+        [
+          "improved-fire-ward",
+          2
+        ],
+        [
+          "hot-streak",
+          1
+        ],
+        [
+          "master-of-elements",
+          3
+        ],
+        [
+          "critical-mass",
+          3
+        ],
+        [
+          "blast-wave",
+          1
+        ],
+        [
+          "fire-power",
+          5
+        ],
+        [
+          "combustion",
+          1
+        ],
+        [
+          "frost-warding",
+          2
+        ],
+        [
+          "improved-frostbolt",
+          5
+        ],
+        [
+          "elemental-precision",
+          5
+        ],
+        [
+          "ice-shards",
+          5
+        ],
+        [
+          "permafrost",
+          3
+        ],
+        [
+          "improved-frost-nova",
+          2
+        ],
+        [
+          "frostbite",
+          3
+        ],
+        [
+          "piercing-ice",
+          3
+        ],
+        [
+          "frost-channeling",
+          3
+        ],
+        [
+          "ice-lance",
+          1
+        ],
+        [
+          "improved-blizzard",
+          3
+        ],
+        [
+          "arctic-reach",
+          2
+        ],
+        [
+          "ice-block",
+          1
+        ],
+        [
+          "shatter",
+          3
+        ],
+        [
+          "improved-cone-of-cold",
+          3
+        ],
+        [
+          "cold-snap",
+          1
+        ],
+        [
+          "fingers-of-frost",
+          2
+        ],
+        [
+          "winters-chill",
+          5
+        ],
+        [
+          "ice-barrier",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "arcane",
@@ -2115,15 +2961,15 @@
             "icon": "icons/mage/improved-fire-ward.jpg"
           },
           {
-            "id": "hot-streak",
-            "name": "Hot Streak",
+            "id": "heating-up",
+            "name": "Heating Up",
             "max": 1,
             "row": 4,
             "col": 3,
-            "description": "Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.",
+            "description": "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times.",
             "type": "Passive",
             "prerequisite": "pyroblast",
-            "icon": "icons/mage/hot-streak.jpg"
+            "icon": "icons/mage/heating-up.jpg"
           },
           {
             "id": "master-of-elements",
@@ -2193,7 +3039,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells.",
+            "description": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells.",
             "type": "Active",
             "details": [
               "Instant",
@@ -2506,10 +3352,214 @@
     ]
   },
   "paladin": {
-    "version": 4,
+    "version": 6,
     "gameClass": "paladin",
     "name": "Paladin",
     "color": "#f58cba",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "divine-strength",
+          5
+        ],
+        [
+          "divine-intellect",
+          5
+        ],
+        [
+          "healing-light",
+          3
+        ],
+        [
+          "spiritual-focus",
+          2
+        ],
+        [
+          "improved-seals",
+          3
+        ],
+        [
+          "unyielding-faith",
+          2
+        ],
+        [
+          "voice-of-truth",
+          1
+        ],
+        [
+          "reverence",
+          3
+        ],
+        [
+          "purifying-power",
+          2
+        ],
+        [
+          "infusion-of-light",
+          2
+        ],
+        [
+          "illumination",
+          5
+        ],
+        [
+          "divine-favor",
+          1
+        ],
+        [
+          "divine-precision",
+          3
+        ],
+        [
+          "holy-shock",
+          1
+        ],
+        [
+          "consecrated-ground",
+          2
+        ],
+        [
+          "holy-power",
+          5
+        ],
+        [
+          "lights-vigil",
+          1
+        ],
+        [
+          "toughness",
+          5
+        ],
+        [
+          "redoubt",
+          5
+        ],
+        [
+          "precision",
+          3
+        ],
+        [
+          "guardians-favor",
+          2
+        ],
+        [
+          "anticipation",
+          5
+        ],
+        [
+          "improved-seal-of-fury",
+          1
+        ],
+        [
+          "improved-righteous-fury",
+          3
+        ],
+        [
+          "shield-specialization",
+          3
+        ],
+        [
+          "sacred-duty",
+          2
+        ],
+        [
+          "swift-judgement",
+          1
+        ],
+        [
+          "one-handed-weapon-specialization",
+          3
+        ],
+        [
+          "improved-hammer-of-justice",
+          3
+        ],
+        [
+          "templars-bulwark",
+          1
+        ],
+        [
+          "reckoning",
+          5
+        ],
+        [
+          "iron-creed",
+          5
+        ],
+        [
+          "holy-shield",
+          1
+        ],
+        [
+          "deflection",
+          5
+        ],
+        [
+          "benediction",
+          5
+        ],
+        [
+          "improved-judgement",
+          2
+        ],
+        [
+          "holy-conduit",
+          2
+        ],
+        [
+          "conviction",
+          5
+        ],
+        [
+          "vindication",
+          3
+        ],
+        [
+          "sanctified-judgement",
+          3
+        ],
+        [
+          "seal-of-command",
+          1
+        ],
+        [
+          "pursuit-of-justice",
+          2
+        ],
+        [
+          "eye-for-an-eye",
+          2
+        ],
+        [
+          "sacred-arbiter",
+          1
+        ],
+        [
+          "two-handed-weapon-specialization",
+          3
+        ],
+        [
+          "vengeance",
+          3
+        ],
+        [
+          "repentance",
+          1
+        ],
+        [
+          "champion-of-the-light",
+          3
+        ],
+        [
+          "instrument-of-law",
+          2
+        ],
+        [
+          "twist-of-light",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "holy",
@@ -2616,7 +3666,7 @@
             "max": 1,
             "row": 3,
             "col": 1,
-            "description": "Grants you immunity to Silence and Interrupt effects. Lasts 6 sec.",
+            "description": "Grants you immunity to Silence and Interrupt effects for 6 sec.",
             "type": "Active",
             "details": [
               "Instant",
@@ -2769,7 +3819,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Applies Light’s Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 182 Holy damage and refund 75% of Light’s Vigil’s Mana cost, or allied targets to heal their party for 324. The Paladin may only have one Light’s Vigil active per party.",
+            "description": "Applies Light’s Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 182 Holy damage and refund 75% of Light’s Vigil’s Mana cost, or allied targets to heal their party for 324. You may only have one Light’s Vigil active per party.",
             "type": "Active",
             "details": [
               "730 Mana",
@@ -2812,13 +3862,13 @@
             "max": 5,
             "row": 1,
             "col": 3,
-            "description": "Damaging melee attacks against you have a 10% chance to increase your chance to block by 6%. Lasts 10 sec or 5 blocks.",
+            "description": "Damaging melee attacks against you have a 10% chance to increase your chance to block by 4%. Lasts 10 sec or 5 blocks.",
             "rankDescriptions": [
-              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 6%. Lasts 10 sec or 5 blocks.",
+              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 4%. Lasts 10 sec or 5 blocks.",
+              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 8%. Lasts 10 sec or 5 blocks.",
               "Damaging melee attacks against you have a 10% chance to increase your chance to block by 12%. Lasts 10 sec or 5 blocks.",
-              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 18%. Lasts 10 sec or 5 blocks.",
-              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 24%. Lasts 10 sec or 5 blocks.",
-              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks."
+              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 16%. Lasts 10 sec or 5 blocks.",
+              "Damaging melee attacks against you have a 10% chance to increase your chance to block by 20%. Lasts 10 sec or 5 blocks."
             ],
             "type": "Passive",
             "icon": "icons/paladin/redoubt.jpg"
@@ -3007,13 +4057,13 @@
             "max": 5,
             "row": 6,
             "col": 3,
-            "description": "Increases the threat generated by your Holy Strike ability 5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.",
+            "description": "Increases the threat generated by your Holy Strike ability by 5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.",
             "rankDescriptions": [
-              "Increases the threat generated by your Holy Strike ability 5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.",
-              "Increases the threat generated by your Holy Strike ability 10%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 4% for 6 sec.",
-              "Increases the threat generated by your Holy Strike ability 15%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 6% for 6 sec.",
-              "Increases the threat generated by your Holy Strike ability 20%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 8% for 6 sec.",
-              "Increases the threat generated by your Holy Strike ability 25%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 10% for 6 sec."
+              "Increases the threat generated by your Holy Strike ability by 5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.",
+              "Increases the threat generated by your Holy Strike ability by 10%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 4% for 6 sec.",
+              "Increases the threat generated by your Holy Strike ability by 15%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 6% for 6 sec.",
+              "Increases the threat generated by your Holy Strike ability by 20%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 8% for 6 sec.",
+              "Increases the threat generated by your Holy Strike ability by 25%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 10% for 6 sec."
             ],
             "type": "Passive",
             "icon": "icons/paladin/iron-creed.jpg"
@@ -3024,7 +4074,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Increases chance to block by 20% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+            "description": "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
             "type": "Active",
             "details": [
               "150 Mana",
@@ -3257,11 +4307,11 @@
             "max": 3,
             "row": 6,
             "col": 2,
-            "description": "Increases your spell damage and healing by up to 33% of your Intellect.",
+            "description": "Increases your spell damage by up to 20% of your Intellect.",
             "rankDescriptions": [
-              "Increases your spell damage and healing by up to 33% of your Intellect.",
-              "Increases your spell damage and healing by up to 66% of your Intellect.",
-              "Increases your spell damage and healing by up to 100% of your Intellect."
+              "Increases your spell damage by up to 20% of your Intellect.",
+              "Increases your spell damage by up to 40% of your Intellect.",
+              "Increases your spell damage by up to 60% of your Intellect."
             ],
             "type": "Passive",
             "icon": "icons/paladin/champion-of-the-light.jpg"
@@ -3286,7 +4336,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo of that Seal. Your next melee attack applies the replaced Seal’s effects, consuming the Echo.",
+            "description": "Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal’s effects, consuming the Echo.",
             "type": "Passive",
             "icon": "icons/paladin/twist-of-light.jpg"
           }
@@ -3295,10 +4345,226 @@
     ]
   },
   "priest": {
-    "version": 4,
+    "version": 6,
     "gameClass": "priest",
     "name": "Priest",
     "color": "#ffffff",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "power-in-light",
+          5
+        ],
+        [
+          "wand-specialization",
+          2
+        ],
+        [
+          "twin-disciplines",
+          5
+        ],
+        [
+          "silent-resolve",
+          3
+        ],
+        [
+          "holy-precision",
+          3
+        ],
+        [
+          "improved-power-word-shield",
+          3
+        ],
+        [
+          "martyrdom",
+          2
+        ],
+        [
+          "mental-agility",
+          3
+        ],
+        [
+          "inner-focus",
+          1
+        ],
+        [
+          "meditation",
+          3
+        ],
+        [
+          "improved-inner-fire",
+          3
+        ],
+        [
+          "mental-strength",
+          5
+        ],
+        [
+          "soul-warding",
+          1
+        ],
+        [
+          "improved-mana-burn",
+          2
+        ],
+        [
+          "penance",
+          1
+        ],
+        [
+          "renewed-hope",
+          5
+        ],
+        [
+          "divine-aegis",
+          3
+        ],
+        [
+          "power-infusion",
+          1
+        ],
+        [
+          "twilight-focus",
+          3
+        ],
+        [
+          "improved-renew",
+          3
+        ],
+        [
+          "holy-specialization",
+          5
+        ],
+        [
+          "spell-warding",
+          5
+        ],
+        [
+          "divine-fury",
+          5
+        ],
+        [
+          "holy-nova",
+          1
+        ],
+        [
+          "blessed-recovery",
+          3
+        ],
+        [
+          "inspiration",
+          3
+        ],
+        [
+          "holy-reach",
+          2
+        ],
+        [
+          "improved-healing",
+          3
+        ],
+        [
+          "searing-light",
+          2
+        ],
+        [
+          "binding-heal",
+          1
+        ],
+        [
+          "litany-of-light",
+          2
+        ],
+        [
+          "spirit-of-redemption",
+          1
+        ],
+        [
+          "spiritual-guidance",
+          5
+        ],
+        [
+          "spiritual-healing",
+          3
+        ],
+        [
+          "prayer-of-mending",
+          1
+        ],
+        [
+          "shadow-focus",
+          5
+        ],
+        [
+          "blackout",
+          5
+        ],
+        [
+          "spirit-tap",
+          5
+        ],
+        [
+          "shadow-affinity",
+          3
+        ],
+        [
+          "improved-shadow-word-pain",
+          2
+        ],
+        [
+          "shadow-reach",
+          2
+        ],
+        [
+          "improved-mind-blast",
+          5
+        ],
+        [
+          "improved-psychic-scream",
+          2
+        ],
+        [
+          "mind-flay",
+          1
+        ],
+        [
+          "improved-mind-flay",
+          2
+        ],
+        [
+          "improved-fade",
+          2
+        ],
+        [
+          "vampiric-embrace",
+          1
+        ],
+        [
+          "shadow-weaving",
+          3
+        ],
+        [
+          "silence",
+          1
+        ],
+        [
+          "devouring-contagion",
+          2
+        ],
+        [
+          "early-demise",
+          2
+        ],
+        [
+          "darkness",
+          5
+        ],
+        [
+          "shadowform",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "discipline",
@@ -3435,7 +4701,7 @@
             "max": 1,
             "row": 3,
             "col": 2,
-            "description": "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect.",
+            "description": "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect.",
             "type": "Active",
             "details": [
               "Instant",
@@ -3896,13 +5162,13 @@
             "max": 5,
             "row": 1,
             "col": 3,
-            "description": "Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
+            "description": "Gives you a 20% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.",
             "rankDescriptions": [
-              "Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-              "Gives you a 40% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-              "Gives you a 60% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-              "Gives you a 80% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-              "Gives you a 100% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting."
+              "Gives you a 20% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.",
+              "Gives you a 40% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.",
+              "Gives you a 60% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.",
+              "Gives you a 80% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.",
+              "Gives you a 100% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting."
             ],
             "type": "Passive",
             "icon": "icons/priest/spirit-tap.jpg"
@@ -4032,7 +5298,7 @@
             "max": 1,
             "row": 4,
             "col": 2,
-            "description": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. Vampiric Embrace also grants a chance for your Spirit Tap talent to trigger when enemies afflicted by it die.",
+            "description": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec.",
             "type": "Active",
             "details": [
               "40 Mana",
@@ -4079,10 +5345,10 @@
             "max": 2,
             "row": 5,
             "col": 3,
-            "description": "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.",
+            "description": "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yds for the remaining duration.",
             "rankDescriptions": [
-              "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.",
-              "Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration."
+              "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yds for the remaining duration.",
+              "Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yds for the remaining duration."
             ],
             "type": "Passive",
             "icon": "icons/priest/devouring-contagion.jpg"
@@ -4139,10 +5405,226 @@
     ]
   },
   "rogue": {
-    "version": 4,
+    "version": 6,
     "gameClass": "rogue",
     "name": "Rogue",
     "color": "#fff569",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "improved-gouge",
+          3
+        ],
+        [
+          "remorseless-attacks",
+          2
+        ],
+        [
+          "malice",
+          5
+        ],
+        [
+          "ruthlessness",
+          3
+        ],
+        [
+          "murder",
+          2
+        ],
+        [
+          "improved-slice-and-dice",
+          3
+        ],
+        [
+          "relentless-strikes",
+          1
+        ],
+        [
+          "improved-expose-armor",
+          2
+        ],
+        [
+          "lethality",
+          5
+        ],
+        [
+          "vile-poisons",
+          5
+        ],
+        [
+          "cold-blood",
+          1
+        ],
+        [
+          "improved-poisons",
+          5
+        ],
+        [
+          "vigor",
+          2
+        ],
+        [
+          "mutilate",
+          1
+        ],
+        [
+          "improved-kidney-shot",
+          2
+        ],
+        [
+          "seal-fate",
+          5
+        ],
+        [
+          "venom",
+          1
+        ],
+        [
+          "improved-eviscerate",
+          3
+        ],
+        [
+          "improved-sinister-strike",
+          2
+        ],
+        [
+          "lightning-reflexes",
+          5
+        ],
+        [
+          "puncturing-wounds",
+          3
+        ],
+        [
+          "deflection",
+          3
+        ],
+        [
+          "precision",
+          3
+        ],
+        [
+          "endurance",
+          2
+        ],
+        [
+          "riposte",
+          1
+        ],
+        [
+          "improved-sprint",
+          2
+        ],
+        [
+          "improved-kick",
+          2
+        ],
+        [
+          "flawless-execution",
+          1
+        ],
+        [
+          "dual-wield-specialization",
+          5
+        ],
+        [
+          "blade-flurry",
+          1
+        ],
+        [
+          "hack-and-slash",
+          5
+        ],
+        [
+          "weapon-expertise",
+          2
+        ],
+        [
+          "aggression",
+          3
+        ],
+        [
+          "adrenaline-rush",
+          1
+        ],
+        [
+          "camouflage",
+          5
+        ],
+        [
+          "master-of-deception",
+          3
+        ],
+        [
+          "opportunity",
+          2
+        ],
+        [
+          "setup",
+          3
+        ],
+        [
+          "elusiveness",
+          2
+        ],
+        [
+          "dirty-tricks",
+          2
+        ],
+        [
+          "improved-ambush",
+          3
+        ],
+        [
+          "initiative",
+          3
+        ],
+        [
+          "ghostly-strike",
+          1
+        ],
+        [
+          "improved-distract",
+          2
+        ],
+        [
+          "heightened-senses",
+          2
+        ],
+        [
+          "premeditation",
+          1
+        ],
+        [
+          "serrated-blades",
+          3
+        ],
+        [
+          "dirty-deeds",
+          2
+        ],
+        [
+          "preparation",
+          1
+        ],
+        [
+          "hemorrhage",
+          1
+        ],
+        [
+          "quietus",
+          5
+        ],
+        [
+          "cutthroat",
+          5
+        ],
+        [
+          "thousand-cuts",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "assassination",
@@ -4397,7 +5879,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:\n 1 point : 9 seconds\n 2 points: 12 seconds\n 3 points: 15 seconds\n 4 points: 18 seconds\n 5 points: 21 seconds",
+            "description": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:\n 1 point : 9 sec\n 2 points: 12 sec\n 3 points: 15 sec\n 4 points: 18 sec\n 5 points: 21 sec",
             "type": "Active",
             "details": [
               "25 Energy",
@@ -4731,11 +6213,11 @@
             "max": 3,
             "row": 2,
             "col": 1,
-            "description": "Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.",
+            "description": "Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.",
             "rankDescriptions": [
-              "Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.",
-              "Gives you a 67% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.",
-              "Gives you a 100% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell."
+              "Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.",
+              "Gives you a 67% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.",
+              "Gives you a 100% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells."
             ],
             "type": "Passive",
             "icon": "icons/rogue/setup.jpg"
@@ -4967,10 +6449,214 @@
     ]
   },
   "shaman": {
-    "version": 4,
+    "version": 6,
     "gameClass": "shaman",
     "name": "Shaman",
     "color": "#0070de",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "convection",
+          5
+        ],
+        [
+          "concussion",
+          5
+        ],
+        [
+          "elemental-warding",
+          3
+        ],
+        [
+          "reverberation",
+          5
+        ],
+        [
+          "call-of-flame",
+          3
+        ],
+        [
+          "elemental-devastation",
+          3
+        ],
+        [
+          "elemental-focus",
+          1
+        ],
+        [
+          "elemental-alacrity",
+          3
+        ],
+        [
+          "improved-fire-nova",
+          2
+        ],
+        [
+          "eye-of-the-storm",
+          3
+        ],
+        [
+          "call-of-thunder",
+          1
+        ],
+        [
+          "elemental-reach",
+          2
+        ],
+        [
+          "lightning-overload",
+          3
+        ],
+        [
+          "earthbound",
+          1
+        ],
+        [
+          "elemental-fury",
+          5
+        ],
+        [
+          "lava-burst",
+          1
+        ],
+        [
+          "earths-grasp",
+          2
+        ],
+        [
+          "thundering-strikes",
+          5
+        ],
+        [
+          "ancestral-knowledge",
+          5
+        ],
+        [
+          "guardian-totems",
+          2
+        ],
+        [
+          "mental-dexterity",
+          3
+        ],
+        [
+          "improved-ghost-wolf",
+          2
+        ],
+        [
+          "improved-lightning-shield",
+          3
+        ],
+        [
+          "elemental-weapons",
+          3
+        ],
+        [
+          "shamanistic-focus",
+          1
+        ],
+        [
+          "anticipation",
+          3
+        ],
+        [
+          "toughness",
+          5
+        ],
+        [
+          "flurry",
+          5
+        ],
+        [
+          "stormstrike",
+          1
+        ],
+        [
+          "spirit-weapons",
+          1
+        ],
+        [
+          "mental-quickness",
+          2
+        ],
+        [
+          "improved-stormstrike",
+          2
+        ],
+        [
+          "maelstrom-weapon",
+          5
+        ],
+        [
+          "rage-of-the-farseer",
+          1
+        ],
+        [
+          "improved-healing-wave",
+          5
+        ],
+        [
+          "totemic-focus",
+          5
+        ],
+        [
+          "mindfulness",
+          3
+        ],
+        [
+          "natural-grace",
+          3
+        ],
+        [
+          "tidal-focus",
+          5
+        ],
+        [
+          "improved-reincarnation",
+          2
+        ],
+        [
+          "ancestral-healing",
+          3
+        ],
+        [
+          "healing-focus",
+          3
+        ],
+        [
+          "water-shield",
+          1
+        ],
+        [
+          "tidal-mastery",
+          5
+        ],
+        [
+          "restorative-totems",
+          5
+        ],
+        [
+          "mana-tide-totem",
+          1
+        ],
+        [
+          "healing-way",
+          3
+        ],
+        [
+          "natures-swiftness",
+          1
+        ],
+        [
+          "purification",
+          5
+        ],
+        [
+          "riptide",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "elemental-combat",
@@ -5756,10 +7442,222 @@
     ]
   },
   "warlock": {
-    "version": 4,
+    "version": 6,
     "gameClass": "warlock",
     "name": "Warlock",
     "color": "#9482c9",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "improved-life-tap",
+          2
+        ],
+        [
+          "suppression",
+          5
+        ],
+        [
+          "improved-corruption",
+          5
+        ],
+        [
+          "malediction",
+          5
+        ],
+        [
+          "soul-harvesting",
+          2
+        ],
+        [
+          "improved-drains",
+          3
+        ],
+        [
+          "improved-bane-of-agony",
+          2
+        ],
+        [
+          "fel-concentration",
+          3
+        ],
+        [
+          "amplify-curse",
+          1
+        ],
+        [
+          "pandemic",
+          3
+        ],
+        [
+          "malevolence",
+          5
+        ],
+        [
+          "nightfall",
+          2
+        ],
+        [
+          "curse-of-exhaustion",
+          1
+        ],
+        [
+          "siphon-life",
+          1
+        ],
+        [
+          "soul-siphon",
+          3
+        ],
+        [
+          "shadow-mastery",
+          5
+        ],
+        [
+          "wrack",
+          1
+        ],
+        [
+          "improved-health-funnel",
+          2
+        ],
+        [
+          "improved-imp",
+          3
+        ],
+        [
+          "demonic-embrace",
+          5
+        ],
+        [
+          "unholy-power",
+          5
+        ],
+        [
+          "demonic-aegis",
+          2
+        ],
+        [
+          "improved-voidwalker",
+          3
+        ],
+        [
+          "fel-vitality",
+          3
+        ],
+        [
+          "demonic-energies",
+          2
+        ],
+        [
+          "improved-sayaad",
+          3
+        ],
+        [
+          "demonic-sacrifice",
+          1
+        ],
+        [
+          "master-summoner",
+          2
+        ],
+        [
+          "decimation",
+          2
+        ],
+        [
+          "fel-domination",
+          1
+        ],
+        [
+          "demonic-brand",
+          3
+        ],
+        [
+          "improved-felhunter",
+          3
+        ],
+        [
+          "soul-link",
+          1
+        ],
+        [
+          "demonic-knowledge",
+          3
+        ],
+        [
+          "master-demonologist",
+          5
+        ],
+        [
+          "demonic-pact",
+          1
+        ],
+        [
+          "destructive-reach",
+          2
+        ],
+        [
+          "improved-shadow-bolt",
+          5
+        ],
+        [
+          "bane",
+          5
+        ],
+        [
+          "molten-skin",
+          5
+        ],
+        [
+          "cataclysm",
+          3
+        ],
+        [
+          "aftermath",
+          5
+        ],
+        [
+          "ruin",
+          5
+        ],
+        [
+          "shadowburn",
+          1
+        ],
+        [
+          "intensity",
+          3
+        ],
+        [
+          "agonizing-flames",
+          3
+        ],
+        [
+          "conflagrate",
+          1
+        ],
+        [
+          "pyroclasm",
+          2
+        ],
+        [
+          "bane-of-havoc",
+          1
+        ],
+        [
+          "fire-and-brimstone",
+          3
+        ],
+        [
+          "shadow-and-flame",
+          5
+        ],
+        [
+          "incinerate",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "affliction",
@@ -5834,18 +7732,18 @@
             "icon": "icons/warlock/malediction.jpg"
           },
           {
-            "id": "soul-harvesting",
-            "name": "Soul Harvesting",
+            "id": "soul-harvest",
+            "name": "Soul Harvest",
             "max": 2,
             "row": 2,
             "col": 2,
-            "description": "You gain Soul Harvest for 10 sec if a victim is killed while afflicted with your Drain Soul. Soul Harvest allows your Mana to regenerate at 50% of normal speed while you are casting spells, and grants a 50% increase to your Mana regeneration.",
+            "description": "Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by 50% for 10 sec and allows 50% of normal Mana regeneration to continue while casting.",
             "rankDescriptions": [
-              "You gain Soul Harvest for 10 sec if a victim is killed while afflicted with your Drain Soul. Soul Harvest allows your Mana to regenerate at 50% of normal speed while you are casting spells, and grants a 50% increase to your Mana regeneration.",
-              "You gain Soul Harvest for 10 sec if a victim is killed while afflicted with your Drain Soul. Soul Harvest allows your Mana to regenerate at 100% of normal speed while you are casting spells, and grants a 100% increase to your Mana regeneration."
+              "Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by 50% for 10 sec and allows 50% of normal Mana regeneration to continue while casting.",
+              "Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by 100% for 10 sec and allows 100% of normal Mana regeneration to continue while casting."
             ],
             "type": "Passive",
-            "icon": "icons/warlock/soul-harvesting.jpg"
+            "icon": "icons/warlock/soul-harvest.jpg"
           },
           {
             "id": "improved-drains",
@@ -6020,7 +7918,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Tears the target apart from within, dealing 36 Shadow damage every 1 sec sec and increasing the damage they take from your other Shadow damage over time effects by 10%. Lasts 6 sec.",
+            "description": "Tears the target apart from within, inflicting 36 Shadow damage every 1 sec sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec.",
             "type": "Active",
             "details": [
               "200 Mana",
@@ -6590,10 +8488,226 @@
     ]
   },
   "warrior": {
-    "version": 4,
+    "version": 6,
     "gameClass": "warrior",
     "name": "Warrior",
     "color": "#c79c6e",
+    "legacyBuilds": {
+      "FF2": [
+        [
+          "improved-heroic-strike",
+          3
+        ],
+        [
+          "deflection",
+          5
+        ],
+        [
+          "improved-rend",
+          3
+        ],
+        [
+          "improved-charge",
+          2
+        ],
+        [
+          "improved-tactical-mastery",
+          5
+        ],
+        [
+          "improved-overpower",
+          2
+        ],
+        [
+          "anger-management",
+          1
+        ],
+        [
+          "deep-wounds",
+          3
+        ],
+        [
+          "spearing-strike",
+          1
+        ],
+        [
+          "two-handed-weapon-specialization",
+          3
+        ],
+        [
+          "impale",
+          2
+        ],
+        [
+          "bloodthrill",
+          5
+        ],
+        [
+          "sweeping-strikes",
+          1
+        ],
+        [
+          "weaponmaster",
+          5
+        ],
+        [
+          "improved-slam",
+          2
+        ],
+        [
+          "improved-hamstring",
+          3
+        ],
+        [
+          "mortal-strike",
+          1
+        ],
+        [
+          "booming-voice",
+          5
+        ],
+        [
+          "cruelty",
+          5
+        ],
+        [
+          "iron-will",
+          5
+        ],
+        [
+          "unbridled-wrath",
+          5
+        ],
+        [
+          "improved-cleave",
+          3
+        ],
+        [
+          "piercing-howl",
+          1
+        ],
+        [
+          "blood-craze",
+          3
+        ],
+        [
+          "boundless-rage",
+          3
+        ],
+        [
+          "dual-wield-specialization",
+          5
+        ],
+        [
+          "raging-blows",
+          1
+        ],
+        [
+          "enrage",
+          5
+        ],
+        [
+          "improved-execute",
+          2
+        ],
+        [
+          "precision",
+          3
+        ],
+        [
+          "death-wish",
+          1
+        ],
+        [
+          "improved-intercept",
+          2
+        ],
+        [
+          "improved-berserker-rage",
+          2
+        ],
+        [
+          "flurry",
+          5
+        ],
+        [
+          "bloodthirst",
+          1
+        ],
+        [
+          "shield-specialization",
+          5
+        ],
+        [
+          "anticipation",
+          5
+        ],
+        [
+          "improved-bloodrage",
+          2
+        ],
+        [
+          "toughness",
+          5
+        ],
+        [
+          "improved-thunder-clap",
+          3
+        ],
+        [
+          "last-stand",
+          1
+        ],
+        [
+          "master-of-defense",
+          2
+        ],
+        [
+          "improved-revenge",
+          3
+        ],
+        [
+          "defiance",
+          3
+        ],
+        [
+          "improved-sunder-armor",
+          3
+        ],
+        [
+          "improved-disarm",
+          3
+        ],
+        [
+          "vanguard",
+          1
+        ],
+        [
+          "improved-shield-wall",
+          2
+        ],
+        [
+          "concussion-blow",
+          1
+        ],
+        [
+          "improved-shield-bash",
+          2
+        ],
+        [
+          "bastion",
+          5
+        ],
+        [
+          "focused-rage",
+          3
+        ],
+        [
+          "shield-slam",
+          1
+        ]
+      ]
+    },
     "trees": [
       {
         "id": "arms",
@@ -6727,7 +8841,7 @@
             "max": 1,
             "row": 4,
             "col": 1,
-            "description": "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.",
+            "description": "A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets.",
             "type": "Active",
             "details": [
               "15 Rage",
@@ -6821,9 +8935,9 @@
             "max": 2,
             "row": 6,
             "col": 1,
-            "description": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam’s cooldown is reduced by 1.5 sec.",
+            "description": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam’s cooldown is reduced by 3.0 sec.",
             "rankDescriptions": [
-              "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam’s cooldown is reduced by 1.5 sec.",
+              "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam’s cooldown is reduced by 3.0 sec.",
               "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam’s cooldown is reduced by 3.0 sec."
             ],
             "type": "Passive",
@@ -6876,13 +8990,13 @@
             "max": 5,
             "row": 1,
             "col": 2,
-            "description": "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 10%.",
+            "description": "Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%.",
             "rankDescriptions": [
-              "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 10%.",
-              "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 20%.",
-              "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 30%.",
-              "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 40%.",
-              "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 50%."
+              "Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%.",
+              "Increases the area of effect of your Shouts by 20% and reduces their Rage cost by 10%.",
+              "Increases the area of effect of your Shouts by 30% and reduces their Rage cost by 15%.",
+              "Increases the area of effect of your Shouts by 40% and reduces their Rage cost by 20%.",
+              "Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%."
             ],
             "type": "Passive",
             "icon": "icons/warrior/booming-voice.jpg"
@@ -6905,21 +9019,21 @@
             "icon": "icons/warrior/cruelty.jpg"
           },
           {
-            "id": "iron-will",
-            "name": "Iron Will",
+            "id": "lingering-rage",
+            "name": "Lingering Rage",
             "max": 5,
             "row": 2,
             "col": 2,
-            "description": "Reduces the duration of Stun and Fear effects inflicted on you by 3%.",
+            "description": "Increases the time before your Rage begins to decay after leaving combat by 2 sec.",
             "rankDescriptions": [
-              "Reduces the duration of Stun and Fear effects inflicted on you by 3%.",
-              "Reduces the duration of Stun and Fear effects inflicted on you by 6%.",
-              "Reduces the duration of Stun and Fear effects inflicted on you by 9%.",
-              "Reduces the duration of Stun and Fear effects inflicted on you by 12%.",
-              "Reduces the duration of Stun and Fear effects inflicted on you by 15%."
+              "Increases the time before your Rage begins to decay after leaving combat by 2 sec.",
+              "Increases the time before your Rage begins to decay after leaving combat by 4 sec.",
+              "Increases the time before your Rage begins to decay after leaving combat by 6 sec.",
+              "Increases the time before your Rage begins to decay after leaving combat by 8 sec.",
+              "Increases the time before your Rage begins to decay after leaving combat by 10 sec."
             ],
             "type": "Passive",
-            "icon": "icons/warrior/iron-will.jpg"
+            "icon": "icons/warrior/lingering-rage.jpg"
           },
           {
             "id": "unbridled-wrath",
@@ -6927,31 +9041,31 @@
             "max": 5,
             "row": 2,
             "col": 3,
-            "description": "Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.",
+            "description": "Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon.",
             "rankDescriptions": [
-              "Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.",
-              "Gives you a 24% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.",
-              "Gives you a 36% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.",
-              "Gives you a 48% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.",
-              "Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
+              "Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon.",
+              "Gives you a 24% chance to generate 1 additional Rage when you deal melee damage with a weapon.",
+              "Gives you a 36% chance to generate 1 additional Rage when you deal melee damage with a weapon.",
+              "Gives you a 48% chance to generate 1 additional Rage when you deal melee damage with a weapon.",
+              "Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon."
             ],
             "type": "Passive",
             "icon": "icons/warrior/unbridled-wrath.jpg"
           },
           {
-            "id": "improved-cleave",
-            "name": "Improved Cleave",
+            "id": "furious-precision",
+            "name": "Furious Precision",
             "max": 3,
             "row": 3,
             "col": 1,
-            "description": "Reduces the Rage cost of your Cleave ability by 1.",
+            "description": "Increases your chance to hit with off-hand attacks by 4%.",
             "rankDescriptions": [
-              "Reduces the Rage cost of your Cleave ability by 1.",
-              "Reduces the Rage cost of your Cleave ability by 2.",
-              "Reduces the Rage cost of your Cleave ability by 3."
+              "Increases your chance to hit with off-hand attacks by 4%.",
+              "Increases your chance to hit with off-hand attacks by 7%.",
+              "Increases your chance to hit with off-hand attacks by 10%."
             ],
             "type": "Passive",
-            "icon": "icons/warrior/improved-cleave.jpg"
+            "icon": "icons/warrior/furious-precision.jpg"
           },
           {
             "id": "piercing-howl",
@@ -6959,7 +9073,7 @@
             "max": 1,
             "row": 3,
             "col": 2,
-            "description": "Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec.",
+            "description": "Causes all enemies nearby to be Dazed, reducing movement speed by 50% for 6 sec.",
             "type": "Active",
             "details": [
               "10 Rage",
@@ -6973,29 +9087,14 @@
             "max": 3,
             "row": 3,
             "col": 3,
-            "description": "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack.",
+            "description": "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.",
             "rankDescriptions": [
-              "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack.",
-              "Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack.",
-              "Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack."
+              "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.",
+              "Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.",
+              "Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack."
             ],
             "type": "Passive",
             "icon": "icons/warrior/blood-craze.jpg"
-          },
-          {
-            "id": "boundless-rage",
-            "name": "Boundless Rage",
-            "max": 3,
-            "row": 3,
-            "col": 4,
-            "description": "Increases your maximum Rage by 10.",
-            "rankDescriptions": [
-              "Increases your maximum Rage by 10.",
-              "Increases your maximum Rage by 20.",
-              "Increases your maximum Rage by 30."
-            ],
-            "type": "Passive",
-            "icon": "icons/warrior/boundless-rage.jpg"
           },
           {
             "id": "dual-wield-specialization",
@@ -7003,13 +9102,13 @@
             "max": 5,
             "row": 4,
             "col": 1,
-            "description": "Increases your off-hand weapon damage by 5%, off-hand Rage generation by 20%, and chance to hit with off-hand attacks by 2%.",
+            "description": "Increases the damage done by your off-hand weapon by 5% and the Rage generated by your off-hand attacks by 10%.",
             "rankDescriptions": [
-              "Increases your off-hand weapon damage by 5%, off-hand Rage generation by 20%, and chance to hit with off-hand attacks by 2%.",
-              "Increases your off-hand weapon damage by 10%, off-hand Rage generation by 40%, and chance to hit with off-hand attacks by 4%.",
-              "Increases your off-hand weapon damage by 15%, off-hand Rage generation by 60%, and chance to hit with off-hand attacks by 6%.",
-              "Increases your off-hand weapon damage by 20%, off-hand Rage generation by 80%, and chance to hit with off-hand attacks by 8%.",
-              "Increases your off-hand weapon damage by 25%, off-hand Rage generation by 100%, and chance to hit with off-hand attacks by 10%."
+              "Increases the damage done by your off-hand weapon by 5% and the Rage generated by your off-hand attacks by 10%.",
+              "Increases the damage done by your off-hand weapon by 10% and the Rage generated by your off-hand attacks by 20%.",
+              "Increases the damage done by your off-hand weapon by 15% and the Rage generated by your off-hand attacks by 30%.",
+              "Increases the damage done by your off-hand weapon by 20% and the Rage generated by your off-hand attacks by 40%.",
+              "Increases the damage done by your off-hand weapon by 25% and the Rage generated by your off-hand attacks by 50%."
             ],
             "type": "Passive",
             "icon": "icons/warrior/dual-wield-specialization.jpg"
@@ -7020,7 +9119,7 @@
             "max": 1,
             "row": 4,
             "col": 2,
-            "description": "Causes your Whirlwind to also strike with your off-hand weapon, and reduces the Rage cost of your Cleave ability by 2.",
+            "description": "Reduces the Rage cost of your Cleave and Whirlwind abilities by 3.",
             "type": "Passive",
             "icon": "icons/warrior/raging-blows.jpg"
           },
@@ -7056,19 +9155,18 @@
             "icon": "icons/warrior/improved-execute.jpg"
           },
           {
-            "id": "precision",
-            "name": "Precision",
-            "max": 3,
+            "id": "improved-berserker-rage",
+            "name": "Improved Berserker Rage",
+            "max": 2,
             "row": 5,
             "col": 1,
-            "description": "Improves your chance to hit by 1%.",
+            "description": "Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.",
             "rankDescriptions": [
-              "Improves your chance to hit by 1%.",
-              "Improves your chance to hit by 2%.",
-              "Improves your chance to hit by 3%."
+              "Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.",
+              "Your Berserker Rage ability will instantly generate 10 Rage and has a 100% chance to remove all movement impairing effects when activated."
             ],
             "type": "Passive",
-            "icon": "icons/warrior/precision.jpg"
+            "icon": "icons/warrior/improved-berserker-rage.jpg"
           },
           {
             "id": "death-wish",
@@ -7100,25 +9198,11 @@
             "icon": "icons/warrior/improved-intercept.jpg"
           },
           {
-            "id": "improved-berserker-rage",
-            "name": "Improved Berserker Rage",
-            "max": 2,
-            "row": 6,
-            "col": 1,
-            "description": "Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.",
-            "rankDescriptions": [
-              "Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.",
-              "Your Berserker Rage ability will instantly generate 10 Rage and has a 100% chance to remove all movement impairing effects when activated."
-            ],
-            "type": "Passive",
-            "icon": "icons/warrior/improved-berserker-rage.jpg"
-          },
-          {
             "id": "flurry",
             "name": "Flurry",
             "max": 5,
             "row": 6,
-            "col": 3,
+            "col": 2,
             "description": "Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
             "rankDescriptions": [
               "Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
@@ -7128,8 +9212,23 @@
               "Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike."
             ],
             "type": "Passive",
-            "prerequisite": "enrage",
+            "prerequisite": "death-wish",
             "icon": "icons/warrior/flurry.jpg"
+          },
+          {
+            "id": "gore-drinker",
+            "name": "Gore Drinker",
+            "max": 2,
+            "row": 6,
+            "col": 3,
+            "description": "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
+            "rankDescriptions": [
+              "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
+              "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
+            ],
+            "type": "Passive",
+            "prerequisite": "enrage",
+            "icon": "icons/warrior/gore-drinker.jpg"
           },
           {
             "id": "bloodthirst",
@@ -7137,7 +9236,7 @@
             "max": 1,
             "row": 7,
             "col": 2,
-            "description": "Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.",
+            "description": "Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.",
             "type": "Active",
             "details": [
               "30 Rage",
@@ -7145,7 +9244,6 @@
               "Instant",
               "6 sec cooldown"
             ],
-            "prerequisite": "death-wish",
             "icon": "icons/warrior/bloodthirst.jpg"
           }
         ]
@@ -7157,6 +9255,20 @@
         "color": "#6a9bd8",
         "icon": "icons/warrior/protection.jpg",
         "talents": [
+          {
+            "id": "improved-bloodrage",
+            "name": "Improved Bloodrage",
+            "max": 2,
+            "row": 1,
+            "col": 1,
+            "description": "Increases all the Rage generated by your Bloodrage ability by 25%.",
+            "rankDescriptions": [
+              "Increases all the Rage generated by your Bloodrage ability by 25%.",
+              "Increases all the Rage generated by your Bloodrage ability by 50%."
+            ],
+            "type": "Passive",
+            "icon": "icons/warrior/improved-bloodrage.jpg"
+          },
           {
             "id": "shield-specialization",
             "name": "Shield Specialization",
@@ -7175,11 +9287,28 @@
             "icon": "icons/warrior/shield-specialization.jpg"
           },
           {
-            "id": "anticipation",
-            "name": "Anticipation",
+            "id": "iron-will",
+            "name": "Iron Will",
             "max": 5,
             "row": 1,
             "col": 3,
+            "description": "Reduces the duration of Stun and Fear effects inflicted on you by 3%.",
+            "rankDescriptions": [
+              "Reduces the duration of Stun and Fear effects inflicted on you by 3%.",
+              "Reduces the duration of Stun and Fear effects inflicted on you by 6%.",
+              "Reduces the duration of Stun and Fear effects inflicted on you by 9%.",
+              "Reduces the duration of Stun and Fear effects inflicted on you by 12%.",
+              "Reduces the duration of Stun and Fear effects inflicted on you by 15%."
+            ],
+            "type": "Passive",
+            "icon": "icons/warrior/iron-will.jpg"
+          },
+          {
+            "id": "anticipation",
+            "name": "Anticipation",
+            "max": 5,
+            "row": 2,
+            "col": 1,
             "description": "Increases your Defense Skill by 4.",
             "rankDescriptions": [
               "Increases your Defense Skill by 4.",
@@ -7192,35 +9321,19 @@
             "icon": "icons/warrior/anticipation.jpg"
           },
           {
-            "id": "improved-bloodrage",
-            "name": "Improved Bloodrage",
-            "max": 2,
-            "row": 2,
-            "col": 1,
-            "description": "Increases all the Rage generated by your Bloodrage ability by 25%.",
-            "rankDescriptions": [
-              "Increases all the Rage generated by your Bloodrage ability by 25%.",
-              "Increases all the Rage generated by your Bloodrage ability by 50%."
-            ],
-            "type": "Passive",
-            "icon": "icons/warrior/improved-bloodrage.jpg"
-          },
-          {
-            "id": "toughness",
-            "name": "Toughness",
-            "max": 5,
+            "id": "improved-revenge",
+            "name": "Improved Revenge",
+            "max": 3,
             "row": 2,
             "col": 3,
-            "description": "Increases your Armor value from items by 2%.",
+            "description": "Increases damage dealt by your Revenge ability by 20%.",
             "rankDescriptions": [
-              "Increases your Armor value from items by 2%.",
-              "Increases your Armor value from items by 4%.",
-              "Increases your Armor value from items by 6%.",
-              "Increases your Armor value from items by 8%.",
-              "Increases your Armor value from items by 10%."
+              "Increases damage dealt by your Revenge ability by 20%.",
+              "Increases damage dealt by your Revenge ability by 40%.",
+              "Increases damage dealt by your Revenge ability by 60%."
             ],
             "type": "Passive",
-            "icon": "icons/warrior/toughness.jpg"
+            "icon": "icons/warrior/improved-revenge.jpg"
           },
           {
             "id": "improved-thunder-clap",
@@ -7249,7 +9362,6 @@
               "Instant",
               "3 min cooldown"
             ],
-            "prerequisite": "improved-bloodrage",
             "icon": "icons/warrior/last-stand.jpg"
           },
           {
@@ -7268,19 +9380,19 @@
             "icon": "icons/warrior/master-of-defense.jpg"
           },
           {
-            "id": "improved-revenge",
-            "name": "Improved Revenge",
+            "id": "improved-disarm",
+            "name": "Improved Disarm",
             "max": 3,
             "row": 3,
             "col": 3,
-            "description": "Increases damage dealt by your Revenge ability by 20%.",
+            "description": "Reduces the cooldown of your Disarm ability by 7 secs.",
             "rankDescriptions": [
-              "Increases damage dealt by your Revenge ability by 20%.",
-              "Increases damage dealt by your Revenge ability by 40%.",
-              "Increases damage dealt by your Revenge ability by 60%."
+              "Reduces the cooldown of your Disarm ability by 7 secs.",
+              "Reduces the cooldown of your Disarm ability by 13 secs.",
+              "Reduces the cooldown of your Disarm ability by 20 secs."
             ],
             "type": "Passive",
-            "icon": "icons/warrior/improved-revenge.jpg"
+            "icon": "icons/warrior/improved-disarm.jpg"
           },
           {
             "id": "defiance",
@@ -7313,29 +9425,28 @@
             "icon": "icons/warrior/improved-sunder-armor.jpg"
           },
           {
-            "id": "improved-disarm",
-            "name": "Improved Disarm",
-            "max": 3,
-            "row": 4,
-            "col": 2,
-            "description": "Reduces the cooldown of your Disarm ability by 7 secs.",
-            "rankDescriptions": [
-              "Reduces the cooldown of your Disarm ability by 7 secs.",
-              "Reduces the cooldown of your Disarm ability by 13 secs.",
-              "Reduces the cooldown of your Disarm ability by 20 secs."
-            ],
-            "type": "Passive",
-            "icon": "icons/warrior/improved-disarm.jpg"
-          },
-          {
             "id": "vanguard",
             "name": "Vanguard",
             "max": 1,
             "row": 4,
-            "col": 3,
+            "col": 2,
             "description": "Your Charge ability is now usable while in Defensive Stance.",
             "type": "Passive",
             "icon": "icons/warrior/vanguard.jpg"
+          },
+          {
+            "id": "improved-shield-bash",
+            "name": "Improved Shield Bash",
+            "max": 2,
+            "row": 4,
+            "col": 3,
+            "description": "Gives your Shield Bash ability a 50% chance to Silence the target for 3 sec.",
+            "rankDescriptions": [
+              "Gives your Shield Bash ability a 50% chance to Silence the target for 3 sec.",
+              "Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec."
+            ],
+            "type": "Passive",
+            "icon": "icons/warrior/improved-shield-bash.jpg"
           },
           {
             "id": "improved-shield-wall",
@@ -7368,25 +9479,26 @@
             "icon": "icons/warrior/concussion-blow.jpg"
           },
           {
-            "id": "improved-shield-bash",
-            "name": "Improved Shield Bash",
-            "max": 2,
+            "id": "focused-rage",
+            "name": "Focused Rage",
+            "max": 3,
             "row": 5,
             "col": 3,
-            "description": "Gives your Shield Bash ability a 50% chance to Silence the target for 3 sec.",
+            "description": "Reduces the Rage cost of your offensive abilities by 1.",
             "rankDescriptions": [
-              "Gives your Shield Bash ability a 50% chance to Silence the target for 3 sec.",
-              "Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec."
+              "Reduces the Rage cost of your offensive abilities by 1.",
+              "Reduces the Rage cost of your offensive abilities by 2.",
+              "Reduces the Rage cost of your offensive abilities by 3."
             ],
             "type": "Passive",
-            "icon": "icons/warrior/improved-shield-bash.jpg"
+            "icon": "icons/warrior/focused-rage.jpg"
           },
           {
             "id": "bastion",
             "name": "Bastion",
             "max": 5,
-            "row": 5,
-            "col": 4,
+            "row": 6,
+            "col": 3,
             "description": "Increases all damage you deal by 2% while a shield is equipped.",
             "rankDescriptions": [
               "Increases all damage you deal by 2% while a shield is equipped.",
@@ -7397,21 +9509,6 @@
             ],
             "type": "Passive",
             "icon": "icons/warrior/bastion.jpg"
-          },
-          {
-            "id": "focused-rage",
-            "name": "Focused Rage",
-            "max": 3,
-            "row": 6,
-            "col": 3,
-            "description": "Reduces the Rage cost of your offensive abilities by 1.",
-            "rankDescriptions": [
-              "Reduces the Rage cost of your offensive abilities by 1.",
-              "Reduces the Rage cost of your offensive abilities by 2.",
-              "Reduces the Rage cost of your offensive abilities by 3."
-            ],
-            "type": "Passive",
-            "icon": "icons/warrior/focused-rage.jpg"
           },
           {
             "id": "shield-slam",

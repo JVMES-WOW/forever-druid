@@ -35,9 +35,11 @@ test('the updated Feral tree has 20 nodes and 51 maximum points', () => {
   assert.equal(calc.byId['predatory-instincts'].col, 4);
   assert.equal(calc.byId['king-of-the-jungle'], undefined);
   assert.equal(calc.byId.ferocity.max, 5);
-  assert.equal(calc.byId['shifting-power'].icon, 'ability-icons/displacer-beast.jpg');
+  assert.equal(calc.byId['shifting-power'].icon, 'icons/druid/shifting-power.jpg');
   assert.deepEqual(calc.byId['shifting-power'].details, ['55% of base Mana', 'Instant', '16 sec cooldown']);
-  assert.equal(calc.byId['improved-shifting-power'].icon, 'ability-icons/the-great-hunt.jpg');
+  assert.equal(calc.byId['improved-shifting-power'].icon, 'icons/druid/improved-shifting-power.jpg');
+  assert.match(calc.byId['shifting-power'].description, /cost is reduced.*Shapeshifting/);
+  assert.match(calc.byId['primal-bite'].description, /high amount of threat/);
 });
 
 test('Shifting Power prerequisites use the existing full-rank enforcement', () => {
@@ -54,9 +56,9 @@ test('Shifting Power prerequisites use the existing full-rank enforcement', () =
   assert.match(calc.requirements({ ...fifteenEarlierPoints, 'shredding-attacks': 3, 'savage-fury': 2 }, calc.byId['improved-shifting-power']), /Requires 1\/1 Shifting Power/);
 });
 
-test('new Druid codes use FF3 while zeroed FF2 builds remain importable', () => {
+test('new Druid codes use FF4 while zeroed FF2 builds remain importable', () => {
   const { calc } = load();
-  assert.match(calc.encode({}), /^FF3\./);
+  assert.match(calc.encode({}), /^FF4\.druid\./);
   const previousTalentCount = calc.talents.length - 1;
   const imported = calc.decode(`FF2.51.1.${'0'.repeat(previousTalentCount)}`);
   assert.deepEqual(imported.points, {});
